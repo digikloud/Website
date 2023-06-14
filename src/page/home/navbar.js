@@ -31,7 +31,7 @@ function Navbar() {
                     <Stack direction="row" spacing={3}>
                         <Typography variant='h4'>HOME</Typography>
                         <Typography variant='h4'>ABOUT US</Typography>
-                        <Typography variant='h4'>SOLUTIONS</Typography>
+                        <Typography variant='h4'>IoT SOLUTIONS</Typography>
                         <Typography variant='h4'>CONTACT US </Typography>
                     </Stack>
                     <div>
