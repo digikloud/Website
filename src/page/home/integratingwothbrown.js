@@ -1,6 +1,6 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import React, { useEffect, useId, useState } from "react";
-import integrate from "../../assets/integrate.webp";
+import integrate from "../../assets/integrate.png";
 import PropType from "prop-types";
 
 function Integratingwothbrown() {

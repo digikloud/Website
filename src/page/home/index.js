@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./navbar";
 import "./index.css";
-import video from "../../assets/videonew.webp";
-import solar from "../../assets/solar.webp";
+import video from "../../assets/videonew - Copy.mp4.png";
+import solar from "../../assets/solar.png";
 import { Grid, Stack, Typography } from "@mui/material";
 import Robusthardware from "./robusthardware";
 import Integratingwothbrown from "./integratingwothbrown";

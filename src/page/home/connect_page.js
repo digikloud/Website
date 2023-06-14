@@ -16,7 +16,7 @@ function Connect_page() {
 
     const elementPosition1 = document.getElementById(id).offsetTop;
 
-    console.log(scrollPosition, elementPosition);
+    // console.log(scrollPosition, elementPosition);
     if (scrollPosition > elementPosition) {
       setIsVisible(true);
     }

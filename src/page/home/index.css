@@ -24,7 +24,7 @@
   color: white;
 }
 .solutions_home {
-  background-image: url(../../assets/background.webp);
+  background-image: url(../../assets/background.png);
   width: 100%;
   height: 800px;
   background-position: center;
@@ -114,7 +114,7 @@
   width: 320px;
 }
 .robusthardware_bgd {
-  background-image: url(../../assets/background2.webp);
+  background-image: url(../../assets/robust_hardware.png);
   background-position: center;
   background-size: contain;
   box-sizing: border-box;
