@@ -10,6 +10,9 @@ import sun from "../../assets/sun.png";
 import PropTypes from "prop-types";
 import Footer from "./Footer";
 import Connect_page from "./connect_page";
+import HomeAbout from "./HomeAbout";
+import ServiceHome from "./servicehome";
+import TestimonalsHome from "./testimonalsHome";
 
 function HomeIndex() {
   const videoref = useRef();
@@ -42,7 +45,7 @@ function HomeIndex() {
         </div>
       </div>
 
-      <div className={`solutions_home`}>
+      {/* <div className={`solutions_home`}>
         <Grid container width={"75%"} margin={"auto"} spacing={3}>
           <Grid item md={6}>
             <Typography variant="h2">
@@ -137,10 +140,13 @@ function HomeIndex() {
             </Stack>
           </Grid>
         </Grid>
-      </div>
-      <Robusthardware />
-      <Integratingwothbrown />
-      <Connect_page />
+      </div> */}
+      <HomeAbout />
+      <ServiceHome />
+      <TestimonalsHome />
+      {/* <Robusthardware /> */}
+      {/* <Integratingwothbrown />
+      <Connect_page /> */}
       <Footer />
     </div>
   );

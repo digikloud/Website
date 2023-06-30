@@ -1,3 +1,6 @@
+*{
+  font-family: "Open sans";
+}
 .backgroundvideo {
   width: 100%;
   top: 0;
@@ -562,4 +565,62 @@
     height: 3px;
     margin: 0 auto;
     display: block;
+}
+.HomeAbout{
+  background-image: url(../../assets/background.png);
+  width: 100%;
+  height: 450px;
+  background-position: center;
+  background-size: cover;
+  padding:0 100px;
+}
+.gfh{
+  font-family: "Open sans";
+  line-height: 1.8;
+}
+.servicehome{
+  background-image: url(../../assets/robust_hardware.png);
+  background-position: center;
+  background-size: contain;
+  box-sizing: border-box;
+  width: 100%;
+  height: 450px;
+  padding: 50px;
+}
+.jf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials{
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  padding:50px;
+}
+.testimonialsContainer{
+  width: 60%;
+  height: 100px;
+  border: 2px solid #7384ed;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  margin:10px;
+  background-color: rgb(223, 226, 241);
+  border-radius: 30px;
+}
+.testimonialsName{
+  color: #0927ec;
+  padding: 10px;
+  width: 30%;
+}
+.testimonialsInfo{
+  width: 70%;
+}
+.test{
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
 }
