@@ -13,6 +13,9 @@ import Connect_page from "./connect_page";
 import HomeAbout from "./HomeAbout";
 import ServiceHome from "./servicehome";
 import TestimonalsHome from "./testimonalsHome";
+import Customer from "./customer";
+import Dashboadrhomepage from "../dashboadrhomepage";
+import Analyzehome from "../analyzehome";
 
 function HomeIndex() {
   const videoref = useRef();
@@ -35,12 +38,10 @@ function HomeIndex() {
 
         <div className="home_top_innertext">
           <Typography variant="h1" marginBottom={1}>
-            Envisaging a brighter future...
+          IoT Solutions that
           </Typography>
-          <Typography variant="h3">
-            March towards a sustainable environment will be propelled when
-            communities decipher the problems using the potential of data, that
-            is available around us in abundance
+          <Typography variant="h1">
+          Transform your Business
           </Typography>
         </div>
       </div>
@@ -142,8 +143,11 @@ function HomeIndex() {
         </Grid>
       </div> */}
       <HomeAbout />
-      <ServiceHome />
-      <TestimonalsHome />
+      <Customer />
+      <Dashboadrhomepage />
+      <Analyzehome />
+      {/* <ServiceHome />
+      <TestimonalsHome /> */}
       {/* <Robusthardware /> */}
       {/* <Integratingwothbrown />
       <Connect_page /> */}

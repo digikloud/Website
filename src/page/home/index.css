@@ -6,6 +6,7 @@
   top: 0;
   z-index: -1;
   height: 100%;
+  background-color: #00b894;
 }
 .background_nav {
   position: relative;
@@ -14,17 +15,19 @@
 }
 .home_top_innertext {
   position: absolute;
-  bottom: 8rem;
-  left: 4rem;
-  width: auto;
-  width: 70%;
+  top : 40%;
+  /* bottom: 8rem; */
+  left: 30%;
+  /* left: 4rem; */
+  /* width: auto;
+  width: 70%; */
   text-align: left;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   padding: 5px 10px;
   padding-right: 5px;
   padding-bottom: 15px;
   border-radius: 5px;
-  color: white;
+  color: #ffffff;
 }
 .solutions_home {
   background-image: url(../../assets/background.png);
@@ -61,12 +64,12 @@
   }
 }
 
-.home_top_innertext {
+/* .home_top_innertext {
   text-shadow: 0 4px 5px #000;
 }
 .home_top_innertext h1 {
   font-style: italic;
-}
+} */
 .service_content {
   position: relative;
   float: left;
@@ -569,10 +572,16 @@
 .HomeAbout{
   background-image: url(../../assets/background.png);
   width: 100%;
-  height: 450px;
+  height: 700px;
   background-position: center;
   background-size: cover;
   padding:0 100px;
+  position: relative;
+}
+.testt{
+  position: absolute;
+  top:10%;
+  left : 60%
 }
 .gfh{
   font-family: "Open sans";
@@ -623,4 +632,68 @@
   flex-direction: column !important;
   justify-content: center;
   align-items: center;
+}
+.projects_data{
+  display: flex;
+  flex-wrap: wrap;
+}
+.projectcard{
+  width: 33%;
+  text-align: center;
+  padding: 15px;
+}
+.homeHead{
+  /* height: 30%; */
+  padding: 50px;
+  color: #00b894;
+  font-family: sans-serif;
+}
+.customers{
+  height: 400px;
+  width: 100%;
+}
+.image_wrapper{
+  margin: 0 10px;
+}
+.Dashboadrhomepage{
+  height: 650px;
+  width: 80%;
+  display: flex;
+}
+.Dashboadrhomepagediv , .Dashboadrhomepagediv1{
+  width: 80%;
+  height: 100%;
+  position: relative;
+  left:10%;
+  /* display: flex; */
+}
+.Dashboadrhomepagehead{
+  color: #00b894;
+  padding: 50px;
+  font-family: sans-serif;
+}
+.Dashboadrhomepagecontent{
+  padding: 50px;
+}
+.dashboard_paragraph{
+  line-height: 1.8;
+}
+.Dashboadrhomepagediv1{
+  display: flex;
+}
+.Dashboadrhomecard{
+  height: 200px;
+  width: 200px;
+  margin: 5px 0;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+  padding: 25px;
+}
+.analyzehome{
+  height: 500px;
+  width: 100%;
+  padding: 50px;
+}
+.analyzehomehead{
+  padding: 50px;
+  color: #00b894;
 }

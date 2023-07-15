@@ -6,6 +6,7 @@
 .navbar_container h4 {
   font-size: 18px;
   font-weight: 700;
+  color: #00b894;
 }
 .navbar_container h4:hover {
   color: #265892;

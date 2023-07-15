@@ -29,16 +29,12 @@ function Navbar() {
 
                 <Stack direction="row" spacing={3} alignItems="center">
                     <Stack direction="row" spacing={3}>
-                        <Typography variant='h4'>HOME</Typography>
-                        <Typography variant='h4'>ABOUT US</Typography>
-                        <Typography variant='h4'>IoT SOLUTIONS</Typography>
-                        <Typography variant='h4'>CONTACT US </Typography>
+                    <Typography variant='h4'>Product</Typography>
+                        <Typography variant='h4'>Solution</Typography>
+                        <Typography variant='h4'>Customer</Typography>
+                        <Typography variant='h4'>Resources </Typography>
+                        <Typography variant='h4'>Company </Typography>
                     </Stack>
-                    <div>
-                        <button className='getaquote'>
-                            <Typography variant='h4'> GET A QUOTE</Typography>
-                        </button>
-                    </div>
                 </Stack>
             </div>
         </div>
