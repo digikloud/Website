@@ -30,7 +30,7 @@ function Dashboadrhomepage() {
         </div>
       </div>
       <div className="Dashboadrhomepagediv1 ">
-        <div style={{ width: "40%" }}>
+        <div style={{ width: "40%" }} className="w">
           <div className="Dashboadrhomecard" mt={'10px'}>
             <img src={building} height='80%' width='100%'/>
             <Typography align="center">Smart Building </Typography>
@@ -40,7 +40,7 @@ function Dashboadrhomepage() {
             <Typography align="center">Smart Irrigation </Typography>
           </div>
         </div>
-        <div style={{ width: "40%" }}>
+        <div style={{ width: "40%" }} className="w">
           <div className="Dashboadrhomecard">
             <img src={hospital} height='80%' width='100%'/>
             <Typography align="center">Health Management </Typography>

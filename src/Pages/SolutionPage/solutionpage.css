@@ -1,0 +1,36 @@
+.solution_page_top_image{
+    height: 800px;
+    width: 100%;
+    background: url("../../assets/HealthCare.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.solution_home_head{
+    height: 150px;
+    width: 70%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    padding: 10px;
+}
+.solution_page_detail{
+    height: 450px;
+    width: 100%;
+}
+.solution_page_detail_head{
+    padding: 50px;
+}
+.solution_page_detail_p{
+    height: 450px;
+    padding: 50px;
+}
+.solution_page_detail_image{
+    height: 450px;
+    width: 50%;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

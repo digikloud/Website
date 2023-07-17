@@ -16,6 +16,7 @@ import TestimonalsHome from "./testimonalsHome";
 import Customer from "./customer";
 import Dashboadrhomepage from "../dashboadrhomepage";
 import Analyzehome from "../analyzehome";
+import Costsaving from "./costsaving";
 
 function HomeIndex() {
   const videoref = useRef();
@@ -146,6 +147,7 @@ function HomeIndex() {
       <Customer />
       <Dashboadrhomepage />
       <Analyzehome />
+      <Costsaving />
       {/* <ServiceHome />
       <TestimonalsHome /> */}
       {/* <Robusthardware /> */}

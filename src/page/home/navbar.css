@@ -46,3 +46,6 @@
   box-shadow: 3px 3px 0px #8cc63f;
   border: 1px solid #8cc63f !important;
 }
+.digi_logo{
+  cursor: pointer;
+}

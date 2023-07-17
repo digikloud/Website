@@ -21,6 +21,7 @@ const theme = createTheme({
       fontSize: "40px",
       fontWeight: 500,
       fontFamily: "'Open Sans', sans-serif",
+      color : "#00b894" ,
     },
     h3: {
       fontSize: "22px",
@@ -50,6 +51,7 @@ const theme = createTheme({
     p: {
       fontSize: "16px",
       fontFamily: "'Open Sans', sans-serif",
+      lineHeight : '2',
     },
   },
 });

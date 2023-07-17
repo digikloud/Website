@@ -694,6 +694,15 @@
   padding: 50px;
 }
 .analyzehomehead{
-  padding: 50px;
-  color: #00b894;
+  padding: 40px;
+}
+.w{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.costSaving{
+  height: 500px;
+  width:100%
 }
