@@ -1,12 +1,13 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
+import analyze from "../../assets/uncover,analyse.gif"
 
 function Analyzehome() {
   return (
     <div className="analyzehome">
       <Grid container spacing={2}>
         <Grid item md={6} lg={6} xs={12}>
-          {/* Image */}
+          {/* Image */}<img src ={analyze} />
         </Grid>
         <Grid item md={6} lg={6} xs={12}>
           <div className="analyzehomehead">

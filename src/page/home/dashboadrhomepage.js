@@ -1,10 +1,10 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import building from "../assets/smart building.png";
-import solar from "../assets/solar1.png";
-import waste from "../assets/waste management.png";
-import hospital from "../assets/health management.png";
-import irrigation from "../assets/smart irrigation.png";
+import building from "../../assets/smart building.png";
+import solar from "../../assets/solar1.png";
+import waste from "../../assets/waste management.png";
+import hospital from "../../assets/health management.png";
+import irrigation from "../../assets/smart irrigation.png";
 
 
 function Dashboadrhomepage() {
@@ -30,7 +30,7 @@ function Dashboadrhomepage() {
         </div>
       </div>
       <div className="Dashboadrhomepagediv1 ">
-        <div style={{ width: "40%" }} className="w">
+        <div style={{ width: "50%" }} className="w">
           <div className="Dashboadrhomecard" mt={'10px'}>
             <img src={building} height='80%' width='100%'/>
             <Typography align="center">Smart Building </Typography>

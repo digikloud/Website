@@ -14,9 +14,10 @@ import HomeAbout from "./HomeAbout";
 import ServiceHome from "./servicehome";
 import TestimonalsHome from "./testimonalsHome";
 import Customer from "./customer";
-import Dashboadrhomepage from "../dashboadrhomepage";
-import Analyzehome from "../analyzehome";
 import Costsaving from "./costsaving";
+import Analyzehome from "./analyzehome";
+import Dashboadrhomepage from "./dashboadrhomepage";
+import Digikloudplatform from "./digikloudplatform";
 
 function HomeIndex() {
   const videoref = useRef();
@@ -148,6 +149,7 @@ function HomeIndex() {
       <Dashboadrhomepage />
       <Analyzehome />
       <Costsaving />
+      <Digikloudplatform />
       {/* <ServiceHome />
       <TestimonalsHome /> */}
       {/* <Robusthardware /> */}
