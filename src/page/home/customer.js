@@ -1,6 +1,8 @@
 import { Grid } from "@mui/material";
 import Marquee from "react-fast-marquee";
 import React from "react";
+import logo from "../../assets/technosoft logo (2).png";
+import logo1 from "../../assets/technosoft logo (3).png";
 
 function Customer() {
   return (
@@ -10,13 +12,14 @@ function Customer() {
           <h1>20+ Clients rely on us</h1>
         </Grid>
 
-        <Grid item lg={12} style={{ display: "flex" }} p={5}>
+        <Grid item lg={12} xs={12} style={{ display: "flex" }} p={5}>
           <Marquee>
             <div className="image_wrapper">
               <img src="https://ambitsoftware.com/wp-content/uploads/2021/01/Ambit_logo_new-crop-2.png" />
             </div>
             <div className="image_wrapper">
-              <img src="https://www.technosoft.com/wp-content/uploads/2015/10/TechnoSoft1.png" />
+              {/* <img src="https://www.technosoft.com/wp-content/uploads/2015/10/TechnoSoft1.png" /> */}
+              <img src={logo1} />
             </div>
             <div className="image_wrapper">
               <img src="https://global-uploads.webflow.com/60674839574cc422f108afa1/6389edff80c0c729e4a11967_logo.svg" />

@@ -6,16 +6,26 @@ function Analyzehome() {
   return (
     <div className="analyzehome">
       <Grid container spacing={2}>
-        <Grid item md={6} lg={6} xs={12}>
-          {/* Image */}<img src ={analyze} />
-        </Grid>
-        <Grid item md={6} lg={6} xs={12}>
-          <div className="analyzehomehead">
+        <Grid item xs={12} md={12} className="analyzehomehead" >
+          <h1 className="typography_heading">Uncover, Analyze, Optimize</h1>
+          <h3>Extracting Actionable Insights from Raw Data</h3>
+        {/* <div className="analyzehomehead">
             <Typography variant="h2">Uncover, Analyze, Optimize</Typography>
             <Typography variant="h3" mt={2}>
               Extracting Actionable Insights from Raw Data
             </Typography>
-          </div>
+          </div> */}
+        </Grid>
+        <Grid item md={6} lg={6} xs={12}>
+          <img src ={analyze} width='100%' height='80%' />
+        </Grid>
+        <Grid item md={6} lg={6} xs={12}>
+          {/* <div className="analyzehomehead">
+            <Typography variant="h2">Uncover, Analyze, Optimize</Typography>
+            <Typography variant="h3" mt={2}>
+              Extracting Actionable Insights from Raw Data
+            </Typography>
+          </div> */}
           <div>
             <Typography variant="p" align="justify">The power of IoT lies not only in connecting devices but also in extracting actionable insights from raw data. By uncovering, analyzing, and optimizing IoT-generated data, organizations can gain valuable insights that drive efficiency, improve decision-making, and optimize operations.</Typography>
           </div>

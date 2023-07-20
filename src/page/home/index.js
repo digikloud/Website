@@ -30,7 +30,7 @@ function HomeIndex() {
       >
         <Navbar />
         <img
-          src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/IoT+Solutions+that+Transform+your+Business.gif"
+          src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/homePageVideo.gif"
           ref={videoref}
           className="backgroundvideo"
           muted
@@ -149,7 +149,7 @@ function HomeIndex() {
       <Dashboadrhomepage />
       <Analyzehome />
       <Costsaving />
-      <Digikloudplatform />
+      {/* <Digikloudplatform /> */}
       {/* <ServiceHome />
       <TestimonalsHome /> */}
       {/* <Robusthardware /> */}

@@ -1,5 +1,6 @@
 *{
   font-family: "Open sans";
+  /* background: #f4f7f9; */
 }
 .backgroundvideo {
   width: 100%;
@@ -8,6 +9,10 @@
   height: 100%;
   background-color: #00b894;
 }
+.typography_heading{
+  font-size: 40px;
+  color: #00b894;
+}
 .background_nav {
   position: relative;
   min-height: 700px;
@@ -15,7 +20,7 @@
 }
 .home_top_innertext {
   position: absolute;
-  top : 40%;
+  top : 15%;
   /* bottom: 8rem; */
   left: 30%;
   /* left: 4rem; */
@@ -292,7 +297,7 @@
   height: 150px;
 }
 .footer_container {
-  margin: 0 30px 20px 30px;
+  /* margin: 0 30px 20px 30px; */
   width: 90% !important;
   position: relative;
 }
@@ -570,13 +575,14 @@
     display: block;
 }
 .HomeAbout{
-  background-image: url(../../assets/background.png);
   width: 100%;
   height: 700px;
   background-position: center;
   background-size: cover;
   padding:0 100px;
-  position: relative;
+  background:#f4f7f9 ;
+  /* background: #00b894; */
+  /* position: relative; */
 }
 .testt{
   position: absolute;
@@ -586,6 +592,7 @@
 .gfh{
   font-family: "Open sans";
   line-height: 1.8;
+  background-color: #7384ed;
 }
 .servicehome{
   background-image: url(../../assets/robust_hardware.png);
@@ -643,37 +650,46 @@
   padding: 15px;
 }
 .homeHead{
-  /* height: 30%; */
-  padding: 50px;
+  /* padding: 50px; */
+  /* font-weight: 500;
+  font-size: 40px; */
   color: #00b894;
   font-family: sans-serif;
 }
 .customers{
-  height: 400px;
+  /* height: 400px; */
+  height: fit-content;
   width: 100%;
+  background: #f4f7f9;
 }
 .image_wrapper{
   margin: 0 10px;
+  background: white;
+  border: 1px solid white;
 }
 .Dashboadrhomepage{
   height: 650px;
   width: 80%;
   display: flex;
+  background: #f4f7f9;
 }
 .Dashboadrhomepagediv , .Dashboadrhomepagediv1{
-  width: 80%;
+  width: 100%;
   height: 100%;
-  position: relative;
-  left:10%;
+  /* position: relative;
+  left:10%; */
   /* display: flex; */
 }
 .Dashboadrhomepagehead{
   color: #00b894;
-  padding: 50px;
+  padding: 10px;
   font-family: sans-serif;
 }
 .Dashboadrhomepagecontent{
   padding: 50px;
+  display: flex;
+        align-items: center;
+        justify-content: center;
 }
 .dashboard_paragraph{
   line-height: 1.8;
@@ -682,27 +698,89 @@
   display: flex;
 }
 .Dashboadrhomecard{
-  height: 200px;
-  width: 300px;
+  height: 150px;
+  width: 200px;
   margin: 5px 0;
   box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
-  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: start; */
+  /* padding: 25px; */
 }
 .analyzehome{
-  height: 500px;
+  height: 550px;
   width: 100%;
   padding: 50px;
+  background: #f4f7f9;
 }
 .analyzehomehead{
-  padding: 40px;
+  padding-right: 30px;
+  /* text-align: right; */
 }
-.w{
-  /* background-color: red; */
+.Dashboadrhomecardlayout{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 .costSaving{
   height: 500px;
-  width:100%
+  width:100%;
+  background: #f4f7f9;
+}
+.costsavinghead{
+  padding: 10px 50px;
+  height: fit-content;
+}
+.costsavingcontent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+  .HomeAbout{
+    width: 100%;
+    height: fit-content;
+    padding:5px;
+  }
+  .homeHead  {
+    padding-left: 10px;
+  }
+  .analyzehome{
+    height: fit-content;
+  }
+  .typography_heading{
+    font-size: 24px;
+  }
+  .Dashboadrhomepage{
+    height: fit-content;
+  }
+  /* .Dashboadrhomepage{
+    background-color: pink;
+  } */
+  .Dashboadrhomepagediv1{
+    display: block;
+    padding: 10px 25%;
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%,50%); */
+  }
+  .Dashboadrhomecard{
+    display:flex ;
+    background-color: white;
+  }
+  .costSaving{
+    height: fit-content;
+  }
+  .costsavinghead{
+    padding: 20px;
+  }
+  .costsavingcontent{
+    padding: 10px;
+  }
 }

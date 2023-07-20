@@ -18,8 +18,8 @@ const theme = createTheme({
       fontFamily: "'Open Sans', sans-serif",
     },
     h2: {
-      fontSize: "40px",
-      fontWeight: 500,
+      // fontSize: "40px",
+      // fontWeight: 500,
       fontFamily: "'Open Sans', sans-serif",
       color : "#00b894" ,
     },
