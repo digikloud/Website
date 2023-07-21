@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import resilence from '../../assets/Resilience in IoT.png';
+import resilence1 from "../../assets/resilience in iot (2).png";
 
 function HomeAbout() {
   return (
@@ -47,7 +48,7 @@ function HomeAbout() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={6} >
-          <img src={resilence} height='300px' width='300px'/>
+          <img src={resilence1}  height='400px' width='400px' />
         </Grid>
         <Grid item xs={12} md={12} className="projects_data"> 
         <div className="projectcard">

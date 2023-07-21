@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import React, { Suspense } from 'react';
 import AboutUs from './Pages/AboutUs';
 import Solutionpage from './Pages/SolutionPage/solutionpage';
+import Solarpage from './Pages/SolutionPage/solarpage';
 
 const Home = React.lazy(() => import("./page/home"))
 
@@ -18,6 +19,7 @@ function App() {
             <Route element={<Suspense fallback={<>Loading...</>}><Home /></Suspense>} path='' />
             <Route path='about-us' element={<AboutUs /> } />
             <Route path='solutionpage' element={<Solutionpage/>} />
+            <Route path='solutionpage/solar' element={<Solarpage />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

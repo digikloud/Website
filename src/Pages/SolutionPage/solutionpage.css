@@ -1,22 +1,36 @@
 .solution_page_top_image{
-    height: 800px;
+    height: 100vh;
     width: 100%;
     background: url("../../assets/HealthCare.png");
     background-position: center;
     background-size: cover;
     position: relative;
 }
+.solution_solar_page_top_image{
+    height: 100vh;
+    width: 100%;
+    background: url("../../assets/solarbg.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.solution_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f7f9;
+}
 .solution_home_head{
     height: 150px;
-    width: 70%;
+    width: 60%;
     position: absolute;
     top: 15%;
     left: 5%;
     padding: 10px;
 }
 .solution_page_detail{
-    height: 450px;
-    width: 100%;
+    width: 80% !important;
+    /* background: red; */
 }
 .solution_page_detail_head{
     padding: 50px;
@@ -25,12 +39,51 @@
     height: 450px;
     padding: 50px;
 }
-.solution_page_detail_image{
-    height: 450px;
-    width: 50%;
-}
+
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.typography_heading{
+    font-size: 40px;
+    color: #00b894;
+    padding: 10px 50px;
+  }
+  .images{
+    height: 300px;
+    width: 300px;
+  }
+  .solutionpagecontent{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  }
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+    /* .solution_page_top_image{
+        height:100vh;
+    }
+    .solution_page_detail{
+        height: 100vh;
+    }
+    .solution_page_detail{
+        height: 100vh;
+    } */
+    .typography_heading{
+        font-size: 25px;
+        color: #00b894;
+        padding: 0px 20px;
+      }
+      .images{
+        height: 200px;
+        width: 200px;
+      }
+      .solutionpagecontent{
+        display: flex;
+      padding: 10px 30px;
+      }
 }

@@ -705,8 +705,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* align-items: start; */
-  /* padding: 25px; */
+  cursor: pointer;
 }
 .analyzehome{
   height: 550px;
