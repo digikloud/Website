@@ -13,8 +13,12 @@ import Solutionpage from "../../Pages/SolutionPage/solutionpage";
 function Dashboadrhomepage() {
   const navigate = useNavigate();
   function click(props){
-    <Solutionpage props={props} />
-    console.log("hi")
+    navigate('/solutionpage/solar');
+    window.scrollTo(0, 0);
+  }
+  function clicked(){
+    navigate('solutionpage');
+    window.scrollTo(0,0)
   }
   return (
     <div>
@@ -47,7 +51,7 @@ function Dashboadrhomepage() {
           </div>
         </div>
         <div style={{ width: "50%" }} className="Dashboadrhomecardlayout">
-          <div className="Dashboadrhomecard" onClick={()=> navigate('/solutionpage')}>
+          <div className="Dashboadrhomecard" onClick={clicked}>
             <img src={hospital} height='50px' width='50px'/>
             <Typography align="center">Health Management </Typography>
           </div>
@@ -55,7 +59,7 @@ function Dashboadrhomepage() {
             <img src={waste} height='50px' width='50px'/>
             <Typography align="center">Waste Management</Typography>
           </div>
-          <div className="Dashboadrhomecard" onClick={()=> navigate('/solutionpage/solar')}>
+          <div className="Dashboadrhomecard" onClick={click}>
             <img src={solar} height='50px' width='50px'/>
             <Typography  align="center">Solar Panel </Typography>
           </div>
