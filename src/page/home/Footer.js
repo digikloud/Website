@@ -12,12 +12,12 @@ function Footer() {
   return (
     <footer className="footer">
       <Grid container className="footer_container">
-        <Grid item md={4} sx={12} className="a">
+        <Grid item md={4} xs={12} className="a">
           <Stack justifyContent="center" height="100%">
             <img src={digikloud} width="300px" />
           </Stack>
         </Grid>
-        <Grid item md={4} sx={12} className="a" >
+        <Grid item md={4}  xs={12} className="a" >
           <Typography variant="h6" color={"#00b894"} gutterBottom>
             NAVIGATION LINK
           </Typography>
@@ -44,7 +44,7 @@ function Footer() {
             </Link>
           </div>
         </Grid>
-        <Grid item md={4} sx={12} className="a">
+        <Grid item md={4} xs={12} className="a">
           <Typography variant="h6" color={"#00b894"} marginBottom={"10px"}>
             CONTACT US
           </Typography>

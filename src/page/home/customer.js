@@ -3,10 +3,23 @@ import Marquee from "react-fast-marquee";
 import React from "react";
 import logo from "../../assets/technosoft logo (2).png";
 import logo1 from "../../assets/technosoft logo (3).png";
+import ambit from "../../assets/ambit.png";
+import axis from "../../assets/axis.png";
+import axs from "../../assets/axs.png";
+import maxbyte from "../../assets/maxbyte.png";
+import sasa from "../../assets/sasa.png";
+import smartfi from "../../assets/smartfi.png";
 
 function Customer() {
+  const logo = [
+    {
+      id: 1,
+      img: { ambit },
+    },
+  ];
+
   return (
-    <div>
+    <div className="homeContainer">
       <Grid container className="customers">
         <Grid item lg={12} md={12} p={5} align="center">
           <h1>20+ Clients rely on us</h1>
@@ -15,23 +28,22 @@ function Customer() {
         <Grid item lg={12} xs={12} style={{ display: "flex" }} p={5}>
           <Marquee>
             <div className="image_wrapper">
-              <img src="https://ambitsoftware.com/wp-content/uploads/2021/01/Ambit_logo_new-crop-2.png" />
+              <img src={sasa} height='150px' width='150px'/>
             </div>
             <div className="image_wrapper">
-              {/* <img src="https://www.technosoft.com/wp-content/uploads/2015/10/TechnoSoft1.png" /> */}
-              <img src={logo1} />
+              <img src={ambit} height='150px' width='150px'/>
             </div>
             <div className="image_wrapper">
-              <img src="https://global-uploads.webflow.com/60674839574cc422f108afa1/6389edff80c0c729e4a11967_logo.svg" />
+              <img src={axis} height='150px' width='150px'/>
             </div>
             <div className="image_wrapper">
-              <img src="https://img1.wsimg.com/isteam/ip/d306fc29-3c86-4936-8254-f1624a34396e/Axis.png/:/rs=h:84,cg:true,m/qt=q:100/ll" />
+              <img src={axs} height='150px' width='150px'/>
             </div>
             <div className="image_wrapper">
-              <img src="https://static.wixstatic.com/media/841590_4e9f10a6539847788dad8041fe6beca8~mv2.png/v1/fill/w_210,h_77,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/SASA%20Full%20Colour%20Logo%20RGB%20(002).png" />
+              <img src={smartfi} height='150px' width='150px'/>
             </div>
             <div className="image_wrapper">
-              <img src="https://axsmanagedservices.com/images/Logo-AXS-print-K-no-slogan.svg" />
+              <img src={maxbyte} height='150px' width='150px'/>
             </div>
           </Marquee>
         </Grid>

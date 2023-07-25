@@ -15,7 +15,8 @@ const theme = createTheme({
     h1: {
       fontSize: "50px",
       fontWeight: 700,
-      fontFamily: "'Open Sans', sans-serif",
+      fontFamily : " 'Montserrat', "
+      // fontFamily: "'Open Sans', sans-serif",
     },
     h2: {
       // fontSize: "40px",
@@ -31,7 +32,8 @@ const theme = createTheme({
     h4: {
       fontSize: "20px",
       fontWeight: 600,
-      fontFamily: "'Open Sans', sans-serif",
+      fontfamily: "'Montserrat', sans-serif"
+      // fontFamily: "'Open Sans', sans-serif",
     },
     h5: {
       fontSize: "18px",
@@ -39,9 +41,10 @@ const theme = createTheme({
       fontFamily: "'Open Sans', sans-serif",
     },
     h6:{
-      fontSize: "16px",
+      fontSize: "20px",
       fontWeight: 600,
-      fontFamily: "'Open Sans', sans-serif",
+      fontFamily : " 'Montserrat', "
+      // fontFamily: "'Open Sans', sans-serif",
     },
     body1: {
       fontSize: "16px",
@@ -50,7 +53,8 @@ const theme = createTheme({
     },
     p: {
       fontSize: "16px",
-      fontFamily: "'Open Sans', sans-serif",
+      fontFamily: "'Montserrat', sans-serif",
+      // fontFamily: "'Open Sans', sans-serif",
       lineHeight : '2',
     },
   },

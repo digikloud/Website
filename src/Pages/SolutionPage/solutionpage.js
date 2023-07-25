@@ -15,17 +15,17 @@ function Solutionpage() {
       <Grid container className="solution_container" >
         <Grid className="solution_page_top_image">
           <div className="solution_home_head">
-            <h1 >
+            <h1 className="solutionTopTag">
               Connecting Health for a Smarter Future
             </h1>
-            <h1 >
+            <h1 className="solutionTopTag">
               IoT in Healthcare Management
             </h1>
           </div>
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={12} lg={12} >  
-            <h1 className="typography_heading" >Healthcare Management</h1>
+            <h1 className="typography_heading_solution" >Healthcare Management</h1>
           </Grid>
           <Grid md={6} xs={12} >
           <Typography variant="p" className="solutionpagecontent">
@@ -44,7 +44,7 @@ function Solutionpage() {
         </Grid> 
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={12} lg={12}>  
-            <h1 className="typography_heading">Remote Patient Monitoring</h1>
+            <h1 className="typography_heading_solution">Remote Patient Monitoring</h1>
           </Grid>
           <Grid  md={6} xs={12}>
           <img src={remote_monitoring} className="images" />
@@ -63,7 +63,7 @@ function Solutionpage() {
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={12} lg={12}>  
-            <h1 className="typography_heading">Smart Hospitals and Facilities</h1>
+            <h1 className="typography_heading_solution">Smart Hospitals and Facilities</h1>
           </Grid>
           <Grid md={6} xs={12}>
           <Typography variant="p" className="solutionpagecontent">
@@ -79,7 +79,7 @@ function Solutionpage() {
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={12} lg={12}>  
-            <h1 className="typography_heading">Data Analytics and Predictive Insights</h1>
+            <h1 className="typography_heading_solution">Data Analytics and Predictive Insights</h1>
           </Grid>
           <Grid  md={6} xs={12}>
           {/* <img src={remote_monitoring} className="images" /> */}

@@ -16,7 +16,7 @@ function Solutionpage() {
       <Grid container className="solution_container" >
         <Grid className="solution_solar_page_top_image">
           <div className="solution_home_head">
-            <h1 >
+            <h1 className="solutionTopTag">
             Step into the Solar Revolution with Digikloud's IoT-enabled Solutions
             </h1>
             {/* <h1 >
@@ -26,7 +26,7 @@ function Solutionpage() {
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={12} lg={12} >  
-            <h1 className="typography_heading" >Solar energy management </h1>
+            <h1 className="typography_heading_solution" >Solar energy management </h1>
           </Grid>
           <Grid md={6} xs={12} >
           <Typography variant="p" className="solutionpagecontent">
@@ -39,7 +39,7 @@ function Solutionpage() {
         </Grid> 
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={12} lg={12}>  
-            <h1 className="typography_heading">IoT-enabled Solar Energy Monitoring</h1>
+            <h1 className="typography_heading_solution">IoT-enabled Solar Energy Monitoring</h1>
           </Grid>
           <Grid  md={6} xs={12}>
           <img src={iotsolar} className="images" />
@@ -52,7 +52,7 @@ function Solutionpage() {
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={12} lg={12}>  
-            <h1 className="typography_heading">Remote Monitoring and Predictive Maintenance</h1>
+            <h1 className="typography_heading_solution">Remote Monitoring and Predictive Maintenance</h1>
           </Grid>
           <Grid md={6} xs={12}>
           <Typography variant="p" className="solutionpagecontent">
@@ -65,7 +65,7 @@ function Solutionpage() {
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={12} lg={12}>  
-            <h1 className="typography_heading">Energy Monitoring and Analytics</h1>
+            <h1 className="typography_heading_solution">Energy Monitoring and Analytics</h1>
           </Grid>
           <Grid  md={6} xs={12}>
           <img src={energyMonitoring} className="images" />
@@ -78,12 +78,12 @@ function Solutionpage() {
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={12} lg={12}>  
-            <h1 className="typography_heading">Digikloud Solar Energy Management Dashboard</h1>
+            <h1 className="typography_heading_solution">Digikloud Solar Energy Management Dashboard</h1>
           </Grid>
-          <Grid  md={6} xs={12}>
+          <Grid item md={6} xs={12}>
           {/* <img src={energyMonitoring} className="images" /> */}
           </Grid>
-          <Grid md={6} xs={12}>
+          <Grid item md={6} xs={12}>
           <Typography variant="p" className="solutionpagecontent">
           Digikloud's advanced analytics engine provides deep insights into your energy usage patterns. Analyze historical data, identify peak demand periods, and optimize energy consumption based on real-time and forecasted information. Discover opportunities for energy savings and efficiency improvements.            </Typography>
           </Grid>

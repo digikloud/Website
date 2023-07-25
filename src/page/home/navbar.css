@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
 .navbar_container {
   position: fixed;
   width: 100%;
@@ -5,8 +7,9 @@
 }
 .navbar_container h4 {
   font-size: 18px;
-  font-weight: 700;
+  /* font-weight: 700; */
   color: #00b894;
+  font-family: 'Montserrat', sans-serif;
 }
 .navbar_container h4:hover {
   color: #265892;
@@ -16,12 +19,12 @@
 }
 .white_nav {
   background-color: white;
-  transition: linear 0.5s;
+  /* transition: linear 0.5s; */
 }
-.transparent_nav {
+/* .transparent_nav {
   transition: linear 0.5s;
   background-color: transparent;
-}
+} */
 .navbar_container > div {
   display: flex;
   justify-content: space-between;

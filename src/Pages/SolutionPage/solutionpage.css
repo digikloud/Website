@@ -1,89 +1,113 @@
-.solution_page_top_image{
-    height: 100vh;
-    width: 100%;
-    background: url("../../assets/HealthCare.png");
-    background-position: center;
-    background-size: cover;
-    position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
-.solution_solar_page_top_image{
-    height: 100vh;
-    width: 100%;
-    background: url("../../assets/solarbg.png");
-    background-position: center;
-    background-size: cover;
-    position: relative;
+.solutionTopTag{
+    color: #00b894;
+    font-size: 40px;
 }
-.solution_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f4f7f9;
+.solution_page_top_image {
+  height: 100vh;
+  width: 100vw;
+  background: url("../../assets/HealthCare.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-.solution_home_head{
-    height: 150px;
-    width: 60%;
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    padding: 10px;
+.solution_solar_page_top_image {
+  height: 100vh;
+  width: 100%;
+  background: url("../../assets/solarbg.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-.solution_page_detail{
-    width: 80% !important;
-    /* background: red; */
+.solutionpagecontent {
+  font-family: "Montserrat", sans-serif !important;
 }
-.solution_page_detail_head{
-    padding: 50px;
+.solution_wasteMonitor_page_top_image {
+  height: 100vh;
+  width: 100%;
+  background: url("../../assets/waste_bg.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-.solution_page_detail_p{
-    height: 450px;
-    padding: 50px;
+.solution_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f7f9;
+}
+.solution_home_head {
+  height: 150px;
+  width: 60%;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  padding: 10px;
+}
+.solution_page_detail {
+  width: 80% !important;
+}
+.solution_page_detail_head {
+  padding: 50px;
+}
+.solution_page_detail_p {
+  height: 450px;
+  padding: 50px;
 }
 
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.img_solution {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.typography_heading{
-    font-size: 40px;
-    color: #00b894;
-    padding: 10px 50px;
-  }
-  .images{
-    height: 300px;
-    width: 300px;
-  }
-  .solutionpagecontent{
-    display: flex;
+.typography_heading_solution {
+  font-size: 40px;
+  color: #00b894;
+  padding: 5px 50px;
+}
+.images {
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.solutionpagecontent {
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px;
-  }
+}
 
 /* Media Query */
 
 @media only screen and (max-width: 600px) {
-    /* .solution_page_top_image{
-        height:100vh;
-    }
-    .solution_page_detail{
-        height: 100vh;
-    }
-    .solution_page_detail{
-        height: 100vh;
-    } */
-    .typography_heading{
-        font-size: 25px;
-        color: #00b894;
-        padding: 0px 20px;
-      }
-      .images{
-        height: 200px;
-        width: 200px;
-      }
-      .solutionpagecontent{
-        display: flex;
-      padding: 10px 30px;
-      }
+  .solution_wasteMonitor_page_top_image {
+    height: 100vh;
+    width: 100%;
+    background: url("../../assets/waste_bg.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .typography_heading_solution {
+    font-size: 25px;
+    color: #00b894;
+    padding: 0 15px;
+  }
+  .images {
+    height: 200px;
+    width: 200px;
+  }
+  .solutionpagecontent {
+    display: flex;
+    padding: 10px 30px;
+  }
+  .images_future {
+    width: 100%;
+  }
 }

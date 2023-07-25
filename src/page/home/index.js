@@ -2,17 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./navbar";
 import "./index.css";
 import video from "../../assets/videonew - Copy.mp4.png";
+import img from "../../assets/IoT Solutions that Transform your Business.png";
+import img1 from "../../assets/new wb (5).png";
+
 import solar from "../../assets/solar.png";
-import { Grid, Stack, Typography } from "@mui/material";
-import Robusthardware from "./robusthardware";
-import Integratingwothbrown from "./integratingwothbrown";
+import { Button, Grid, Stack, Typography } from "@mui/material";
 import sun from "../../assets/sun.png";
 import PropTypes from "prop-types";
 import Footer from "./Footer";
-import Connect_page from "./connect_page";
 import HomeAbout from "./HomeAbout";
-import ServiceHome from "./servicehome";
-import TestimonalsHome from "./testimonalsHome";
 import Customer from "./customer";
 import Costsaving from "./costsaving";
 import Analyzehome from "./analyzehome";
@@ -30,7 +28,8 @@ function HomeIndex() {
       >
         <Navbar />
         <img
-          src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/homePageVideo.gif"
+          // src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/homePageVideo.gif"
+          src={img1}
           ref={videoref}
           className="backgroundvideo"
           muted
@@ -38,123 +37,20 @@ function HomeIndex() {
           loop
         />
 
-        <div className="home_top_innertext">
+        {/* <div className="home_top_innertext">
           <Typography variant="h1" marginBottom={1}>
-          IoT Solutions that
+            IoT Solutions that Transform
           </Typography>
-          <Typography variant="h1">
-          Transform your Business
-          </Typography>
-        </div>
+          <Typography variant="h1">your Business</Typography>
+          <button variant="contained" className="button">Learn More</button>
+        </div> */}
       </div>
-
-      {/* <div className={`solutions_home`}>
-        <Grid container width={"75%"} margin={"auto"} spacing={3}>
-          <Grid item md={6}>
-            <Typography variant="h2">
-              Solutions build to give the meaningful Insights
-            </Typography>
-          </Grid>
-          <Grid item md={6}>
-            <ul>
-              <li>
-                <Typography variant="body1" gutterBottom>
-                  Myriad digital solutions using the IOT, Cloud & Analytics in
-                  the utmost efficient way.
-                </Typography>
-              </li>
-              <li>
-                <Typography variant="body1">
-                  Seamless integration of our digital solutions with your
-                  existing assets thereby:
-                  <br /> Optimizing operations and in turn enhancing the overall
-                  value of the underlying asset
-                </Typography>
-              </li>
-            </ul>
-          </Grid>
-
-          <Grid item md={4}>
-            <Stack spacing={4} className={`service_container`}>
-              <SolutionstoBuild
-                title="Local PV & Substation SCADA"
-                margin
-                index={0}
-                direction="left"
-              />
-              <SolutionstoBuild
-                title="IOT Based Cloud Scada"
-                index={1}
-                direction="left"
-              />
-              <SolutionstoBuild
-                title="Portfolio Aggregation"
-                index={2}
-                direction="left"
-              />
-              <SolutionstoBuild
-                title="Asset Management"
-                margin
-                index={3}
-                direction="left"
-              />
-            </Stack>
-          </Grid>
-
-          <Grid item md={4}>
-            <Stack
-              alignItems={"center"}
-              height="100%"
-              justifyContent="center"
-              className="sun"
-            >
-              <img src={sun} className="sun_rotate" />
-              <Typography variant="h5">
-                UTILITY <br /> C&I
-                <br /> RESIDENTIAL
-              </Typography>
-            </Stack>
-          </Grid>
-
-          <Grid item md={4}>
-            <Stack spacing={4} className="service_container1">
-              <SolutionstoBuild
-                title="Predictive Analytics"
-                index={0}
-                margin
-                direction="right"
-              />
-              <SolutionstoBuild
-                title="AI & ML Driven Algorithms"
-                index={1}
-                direction="right"
-              />
-              <SolutionstoBuild
-                title="Precise Forecast And Scheduling"
-                index={2}
-                direction="right"
-              />
-              <SolutionstoBuild
-                title="Precise Forecast And Scheduling"
-                index={3}
-                margin
-                direction="right"
-              />
-            </Stack>
-          </Grid>
-        </Grid>
-      </div> */}
       <HomeAbout />
       <Customer />
       <Dashboadrhomepage />
       <Analyzehome />
       <Costsaving />
-      {/* <Digikloudplatform /> */}
-      {/* <ServiceHome />
-      <TestimonalsHome /> */}
-      {/* <Robusthardware /> */}
-      {/* <Integratingwothbrown />
-      <Connect_page /> */}
+      <Digikloudplatform />
       <Footer />
     </div>
   );
