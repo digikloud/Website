@@ -4,7 +4,8 @@
   font-family: "Montserrat", sans-serif;
 }
 .solutionTopTag{
-    color: #00b894;
+    /* color: #00b894; */
+    color: white;
     font-size: 40px;
 }
 .solution_page_top_image {

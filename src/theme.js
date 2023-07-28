@@ -11,7 +11,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontfamily: ["Open Sans", "sans-serif"],
+    fontfamily: ["'Montserrat', sans-serif"],
     h1: {
       fontSize: "50px",
       fontWeight: 700,
@@ -57,6 +57,9 @@ const theme = createTheme({
       // fontFamily: "'Open Sans', sans-serif",
       lineHeight : '2',
     },
+    homepageSubhead:{
+      fontFamily: "'Montserrat', sans-serif",
+    }
   },
 });
 

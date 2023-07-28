@@ -7,7 +7,8 @@ import img1 from "../../assets/new wb (5).png";
 
 import solar from "../../assets/solar.png";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import sun from "../../assets/sun.png";
+import gif from "../../assets/Elevate Your Space with DigiKloud IoT Solutions.gif";
+import gif1 from "../../assets/company presentation.gif"
 import PropTypes from "prop-types";
 import Footer from "./Footer";
 import HomeAbout from "./HomeAbout";
@@ -16,6 +17,7 @@ import Costsaving from "./costsaving";
 import Analyzehome from "./analyzehome";
 import Dashboadrhomepage from "./dashboadrhomepage";
 import Digikloudplatform from "./digikloudplatform";
+import ProtocolsHome from "./IotProtocols";
 
 function HomeIndex() {
   const videoref = useRef();
@@ -29,7 +31,7 @@ function HomeIndex() {
         <Navbar />
         <img
           // src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/homePageVideo.gif"
-          src={img1}
+          src={gif1}
           ref={videoref}
           className="backgroundvideo"
           muted
@@ -51,6 +53,7 @@ function HomeIndex() {
       <Analyzehome />
       <Costsaving />
       <Digikloudplatform />
+      <ProtocolsHome />
       <Footer />
     </div>
   );

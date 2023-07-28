@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
+import Drawer from "@mui/material/Drawer";
 import "./navbar.css";
 import { Stack, Typography } from "@mui/material";
 import digikloud from "../../assets/final file.png";
 import { useNavigate } from "react-router-dom";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+const drawerWidth = 240;
 
 function Navbar() {
   const [color, setColor] = useState("white_nav");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navigate = useNavigate();
   
@@ -107,8 +110,9 @@ function Navbar() {
               MenuListProps={{
                 "aria-labelledby": "basic-button",
               }}
+              selected={true} 
             >
-              <MenuItem onClick={health}  id="healthpage">Health Management</MenuItem>
+              <MenuItem onClick={health}  id="healthpage" >Health Management</MenuItem>
               <MenuItem onClick={solar} >Solar Monitoring</MenuItem>
               <MenuItem onClick={waste} >Waste Monitoring</MenuItem>
             </Menu>

@@ -6,11 +6,6 @@ function HomeAbout() {
   return (
     <div className="homeContainer">
       <Grid container spacing={4} className="HomeAbout" >
-        {/* <Grid item xs={12} md={12} className="homeHead">
-          <h1 className="typography_heading">
-            Resilience in IoT platform for your Business
-          </h1>
-        </Grid> */}
         <Grid item xs={12} md={6} >
         <h1 className="typography_heading">
             Resilience in IoT platform for your Business
@@ -24,21 +19,21 @@ function HomeAbout() {
             business from disruptions and enabling long-term success.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6} >
-          <img src={resilence} height="400px" width="400px" />
+        <Grid item xs={12} md={6} className="home_content_image">
+          <img src={resilence} height="400px" width="350px" />
         </Grid>
         <Grid item xs={12} md={12} className="projects_data">
           <div className="projectcard">
             <Typography variant="h1">20+</Typography>
-            <Typography className="homepageSubhead">Projects Delivered</Typography>
+            <Typography variant="body" className="homepageSubhead">Projects Delivered</Typography>
           </div>
           <div className="projectcard">
             <Typography variant="h1">20+</Typography>
-            <Typography className="homepageSubhead">Operating countries</Typography>
+            <Typography variant="body" className="homepageSubhead">Operating countries</Typography>
           </div>
           <div className="projectcard">
             <Typography variant="h1">20+</Typography>
-            <Typography className="homepageSubhead">No of data getting published</Typography>
+            <Typography variant="body" className="homepageSubhead">No of data getting published</Typography>
           </div>
         </Grid>
       </Grid>

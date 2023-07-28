@@ -52,3 +52,12 @@
 .digi_logo{
   cursor: pointer;
 }
+.css-6hp17o-MuiList-root-MuiMenu-list{
+/* background: #ffffff; */
+color: #00b894;
+font-family: 'Montserrat', sans-serif;
+}
+/* .css-6hp17o-MuiList-root-MuiMenu-list:hover{
+  background: #00b894;
+  color: white;
+} */

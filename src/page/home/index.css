@@ -141,7 +141,7 @@
 }
 .HomeAbout{
   width: 80% !important;
-  /* height: 700px; */
+  height: 700px;
   background-position: center;
   background-size: cover;
   padding:0 100px;
@@ -152,6 +152,7 @@
   justify-content: center;
   align-items: center;
   background:#f4f7f9 ;
+  /* background:#078ee8 ; */
 }
 .projects_data{
   display: flex;
@@ -177,9 +178,11 @@
   border: 1px solid white;
 }
 .Dashboadrhomepage{
-  height: 750px;
   width: 80% !important;
-  display: flex;
+  height: 850px;
+  background-position: center;
+  background-size: cover;
+  padding:0 100px;
   background: #f4f7f9;
 }
 .Dashboadrhomepagediv , .Dashboadrhomepagediv1{
@@ -221,13 +224,14 @@
   color: #00b894;
 }
 .analyzehome{
-  height: 550px;
+  /* height: 600px; */
   width: 80% !important;
-  padding: 50px;
+  padding:0 100px;
   background: #f4f7f9;
 }
 .homepageSubhead{
   color: #757e8c;
+  font-family: 'Montserrat',;
 }
 .Dashboadrhomecardlayout{
   display: flex;
@@ -237,10 +241,12 @@
 .costSaving{
   width:80% !important;
   background: #f4f7f9;
+  padding:0 100px;
 }
 .costsavinghead{
   padding: 10px;
   height: fit-content;
+  
 }
 .costsavingcontent{
   /* display: flex; */
@@ -250,9 +256,16 @@
 }
 .digikloudPlatform{
   width: 80% !important;
+  background: #f4f7f9;
+  padding:0 100px;
   height: 500px;
 }
-
+.home_content_image ,.analyze_content, .costsaving_content_image,.iotProtocols_content_image{
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+}
 /* Media Query */
 
 @media only screen and (max-width: 600px) {
@@ -261,40 +274,72 @@
     height: fit-content;
     padding:5px;
   }
+  .backgroundvideo {
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    background-color: #e91212;
+  }
+  .background_nav {
+    position: relative;
+    min-height:0;
+    height: 400px;
+  }
   .homeHead  {
     padding-left: 10px;
+  }
+  .projects_data{
+    text-align: center;
+    /* display: block; */
+    height: 200px;
+    flex-direction: row !important;
+    margin-bottom: 5px;
   }
   .analyzehome{
     height: fit-content;
     padding:20px;
   }
-  /* .typography_heading{
-    font-size: 24px;
-    padding: 0;
-  } */
   .typography_heading {
     font-size: 25px;
     color: #00b894;
   }
+  .homepageSubhead{
+    font-size: 14px !important;
+    padding-bottom:13px;
+  }
   .Dashboadrhomepage{
     height: fit-content;
+    padding: 0;
   }
   .Dashboadrhomepagediv1{
-    display: block;
-    padding: 10px 25%;
+    width: 100% !important;
+    /* display: block; */
+    /* padding: 10px 25%; */
   }
-
+  .Dashboadrhomecardlayout{
+    padding-bottom: 10px !important;
+  }
+  .Dashboadrhomecard{
+    width: 150px;
+  }
+  .Dashboadrhomecard h6{
+    /* background-color: red; */
+    font-size: 14px;
+  }
   .costSaving{
     height: fit-content;
+    padding: 0;
   }
   .costsavinghead{
-    padding: 20px;
+    padding: 0;
   }
   .costsavingcontent{
     padding: 10px;
   }
   .digikloudPlatform{
     height: fit-content;
+    padding: 0;
   }
   .footer{
     height: fit-content;
