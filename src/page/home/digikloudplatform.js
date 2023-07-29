@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import resilence from "../../assets/resilience in iot (21).png";
+import dashboard from "../../assets/dashboard.gif";
 
 function Digikloudplatform() {
   return (
@@ -19,7 +19,7 @@ function Digikloudplatform() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
-          {/* <img src={resilence} height="400px" width="350px" /> */}
+          <img src={dashboard} height="90%" width="700px" style={{borderRadius:'10px'}}/>
         </Grid>
       </Grid>
     </div>
