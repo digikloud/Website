@@ -11,7 +11,7 @@
 .solution_page_top_image {
   height: 100vh;
   width: 100vw;
-  background: url("../../assets/HealthCare.png");
+  background: url("../../assets/healthcare2.png");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -19,7 +19,7 @@
 .solution_solar_page_top_image {
   height: 100vh;
   width: 100%;
-  background: url("../../assets/solarbg.png");
+  background: url("../../assets/solarSolBg.png");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -30,7 +30,7 @@
 .solution_wasteMonitor_page_top_image {
   height: 100vh;
   width: 100%;
-  background: url("../../assets/waste_bg.png");
+  background: url("../../assets/WasteSolBg.png");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -90,7 +90,7 @@
   .solution_wasteMonitor_page_top_image {
     height: 100vh;
     width: 100%;
-    background: url("../../assets/waste_bg.png");
+    /* background: url("../../assets/waste_bg.png"); */
     background-position: center;
     background-size: cover;
     position: relative;

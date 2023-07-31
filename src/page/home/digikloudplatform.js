@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import dashboard from "../../assets/dashboard.gif";
+import db from "../../assets/From developmnt to distribution (1).gif"
 
 function Digikloudplatform() {
   return (
@@ -19,7 +19,7 @@ function Digikloudplatform() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
-          <img src={dashboard} height="90%" width="700px" style={{borderRadius:'10px'}}/>
+          <img src={db}  className="dashboard_platformPage"/>
         </Grid>
       </Grid>
     </div>

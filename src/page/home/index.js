@@ -1,13 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./navbar";
 import "./index.css";
-import video from "../../assets/videonew - Copy.mp4.png";
-import img from "../../assets/IoT Solutions that Transform your Business.png";
-import img1 from "../../assets/new wb (5).png";
 
-import solar from "../../assets/solar.png";
+// import solar from "../../assets/solar.png";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import gif from "../../assets/Elevate Your Space with DigiKloud IoT Solutions.gif";
 import gif1 from "../../assets/company presentation.gif"
 import PropTypes from "prop-types";
 import Footer from "./Footer";
@@ -18,6 +14,7 @@ import Analyzehome from "./analyzehome";
 import Dashboadrhomepage from "./dashboadrhomepage";
 import Digikloudplatform from "./digikloudplatform";
 import ProtocolsHome from "./IotProtocols";
+import ContactUs from "../contactus";
 
 function HomeIndex() {
   const videoref = useRef();
@@ -54,6 +51,7 @@ function HomeIndex() {
       <Costsaving />
       <Digikloudplatform />
       <ProtocolsHome />
+      {/* <ContactUs /> */}
       <Footer />
     </div>
   );
@@ -104,7 +102,7 @@ function SolutionstoBuild({ title, margin, index, direction }) {
  `}
       >
         <Stack direction="row" alignItems="center" spacing={3}>
-          <img src={solar} />
+          {/* <img src={solar} /> */}
           <Typography variant="h5">{title}</Typography>
         </Stack>
       </div>
