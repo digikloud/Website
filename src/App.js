@@ -7,6 +7,7 @@ import AboutUs from './Pages/AboutUs';
 import Solutionpage from './Pages/SolutionPage/solutionpage';
 import Solarpage from './Pages/SolutionPage/solarpage';
 import WasteMonitoringPage from './Pages/SolutionPage/wasteMonitoringPage';
+import Workplacemanagement from './Pages/SolutionPage/workplacemanagement';
 
 const Home = React.lazy(() => import("./page/home"))
 
@@ -22,6 +23,7 @@ function App() {
             <Route path='solutionpage/healthmanagement' element={<Solutionpage/>} />
             <Route path='solutionpage/solarmonitoring' element={<Solarpage />} />
             <Route path='solutionpage/wastemonitoring' element={<WasteMonitoringPage />} />
+            <Route path='solutionpage/workplacemanagement' element={<Workplacemanagement />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

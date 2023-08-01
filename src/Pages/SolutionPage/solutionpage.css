@@ -3,6 +3,9 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
+Grid> .p{
+  color : red
+}
 .solutionTopTag{
     /* color: #00b894; */
     color: white;
@@ -51,6 +54,19 @@
 }
 .solution_page_detail {
   width: 80% !important;
+  height: 500px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.v{
+  background-color: red;
+  height: 500px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .solution_page_detail_head {
   padding: 50px;
@@ -68,11 +84,11 @@
 .typography_heading_solution {
   font-size: 40px;
   color: #00b894;
-  padding: 5px 50px;
+  padding: 10px 10px 10px 0;
 }
 .images {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -82,6 +98,10 @@
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+.dashboard{
+  height: 300px;
+  width: 100%;
 }
 
 /* Media Query */

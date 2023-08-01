@@ -6,7 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import "./navbar.css";
-import { Stack, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 
 function Navbar() {
   const [color, setColor] = useState("white_nav");
@@ -37,11 +37,6 @@ function Navbar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const solution = () => {
-    // navigate("/solutionpage");
-    window.scrollTo(0, 0);
-    setAnchorEl(null);
-  };
   const health = () => {
     navigate("/solutionpage/healthmanagement");
     window.scrollTo(0, 0);
@@ -54,6 +49,11 @@ function Navbar() {
     navigate("/solutionpage/wastemonitoring");
     window.scrollTo(0, 0);
   };
+  const workplace = () => {
+    navigate("/solutionpage/workplacemanagement");
+    window.scrollTo(0, 0);
+
+  }
 
   useEffect(() => {
     const home = () => {
@@ -68,51 +68,54 @@ function Navbar() {
 
   return (
     <div className={`${color} navbar_container`}>
-      <header >
+      <header>
         <div id="logo" className="digi_logo">
           <img src={digikloud} width="200px" id="logo" />
         </div>
         <nav ref={navRef}>
           {/* <Stack  spacing={3} alignItems="center">
             <Stack className="nav_links" spacing={3}> */}
-              <Typography variant="h4">Product</Typography>
-              <Typography
-                variant="h4"
-                id="basic-button"
-                aria-controls={open ? "basic-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
-                onClick={handleClick}
-              >
-                Solution
-              </Typography>
-              <Typography variant="h4">Customer</Typography>
-              <Typography variant="h4">Resources </Typography>
-              <Typography variant="h4">Company </Typography>
+          <Typography variant="h4">Product</Typography>
+          <Typography
+            variant="h4"
+            id="basic-button"
+            aria-controls={open ? "basic-menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
+            onClick={handleClick}
+          >
+            Solution
+          </Typography>
+          <Typography variant="h4">Customer</Typography>
+          <Typography variant="h4">Resources </Typography>
+          <Typography variant="h4">Company </Typography>
 
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  "aria-labelledby": "basic-button",
-                }}
-                selected={true}
-              >
-                <MenuItem onClick={health} id="healthpage">
-                  Health Management
-                </MenuItem>
-                <MenuItem onClick={solar}>Solar Monitoring</MenuItem>
-                <MenuItem onClick={waste}>Waste Monitoring</MenuItem>
-              </Menu>
-            {/* </Stack>
+          <Menu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              "aria-labelledby": "basic-button",
+            }}
+            selected={true}
+            variant="soft"
+            color="primary"
+          >
+            <MenuItem onClick={health} id="healthpage">
+              Health Management
+            </MenuItem>
+            <MenuItem onClick={solar}>Solar Monitoring</MenuItem>
+            <MenuItem onClick={waste}>Waste Monitoring</MenuItem>
+            <MenuItem onClick={workplace}>Smart Workplace Management</MenuItem>
+          </Menu>
+          {/* </Stack>
           </Stack> */}
           <CloseIcon className="nav-btn nav-close-btn" onClick={showNavbar} />
           {/* <MenuIcon className="nav-btn" onClick={showNavbar} /> */}
           {/* <MenuIcon className="nav-btn" onClick={showNavbar} /> */}
         </nav>
-        <MenuIcon className="nav-btn"  onClick={showNavbar} />
+        <MenuIcon className="nav-btn" onClick={showNavbar} />
       </header>
     </div>
   );

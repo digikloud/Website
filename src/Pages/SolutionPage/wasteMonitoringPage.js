@@ -5,6 +5,7 @@ import bin from "../../assets/smart waste bin.png";
 import smartbin from "../../assets/smart bin sensor.png";
 import wasteSorting from "../../assets/waste sorting.png";
 import binFuture from "../../assets/binFuture.png";
+import wastedashboard from "../../assets/wastedashboard.gif";
 
 function WasteMonitoringPage() {
   return (
@@ -84,7 +85,7 @@ function WasteMonitoringPage() {
             </h1>
           </Grid>
           <Grid md={6} xs={12}>
-            {/* <img src={smartbin} className="images" /> */}
+            <img src={wastedashboard} className=" dashboard" />
           </Grid>
           <Grid md={6} xs={12}>
             <Typography variant="p" className="solutionpagecontent">

@@ -5,6 +5,7 @@ import solar from "../../assets/solar1.png";
 import waste from "../../assets/waste management.png";
 import hospital from "../../assets/health management.png";
 import irrigation from "../../assets/smart irrigation.png";
+import occupancy from "../../assets/occupancy management.png";
 import { Navigate } from "react-router";
 import { useNavigate } from "react-router";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -33,9 +34,9 @@ function Dashboadrhomepage() {
               <Typography variant="h6">Smart Building </Typography>
               <ArrowForwardIcon />
             </div>
-            <div className="Dashboadrhomecard">
-              <img src={irrigation} height="50px" width="50px" />
-              <Typography variant="h6">Smart Irrigation </Typography>
+            <div className="Dashboadrhomecard" onClick={() => {navigate("/solutionpage/workplacemanagement");window.scrollTo(0, 0);}}>
+              <img src={occupancy} height="40px" width="40px" />
+              <Typography variant="h6">Smart Workplace Management </Typography>
               <ArrowForwardIcon />
             </div>
           </div>
