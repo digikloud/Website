@@ -51,7 +51,7 @@ function HomeIndex() {
       <Costsaving />
       <Digikloudplatform />
       {/* <ProtocolsHome /> */}
-      <ContactUs />
+      {/* <ContactUs /> */}
       <Footer />
     </div>
   );
