@@ -24,17 +24,18 @@ function HomeAbout() {
         </Grid>
         <Grid item xs={12} md={12} className="projects_data">
           <div className="projectcard">
-            <Typography variant="h1">20+</Typography>
+            <Typography variant="h1">50+</Typography>
             <Typography variant="body" className="homepageSubhead">Projects Delivered</Typography>
           </div>
           <div className="projectcard">
-            <Typography variant="h1">20+</Typography>
-            <Typography variant="body" className="homepageSubhead">Operating countries</Typography>
+            <Typography variant="h1">200+</Typography>
+            <Typography variant="body" className="homepageSubhead">Connected devices</Typography>
           </div>
           <div className="projectcard">
-            <Typography variant="h1">20+</Typography>
-            <Typography variant="body" className="homepageSubhead">No of data getting published</Typography>
+            <Typography variant="h1">1000+</Typography>
+            <Typography variant="body" className="homepageSubhead">Messages per second</Typography>
           </div>
+          
         </Grid>
       </Grid>
     </div>

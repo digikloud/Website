@@ -30,15 +30,15 @@ function Customer() {
             <div className="image_wrapper">
               <img src={axs} height='150px' width='150px'/>
             </div>
-            <div className="image_wrapper">
+            {/* <div className="image_wrapper">
               <img src={smartfi} height='150px' width='150px'/>
-            </div>
+            </div> */}
             <div className="image_wrapper">
               <img src={maxbyte} height='150px' width='150px'/>
             </div>
-            <div className="image_wrapper">
+            {/* <div className="image_wrapper">
               <img src={logo} height='150px' width='150px'/>
-            </div>
+            </div> */}
           </Marquee>
         </Grid>
       </Grid>

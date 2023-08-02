@@ -75,7 +75,7 @@ function Navbar() {
         <nav ref={navRef}>
           {/* <Stack  spacing={3} alignItems="center">
             <Stack className="nav_links" spacing={3}> */}
-          <Typography variant="h4">Product</Typography>
+          {/* <Typography variant="h4">Product</Typography> */}
           <Typography
             variant="h4"
             id="basic-button"
@@ -86,9 +86,9 @@ function Navbar() {
           >
             Solution
           </Typography>
-          <Typography variant="h4">Customer</Typography>
+          {/* <Typography variant="h4">Customer</Typography>
           <Typography variant="h4">Resources </Typography>
-          <Typography variant="h4">Company </Typography>
+          <Typography variant="h4">Company </Typography> */}
 
           <Menu
             id="basic-menu"
@@ -98,7 +98,8 @@ function Navbar() {
             MenuListProps={{
               "aria-labelledby": "basic-button",
             }}
-            selected={true}
+            // selected={true}
+            onTouchMoveCapture={true}
             // variant="soft"
             color="primary"
           >
