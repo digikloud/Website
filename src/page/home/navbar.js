@@ -99,7 +99,7 @@ function Navbar() {
               "aria-labelledby": "basic-button",
             }}
             selected={true}
-            variant="soft"
+            // variant="soft"
             color="primary"
           >
             <MenuItem onClick={health} id="healthpage">

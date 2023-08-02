@@ -5,7 +5,7 @@ import protocols from "../../assets/IotProtocols.png";
 function ProtocolsHome() {
   return (
     <div className="homeContainer">
-      <Grid container spacing={4} className="digikloudPlatform">
+      <Grid container spacing={4} className="iotProtocols">
         <Grid item xs={12} md={6}>
           <h1 className="typography_heading">SUPPORTED IoT PROTOCOLS</h1>
           <h3 className="homepageSubhead">Seamless Connectivity, Boundless Possibilities</h3>

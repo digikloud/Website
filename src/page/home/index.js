@@ -50,8 +50,8 @@ function HomeIndex() {
       <Analyzehome />
       <Costsaving />
       <Digikloudplatform />
-      <ProtocolsHome />
-      {/* <ContactUs /> */}
+      {/* <ProtocolsHome /> */}
+      <ContactUs />
       <Footer />
     </div>
   );
