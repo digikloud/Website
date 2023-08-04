@@ -16,6 +16,7 @@ function ProtocolsHome() {
           
         </Grid>
         <Grid item xs={12} md={6} className="iotProtocols_content_image">
+        <div className="content_text">
         <Typography variant="p" align="justify">
             At DiGiKloud, we specialize in delivering cutting-edge Internet of
             Things (IoT) solutions that empower businesses and individuals to
@@ -26,6 +27,7 @@ function ProtocolsHome() {
             communication, data exchange, and seamless integration between
             devices and applications.
           </Typography>
+        </div>
         </Grid>
       </Grid>
     </div>

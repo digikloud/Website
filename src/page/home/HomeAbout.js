@@ -22,7 +22,7 @@ function HomeAbout() {
           </div>
         </Grid>
         <Grid item xs={12} md={6} className="home_content_image">
-          <img src={resilence} height="400px" width="350px" />
+          <img src={resilence} className="homeAboutImages" />
         </Grid>
         <Grid item xs={12} md={12} className="projects_data">
           <div className="projectcard">
