@@ -3,9 +3,6 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
-Grid> .p{
-  color : red
-}
 .solutionTopTag{
     /* color: #00b894; */
     color: white;
@@ -61,7 +58,7 @@ Grid> .p{
   left: 10%;
   transform: none;
   height: 150px;
-  width: 60%;
+  /* width: 60%; */
 }
 .solution_page_detail {
   width: 80% !important;
@@ -72,7 +69,6 @@ Grid> .p{
   align-items: center;
 }
 .v{
-  background-color: red;
   height: 500px;
   padding: 0 100px;
   display: flex;

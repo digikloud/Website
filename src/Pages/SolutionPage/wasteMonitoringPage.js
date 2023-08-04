@@ -13,7 +13,7 @@ function WasteMonitoringPage() {
       <Navbar />
       <Grid container className="solution_container">
         <Grid className="solution_wasteMonitor_page_top_image">
-          <div className="solution_home_head">
+          <div className="solution_home_head health_quote">
             <h1 className="solutionTopTag">
               Driving the Future of Waste Management IoT Innovations for Cleaner
               Communities

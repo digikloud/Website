@@ -4,7 +4,9 @@ import "./index.css";
 
 // import solar from "../../assets/solar.png";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import gif1 from "../../assets/company presentation.gif"
+import gif1 from "../../assets/company presentation.gif";
+import a from "../../assets/company presentation (2).gif"
+import home from "../../assets/home.gif";
 import PropTypes from "prop-types";
 import Footer from "./Footer";
 import HomeAbout from "./HomeAbout";
@@ -14,7 +16,7 @@ import Analyzehome from "./analyzehome";
 import Dashboadrhomepage from "./dashboadrhomepage";
 import Digikloudplatform from "./digikloudplatform";
 import ProtocolsHome from "./IotProtocols";
-import ContactUs from "../contactus";
+import ContactUs from "./contactus";
 
 function HomeIndex() {
   const videoref = useRef();
@@ -28,7 +30,7 @@ function HomeIndex() {
         <Navbar />
         <img
           // src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/homePageVideo.gif"
-          src={gif1}
+          src={a}
           ref={videoref}
           className="backgroundvideo"
           muted
@@ -36,21 +38,22 @@ function HomeIndex() {
           loop
         />
 
-        {/* <div className="home_top_innertext">
+        <div className="home_top_innertext">
           <Typography variant="h1" marginBottom={1}>
-            IoT Solutions that Transform
+          {/* <Typography variant="h1"></Typography> */}
+            IoT Solutions that Transform your Business
           </Typography>
-          <Typography variant="h1">your Business</Typography>
-          <button variant="contained" className="button">Learn More</button>
-        </div> */}
+          {/* <Typography variant="h1">your Business</Typography> */}
+          {/* <button variant="contained" className="button">Learn More</button> */}
+        </div>
       </div>
       <HomeAbout />
       <Customer />
       <Dashboadrhomepage />
       <Analyzehome />
       <Costsaving />
-      <Digikloudplatform />
-      {/* <ProtocolsHome /> */}
+      {/* <Digikloudplatform /> */}
+      <ProtocolsHome />
       {/* <ContactUs /> */}
       <Footer />
     </div>

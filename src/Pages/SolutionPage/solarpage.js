@@ -14,7 +14,7 @@ function Solutionpage() {
       <Navbar />
       <Grid container className="solution_container">
         <Grid className="solution_solar_page_top_image">
-          <div className="solution_home_head">
+          <div className="solution_home_head health_quote">
             <h1 className="solutionTopTag">
               Step into the Solar Revolution with Digikloud's IoT-enabled
               Solutions

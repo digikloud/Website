@@ -1,6 +1,5 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import analyze1 from "../../assets/2.png";
 import analyze from "../../assets/analyze.png"
 
 function Analyzehome() {

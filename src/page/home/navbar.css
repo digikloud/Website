@@ -46,13 +46,15 @@ nav {
   font-family: "Montserrat", sans-serif;
   background: #f4f7f9;
 }
-.css-r8u8y9:hover {
+/* .css-r8u8y9:hover {
   background: #00b894;
   color: white;
-}
+} */
 
 .css-1cl2ir8:hover {
   color: #265892;
+  background-color: #00b894;
+  color: white;
 }
 
 :root {
