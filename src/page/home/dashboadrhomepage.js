@@ -36,24 +36,24 @@ function Dashboadrhomepage() {
               <Typography variant="h6">Smart Building</Typography>
               <ArrowForwardIcon />
             </div>
-            <div className="Dashboadrhomecard" >
+            <div className="Dashboadrhomecard" onClick={() => {navigate("/solutionpage/workplacemanagement");window.scrollTo(0, 0);}}>
               <img src={occupancy} height="40px" width="40px" />
               <Typography variant="h6">Workplace Management</Typography>
               <ArrowForwardIcon />
             </div>
-            <div className="Dashboadrhomecard" >
+            <div className="Dashboadrhomecard" onClick={() => {navigate("/solutionpage/healthmanagement");window.scrollTo(0, 0);}}>
               <img src={hospital} height="50px" width="50px" />
               <Typography variant="h6">Health Management</Typography>
               <ArrowForwardIcon />
             </div>
           </div>
           <div className="Dashboadrhomecardlayout" >
-            <div className="Dashboadrhomecard" >
+            <div className="Dashboadrhomecard" onClick={() =>{ navigate("/solutionpage/solarmonitoring");window.scrollTo(0, 0);}}>
               <img src={solar} height="50px" width="50px" />
               <Typography variant="h6">Solar Panel</Typography>
               <ArrowForwardIcon />
             </div>
-            <div className="Dashboadrhomecard" >
+            <div className="Dashboadrhomecard" onClick={() => {navigate("/solutionpage/wastemonitoring");window.scrollTo(0, 0);}}>
               <img src={waste} height="50px" width="50px" />
               <Typography variant="h6">Waste Management</Typography>
               <ArrowForwardIcon />
