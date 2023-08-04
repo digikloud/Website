@@ -13,12 +13,21 @@ function Solutionpage() {
     <div>
       <Navbar />
       <Grid container className="solution_container">
-        <Grid className="solution_solar_page_top_image">
-          <div className="solution_home_head health_quote">
+        {/* <Grid className="solution_solar_page_top_image">
+          <div className="solution_home_head ">
             <h1 className="solutionTopTag">
               Step into the Solar Revolution with Digikloud's IoT-enabled
               Solutions
             </h1>
+          </div>
+        </Grid> */}
+         <Grid className="solution_solar_page_top_image">
+          <div className="solution_home_head ">
+            <h1 className="solutionTopTag">
+            Step into the Solar Revolution with Digikloud's IoT-enabled
+              Solutions
+            </h1>
+            <h1 className="solutionTopTag"></h1>
           </div>
         </Grid>
         <Grid container className="solution_page_detail">

@@ -1,3 +1,77 @@
+// import * as React from 'react';
+// import Grid from '@mui/material/Grid';
+// import Box from '@mui/material/Box';
+// import Button from '@mui/material/Button';
+// import Snackbar from '@mui/material/Snackbar';
+
+// export default function ContactUs() {
+//   const [state, setState] = React.useState({
+//     open: false,
+//     vertical: 'top',
+//     horizontal: 'center',
+//   });
+//   const { vertical, horizontal, open } = state;
+
+//   const handleClick = (newState) => () => {
+//     setState({ ...newState, open: true });
+//   };
+
+//   const handleClose = () => {
+//     setState({ ...state, open: false });
+//   };
+
+//   const buttons = (
+//     <React.Fragment>
+//       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+//         <Button onClick={handleClick({ vertical: 'top', horizontal: 'center' })}>
+//           Top-Center
+//         </Button>
+//       </Box>
+//       <Grid container justifyContent="center">
+//         <Grid item xs={6}>
+//           <Button onClick={handleClick({ vertical: 'top', horizontal: 'left' })}>
+//             Top-Left
+//           </Button>
+//         </Grid>
+//         <Grid item xs={6} textAlign="right">
+//           <Button onClick={handleClick({ vertical: 'top', horizontal: 'right' })}>
+//             Top-Right
+//           </Button>
+//         </Grid>
+//         <Grid item xs={6}>
+//           <Button onClick={handleClick({ vertical: 'bottom', horizontal: 'left' })}>
+//             Bottom-Left
+//           </Button>
+//         </Grid>
+//         <Grid item xs={6} textAlign="right">
+//           <Button onClick={handleClick({ vertical: 'bottom', horizontal: 'right' })}>
+//             Bottom-Right
+//           </Button>
+//         </Grid>
+//       </Grid>
+//       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+//         <Button onClick={handleClick({ vertical: 'bottom', horizontal: 'center' })}>
+//           Bottom-Center
+//         </Button>
+//       </Box>
+//     </React.Fragment>
+//   );
+
+//   return (
+//     <Box sx={{ width: 500 }}>
+//       {buttons}
+//       <Snackbar
+//         anchorOrigin={{ vertical, horizontal }}
+//         open={open}
+//         onClose={handleClose}
+//         message="I love snacks"
+//         key={vertical + horizontal}
+//       />
+//     </Box>
+//   );
+// }
+
+import { Grid, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
@@ -8,6 +82,7 @@ import MuiAlert from '@mui/material/Alert';
 function ContactUs() {
   const [data, setData] = useState(null);
   const [SnackbarOpen , setSnackbarOpen] = useState(false);
+  // const { vertical, horizontal, open } = SnackbarOpen;
 
 
   const validationSchema = yup.object({
@@ -26,22 +101,22 @@ function ContactUs() {
     },
     validationSchema: validationSchema,
     onSubmit: async (values,{ resetForm }) => {
-      var myHeaders = new Headers();
-      myHeaders.append("x-api-key", "FdTxP923nY5glD2FwwxHu9noioHSdKlF2kvXxy0R");
+      // var myHeaders = new Headers();
+      // myHeaders.append("x-api-key", "FdTxP923nY5glD2FwwxHu9noioHSdKlF2kvXxy0R");
 
-      var requestOptions = {
-        method: "POST",
-        headers: myHeaders,
-        redirect: "follow",
-      };
+      // var requestOptions = {
+      //   method: "POST",
+      //   headers: myHeaders,
+      //   redirect: "follow",
+      // };
 
-      fetch(
-        `https://api.digikloud.io/email?customerEmail=${values.email}&customerName=${values.name}&customerMessage=${values.message}`,
-        requestOptions
-      )
-        .then((response) => response.text())
-        .then((result) => console.log(result))
-        .catch((error) => console.log("error", error));
+      // fetch(
+      //   `https://api.digikloud.io/email?customerEmail=${values.email}&customerName=${values.name}&customerMessage=${values.message}`,
+      //   requestOptions
+      // )
+      //   .then((response) => response.text())
+      //   .then((result) => console.log(result))
+      //   .catch((error) => console.log("error", error));
         resetForm();
         setSnackbarOpen(true)
       console.log(data);
@@ -55,52 +130,88 @@ function ContactUs() {
     setSnackbarOpen(false);
   };
 
+
   return (
-    <div className="homeContainer contact_us_form">
-      <form onSubmit={formik.handleSubmit} className="test">
+    <div className="homeContainer">
+      <Grid container spacing={4} className="contact_us_page">
+        <Grid item xs={12} md={12} style={{ textAlign: "center" }}>
+          <h1 className="typography_heading">
+            Partner with us for excellence in every endeavor
+          </h1>
+          <h3 className="homepageSubhead">
+            Send us a message if you're ready to explore possibilities or
+            request a demo.
+          </h3>
+        </Grid>
+        <Grid item xs={12} md={8} className="contact_us_form">
+        <form onSubmit={formik.handleSubmit} className="test">
+          <label>Name</label>
         <TextField
           variant="outlined"
           id="name"
           name="name"
-          label="Name"
+          // label="Name"
           value={formik.values.name}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           error={formik.touched.name && Boolean(formik.errors.name)}
           helperText={formik.touched.name && formik.errors.name}
+          fullWidth
+          InputProps={{
+            style: {
+              borderRadius: "100px",
+            }
+          }}
         />
+        <label style={{background:'red'}}>Email</label>
         <TextField
           variant="outlined"
           id="email"
           name="email"
-          label="Email"
+          // label="Email"
           value={formik.values.email}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           error={formik.touched.email && Boolean(formik.errors.email)}
           helperText={formik.touched.email && formik.errors.email}
+          fullWidth
+          InputProps={{
+            style: {
+              borderRadius: "100px",
+            }
+          }}
         />
+        <label>Message</label>
         <TextField
-          variant="outlined"
+          // variant="outlined"
           id="message"
           name="message"
-          label="Message"
+          // label="Message"
           type="message"
           value={formik.values.message}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           error={formik.touched.message && Boolean(formik.errors.message)}
           helperText={formik.touched.message && formik.errors.message}
+          fullWidth
+          style={{color:'red'}}
+          InputProps={{
+            style: {
+              borderRadius: "100px",
+            }
+          }}
         />
         <Button color="primary" variant="contained" type="submit">
           Submit
         </Button>
       </form>
-      <Snackbar open={SnackbarOpen} autoHideDuration={6000} onClose={handleClose}>
+      <Snackbar open={SnackbarOpen} autoHideDuration={6000} onClose={handleClose} >
         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
           Mail sent successfully !
         </Alert>
       </Snackbar>
+        </Grid>
+      </Grid>
     </div>
   );
 }

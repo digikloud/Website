@@ -307,6 +307,10 @@
   justify-content: center;
   align-items: center;
 }
+.contact_us_page{
+  width: 80% !important;
+  padding: 0 100px;
+}
 .contact_us_form{
   height: 300px;
   /* display: flex; */

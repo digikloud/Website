@@ -14,7 +14,7 @@ function Solutionpage() {
       <Navbar />
       <Grid container className="solution_container">
         <Grid className="solution_page_top_image">
-          <div className="solution_home_head health_quote">
+          <div className=" health_text">
             <h1 className="solutionTopTag">
               Connecting Health for a Smarter Future IoT in Healthcare Management
             </h1>
