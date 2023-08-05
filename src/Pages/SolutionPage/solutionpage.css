@@ -3,6 +3,20 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
+.livedemo_btn{
+  position: fixed;
+  top:15%;
+  left: 90%;
+  display: block;
+}
+.livedemo_btn_home{
+  position: fixed;
+  top:15%;
+  left: 90%;
+  display: block;
+  display: none;
+  background-color: red;
+}
 .solutionTopTag{
     color: white;
     font-size: 50px;
@@ -77,6 +91,9 @@
   justify-content: center;
   align-items: center;
 }
+/* .dashboardpage{
+  height: 700px !important;
+} */
 .v{
   height: 500px;
   padding: 0 100px;
@@ -116,7 +133,7 @@
   padding: 50px;
 }
 .dashboard{
-  height: 300px;
+  height: 100%;
   width: 100%;
 }
 .content_text{
@@ -128,11 +145,30 @@
   .solution_page_top_image {
     height: 50vh;
     width: 100vw;
-    background: url("../../assets/healthcare2.png");
+    background: url("../../assets/health_mq.png");
     background-position: center;
     background-size: cover;
     position: relative;
   }
+  .livedemo_btn{
+    position: fixed;
+    display: none;
+    top:50%;
+    left: 80%;
+    display: none;
+    /* display: none; */
+    background-color: red;
+  /* background-color: #f4f7f9; */
+}
+.livedemo_btn_home{
+  position: fixed;
+  top:50%;
+  display: none;
+  left: 80%;
+  display: none;
+  /* display: none; */
+  background-color: red;
+}
   .solution_wasteMonitor_page_top_image {
     height: 50vh;
     width: 100%;

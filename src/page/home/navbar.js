@@ -87,7 +87,7 @@ function Navbar() {
             Solution
           </Typography>
           <Typography variant="h4">Customer</Typography>
-          <Typography variant="h4">Resources </Typography>
+          <Typography variant="h4">Services </Typography>
           <Typography variant="h4">Company </Typography>
 
           <Menu

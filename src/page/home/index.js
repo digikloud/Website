@@ -1,10 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./navbar";
 import "./index.css";
-
-// import solar from "../../assets/solar.png";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import gif1 from "../../assets/company presentation.gif";
+// import gif1 from "../../assets/company presentation.gif";
 import a from "../../assets/company presentation (2).gif"
 import home from "../../assets/home.gif";
 import PropTypes from "prop-types";
@@ -15,6 +13,7 @@ import Costsaving from "./costsaving";
 import Analyzehome from "./analyzehome";
 import Dashboadrhomepage from "./dashboadrhomepage";
 import Digikloudplatform from "./digikloudplatform";
+import video from "../../assets/company presentation.mp4"
 import ProtocolsHome from "./IotProtocols";
 import ContactUs from "./contactus";
 
@@ -24,7 +23,7 @@ function HomeIndex() {
   return (
     <div>
       <div
-        style={{ height: videoref?.current?.clientHeight }}
+        // style={{ height: videoref?.current?.clientHeight }}
         className="background_nav"
       >
         <Navbar />
@@ -37,6 +36,10 @@ function HomeIndex() {
           autoPlay
           loop
         />
+        {/* <video autoPlay loop muted className="backgroundvideo" >
+            <source src={video} type='video/mp4' style={{width:'100vw'}} ref={videoref}/>
+           
+        </video> */}
 
         <div className="home_top_innertext">
           <Typography variant="h1" marginBottom={1}>

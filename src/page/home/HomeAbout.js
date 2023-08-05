@@ -34,13 +34,13 @@ function HomeAbout() {
           <div className="projectcard">
             <Typography variant="h1">200+</Typography>
             <Typography variant="body" className="homepageSubhead">
-              Connected devices
+              Connected Devices
             </Typography>
           </div>
           <div className="projectcard">
             <Typography variant="h1">1000+</Typography>
             <Typography variant="body" className="homepageSubhead">
-              Messages per second
+              Messages Per Second
             </Typography>
           </div>
         </Grid>

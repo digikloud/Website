@@ -2,9 +2,9 @@
 .backgroundvideo {
   width: 100%;
   top: 0;
-  z-index: -1;
+  /* z-index: -1; */
   height: 100%;
-  background-color: #000000;
+  /* background-color: #00b894; */
 }
 .typography_heading {
   font-size: 40px;
@@ -39,6 +39,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 150px;
+  /* margin-top: 10px; */
 }
 .footer_container {
   width: 90% !important;
@@ -86,6 +87,7 @@
   color: white;
   position: relative;
   background-position: center;
+  /* margin-top: 10px; */
 }
 
 .footer::before {
@@ -188,7 +190,7 @@
 }
 .Dashboadrhomepage{
   width: 80% !important;
-  height: 750px;
+  /* height: 750px; */
   background-position: center;
   background-size: cover;
   padding:0 100px;
@@ -221,8 +223,8 @@
   display: flex;
 }
 .Dashboadrhomecard{
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   margin: 5px 0;
   box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
   display: flex;
@@ -251,6 +253,7 @@
   font-family: 'Montserrat',;
 }
 .Dashboadrhomecardlayout{
+  /* background-color: #f4f7f9; */
   margin-top: 20px;
   display: flex;
   flex-direction:row !important;
@@ -258,7 +261,7 @@
   justify-content: space-evenly;
 }
 .costSaving{
-  height: 500px;
+  /* height: 500px; */
   width:80% !important;
   background: #f4f7f9;
   padding:0 100px;
@@ -281,8 +284,11 @@
   height: 500px;
 }
 .dashboard_platformPage{
-  width: 700px;
-  height: 600px;
+  /* width: 700px;
+  height: 600px; */
+  /* width: 680px; */
+  /* height: 500px; */
+  width: 100%;
   border-radius: 20px;
 }
 .iotprotocols_image{
@@ -309,12 +315,17 @@
 }
 .contact_us_page{
   width: 80% !important;
+  height: 600px;
   padding: 0 100px;
+  /* border: 1px solid red; */
+  margin-bottom: 100px;
 }
 .contact_us_form{
-  height: 300px;
-  /* display: flex; */
-  flex-direction: column !important;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 ;
+  padding-bottom: 50px;
+  border-bottom: 10px;
 }
 .test{
   /* background-color: red; */
@@ -326,6 +337,12 @@
   justify-content: space-between;
   align-items: center;
 }
+.contactusFormLabel{
+  width: 100%;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
 /* Media Query */
 
 @media only screen and (max-width: 600px) {
@@ -408,8 +425,8 @@
     /* width: 100%; */
   }
   .Dashboadrhomecard{
-    /* height: 150px;
-    width: 80px; */
+    height: 150px;
+    width: 150px;
     /* background-color: red; */
     /* margin: 5px 0; */
     box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
@@ -472,6 +489,11 @@
   }
   .content_text{
     text-align: left !important;
+  }
+  .contact_us_page{
+    width: 80% !important;
+    /* height: 700px; */
+    padding: 0;
   }
   
 }
