@@ -38,7 +38,7 @@ function HomeIndex() {
           loop
         /> */}
         <video autoPlay loop muted  className="backgroundvideo">
-            <source src={video} type='video/mp4' ref={videoref} />
+            <source src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/digikloud_home.mp4" type='video/mp4' ref={videoref} />
            
         </video>
 
