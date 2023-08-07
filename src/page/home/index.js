@@ -16,6 +16,7 @@ import Digikloudplatform from "./digikloudplatform";
 import video from "../../assets/company presentation.mp4"
 import ProtocolsHome from "./IotProtocols";
 import ContactUs from "./contactus";
+import Bookdemo from "./bookdemo";
 
 function HomeIndex() {
   const videoref = useRef();
@@ -27,7 +28,7 @@ function HomeIndex() {
         className="background_nav"
       >
         <Navbar />
-        <img
+        {/* <img
           // src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/homePageVideo.gif"
           src={a}
           ref={videoref}
@@ -35,19 +36,16 @@ function HomeIndex() {
           muted
           autoPlay
           loop
-        />
-        {/* <video autoPlay loop muted className="backgroundvideo" >
-            <source src={video} type='video/mp4' style={{width:'100vw'}} ref={videoref}/>
+        /> */}
+        <video autoPlay loop muted  className="backgroundvideo">
+            <source src={video} type='video/mp4' ref={videoref} />
            
-        </video> */}
+        </video>
 
         <div className="home_top_innertext">
-          <Typography variant="h1" marginBottom={1}>
-          {/* <Typography variant="h1"></Typography> */}
+          <Typography variant="h1">
             IoT Solutions that Transform your Business
           </Typography>
-          {/* <Typography variant="h1">your Business</Typography> */}
-          {/* <button variant="contained" className="button">Learn More</button> */}
         </div>
       </div>
       <HomeAbout />
@@ -56,7 +54,8 @@ function HomeIndex() {
       <Analyzehome />
       <Costsaving />
       {/* <Digikloudplatform /> */}
-      <ProtocolsHome />
+      {/* <ProtocolsHome /> */}
+      <Bookdemo />
       {/* <ContactUs /> */}
       <Footer />
     </div>

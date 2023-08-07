@@ -49,6 +49,14 @@
   background-size: cover;
   position: relative;
 }
+.solution_workplace_page_top_image{
+  height: 100vh;
+  width: 100%;
+  background: url("../../assets/workplace_bg.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
 .solution_container {
   display: flex;
   justify-content: center;
@@ -63,8 +71,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   /* padding: 10px; */
-  line-height: 2;
-  
+  line-height: 2; 
+}
+.worlplace_solution_home_head{
+  width: 50%;
+  /* background-color: red; */
+  position: absolute;
+  left: 5%;
+  top : 40%
 }
 .health_text{
   width: 60% !important;
@@ -86,6 +100,7 @@
 .solution_page_detail {
   width: 80% !important;
   height: 500px;
+  /* height: fit-content; */
   padding: 0 100px;
   display: flex;
   justify-content: center;
@@ -123,6 +138,13 @@
   height: 400px;
   width: 400px;
   display: block;
+  /* margin-left: auto; */
+  margin-right: auto;
+}
+.images_rightside {
+  height: 400px;
+  width: 400px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -150,6 +172,11 @@
     background-size: cover;
     position: relative;
   }
+  .worlplace_solution_home_head{
+    color: red !important;
+    top: 50%;
+    /* background-color: red; */
+  }
   .livedemo_btn{
     position: fixed;
     display: none;
@@ -172,6 +199,14 @@
   .solution_wasteMonitor_page_top_image {
     height: 50vh;
     width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .solution_workplace_page_top_image{
+    height: 50vh;
+    width: 100%;
+    background: url("../../assets/workplace_bg.png");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -205,6 +240,10 @@
     padding: 10px 0 ;
   }
   .images {
+    height: 200px;
+    width: 200px;
+  }
+  .images_rightside {
     height: 200px;
     width: 200px;
   }

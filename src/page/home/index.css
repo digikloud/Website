@@ -3,7 +3,11 @@
   width: 100%;
   top: 0;
   /* z-index: -1; */
-  height: 100%;
+  height: 100vh;
+  width: 100%;
+height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
   /* background-color: #00b894; */
 }
 .typography_heading {
@@ -150,8 +154,8 @@
 .HomeAbout{
   width: 80% !important;
   height: 700px;
-  background-position: center;
-  background-size: cover;
+  /* background-position: center;
+  background-size: cover; */
   padding:0 100px;
   background:#f4f7f9 ;
 }
@@ -250,6 +254,7 @@
 }
 .homepageSubhead{
   color: #757e8c;
+  line-height: 1.5;
   font-family: 'Montserrat',;
 }
 .Dashboadrhomecardlayout{
@@ -313,6 +318,13 @@
   justify-content: center;
   align-items: center;
 }
+.bookdemo_content{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column !important;
+  align-items: flex-start;
+  padding: 5px;
+}
 .contact_us_page{
   width: 80% !important;
   height: 600px;
@@ -341,6 +353,14 @@
   width: 100%;
   font-size: 16px;
   padding-left: 10px;
+}
+.bookDemoContainer{
+  height: 400px;
+  width: 80% !important;
+}
+.bookdemo_image{
+  width: 100%;
+  height: 400px;
 }
 
 /* Media Query */
@@ -371,10 +391,12 @@
     /* font-family: 'Montserrat', sans-serif; */
   }
   .backgroundvideo {
-    width: 100%;
-    top: 0;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+    /* top: 0;
     z-index: -1;
-    height: 100%;
+    height: 100%; */
   }
   .background_nav {
     position: relative;
@@ -494,6 +516,14 @@
     width: 80% !important;
     /* height: 700px; */
     padding: 0;
+  }
+  .bookDemoContainer{
+    height: fit-content;
+  }
+  .bookdemo_image{
+    display: none;
+    width: 400px;
+    height: 400px;
   }
   
 }

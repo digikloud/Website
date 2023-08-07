@@ -1,21 +1,24 @@
 import React from "react";
 import Navbar from "../../page/home/navbar";
 import { Grid, Typography } from "@mui/material";
+import workplace1 from "../../assets/workplace_image.png";
+import workplace from "../../assets/3.png";
+import smart_workplace_sensors from "../../assets/smart_workplace_sensors.png";
+import workplace_security from "../../assets/workplace_security.png";
 
 function Workplacemanagement() {
   return (
     <div>
       <Navbar />
       <Grid container className="solution_container">
-        <Grid className="solution_solar_page_top_image">
-          <div className="solution_home_head health_quote">
+        <Grid className="solution_workplace_page_top_image">
+          <div className="worlplace_solution_home_head  ">
             <h1 className="solutionTopTag">
-              Step into the Solar Revolution with Digikloud's IoT-enabled
-              Solutions
+              IoT for Smart Workplace Management
             </h1>
           </div>
         </Grid>
-        <Grid container className="solution_page_detail">
+        <Grid container className="solution_page_detail" >
           <Grid item md={6} xs={12}>
             <h1 className="typography_heading_solution">
               Smart Workplace Management
@@ -33,13 +36,13 @@ function Workplacemanagement() {
             </div>
           </Grid>
           <Grid item md={6} xs={12}>
-            {/* <img src={solarenergy} className="images" /> */}
+            <img src={workplace} className="images" />
           </Grid>
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
             <h1 className="typography_heading_solution">Smart Sensors</h1>
-            {/* <img src={iotsolar} className="images" /> */}
+            <img src={smart_workplace_sensors} className="images" />
           </Grid>
           <Grid item md={6} xs={12}>
             <div className="content_text">
@@ -72,13 +75,13 @@ function Workplacemanagement() {
             </div>
           </Grid>
           <Grid item md={6} xs={12}>
-            {/* <img src={iotsolar} className="images" /> */}
+            {/* <img src={workplace_security} className="images_rightside" /> */}
           </Grid>
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
             <h1 className="typography_heading_solution">Safety and Security</h1>
-            {/* <img src={iotsolar} className="images" /> */}
+            <img src={workplace_security} className="images" />
           </Grid>
           <Grid item md={6} xs={12}>
             <div className="content_text">
