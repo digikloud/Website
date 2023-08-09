@@ -67,7 +67,7 @@ function Bookdemo() {
     <div className="homeContainer">
       <Grid container className="bookDemoContainer">
         <Grid item xs={12} md={6} className="costsaving_content_image">
-          <img src={image} className="bookdemo_image" />
+          <img src={image} alt="bookedemo image" className="bookdemo_image" />
         </Grid>
         <Grid item xs={12} md={6} className="bookdemo_content">
           <h1 className="typography_heading">
@@ -94,8 +94,8 @@ function Bookdemo() {
       </Grid>
       <Dialog open={open} onClose={handleClose} PaperProps={{
       style: {
-        // minHeight: '75vh',
-        // minWidth: '75vw',
+        minHeight: '75vh',
+        minWidth: '75vw',
         color:'#00b894',
         background:'#f4f7f9'
       },

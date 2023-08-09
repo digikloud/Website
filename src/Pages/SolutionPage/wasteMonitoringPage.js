@@ -4,7 +4,6 @@ import { Button, Grid, Typography } from "@mui/material";
 import bin from "../../assets/smart waste bin.png";
 import smartbin from "../../assets/smart bin sensor.png";
 import wasteSorting from "../../assets/waste sorting.png";
-import binFuture from "../../assets/binFuture.png";
 import wastedashboard from "../../assets/wastedashboard.gif";
 import { useState } from "react";
 import { useEffect } from "react";

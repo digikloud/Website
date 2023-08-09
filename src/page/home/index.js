@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 import "./index.css";
 import { Button, Grid, Stack, Typography } from "@mui/material";
 // import gif1 from "../../assets/company presentation.gif";
-import a from "../../assets/company presentation (2).gif"
+import a from "../../assets/home.gif";
 import home from "../../assets/home.gif";
 import PropTypes from "prop-types";
 import Footer from "./Footer";
@@ -13,7 +13,7 @@ import Costsaving from "./costsaving";
 import Analyzehome from "./analyzehome";
 import Dashboadrhomepage from "./dashboadrhomepage";
 import Digikloudplatform from "./digikloudplatform";
-import video from "../../assets/company presentation.mp4"
+import video from "../../assets/company presentation.mp4";
 import ProtocolsHome from "./IotProtocols";
 import ContactUs from "./contactus";
 import Bookdemo from "./bookdemo";
@@ -37,9 +37,13 @@ function HomeIndex() {
           autoPlay
           loop
         /> */}
-        <video autoPlay loop muted  className="backgroundvideo">
-            <source src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/digikloud_home.mp4" type='video/mp4' ref={videoref} />
-           
+        <video autoPlay loop muted className="backgroundvideo">
+          <source
+            src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/digikloud_home.mp4"
+            type="video/mp4"
+            ref={videoref}
+          />
+          Your browser does not support the video tag.
         </video>
 
         <div className="home_top_innertext">
@@ -54,7 +58,7 @@ function HomeIndex() {
       <Analyzehome />
       <Costsaving />
       {/* <Digikloudplatform /> */}
-      {/* <ProtocolsHome /> */}
+      <ProtocolsHome />
       <Bookdemo />
       {/* <ContactUs /> */}
       <Footer />

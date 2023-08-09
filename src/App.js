@@ -8,6 +8,7 @@ import Solutionpage from './Pages/SolutionPage/solutionpage';
 import Solarpage from './Pages/SolutionPage/solarpage';
 import WasteMonitoringPage from './Pages/SolutionPage/wasteMonitoringPage';
 import Workplacemanagement from './Pages/SolutionPage/workplacemanagement';
+import Company from './Pages/Company';
 
 const Home = React.lazy(() => import("./page/home"))
 
@@ -24,6 +25,7 @@ function App() {
             <Route path='solutionpage/solarmonitoring' element={<Solarpage />} />
             <Route path='solutionpage/wastemonitoring' element={<WasteMonitoringPage />} />
             <Route path='solutionpage/workplacemanagement' element={<Workplacemanagement />} />
+            {/* <Route path='company' element={<Company />} /> */}
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

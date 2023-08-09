@@ -42,37 +42,37 @@ function Customer() {
               )
             } */}
             <div className="image_wrapper">
-              <img src={sasa} height="150px" width="150px" />
+              <img src={sasa} alt="sasa" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
-              <img src={ambit} height="150px" width="150px" />
+              <img src={ambit} alt="ambit" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
-              <img src={axis} height="150px" width="150px" />
+              <img src={axis} alt="axis" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
-              <img src={axs} height="150px" width="150px" />
+              <img src={axs} alt="axs" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
-              <img src={maxbyte} height="150px" width="150px" />
+              <img src={maxbyte} alt="maxbyte" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
-              <img src={hilcher} height="150px" width="150px" />
+              <img src={hilcher} alt="hilcher" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
-              <img src={elausys} height="150px" width="150px" />
+              <img src={elausys} alt="elausys" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
-              <img src={log5data} height="150px" width="150px" />
+              <img src={log5data} alt="log5data" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
-              <img src={keystone} height="150px" width="150px" />
+              <img src={keystone} alt="keystone" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
-              <img src={mfc} height="150px" width="150px" />
+              <img src={mfc} alt="mfc" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
-              <img src={tecnosoft} height="150px" width="150px" />
+              <img src={tecnosoft} alt="tecnosoft" height="150px" width="150px" />
             </div>
           </Marquee>
         </Grid>

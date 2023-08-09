@@ -54,6 +54,10 @@ function Navbar() {
     window.scrollTo(0, 0);
 
   }
+  const company = () => {
+    navigate("/company");
+    window.scrollTo(0,0);
+  }
 
   useEffect(() => {
     const home = () => {
@@ -70,11 +74,9 @@ function Navbar() {
     <div className={`${color} navbar_container`}>
       <header>
         <div id="logo" className="digi_logo">
-          <img src={digikloud} width="200px" id="logo" />
+          <img src={digikloud} alt="iot company name" width="200px" id="logo" />
         </div>
         <nav ref={navRef}>
-          {/* <Stack  spacing={3} alignItems="center">
-            <Stack className="nav_links" spacing={3}> */}
           <Typography variant="h4">Product</Typography>
           <Typography
             variant="h4"
@@ -89,6 +91,7 @@ function Navbar() {
           <Typography variant="h4">Customer</Typography>
           <Typography variant="h4">Services </Typography>
           <Typography variant="h4">Company </Typography>
+          {/* <Typography variant="h4"  onClick={company}>Company </Typography> */}
 
           <Menu
             id="basic-menu"
@@ -98,9 +101,7 @@ function Navbar() {
             MenuListProps={{
               "aria-labelledby": "basic-button",
             }}
-            // selected={true}
             onTouchMoveCapture={true}
-            // variant="soft"
             color="primary"
           >
             <MenuItem onClick={health} id="healthpage">
@@ -110,11 +111,7 @@ function Navbar() {
             <MenuItem onClick={waste}>Waste Monitoring</MenuItem>
             <MenuItem onClick={workplace}>Smart Workplace Management</MenuItem>
           </Menu>
-          {/* </Stack>
-          </Stack> */}
           <CloseIcon className="nav-btn nav-close-btn" onClick={showNavbar} />
-          {/* <MenuIcon className="nav-btn" onClick={showNavbar} /> */}
-          {/* <MenuIcon className="nav-btn" onClick={showNavbar} /> */}
         </nav>
         <MenuIcon className="nav-btn" onClick={showNavbar} />
       </header>

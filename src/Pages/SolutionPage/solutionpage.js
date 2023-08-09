@@ -1,7 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import "./solutionpage.css";
-import healthcare from "../../assets/HealthCare.png";
+// import healthcare from "../../assets/HealthCare.png";
 import healthdetails from "../../assets/health_details.png";
 import remote_monitoring from "../../assets/remote_monitoring.png";
 import Navbar from "../../page/home/navbar";
