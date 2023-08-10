@@ -4,7 +4,8 @@
     align-items: center;
     background: #f4f7f9;
 }
-.companyHomepage{
+
+.companyHomepage {
     height: 100vh;
     width: 100vw;
     background: url("../assets/CompanyPage/Digikloud.gif");
@@ -12,7 +13,8 @@
     background-size: cover;
     position: relative;
 }
-.companypage_tophead{
+
+.companypage_tophead {
     height: 20%;
     width: 60%;
     position: absolute;
@@ -21,14 +23,107 @@
     color: white;
     text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
 }
-.companypage_subhead{
+
+.companypage_subhead {
     text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
     margin-top: 50px;
 }
 
+.company_page_detail {
+    width: 80% !important;
+    height: fit-content;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.companyVideo{
+    display: flex;
+    justify-content: center;
+}
+
+.company_platform_container {
+    display: flex;
+}
+
+.company_platform ,.company_vision {
+    background: #00b894;
+    color: white;
+    border: 1px solid white;
+    height: 200px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-evenly;
+}
+
+.company_platform>.inner_head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.company_platform ,.vision_card > .text{
+    /* text-align: center; */
+    padding: 0 15px;
+}
+.company_vision_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vision_card{
+    height: 300px;
+    width: 30%;
+    background: #00b894;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
 @media screen and (max-width : 600px) {
-    .companyHomepage{
+    .companyHomepage {
         height: 50vh;
         width: 100vw;
     }
+
+    .companypage_tophead {
+        height: 20%;
+        width: 60%;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        color: white;
+        text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+    }
+
+    .companypage_tophead>h1 {
+        font-size: 25px;
+    }
+
+    .companypage_subhead>h3 {
+        font-size: 20px;
+    }
+
+    .company_page_detail {
+        padding: 20px 0;
+    }
+
+    .company_platform {
+        padding: 0;
+    }
+
+    .company_platform_container {
+        display: block;
+    }
+    /* .company_platform {
+        background: #00b894;
+        color: white;
+        border: 1px solid white;
+        height: 100px;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-evenly;
+    } */
 }

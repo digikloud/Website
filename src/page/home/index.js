@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./navbar";
 import "./index.css";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import gif from "../../assets/homegif.gif"
+import gif from "../../assets/home gif.gif"
 import PropTypes from "prop-types";
 import Footer from "./Footer";
 import HomeAbout from "./HomeAbout";
@@ -11,7 +11,8 @@ import Costsaving from "./costsaving";
 import Analyzehome from "./analyzehome";
 import Dashboadrhomepage from "./dashboadrhomepage";
 import Digikloudplatform from "./digikloudplatform";
-import video from "../../assets/company presentation.mp4";
+// import video from "../../assets/company presentation.mp4";
+import video from "../../assets/homeGif.mp4";
 import ProtocolsHome from "./IotProtocols";
 import ContactUs from "./contactus";
 import Bookdemo from "./bookdemo";
@@ -26,7 +27,7 @@ function HomeIndex() {
         className="background_nav"
       >
         <Navbar />
-        <img
+        {/* <img
           // src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/homePageVideo.gif"
           src={gif}
           ref={videoref}
@@ -34,22 +35,24 @@ function HomeIndex() {
           muted
           autoPlay
           loop
-        />
-        {/* <video autoPlay loop muted className="backgroundvideo">
+        /> */}
+        <video autoPlay loop muted className="backgroundvideo">
           <source
-            src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/digikloud_home.mp4"
+          src={video}
+            // src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/digikloud_home.mp4"
             type="video/mp4"
             ref={videoref}
           />
           Your browser does not support the video tag.
-        </video> */}
+        </video>
 
-        <div className="home_top_innertext">
+        
+      </div>
+      <div className="home_top_innertext">
           <Typography variant="h1">
             IoT Solutions that Transform your Business
           </Typography>
         </div>
-      </div>
       <HomeAbout />
       <Customer />
       <Dashboadrhomepage />

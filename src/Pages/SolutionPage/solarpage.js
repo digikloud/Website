@@ -12,15 +12,7 @@ function Solutionpage() {
   return (
     <div>
       <Navbar />
-      <Grid container className="solution_container">
-        {/* <Grid className="solution_solar_page_top_image">
-          <div className="solution_home_head ">
-            <h1 className="solutionTopTag">
-              Step into the Solar Revolution with Digikloud's IoT-enabled
-              Solutions
-            </h1>
-          </div>
-        </Grid> */}
+      <Grid container className="companyPagecontainer">
          <Grid className="solution_solar_page_top_image">
           <div className="solution_home_head ">
             <h1 className="solutionTopTag">
@@ -144,3 +136,86 @@ function Solutionpage() {
 }
 
 export default Solutionpage;
+
+
+  //  <Grid container spacing={4} className="companyPagecontainer">
+  //       <Grid item xs={12} md={12} className="companyHomepage">
+  //         <div className="companypage_tophead">
+  //           <Typography variant="h1">
+  //             Empowering a Connected World Through IoT Innovation
+  //           </Typography>
+  //           <div className="companypage_subhead">
+  //             <Typography variant="h3">Let's get started with yours</Typography>
+  //           </div>
+  //         </div>
+  //       </Grid>
+  //       <Grid container className="company_page_detail">
+  //         <Grid item md={6} xs={12}>
+  //           <h1 className="typography_heading_solution">Who we are</h1>
+  //           <div className="content_text">
+  //             <Typography variant="p">
+  //               Welcome to Digikloud, where we're dedicated to revolutionizing
+  //               industries through our cutting-edge IoT platform. Our mission is
+  //               to bridge the gap between the physical and digital realms,
+  //               empowering businesses to harness the power of the Internet of
+  //               Things (IoT) and drive unprecedented innovation, efficiency, and
+  //               growth.
+  //             </Typography>
+  //           </div>
+  //         </Grid>
+  //         <Grid item md={6} xs={12}>
+  //           Image
+  //         </Grid>
+  //       </Grid>
+  //       <Grid container className="company_page_detail">
+  //         <Grid item md={12} xs={12}>
+  //           <h1 className="typography_heading_solution">Our IoT Journey</h1>
+  //           <div className="content_text">
+  //             <Typography variant="p">
+  //               In 2022 , Digikloud systems embarked on a journey to reshape the
+  //               way businesses interact with the world around them. From the
+  //               outset, our focus has been on creating a seamless and
+  //               intelligent ecosystem where devices, data, and insights converge
+  //               to create transformative solutions. Today, we stand as pioneers
+  //               in the IoT landscape, helping companies across
+  //               [Industries/Verticals] realize the full potential of
+  //               connectivity.
+  //             </Typography>
+  //           </div>
+  //         </Grid>
+  //       </Grid>
+  //       <Grid container spacing={4} className="company_page_detail">
+  //         <Grid item md={12} xs={12}>
+  //           <h1 className="typography_heading_solution">
+  //             Why Choose Our IoT Platform?
+  //           </h1>
+  //           <div className="content_text">
+  //             <Typography variant="p">
+  //               At Digikloud, we understand that selecting the right IoT
+  //               platform is a critical decision.Beyond providing a platform, we
+  //               offer comprehensive support throughout your IoT journey. From
+  //               consultation and implementation to monitoring and continuous
+  //               innovation, we're here for you every step of the way..
+  //             </Typography>
+  //           </div>
+  //         </Grid>
+  //         <Grid item xs={12} md={12} className="company_platform_container" >
+  //           <Grid item xs={12} md={4} lg={4} className="company_platform">
+  //             <div className="inner_head">
+  //               <Avatar>01</Avatar>
+  //               <Typography variant="h6">Data-Driven Insights</Typography>
+  //             </div>
+  //             <Typography variant="p">
+  //               Write here a key feature of the app or software that is being
+  //               advertised here.
+  //             </Typography>
+  //           </Grid>
+  //           <Grid item xs={12} md={4} lg={4} className="company_platform">
+  //             <Avatar>02</Avatar>
+  //           </Grid>
+  //           <Grid item xs={12} md={4} lg={4} className="company_platform">
+  //             <Avatar>03</Avatar>
+  //           </Grid>
+  //         </Grid>
+  //       </Grid>
+  //     </Grid> 
