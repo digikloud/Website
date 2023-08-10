@@ -5,7 +5,7 @@ import analyze from "../../assets/analyze.png"
 function Analyzehome() {
   return (
     <div className="homeContainer">
-      <Grid container spacing={4} className="analyzehome">
+      <Grid container  className="analyzehome">
         <Grid item xs={12} md={6}>
         <h1 className="typography_heading">Uncover, Analyze, Optimize</h1>
           <h3 className="homepageSubhead">

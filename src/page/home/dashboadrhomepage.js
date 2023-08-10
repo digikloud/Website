@@ -15,7 +15,7 @@ function Dashboadrhomepage() {
   const navigate = useNavigate();
   return (
     <div className="homeContainer">
-      <Grid container spacing={4} className="Dashboadrhomepage">
+      <Grid container  className="Dashboadrhomepage">
         <Grid item xs={12} md={12} >
           <h1 className="typography_heading">
             Harness IoT to aggregate data from every asset

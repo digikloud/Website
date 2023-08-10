@@ -82,7 +82,7 @@ import kafka from "../../assets/iotprotocols/kafka.png";
 function ProtocolsHome() {
   return (
     <div className="homeContainer">
-      <Grid container spacing={4} className="iotProtocols">
+      <Grid container className="iotProtocols">
         <Grid item xs={12} md={12} lg={12}>
           <h1 className="typography_heading">Supported IoT protocols</h1>
           <h3 className="homepageSubhead">

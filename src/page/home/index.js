@@ -22,46 +22,37 @@ function HomeIndex() {
 
   return (
     <div>
-      <div
-        // style={{ height: videoref?.current?.clientHeight }}
-        className="background_nav"
-      >
-        <Navbar />
-        {/* <img
-          // src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/homePageVideo.gif"
+      <Navbar />
+      <div className="homepage">
+      {/* <img
           src={gif}
-          ref={videoref}
           className="backgroundvideo"
           muted
           autoPlay
           loop
-        /> */}
+        />  */}
         <video autoPlay loop muted className="backgroundvideo">
           <source
           src={video}
-            // src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/digikloud_home.mp4"
             type="video/mp4"
             ref={videoref}
           />
           Your browser does not support the video tag.
         </video>
-
-        
-      </div>
-      <div className="home_top_innertext">
+        <div className="home_top_innertext">
           <Typography variant="h1">
             IoT Solutions that Transform your Business
           </Typography>
         </div>
+      </div>
+      
       <HomeAbout />
       <Customer />
       <Dashboadrhomepage />
       <Analyzehome />
-      <Costsaving />
-      {/* <Digikloudplatform /> */}
+      <Costsaving /> 
       <ProtocolsHome />
       <Bookdemo />
-      {/* <ContactUs /> */}
       <Footer />
     </div>
   );

@@ -5,7 +5,7 @@ import cost from "../../assets/cost saving insight.png";
 function Costsaving() {
   return (
     <div className="homeContainer">
-      <Grid container spacing={4} className="costSaving">
+      <Grid container  className="costSaving">
         <Grid item xs={12} md={6}>
           <h1 className="typography_heading">Cost-Saving Insights</h1>
           <h3 className="homepageSubhead">
