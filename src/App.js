@@ -25,7 +25,7 @@ function App() {
             <Route path='solutionpage/solarmonitoring' element={<Solarpage />} />
             <Route path='solutionpage/wastemonitoring' element={<WasteMonitoringPage />} />
             <Route path='solutionpage/workplacemanagement' element={<Workplacemanagement />} />
-            {/* <Route path='company' element={<Company />} /> */}
+            <Route path='company' element={<Company />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

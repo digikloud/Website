@@ -2,9 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./navbar";
 import "./index.css";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-// import gif1 from "../../assets/company presentation.gif";
-import a from "../../assets/home.gif";
-import home from "../../assets/home.gif";
+import gif from "../../assets/homegif.gif"
 import PropTypes from "prop-types";
 import Footer from "./Footer";
 import HomeAbout from "./HomeAbout";
@@ -28,23 +26,23 @@ function HomeIndex() {
         className="background_nav"
       >
         <Navbar />
-        {/* <img
+        <img
           // src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/homePageVideo.gif"
-          src={a}
+          src={gif}
           ref={videoref}
           className="backgroundvideo"
           muted
           autoPlay
           loop
-        /> */}
-        <video autoPlay loop muted className="backgroundvideo">
+        />
+        {/* <video autoPlay loop muted className="backgroundvideo">
           <source
             src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/digikloud_home.mp4"
             type="video/mp4"
             ref={videoref}
           />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
 
         <div className="home_top_innertext">
           <Typography variant="h1">

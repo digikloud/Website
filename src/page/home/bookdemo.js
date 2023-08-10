@@ -94,7 +94,7 @@ function Bookdemo() {
       </Grid>
       <Dialog open={open} onClose={handleClose} PaperProps={{
       style: {
-        minHeight: '75vh',
+        // minHeight: '75vh',
         minWidth: '75vw',
         color:'#00b894',
         background:'#f4f7f9'
