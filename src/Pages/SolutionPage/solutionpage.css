@@ -254,4 +254,7 @@
   .images_future {
     width: 100%;
   }
+  .dashboardpage{
+    height: fit-content !important;
+  }
 }
