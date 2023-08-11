@@ -40,7 +40,7 @@ function Company() {
               controls
               style={{ borderRadius: "10px" }}
             >
-              <source src={video} type="video/mp4" />
+              <source src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/Digikloud+Systems.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Grid>
