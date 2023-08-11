@@ -6,6 +6,7 @@ import iotsolar from "../../assets/IoTsolar.png";
 import Navbar from "../../page/home/navbar";
 import remoteMonitoring from "../../assets/remote monitoring solar.png";
 import energyMonitoring from "../../assets/energy monitoring.png";
+import solarDashboard from "../../assets/solar_dashboard_ref.gif"
 import Footer from "../../page/home/Footer";
 
 function Solutionpage() {
@@ -111,13 +112,11 @@ function Solutionpage() {
             </div>
           </Grid>
         </Grid>
-        <Grid container className="solution_page_detail">
-          <Grid item md={6} xs={12}>
+        <Grid container className="solution_page_detail dashboardpage">
+          <Grid item md={12} xs={12}>
             <h1 className="typography_heading_solution">
               Digikloud Solar Energy Management Dashboard
             </h1>
-          </Grid>
-          <Grid item md={6} xs={12}>
             <div className="content_text">
               <Typography variant="p">
                 Digikloud's advanced analytics engine provides deep insights
@@ -128,6 +127,20 @@ function Solutionpage() {
               </Typography>
             </div>
           </Grid>
+          <Grid item md={12} xs={12} >
+            <img src={solarDashboard} className=" dashboard" />        
+          </Grid>
+          {/* <Grid item md={6} xs={12}>
+            <div className="content_text">
+              <Typography variant="p">
+                Digikloud's advanced analytics engine provides deep insights
+                into your energy usage patterns. Analyze historical data,
+                identify peak demand periods, and optimize energy consumption
+                based on real-time and forecasted information. Discover
+                opportunities for energy savings and efficiency improvements.
+              </Typography>
+            </div>
+          </Grid> */}
         </Grid>
       </Grid>
       {/* <Footer /> */}

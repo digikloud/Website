@@ -150,7 +150,7 @@ function WasteMonitoringPage() {
               and sustainability.
             </Typography>
           </Grid>
-          <Grid item md={12} xs={12} style={{marginTop:'10px'}}>
+          <Grid item md={12} xs={12} >
             <img src={wastedashboard} className=" dashboard" />
             
           </Grid>
