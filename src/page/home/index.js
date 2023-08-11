@@ -24,21 +24,21 @@ function HomeIndex() {
     <div>
       <Navbar />
       <div className="homepage">
-      <img
+      {/* <img
           src={gif}
           className="backgroundvideo"
           muted
           autoPlay
           loop
-        /> 
-        {/* <video autoPlay loop muted className="backgroundvideo">
+        />  */}
+        <video autoPlay loop muted className="backgroundvideo">
           <source
-          src={video}
+          src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/home.mp4"
             type="video/mp4"
             ref={videoref}
           />
           Your browser does not support the video tag.
-        </video> */}
+        </video>
         <div className="home_top_innertext">
           <Typography variant="h1">
             IoT Solutions that Transform your Business

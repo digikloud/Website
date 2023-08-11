@@ -116,10 +116,10 @@ function Company() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid container className="company_page_detail">
+        <Grid container className="company_page_detail vision_bg">
           <Grid item xs={12} md={12}>
-            <h1 className="typography_heading">Our Vision and Values</h1>
-            <h3 className="homepageSubhead">
+            <h1 className="typography_heading" style={{color:'white'}}>Our Vision and Values</h1>
+            <h3 className="homepageSubhead" style={{color:'white'}}>
               At Digikloud, our vision is clear: to create a connected world
               where innovation knows no bounds. Our values guide us along this
               path

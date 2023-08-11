@@ -52,18 +52,16 @@ function Navbar() {
   const workplace = () => {
     navigate("/solutionpage/workplacemanagement");
     window.scrollTo(0, 0);
-
-  }
+  };
   const company = () => {
     navigate("/company");
-    window.scrollTo(0,0);
-  }
+    window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     const home = () => {
       navigate("/");
       window.scrollTo(0, 0);
-      console.log("s");
     };
 
     const element = document.getElementById("logo");
@@ -88,9 +86,9 @@ function Navbar() {
           >
             Solution
           </Typography>
-          <Typography variant="h4">Customer</Typography>
           <Typography variant="h4">Services </Typography>
           <Typography variant="h4">Company </Typography>
+          <Typography variant="h4">Contact Us</Typography>
           {/* <Typography variant="h4"  onClick={company}>Company </Typography> */}
 
           <Menu
@@ -104,11 +102,12 @@ function Navbar() {
             onTouchMoveCapture={true}
             color="primary"
           >
+            <MenuItem onClick={waste}>Waste Monitoring</MenuItem>
+            <MenuItem onClick={solar}>Solar Monitoring</MenuItem>
             <MenuItem onClick={health} id="healthpage">
               Health Management
             </MenuItem>
-            <MenuItem onClick={solar}>Solar Monitoring</MenuItem>
-            <MenuItem onClick={waste}>Waste Monitoring</MenuItem>
+
             <MenuItem onClick={workplace}>Smart Workplace Management</MenuItem>
           </Menu>
           <CloseIcon className="nav-btn nav-close-btn" onClick={showNavbar} />
