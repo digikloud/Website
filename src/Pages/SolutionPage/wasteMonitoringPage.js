@@ -4,7 +4,8 @@ import { Button, Grid, Typography } from "@mui/material";
 import bin from "../../assets/smart waste bin.png";
 import smartbin from "../../assets/smart bin sensor.png";
 import wasteSorting from "../../assets/waste sorting.png";
-import wastedashboard from "../../assets/wastedashboard.gif";
+// import wastedashboard from "../../assets/wastedashboard.gif";
+import wastedashboard from "../../assets/waste_dashboard_ref.gif";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -149,7 +150,7 @@ function WasteMonitoringPage() {
               and sustainability.
             </Typography>
           </Grid>
-          <Grid item md={12} xs={12} >
+          <Grid item md={12} xs={12} style={{marginTop:'10px'}}>
             <img src={wastedashboard} className=" dashboard" />
             
           </Grid>

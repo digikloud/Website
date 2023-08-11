@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./navbar";
 import "./index.css";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import gif from "../../assets/home gif.gif"
 import PropTypes from "prop-types";
 import Footer from "./Footer";
 import HomeAbout from "./HomeAbout";
@@ -11,8 +10,7 @@ import Costsaving from "./costsaving";
 import Analyzehome from "./analyzehome";
 import Dashboadrhomepage from "./dashboadrhomepage";
 import Digikloudplatform from "./digikloudplatform";
-// import video from "../../assets/company presentation.mp4";
-import video from "../../assets/homeGif.mp4";
+import video from "../../assets/home1.gif";
 import ProtocolsHome from "./IotProtocols";
 import ContactUs from "./contactus";
 import Bookdemo from "./bookdemo";
@@ -24,21 +22,21 @@ function HomeIndex() {
     <div>
       <Navbar />
       <div className="homepage">
-      {/* <img
-          src={gif}
+      <img
+          src={video}
           className="backgroundvideo"
           muted
           autoPlay
           loop
-        />  */}
-        <video autoPlay loop muted className="backgroundvideo">
+        /> 
+        {/* <video autoPlay loop muted className="backgroundvideo">
           <source
           src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/home.mp4"
             type="video/mp4"
             ref={videoref}
           />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
         <div className="home_top_innertext">
           <Typography variant="h1">
             IoT Solutions that Transform your Business
