@@ -175,6 +175,7 @@
 .HomeAbout {
   width: 80% !important;
   height: 700px;
+  margin-top: 50px;
   padding: 0 100px;
   background: #f4f7f9;
 }
@@ -221,10 +222,7 @@
 
 .Dashboadrhomepage {
   width: 80% !important;
-  background-position: center;
-  background-size: cover;
-  padding: 0 100px;
-  background: #f4f7f9;
+  padding: 50px 100px;
 }
 
 .Dashboadrhomepagediv {

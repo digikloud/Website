@@ -14,32 +14,32 @@ function Footer() {
       <Grid container className="footer_container">
         <Grid item md={4} xs={12} className="footer_logo">
           <Stack justifyContent="center" height="100%">
-            <img src={digikloud} width="300px" />
+            <img src={digikloud} alt="iot company logo" width="300px" />
           </Stack>
         </Grid>
         <Grid item md={4}  xs={12} className="a" >
-          <Typography variant="h6" color={"#00b894"} gutterBottom>
-            NAVIGATION LINK
+          <Typography variant="h6" color={"#00b894"} style={{textAlign:'start'}} gutterBottom>
+            IoT Dashboards
           </Typography>
           <div className="link_footer">
-            <Link to="/#" style={{ textDecoration: "none" }}>
+            <Link to="solutionpage/wastemonitoring" target="_blank" style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
-                <KeyboardArrowRightIcon /> Home
+                <KeyboardArrowRightIcon /> Waste Monitoring
               </div>
             </Link>
-            <Link to="/#" style={{ textDecoration: "none" }}>
+            <Link to="solutionpage/solarmonitoring" target="_blank" style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
-                <KeyboardArrowRightIcon /> About Us
+                <KeyboardArrowRightIcon /> Solar Monitoring
               </div>
             </Link>
-            <Link to="/#" style={{ textDecoration: "none" }}>
+            <Link to="solutionpage/healthmanagement" target="_blank" style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
-                <KeyboardArrowRightIcon /> Solutions
+                <KeyboardArrowRightIcon /> Health Management
               </div>
             </Link>
-            <Link to="/#" style={{ textDecoration: "none" }}>
+            <Link to="solutionpage/workplacemanagement" target="_blank" style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
-                <KeyboardArrowRightIcon /> Contact Us
+                <KeyboardArrowRightIcon /> Workplace Management
               </div>
             </Link>
           </div>
@@ -64,7 +64,7 @@ function Footer() {
               </div>
             </Stack>
             <Stack direction="row" spacing={2}>
-              <div>
+              {/* <div>
                 <Link to="/#" style={{ textDecoration: "none" }}>
                   <div className="footer_icon_social">
                     <FacebookIcon />
@@ -77,9 +77,9 @@ function Footer() {
                     <TwitterIcon />
                   </div>
                 </Link>
-              </div>
+              </div> */}
               <div>
-                <Link to="/#" style={{ textDecoration: "none" }}>
+                <Link to="https://www.linkedin.com/company/digikloud-system/?viewAsMember=true" target="_blank" style={{ textDecoration: "none" }}>
                   <div className="footer_icon_social">
                     <LinkedInIcon />
                   </div>

@@ -36,13 +36,13 @@ function Workplacemanagement() {
             </div>
           </Grid>
           <Grid item md={6} xs={12}>
-            <img src={workplace} className="images" />
+            <img src={workplace} alt="workplace dashboard iot" className="images" />
           </Grid>
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
             <h1 className="typography_heading_solution">Smart Sensors</h1>
-            <img src={smart_workplace_sensors} className="images" />
+            <img src={smart_workplace_sensors} alt="workplace dashboard iot"  className="images" />
           </Grid>
           <Grid item md={6} xs={12}>
             <div className="content_text">
@@ -75,13 +75,12 @@ function Workplacemanagement() {
             </div>
           </Grid>
           <Grid item md={6} xs={12}>
-            {/* <img src={workplace_security} className="images_rightside" /> */}
           </Grid>
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
             <h1 className="typography_heading_solution">Safety and Security</h1>
-            <img src={workplace_security} className="images" />
+            <img src={workplace_security} alt="workplace dashboard iot"  className="images" />
           </Grid>
           <Grid item md={6} xs={12}>
             <div className="content_text">

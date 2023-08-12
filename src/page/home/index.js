@@ -9,7 +9,6 @@ import Customer from "./customer";
 import Costsaving from "./costsaving";
 import Analyzehome from "./analyzehome";
 import Dashboadrhomepage from "./dashboadrhomepage";
-import Digikloudplatform from "./digikloudplatform";
 import video from "../../assets/home1.gif";
 import ProtocolsHome from "./IotProtocols";
 import ContactUs from "./contactus";

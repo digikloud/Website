@@ -5,7 +5,7 @@ import resilence from "../../assets/resilience in iot (21).png";
 function HomeAbout() {
   return (
     <div className="homeContainer">
-      <Grid container  className="HomeAbout">
+      <Grid container  className="HomeAbout" >
         <Grid item xs={12} md={6}>
           <h1 className="typography_heading">
             Resilience in IoT platform for your Business

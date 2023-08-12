@@ -65,42 +65,6 @@ function Dashboadrhomepage() {
         <Grid item xs={12} lg={12} md={12} className="dashboard_video" >
           <img src={db} alt="Dashboard Video" className="dashboard_platformPage" />
         </Grid>
-        {/* <Grid item xs={12} md={6} lg={6} className="Dashboadrhomepagediv1 ">
-          <div style={{ width: "50%" }} className="Dashboadrhomecardlayout">
-            <div className="Dashboadrhomecard" mt={"10px"}>
-              <img src={building} height="50px" width="50px" />
-              <Typography variant="h6">Smart Building </Typography>
-              <ArrowForwardIcon />
-            </div>
-            <div className="Dashboadrhomecard" onClick={() => {navigate("/solutionpage/workplacemanagement");window.scrollTo(0, 0);}}>
-              <img src={occupancy} height="40px" width="40px" />
-              <Typography variant="h6">Smart Workplace Management </Typography>
-              <ArrowForwardIcon />
-            </div>
-          </div>
-          <div style={{ width: "50%" }} className="Dashboadrhomecardlayout">
-            <div className="Dashboadrhomecard" onClick={() => {navigate("/solutionpage/healthmanagement");window.scrollTo(0, 0);}}>
-              <img
-                src={hospital}
-                height="50px"
-                width="50px"
-                style={{ color: "white" }}
-              />
-              <Typography variant="h6">Health Management </Typography>
-              <ArrowForwardIcon />
-            </div>
-            <div className="Dashboadrhomecard" onClick={() => {navigate("/solutionpage/wastemonitoring");window.scrollTo(0, 0);}}>
-              <img src={waste} height="50px" width="50px" />
-              <Typography variant="h6">Waste Management</Typography>
-              <ArrowForwardIcon />
-            </div>
-            <div className="Dashboadrhomecard" onClick={() =>{ navigate("/solutionpage/solarmonitoring");window.scrollTo(0, 0);}}>
-              <img src={solar} height="50px" width="50px" />
-              <Typography variant="h6">Solar Panel</Typography>
-              <ArrowForwardIcon />
-            </div>
-          </div>
-        </Grid> */}
       </Grid>
     </div>
   );

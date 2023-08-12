@@ -106,7 +106,7 @@ function ProtocolsHome() {
                 <div className="front">
                   <div className="logoFlip">
                     <Stack direction="row">
-                      <img src={lorawan} alt="logo" className="img_flipCard" />
+                      <img src={lorawan} alt="iot lorawan" className="img_flipCard" />
                     </Stack>
                     <Typography variant="h6" className="flipCard_subhead">
                       lorawan
@@ -125,7 +125,7 @@ function ProtocolsHome() {
                 <div className="front">
                   <div className="logoFlip">
                     <Stack direction="row">
-                      <img src={mqtt} alt="logo" className="img_flipCard" />
+                      <img src={mqtt} alt="iot mqtt" className="img_flipCard" />
                     </Stack>
                     <Typography variant="h6" className="flipCard_subhead">
                       mqtt
@@ -143,7 +143,7 @@ function ProtocolsHome() {
                 <div className="front">
                   <div className="logoFlip">
                     <Stack direction="row">
-                      <img src={modbus} alt="logo" className="img_flipCard" />
+                      <img src={modbus} alt="iot modbus" className="img_flipCard" />
                     </Stack>
                     <Typography variant="h6" className="flipCard_subhead">
                       modbus
@@ -161,7 +161,7 @@ function ProtocolsHome() {
                 <div className="front">
                   <div className="logoFlip">
                     <Stack direction="row">
-                      <img src={opcua} alt="logo" className="img_flipCard" />
+                      <img src={opcua} alt="iot opcua" className="img_flipCard" />
                     </Stack>
                     <Typography variant="h6" className="flipCard_subhead">
                       opc ua
@@ -179,7 +179,7 @@ function ProtocolsHome() {
                 <div className="front">
                   <div className="logoFlip">
                     <Stack direction="row">
-                      <img src={kafka} alt="logo" className="img_flipCard" />
+                      <img src={kafka} alt="iot kafka" className="img_flipCard" />
                     </Stack>
                     <Typography variant="h6" className="flipCard_subhead">
                       kafka

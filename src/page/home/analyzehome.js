@@ -11,7 +11,7 @@ function Analyzehome() {
           <h3 className="homepageSubhead">
             Extracting Actionable Insights from Raw Data
           </h3>
-        <img src={analyze}  width="80%" height="80%" alt="analyze_image" />
+        <img src={analyze} alt="iot analyze"  width="80%" height="80%"  />
         </Grid>
         <Grid item xs={12} md={6} className="analyze_content">
           <Typography variant="p" align="justify">

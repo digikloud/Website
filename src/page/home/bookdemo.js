@@ -50,9 +50,10 @@ function Bookdemo() {
         .then((response) => response.text())
         .then((result) => console.log(result))
         .catch((error) => console.log("error", error));
-      resetForm();
-      setSnackbarOpen(true);
+      resetForm(); 
       console.log(data);
+      setSnackbarOpen(true);
+      setTimeout(handleClose ,3000)
     },
   });
   const handleCloseAlert = (event, reason) => {
@@ -63,19 +64,20 @@ function Bookdemo() {
     setSnackbarOpen(false);
   };
 
+
   return (
     <div className="homeContainer">
       <Grid container className="bookDemoContainer">
         <Grid item xs={12} md={6} className="costsaving_content_image">
-          <img src={image} alt="bookedemo image" className="bookdemo_image" />
+          <img src={image} alt="iot bookedemo image" className="bookdemo_image" />
         </Grid>
         <Grid item xs={12} md={6} className="bookdemo_content">
           <h1 className="typography_heading">
-            Ready to Create Something Extraordinary?
+            Ready to Create Something Extraordinary ?
           </h1>
           <h3 className="homepageSubhead">
             Apply for our free trial and let our professionals ensure your
-            journey is smooth and successful.
+            journey is smooth and successful
           </h3>
             <Button
               style={{
@@ -94,8 +96,6 @@ function Bookdemo() {
       </Grid>
       <Dialog open={open} onClose={handleClose} PaperProps={{
       style: {
-        // minHeight: '75vh',
-        minWidth: '75vw',
         color:'#00b894',
         background:'#f4f7f9'
       },
@@ -104,15 +104,12 @@ function Bookdemo() {
         <DialogContent>
           <DialogContentText>
           Send us a message if you're ready to explore possibilities or
-            request a demo.
+            request a demo
           </DialogContentText>
           <form onSubmit={formik.handleSubmit} className="test">
-            {/* <label className="contactusFormLabel">Name</label> */}
             <TextField
-            //   variant="outlined"
               id="name"
               name="name"
-            //   label="Name"
               placeholder="Enter your name ..."
               value={formik.values.name}
               onChange={formik.handleChange}
@@ -129,34 +126,11 @@ function Bookdemo() {
                 },
               }}
             />
-            {/* <label className="contactusFormLabel">Name</label>
-            <TextField
-              variant="outlined"
-              id="name"
-              name="name"
-              label="Name"
-              value={formik.values.name}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              error={formik.touched.name && Boolean(formik.errors.name)}
-              helperText={formik.touched.name && formik.errors.name}
-              fullWidth
-              InputProps={{
-                style: {
-                  borderRadius: "30px",
-                  background: "#f4f7f9",
-                  border: "5px solid #f4f7f9",
-                  
-                },
-              }}
-            /> */}
-            {/* <label className="contactusFormLabel">Email</label> */}
             <TextField
               variant="outlined"
               id="email"
               name="email"
               placeholder="Enter your Email here..."
-            //   label="Email"
               value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
@@ -172,12 +146,9 @@ function Bookdemo() {
                 },
               }}
             />
-            {/* <label className="contactusFormLabel">Message</label> */}
             <TextField
-              // variant="outlined"
               id="message"
               name="message"
-              // label="Message"
               type="message"
               placeholder="Enter your message here..."
               multiline
@@ -188,7 +159,6 @@ function Bookdemo() {
               error={formik.touched.message && Boolean(formik.errors.message)}
               helperText={formik.touched.message && formik.errors.message}
               fullWidth
-              // style={{color:'red'}}
               InputProps={{
                 style: {
                   borderRadius: "30px",
@@ -198,13 +168,12 @@ function Bookdemo() {
                 },
               }}
             />
-            <Button
+            <span><Button
               style={{
                 borderRadius: 15,
                 backgroundColor: '#00b894',
                 color:'white',
                 margin:'5px',
-                // padding: "18px 36px",
                 fontSize: "18px",
               }}
               variant="contained"
@@ -212,10 +181,17 @@ function Bookdemo() {
             >
               Submit
             </Button>
+            <Button style={{
+                borderRadius: 15,
+                backgroundColor: '#00b894',
+                color:'white',
+                margin:'5px',
+                fontSize: "18px",
+              }} onClick={handleClose} >Cancel</Button></span>
           </form>
           <Snackbar
             open={SnackbarOpen}
-            autoHideDuration={6000}
+            autoHideDuration={3000}
             onClose={handleCloseAlert}
           >
             <Alert
@@ -228,8 +204,7 @@ function Bookdemo() {
           </Snackbar>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} style={{color:'#757e8c'}}>Cancel</Button>
-          {/* <Button onClick={handleClose}>Subscribe</Button> */}
+          {/* <Button onClick={handleClose} style={{color:'#757e8c'}}>Cancel</Button> */}
         </DialogActions>
       </Dialog>
     </div>

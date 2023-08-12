@@ -23,7 +23,7 @@ function Costsaving() {
           </div>
         </Grid>
         <Grid item xs={12} md={6} className="costsaving_content_image">
-          <img src={cost} alt="costsaving_image" height="300px" width="300px" />
+          <img src={cost} alt="iot costsaving_image" height="300px" width="300px" />
         </Grid>
       </Grid>
     </div>
