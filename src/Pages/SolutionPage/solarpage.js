@@ -1,4 +1,5 @@
 import { Button, Grid, Typography } from "@mui/material";
+import { Helmet } from "react-helmet";
 import React from "react";
 import "./solutionpage.css";
 import solarenergy from "../../assets/solar energy management.png";
@@ -12,6 +13,9 @@ import Footer from "../../page/home/Footer";
 function Solutionpage() {
   return (
     <div>
+      <Helmet>
+        <title>Solar IoT Dashboard</title>
+      </Helmet>
       <Navbar />
       <Grid container className="companyPagecontainer">
          <Grid className="solution_solar_page_top_image">

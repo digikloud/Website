@@ -7,6 +7,7 @@ import wasteSorting from "../../assets/waste sorting.png";
 import wastedashboard from "../../assets/waste_dashboard_ref.gif";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function WasteMonitoringPage() {
   const [button, setButton] = useState("livedemo_btn_home");
@@ -24,6 +25,9 @@ function WasteMonitoringPage() {
   };
   return (
     <div>
+      <Helmet>
+        <title>Waste Management IoT Dashboard</title>
+      </Helmet>
       <Navbar />
       <Grid container className="solution_container">
         <Grid className="solution_wasteMonitor_page_top_image">

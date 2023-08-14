@@ -7,10 +7,14 @@ import remote_monitoring from "../../assets/remote_monitoring.png";
 import Navbar from "../../page/home/navbar";
 import smartHospital from "../../assets/smart hospital.png";
 import Footer from "../../page/home/Footer";
+import { Helmet } from "react-helmet";
 
 function Solutionpage() {
   return (
     <div>
+       <Helmet>
+        <title>Helath Management IoT Dashboard</title>
+      </Helmet>
       <Navbar />
       <Grid container className="solution_container">
         <Grid className="solution_page_top_image">

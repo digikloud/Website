@@ -5,10 +5,14 @@ import workplace1 from "../../assets/workplace_image.png";
 import workplace from "../../assets/3.png";
 import smart_workplace_sensors from "../../assets/smart_workplace_sensors.png";
 import workplace_security from "../../assets/workplace_security.png";
+import { Helmet } from "react-helmet";
 
 function Workplacemanagement() {
   return (
     <div>
+      <Helmet>
+        <title>Workplace IoT Dashboard</title>
+      </Helmet>
       <Navbar />
       <Grid container className="solution_container">
         <Grid className="solution_workplace_page_top_image">

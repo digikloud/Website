@@ -13,12 +13,16 @@ import video from "../../assets/home1.gif";
 import ProtocolsHome from "./IotProtocols";
 import ContactUs from "./contactus";
 import Bookdemo from "./bookdemo";
+import { Helmet } from "react-helmet";
 
 function HomeIndex() {
   const videoref = useRef();
 
   return (
     <div>
+      <Helmet>
+        <title>Digikloud</title>
+      </Helmet>
       <Navbar />
       <div className="homepage">
       <img
