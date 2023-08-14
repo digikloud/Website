@@ -21,10 +21,10 @@ function App() {
           <Routes>
             <Route element={<Suspense fallback={<>Loading...</>}><Home /></Suspense>} path='' />
             <Route path='about-us' element={<AboutUs /> } />
-            <Route path='solutionpage/healthmanagement' element={<Solutionpage/>} />
-            <Route path='solutionpage/solarmonitoring' element={<Solarpage />} />
-            <Route path='solutionpage/wastemonitoring' element={<WasteMonitoringPage />} />
-            <Route path='solutionpage/workplacemanagement' element={<Workplacemanagement />} />
+            <Route path='solution/healthmanagement' element={<Solutionpage/>} />
+            <Route path='solution/solarmonitoring' element={<Solarpage />} />
+            <Route path='solution/wastemonitoring' element={<WasteMonitoringPage />} />
+            <Route path='solution/workplacemanagement' element={<Workplacemanagement />} />
             <Route path='company' element={<Company />} />
           </Routes>
         </BrowserRouter>

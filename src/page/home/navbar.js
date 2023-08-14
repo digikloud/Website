@@ -38,19 +38,19 @@ function Navbar() {
     setAnchorEl(null);
   };
   const health = () => {
-    navigate("/solutionpage/healthmanagement");
+    navigate("/solution/healthmanagement");
     window.scrollTo(0, 0);
   };
   const solar = () => {
-    navigate("/solutionpage/solarmonitoring");
+    navigate("/solution/solarmonitoring");
     window.scrollTo(0, 0);
   };
   const waste = () => {
-    navigate("/solutionpage/wastemonitoring");
+    navigate("/solution/wastemonitoring");
     window.scrollTo(0, 0);
   };
   const workplace = () => {
-    navigate("/solutionpage/workplacemanagement");
+    navigate("/solution/workplacemanagement");
     window.scrollTo(0, 0);
   };
   const company = () => {

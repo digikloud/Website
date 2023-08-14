@@ -621,12 +621,7 @@
     display: none;
   }
 
-  .a {
-    display: none;
-  }
-
-  .footer_icon_nav_link {
-    color: red;
+  .footer_icon_nav_link ,.footer_address {
     font-size: 14px;
   }
 
@@ -635,7 +630,9 @@
     height: 300px;
     border-radius: 20px;
   }
-
+.footer_container h6{
+  font-size: 16px;
+}
   .iotProtocols {
     height: fit-content;
     padding: 0;

@@ -17,34 +17,34 @@ function Footer() {
             <img src={digikloud} alt="iot company logo" width="300px" />
           </Stack>
         </Grid>
-        <Grid item md={4}  xs={12} className="a" >
+        <Grid item md={4}  xs={12} className="footer_dashboard_links" >
           <Typography variant="h6" color={"#00b894"} style={{textAlign:'start'}} gutterBottom>
             IoT Dashboards
           </Typography>
           <div className="link_footer">
-            <Link to="solutionpage/wastemonitoring" target="_blank" style={{ textDecoration: "none" }}>
+            <Link to="solution/wastemonitoring"  style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
                 <KeyboardArrowRightIcon /> Waste Monitoring
               </div>
             </Link>
-            <Link to="solutionpage/solarmonitoring" target="_blank" style={{ textDecoration: "none" }}>
+            <Link to="solution/solarmonitoring"  style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
                 <KeyboardArrowRightIcon /> Solar Monitoring
               </div>
             </Link>
-            <Link to="solutionpage/healthmanagement" target="_blank" style={{ textDecoration: "none" }}>
+            <Link to="solution/healthmanagement"  style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
                 <KeyboardArrowRightIcon /> Health Management
               </div>
             </Link>
-            <Link to="solutionpage/workplacemanagement" target="_blank" style={{ textDecoration: "none" }}>
+            <Link to="solution/workplacemanagement"  style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
                 <KeyboardArrowRightIcon /> Workplace Management
               </div>
             </Link>
           </div>
         </Grid>
-        <Grid item md={4} xs={12} className="as">
+        <Grid item md={4} xs={12} >
           <Typography variant="h6" color={"#00b894"} marginBottom={"10px"}>
             CONTACT US
           </Typography>
