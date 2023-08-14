@@ -9,7 +9,7 @@ import occupancy from "../../assets/occupancy management.png";
 import { Navigate } from "react-router";
 import { useNavigate } from "react-router";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import db from "../../assets/From developmnt to distribution (4).gif";
+import db from "../../assets/dashboard_ref.gif";
 
 function Dashboadrhomepage() {
   const navigate = useNavigate();

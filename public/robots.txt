@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Sitemap: https://digikloud.io/sitemap.xml
+Sitemap: https://digikloud.io/sitemap1.xml
