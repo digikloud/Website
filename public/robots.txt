@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap : https://digikloud.io/sitemap1.xml
+Sitemap : https://digikloud.io/sitemap.XML
