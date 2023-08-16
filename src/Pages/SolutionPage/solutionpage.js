@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import React from "react";
 import "./solutionpage.css";
 import dashboard from "../../assets/health_dashboard_ref.gif";

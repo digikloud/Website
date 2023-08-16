@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { Helmet } from "react-helmet";
 import React from "react";
 import "./solutionpage.css";

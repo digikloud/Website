@@ -1,3 +1,3 @@
 User-agent: *
-Allow: /*
-Sitemap : https://digikloud.io/sitemap.XML
+Allow: /
+Sitemap : https://digikloud.io/sitemap.xml
