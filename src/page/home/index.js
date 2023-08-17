@@ -23,6 +23,7 @@ function HomeIndex() {
       <Helmet>
         <title>Digikloud</title>
         <meta name="description" content="IoT Solutions that Transform your Business" />
+        <meta name="msvalidate.01" content="E7C8450433A1B04E4DB234FBBCB4D282" />
       </Helmet>
       <Navbar />
       <section className="homepage">
