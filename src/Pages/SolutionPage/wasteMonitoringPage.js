@@ -8,6 +8,7 @@ import wastedashboard from "../../assets/waste_dashboard_ref.gif";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import Footer from "../../page/home/Footer";
 
 function WasteMonitoringPage() {
   const [button, setButton] = useState("livedemo_btn_home");
@@ -27,6 +28,17 @@ function WasteMonitoringPage() {
     <div>
       <Helmet>
         <title>Waste Management IoT Dashboard</title>
+        <meta
+          name="description"
+          content="DiGiKloud is dedicated to providing businesses with secure, dependable, and cutting-edge IoT solutions, empowering them to overcome challenges and achieve their goals. We offer comprehensive services, from analyzing your business needs to implementing and securing your IoT ecosystem."
+        />
+        <meta name="msvalidate.01" content="E7C8450433A1B04E4DB234FBBCB4D282" />
+        <meta
+          name="keywords"
+          content="digikloud,iot,dasboard,waste management dashboard using iot,solar monitoring dashboard using iot,workplace management using iot"
+        ></meta>
+        <link rel="canonical" href="https://digikloud.io/" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Navbar />
       <Grid container className="solution_container">
@@ -142,6 +154,7 @@ function WasteMonitoringPage() {
           </Grid>
         </Grid>
       </Grid>
+      <Footer />
     </div>
   );
 }

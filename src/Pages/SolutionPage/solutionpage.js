@@ -14,6 +14,17 @@ function Solutionpage() {
     <div>
        <Helmet>
         <title>Helath Management IoT Dashboard</title>
+        <meta
+          name="description"
+          content="DiGiKloud is dedicated to providing businesses with secure, dependable, and cutting-edge IoT solutions, empowering them to overcome challenges and achieve their goals. We offer comprehensive services, from analyzing your business needs to implementing and securing your IoT ecosystem."
+        />
+        <meta name="msvalidate.01" content="E7C8450433A1B04E4DB234FBBCB4D282" />
+        <meta
+          name="keywords"
+          content="digikloud,iot,dasboard,waste management dashboard using iot,solar monitoring dashboard using iot,workplace management using iot"
+        ></meta>
+        <link rel="canonical" href="https://digikloud.io/" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Navbar />
       <Grid container className="solution_container">
@@ -111,7 +122,7 @@ function Solutionpage() {
           </Grid>
         </Grid>
       </Grid>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

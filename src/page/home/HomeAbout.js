@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import resilence from "../../assets/resilience in iot.png";
+import resilence from "../../assets/Home Page/resilence_in_iot.png";
 
 function HomeAbout() {
   return (

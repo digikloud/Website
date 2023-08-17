@@ -22,22 +22,22 @@ function Footer() {
             IoT Dashboards
           </Typography>
           <div className="link_footer">
-            <Link to="solution/wastemonitoring"  style={{ textDecoration: "none" }}>
+            <Link to="/solution/wastemonitoring"  style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
                 <KeyboardArrowRightIcon /> Waste Monitoring
               </div>
             </Link>
-            <Link to="solution/solarmonitoring"  style={{ textDecoration: "none" }}>
+            <Link to="/solution/solarmonitoring"  style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
                 <KeyboardArrowRightIcon /> Solar Monitoring
               </div>
             </Link>
-            <Link to="solution/healthmanagement"  style={{ textDecoration: "none" }}>
+            <Link to="/solution/healthmanagement"  style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
                 <KeyboardArrowRightIcon /> Health Management
               </div>
             </Link>
-            <Link to="solution/workplacemanagement"  style={{ textDecoration: "none" }}>
+            <Link to="/solution/workplacemanagement"  style={{ textDecoration: "none" }}>
               <div className="footer_icon_nav_link">
                 <KeyboardArrowRightIcon /> Workplace Management
               </div>
@@ -50,7 +50,7 @@ function Footer() {
           </Typography>
           <div className="footer_address">
             <div className="footer_icon_address">
-              <LocationOnIcon sx={{ color: "#00b894", marginRight: "10px" }} />{" "}
+              <LocationOnIcon sx={{ color: "#00b894", marginRight: "10px" }} />
               002, Sai Bageecha Apartment,
               <br />
               Channasandra, Bengaluru -560067
@@ -59,7 +59,7 @@ function Footer() {
             </div>
             <Stack direction="column">
               <div className="footer_icon_address">
-                <EmailIcon sx={{ color: "#00b894", marginRight: "10px" }} />{" "}
+                <EmailIcon sx={{ color: "#00b894", marginRight: "10px" }} />
                 solutions@digikloudsystems.com
               </div>
             </Stack>

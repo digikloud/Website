@@ -6,12 +6,24 @@ import workplace from "../../assets/3.png";
 import smart_workplace_sensors from "../../assets/smart_workplace_sensors.png";
 import workplace_security from "../../assets/workplace_security.png";
 import { Helmet } from "react-helmet";
+import Footer from "../../page/home/Footer";
 
 function Workplacemanagement() {
   return (
     <div>
       <Helmet>
         <title>Workplace IoT Dashboard</title>
+        <meta
+          name="description"
+          content="DiGiKloud is dedicated to providing businesses with secure, dependable, and cutting-edge IoT solutions, empowering them to overcome challenges and achieve their goals. We offer comprehensive services, from analyzing your business needs to implementing and securing your IoT ecosystem."
+        />
+        <meta name="msvalidate.01" content="E7C8450433A1B04E4DB234FBBCB4D282" />
+        <meta
+          name="keywords"
+          content="digikloud,iot,dasboard,waste management dashboard using iot,solar monitoring dashboard using iot,workplace management using iot"
+        ></meta>
+        <link rel="canonical" href="https://digikloud.io/" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Navbar />
       <Grid container className="solution_container">
@@ -98,6 +110,7 @@ function Workplacemanagement() {
           </Grid>
         </Grid>
       </Grid>
+      <Footer />
     </div>
   );
 }
