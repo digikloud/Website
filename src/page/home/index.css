@@ -756,7 +756,9 @@
     height: fit-content;
     padding: 0;
   }
-
+  .iotProtocols{
+    padding: 0;
+  }
   .footer {
     height: fit-content;
   }
