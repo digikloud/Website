@@ -19,12 +19,13 @@ function HomeIndex() {
   const videoref = useRef();
 
   return (
-    <div>
+    <main>
       <Helmet>
         <title>Digikloud</title>
+        <meta name="description" content="IoT Solutions that Transform your Business" />
       </Helmet>
       <Navbar />
-      <div className="homepage">
+      <section className="homepage">
       <img
           src={video}
           className="backgroundvideo"
@@ -40,12 +41,12 @@ function HomeIndex() {
           />
           Your browser does not support the video tag.
         </video> */}
-        <div className="home_top_innertext">
+        <header className="home_top_innertext">
           <Typography variant="h1">
             IoT Solutions that Transform your Business
           </Typography>
-        </div>
-      </div>
+        </header>
+      </section>
       
       <HomeAbout />
       <Customer />
@@ -55,7 +56,7 @@ function HomeIndex() {
       <ProtocolsHome />
       <Bookdemo />
       <Footer />
-    </div>
+    </main>
   );
 }
 

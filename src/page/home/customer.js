@@ -26,7 +26,7 @@ function Customer() {
   ];
 
   return (
-    <div className="homeContainer">
+    <article className="homeContainer">
       <Grid container className="customers">
         <Grid item lg={12} md={12} p={5} align="center">
           <h1>20+ Clients rely on us</h1>
@@ -77,7 +77,7 @@ function Customer() {
           </Marquee>
         </Grid>
       </Grid>
-    </div>
+    </article>
   );
 }
 

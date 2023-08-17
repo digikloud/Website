@@ -81,7 +81,7 @@ import kafka from "../../assets/iotprotocols/kafka.png";
 
 function ProtocolsHome() {
   return (
-    <div className="homeContainer">
+    <article className="homeContainer">
       <Grid container className="iotProtocols">
         <Grid item xs={12} md={12} lg={12}>
           <h1 className="typography_heading">Supported IoT protocols</h1>
@@ -197,7 +197,7 @@ function ProtocolsHome() {
           </div>
         </Grid>
       </Grid>
-    </div>
+    </article>
   );
 }
 export default ProtocolsHome;

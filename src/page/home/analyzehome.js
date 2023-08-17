@@ -4,14 +4,14 @@ import analyze from "../../assets/analyze.png"
 
 function Analyzehome() {
   return (
-    <div className="homeContainer">
+    <article className="homeContainer">
       <Grid container  className="analyzehome">
         <Grid item xs={12} md={6}>
         <h1 className="typography_heading">Uncover, Analyze, Optimize</h1>
           <h3 className="homepageSubhead">
             Extracting Actionable Insights from Raw Data
           </h3>
-        <img src={analyze} alt="iot analyze"  width="80%" height="80%"  />
+        <img src={analyze} alt="iot analyze"  className="homeAboutImages"  />
         </Grid>
         <Grid item xs={12} md={6} className="analyze_content">
           <Typography variant="p" align="justify">
@@ -29,7 +29,7 @@ function Analyzehome() {
             </ul>
         </Grid>
       </Grid>
-    </div>
+    </article>
   );
 }
 

@@ -14,7 +14,7 @@ import db from "../../assets/dashboard_ref.gif";
 function Dashboadrhomepage() {
   const navigate = useNavigate();
   return (
-    <div className="homeContainer">
+    <article className="homeContainer">
       <Grid container  className="Dashboadrhomepage">
         <Grid item xs={12} md={12} >
           <h1 className="typography_heading">
@@ -66,7 +66,7 @@ function Dashboadrhomepage() {
           <img src={db} alt="Dashboard Video" className="dashboard_platformPage" />
         </Grid>
       </Grid>
-    </div>
+    </article>
   );
 }
 

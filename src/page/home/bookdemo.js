@@ -66,7 +66,7 @@ function Bookdemo() {
 
 
   return (
-    <div className="homeContainer">
+    <article className="homeContainer">
       <Grid container className="bookDemoContainer">
         <Grid item xs={12} md={6} className="costsaving_content_image">
           <img src={image} alt="iot bookedemo image" className="bookdemo_image" />
@@ -80,6 +80,7 @@ function Bookdemo() {
             journey is smooth and successful
           </h3>
             <Button
+              aria-label="book demo"
               style={{
                 borderRadius: 35,
                 backgroundColor: "#00b894",
@@ -207,7 +208,7 @@ function Bookdemo() {
           {/* <Button onClick={handleClose} style={{color:'#757e8c'}}>Cancel</Button> */}
         </DialogActions>
       </Dialog>
-    </div>
+    </article>
   );
 }
 

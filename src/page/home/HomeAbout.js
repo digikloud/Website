@@ -1,16 +1,16 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import resilence from "../../assets/resilience in iot (21).png";
+import resilence from "../../assets/resilience in iot.png";
 
 function HomeAbout() {
   return (
-    <div className="homeContainer">
+    <article className="homeContainer">
       <Grid container  className="HomeAbout" >
         <Grid item xs={12} md={6}>
           <h1 className="typography_heading">
             Resilience in IoT platform for your Business
           </h1>
-          <div className="content_text">
+          <article className="content_text">
             <Typography variant="p" align="justify">  
               The Internet of Things (IoT) has revolutionized the way businesses
               operate, providing unprecedented connectivity and data-driven
@@ -19,7 +19,7 @@ function HomeAbout() {
               and continuous operation of your IoT infrastructure, safeguarding
               your business from disruptions and enabling long-term success.
             </Typography>
-          </div>
+          </article>
         </Grid>
         <Grid item xs={12} md={6} className="home_content_image">
           <img src={resilence} className="homeAboutImages" />
@@ -45,7 +45,7 @@ function HomeAbout() {
           </div>
         </Grid>
       </Grid>
-    </div>
+    </article>
   );
 }
 
