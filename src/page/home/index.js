@@ -14,6 +14,7 @@ import ProtocolsHome from "./IotProtocols";
 import ContactUs from "./contactus";
 import Bookdemo from "./bookdemo";
 import { Helmet } from "react-helmet";
+import Dashboard from "./dashboard";
 
 function HomeIndex() {
   const videoref = useRef();
@@ -29,7 +30,7 @@ function HomeIndex() {
         <meta name="msvalidate.01" content="E7C8450433A1B04E4DB234FBBCB4D282" />
         <meta
           name="keywords"
-          content="digikloud,iot,dasboard,waste management dashboard using iot,solar monitoring dashboard using iot,workplace management using iot"
+          content="digikloud,iot,dasboard,waste management dashboard using iot,solar monitoring dashboard using iot,workplace management using iot,dashboard iot,waste management,solar monitoring,solar dashboard,health management dashboard"
         ></meta>
         <link rel="canonical" href="https://digikloud.io/" />
         <meta property="og:type" content="website" />
@@ -55,6 +56,7 @@ function HomeIndex() {
       <HomeAbout />
       <Customer />
       <Dashboadrhomepage />
+      <Dashboard />
       <Analyzehome />
       <Costsaving />
       <ProtocolsHome />

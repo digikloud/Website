@@ -17,14 +17,14 @@ function Solutionpage() {
         <title>Solar IoT Dashboard</title>
         <meta
           name="description"
-          content="DiGiKloud is dedicated to providing businesses with secure, dependable, and cutting-edge IoT solutions, empowering them to overcome challenges and achieve their goals. We offer comprehensive services, from analyzing your business needs to implementing and securing your IoT ecosystem."
+          content="Solar monitoring using IoT (Internet of Things) involves leveraging IoT technology to monitor, analyze, and manage solar energy systems in a more intelligent and connected manner."
         />
         <meta name="msvalidate.01" content="E7C8450433A1B04E4DB234FBBCB4D282" />
         <meta
           name="keywords"
-          content="digikloud,iot,dasboard,waste management dashboard using iot,solar monitoring dashboard using iot,workplace management using iot"
+          content="digikloud,iot,dasboard,solar monitoring dashboard using iot,solar dashboard,solar monitoring"
         ></meta>
-        <link rel="canonical" href="https://digikloud.io/" />
+        <link rel="canonical" href="https://digikloud.io/solution/solarmonitoring" />
         <meta property="og:type" content="website" />
       </Helmet>
       <Navbar />

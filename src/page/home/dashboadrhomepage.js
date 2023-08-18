@@ -10,6 +10,9 @@ import { Navigate } from "react-router";
 import { useNavigate } from "react-router";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import db from "../../assets/dashboard_ref.gif";
+import ImageSlider from "../../components/imageSlider";
+import { SliderData } from "../../components/dashboardSlider";
+import "../../components/imageSlider.css";
 
 function Dashboadrhomepage() {
   const navigate = useNavigate();
@@ -61,9 +64,6 @@ function Dashboadrhomepage() {
           </div>
           </div>
           
-        </Grid>
-        <Grid item xs={12} lg={12} md={12} className="dashboard_video" >
-          <img src={db} alt="Dashboard Video" className="dashboard_platformPage" />
         </Grid>
       </Grid>
     </article>

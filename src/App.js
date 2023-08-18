@@ -4,7 +4,7 @@ import theme from "./theme"
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import React, { Suspense } from 'react';
 import AboutUs from './Pages/AboutUs';
-import Solutionpage from './Pages/SolutionPage/solutionpage';
+import Solutionpage from './Pages/SolutionPage/healthMonitoringPage';
 import Solarpage from './Pages/SolutionPage/solarpage';
 import WasteMonitoringPage from './Pages/SolutionPage/wasteMonitoringPage';
 import Workplacemanagement from './Pages/SolutionPage/workplacemanagement';
@@ -20,7 +20,6 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route element={<Suspense fallback={<>Loading...</>}><Home /></Suspense>} path='' />
-            {/* <Route path='sitemap.xml' element={sitemap.xml} /> */}
             <Route path='about-us' element={<AboutUs /> } />
             <Route path='solution/healthmanagement' element={<Solutionpage/>} />
             <Route path='solution/solarmonitoring' element={<Solarpage />} />
