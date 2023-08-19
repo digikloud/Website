@@ -1,0 +1,53 @@
+.heading,.solar_info {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background: #f4f7f9;
+}
+.iotdashboard_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f7f9;
+}
+
+.iotdashboard_image_container {
+    height: 700px;
+    width: 80%;
+    padding: 0 10px;
+}
+
+.img-iotDashboard {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.solar_info{
+    width: 80%;
+    padding: 0 10px;
+}
+.key_elements_solar{
+    width: 80%;
+    padding: 0 10px;
+    /* height: 100vh; */
+}
+.key_element_card{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 150px;
+    margin: 1rem;
+    background: white;
+    border-radius: 10px;
+}
+.key_element_card > img{
+    padding-right: 20px;
+}
+.solarManagementSolution{
+    width: 80%;
+    padding: 0 10px;
+}

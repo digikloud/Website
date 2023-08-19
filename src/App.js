@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@mui/material';
 import './App.css';
 import theme from "./theme"
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route,Routes } from 'react-router-dom';
 import React, { Suspense } from 'react';
 import AboutUs from './Pages/AboutUs';
 import Solutionpage from './Pages/SolutionPage/healthMonitoringPage';
@@ -9,6 +9,7 @@ import Solarpage from './Pages/SolutionPage/solarpage';
 import WasteMonitoringPage from './Pages/SolutionPage/wasteMonitoringPage';
 import Workplacemanagement from './Pages/SolutionPage/workplacemanagement';
 import Company from './Pages/Company';
+import SolarMonitoring from './Pages/IoTdashboards/solarMonitoring';
 
 const Home = React.lazy(() => import("./page/home"))
 
@@ -26,6 +27,7 @@ function App() {
             <Route path='solution/wastemonitoring' element={<WasteMonitoringPage />} />
             <Route path='solution/workplacemanagement' element={<Workplacemanagement />} />
             <Route path='company' element={<Company />} />
+            <Route path='iotdashboards/solar' element={<SolarMonitoring />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

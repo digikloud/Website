@@ -58,6 +58,7 @@ function WasteMonitoringPage() {
             style={{
               backgroundColor: "#00b894",
               fontSize: "18px",
+              color: 'white'
             }}
           >
             Live Demo

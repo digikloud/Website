@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -33,7 +34,7 @@ nav {
 .white_nav {
   background-color: white;
 }
-.navbar_container > div {
+.navbar_container>div {
   display: flex;
   justify-content: space-between;
   padding: 15px;
@@ -46,17 +47,11 @@ nav {
   font-family: "Montserrat", sans-serif;
   background: #f4f7f9;
 }
-/* .css-r8u8y9:hover {
-  background: #00b894;
-  color: white;
-} */
-
 .css-1cl2ir8:hover {
   color: #265892;
   background-color: #00b894;
   color: white;
 }
-
 header {
   display: flex;
   align-items: center;
@@ -64,14 +59,12 @@ header {
   height: 80px;
   padding: 0 2rem;
 }
-
 header .nav-btn {
   padding: 5px;
   cursor: pointer;
   background: transparent;
   border: none;
   outline: none;
-  /* height: 100px; */
   display: none;
   opacity: 0;
   font-size: 1.8rem;
@@ -92,7 +85,6 @@ header .nav-btn {
     font-size: 14px;
     border-bottom: 2px solid #265892;
   }
-
   header nav {
     position: fixed;
     top: -100vh;
@@ -109,18 +101,15 @@ header .nav-btn {
     transition: 1s;
     padding: 0 10px;
   }
-
   header .responsive_nav {
     transform: translateY(100vh);
   }
-
   nav .nav-close-btn {
     position: absolute;
     top: 1rem;
     right: 2rem;
-	color: #265892;
+    color: #265892;
   }
-
   nav a {
     font-size: 1.5rem;
   }

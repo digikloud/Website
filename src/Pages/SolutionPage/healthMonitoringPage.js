@@ -9,7 +9,7 @@ import smartHospital from "../../assets/smart hospital.png";
 import Footer from "../../page/home/Footer";
 import { Helmet } from "react-helmet";
 
-function Solutionpage() {
+function Healthpage() {
   return (
     <div>
        <Helmet>
@@ -33,7 +33,6 @@ function Solutionpage() {
             <h1 className="solutionTopTag">
               Connecting Health for a Smarter Future IoT in Healthcare Management
             </h1>
-            <h1 className="solutionTopTag"></h1>
           </div>
         </Grid>
         <Grid container className="solution_page_detail">
@@ -118,7 +117,7 @@ function Solutionpage() {
               </div>
           </Grid>
           <Grid item md={12} xs={12} >
-            <img src={dashboard} alt="iot helath management  dahboard" className=" dashboard" />        
+            <img src={dashboard} alt="iot helath management dahboard" className=" dashboard" />        
           </Grid>
         </Grid>
       </Grid>
@@ -127,4 +126,4 @@ function Solutionpage() {
   );
 }
 
-export default Solutionpage;
+export default Healthpage;

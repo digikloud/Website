@@ -21,6 +21,9 @@ function Navbar() {
     navRef.current.classList.toggle("responsive_nav");
   };
 
+  window.addEventListener("click", function(){
+    console.log("clicked");
+  });
   const listenScrollEvent = (e) => {
     if (window.scrollY > 0) {
       setColor("white_nav");
@@ -53,10 +56,10 @@ function Navbar() {
     navigate("/solution/workplacemanagement");
     window.scrollTo(0, 0);
   };
-  const company = () => {
-    navigate("/company");
-    window.scrollTo(0, 0);
-  };
+  // const company = () => {
+  //   navigate("/company");
+  //   window.scrollTo(0, 0);
+  // };
 
   useEffect(() => {
     const home = () => {
@@ -66,7 +69,7 @@ function Navbar() {
 
     const element = document.getElementById("logo");
     element.addEventListener("click", home);
-  }, []);
+  }, [navigate]);
 
   return (
     <div className={`${color} navbar_container`}>

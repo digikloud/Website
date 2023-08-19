@@ -1,6 +1,6 @@
-import { Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import { Helmet } from "react-helmet";
-import React from "react";
+import React, { useState ,useEffect} from "react";
 import "./solutionpage.css";
 import solarenergy from "../../assets/solar energy management.png";
 import iotsolar from "../../assets/IoTsolar.png";
@@ -10,7 +10,20 @@ import energyMonitoring from "../../assets/energy monitoring.png";
 import solarDashboard from "../../assets/solar_dashboard_ref.gif"
 import Footer from "../../page/home/Footer";
 
-function Solutionpage() {
+function Solarpage() {
+  const [button, setButton] = useState("livedemo_btn_home");
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollEvent);
+  }, []);
+
+  const handleScrollEvent = (e) => {
+    if (window.scrollY > 700) {
+      setButton("livedemo_btn");
+    } else {
+      setButton("livedemo_btn_home");
+    }
+  };
   return (
     <div>
       <Helmet>
@@ -35,9 +48,22 @@ function Solutionpage() {
             Step into the Solar Revolution with Digikloud's IoT-enabled
               Solutions
             </h1>
-            <h1 className="solutionTopTag"></h1>
           </div>
         </Grid>
+        <div className={`${button}`}>
+          <Button
+            target="_blank"
+            href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d"
+            variant="outlined"
+            style={{
+              backgroundColor: "#00b894",
+              fontSize: "18px",
+              color: 'white'
+            }}
+          >
+            Live Demo
+          </Button>
+        </div>
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
             <h1 className="typography_heading_solution">
@@ -102,7 +128,7 @@ function Solutionpage() {
             </div>
           </Grid>
           <Grid item md={6} xs={12}>
-            <img src={remoteMonitoring} className="images" />
+            <img src={remoteMonitoring} alt="solar iot" className="images" />
           </Grid>
         </Grid>
         <Grid container className="solution_page_detail">
@@ -152,4 +178,4 @@ function Solutionpage() {
   );
 }
 
-export default Solutionpage;
+export default Solarpage;

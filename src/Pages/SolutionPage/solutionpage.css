@@ -15,7 +15,6 @@
   left: 90%;
   display: block;
   display: none;
-  background-color: red;
 }
 .solutionTopTag{
     color: white;
@@ -183,9 +182,6 @@
     top:50%;
     left: 80%;
     display: none;
-    /* display: none; */
-    background-color: red;
-  /* background-color: #f4f7f9; */
 }
 .livedemo_btn_home{
   position: fixed;
@@ -193,7 +189,6 @@
   display: none;
   left: 80%;
   display: none;
-  /* display: none; */
   background-color: red;
 }
   .solution_wasteMonitor_page_top_image {
