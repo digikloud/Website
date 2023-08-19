@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "../../page/home/navbar";
 import "./iotdashboard.css";
 import { Button, Grid, Typography } from "@mui/material";
-import solar01 from "../../assets/iotDashboard/solar01.webp";
+import solar012 from "../../assets/iotDashboard/solar01.webp";
+import solar01 from "../../assets/iotDashboard/solar02.png";
 import bulb from "../../assets/iotDashboard/bulb01.png";
 
 function SolarMonitoring() {
