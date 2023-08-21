@@ -16,7 +16,6 @@ const theme = createTheme({
       fontSize: "50px",
       fontWeight: 700,
       fontFamily : " 'Montserrat', "
-      // fontFamily: "'Open Sans', sans-serif",
     },
     h2: {
       fontSize: "40px",
@@ -27,24 +26,21 @@ const theme = createTheme({
     h3: {
       fontSize: "30px",
       fontWeight: 600,
-      fontFamily: "'Open Sans', sans-serif",
+      fontFamily: "'Montserrat',",
     },
     h4: {
-      fontSize: "20px",
+      fontSize: "24px",
       fontWeight: 600,
-      fontfamily: "'Montserrat', sans-serif"
-      // fontFamily: "'Open Sans', sans-serif",
+      fontFamily: "'Montserrat',",
     },
     h5: {
-      fontSize: "18px",
-      fontWeight: 600,
-      fontFamily: "'Open Sans', sans-serif",
+      fontSize: "20px",
+      fontFamily: "'Montserrat',",
     },
     h6:{
       fontSize: "20px",
       fontWeight: 600,
       fontFamily : " 'Montserrat', "
-      // fontFamily: "'Open Sans', sans-serif",
     },
     body1: {
       fontSize: "16px",
@@ -54,7 +50,6 @@ const theme = createTheme({
     p: {
       fontSize: "16px",
       fontFamily: "'Montserrat', sans-serif",
-      // fontFamily: "'Open Sans', sans-serif",
       lineHeight : '2',
     },
     homepageSubhead:{

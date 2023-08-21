@@ -56,6 +56,10 @@ function Navbar() {
     navigate("/solution/workplacemanagement");
     window.scrollTo(0, 0);
   };
+  const iotSolar = () => {
+    navigate("/iotdashboards/solar");
+    window.scrollTo(0, 0);
+  }
   // const company = () => {
   //   navigate("/company");
   //   window.scrollTo(0, 0);
@@ -90,6 +94,7 @@ function Navbar() {
             Solution
           </Typography>
           <Typography variant="h4">Services </Typography>
+          <Typography variant="h4" onClick={iotSolar}>IoT Dashboards</Typography>
           <Typography variant="h4">Company </Typography>
           <Typography variant="h4">Contact Us</Typography>
           {/* <Typography variant="h4"  onClick={company}>Company </Typography> */}
