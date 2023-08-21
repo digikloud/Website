@@ -2,25 +2,25 @@ import React from "react";
 import Navbar from "../../page/home/navbar";
 import "./iotdashboard.css";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import solar01 from "../../assets/iotDashboard/solar02.png";
-import solar03 from "../../assets/iotDashboard/solar03.png";
+import waste01 from "../../assets/iotDashboard/waste01.png";
+import waste02 from "../../assets/iotDashboard/waste02.png";
 import bulb from "../../assets/iotDashboard/bulb01.png";
 import star02 from "../../assets/iotDashboard/star02.png";
 import Footer from "../../page/home/Footer";
 
-function SolarMonitoring() {
+function WasteManagementIoT() {
   return (
     <>
       <Navbar />
       <section className="heading">
-        <h1>IoT Solar Monitoring solution</h1>
+        <h1>IoT Waste management solution</h1>
         <h2>
-          Digikloud's new template feature as a starting point to develop your
-          Solar monitoring solution
+          Utilize Digikloud's innovative template feature as a foundation to
+          kickstart the development of your waste management solution.
         </h2>
         <Button
           target="_blank"
-          href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"
+          href="https://app-demo.digikloudsystems.com/dashboard/923a4bc0-2148-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d"
           style={{
             borderRadius: 15,
             backgroundColor: "#00b894",
@@ -34,7 +34,7 @@ function SolarMonitoring() {
       <section className="iotdashboard_container">
         <article className="iotdashboard_image_container">
           <img
-            src={solar01}
+            src={waste01}
             alt="solar monitoring iot solution"
             className="img-iotDashboard"
           />
@@ -42,25 +42,29 @@ function SolarMonitoring() {
       </section>
       <section className="iotdashboard_container">
         <article className="solar_info">
-          <Typography variant="h3">What is solar monitoring?</Typography>
+          <Typography variant="h3">What is Waste Managment ?</Typography>
           <Typography variant="h4">
-            Solar monitoring using IoT (Internet of Things) involves leveraging
-            IoT technology to monitor, analyze, and manage solar energy systems
-            in a more intelligent and connected manner.
+            A waste management solution using IoT (Internet of Things) involves
+            integrating sensors, devices, and data analytics to enhance the
+            efficiency and effectiveness of waste collection, monitoring, and
+            processing.
           </Typography>
           <Typography variant="h5">
-            IoT-enabled solar monitoring enhances the capabilities of
-            traditional monitoring by providing real-time data collection,
-            remote management, and advanced analytics.
+            IoT-enabled waste management systems can provide real-time data on
+            waste bin fill levels, optimize collection routes, monitor landfill
+            conditions, track recycling progress, and enable remote management
+            and control. This technology-driven approach aims to reduce
+            operational costs, minimize environmental impact, and improve
+            overall waste management practices.
           </Typography>
         </article>
       </section>
       <section className="iotdashboard_container key_elements_solar_container">
         <article className="key_elements_solar">
           <h2>
-            Here are the key elements that constitute a solar management
-            scenario for businesses aiming to streamline their operational costs
-            and enhance efficiency
+            Below are the fundamental components comprising a waste management
+            scenario designed for businesses seeking to optimize operational
+            expenses and improve overall efficiency.
           </h2>
           <Grid container spacing={1}>
             <Grid
@@ -78,48 +82,46 @@ function SolarMonitoring() {
               <article className="key_element_card">
                 <Img />
                 <Typography variant="p">
-                  Utilize IoT data and analytics to predict maintenance needs
-                  for system components.
+                  Utilizing IoT-enabled sensors to monitor waste bin fill levels
+                  in real-time, optimizing collection schedules, and reducing
+                  unnecessary pickups
                 </Typography>
               </article>
               <article className="key_element_card">
                 <Img />
                 <Typography variant="p">
-                  Deploy IoT sensors on solar panels, inverters, batteries, and
-                  other relevant components to monitor performance in real time.
+                  Employing advanced data analysis to identify trends, patterns,
+                  and areas for improvement within the waste management process.
                 </Typography>
               </article>
             </Grid>
 
-            <Grid
-              item
-              xs={12}
-              md={6}
-            >
+            <Grid item xs={12} md={6}>
               <article className="key_element_card">
                 <Img />
                 <Typography variant="p">
-                  Assess the business's energy needs, load profiles, and energy
-                  cost structure.
+                  Generating detailed reports on waste generation, collection,
+                  and disposal for transparency and continuous improvement.
                 </Typography>
               </article>
               <article className="key_element_card">
                 <Img />
                 <Typography variant="p">
-                  Utilize IoT platforms and data analytics tools to process
-                  collected data.
+                  Analyzing the costs associated with waste collection,
+                  transportation, disposal, and recycling to identify potential
+                  savings.
                 </Typography>
               </article>
-              <article className="key_element_card">
+              {/* <article className="key_element_card">
                 <Img />
                 <Typography variant="p">
                   Implement remote diagnostics to identify and address issues
                   promptly.
                 </Typography>
-              </article>
+              </article> */}
             </Grid>
           </Grid>
-          <article className="solar_layer_technology">
+          {/* <article className="solar_layer_technology">
             <h2>
               IoT-based solar management solutions typically consist of multiple
               layers of technology
@@ -199,68 +201,52 @@ function SolarMonitoring() {
                 </article>
               </Grid>
             </Grid>
-          </article>
+          </article> */}
         </article>
       </section>
       <section className="iotdashboard_container white_bg_container">
         <article className="solar_features">
           <Typography variant="h4">Features</Typography>
-          <Typography variant="h3">Solar Monitoring with DiGiKloud</Typography>
+          <Typography variant="h3">Waste Management with DiGiKloud</Typography>
           <Grid container spacing={1}>
-            <Grid
-              // style={{
-              //   display: "grid",
-              //   justifyItems: "center",
-              //   justifyContent: "space-evenly",
-              //   alignContent: "space-evenly",
-              //   alignItems: "center",
-              // }}
-              item
-              xs={12}
-              md={6}
-            >
+            <Grid item xs={12} md={6}>
               <article className="key_element_card">
                 <StarIcon />
                 <Typography variant="p">
-                  Personalize the IoT dashboard to your preferences by including
-                  additional widgets.
+                  Real-time IoT Sensor Monitoring for Waste Bin Fill Levels.
                 </Typography>
               </article>
               <article className="key_element_card">
                 <StarIcon />
                 <Typography variant="p">
-                  Utilize our comprehensive solar monitoring template.
+                  Intuitive Dashboard Visualizations for Decision-making.
                 </Typography>
               </article>
               <article className="key_element_card">
                 <StarIcon />
                 <Typography variant="p">
-                  Configure alerts and notifications.
+                  Data Analytics and Reporting for Insights into Waste Trends.
                 </Typography>
               </article>
             </Grid>
 
-            <Grid
-              item
-              xs={12}
-              md={6}
-            >
+            <Grid item xs={12} md={6}>
               <article className="key_element_card">
                 <StarIcon />
                 <Typography variant="p">
-                  Review historical data and analyze patterns.
+                  Continuous Improvement through Data-driven Insights.
                 </Typography>
               </article>
               <article className="key_element_card">
                 <StarIcon />
                 <Typography variant="p">
-                  Establish a connection between solar monitoring and the cloud.
+                  Smart Notifications and Alerts for Timely Collection.
                 </Typography>
               </article>
               <article className="key_element_card">
                 <StarIcon />
                 <Typography variant="p">
-                  Monitor real-time consumption data.
+                  Cost Analysis and Optimization Opportunities.
                 </Typography>
               </article>
             </Grid>
@@ -280,19 +266,19 @@ function SolarMonitoring() {
                   className="iotdashboard_info"
                 >
                   <Typography variant="h2">
-                    IoT Solar Monitoring Dashboard
+                    IoT Waste Management Dashboard
                   </Typography>
                   <Typography variant="p">
-                    The pre-built IoT solar monitoring dashboard available on
-                    Digikloud offers a comprehensive solution. By integrating
-                    your sensor into the platform, you can seamlessly begin
-                    managing your solar-related data. Take advantage of this
-                    opportunity by signing up for a complimentary trial and
-                    initiating your journey with ease.
+                    The pre-built IoT waste management monitoring dashboard
+                    offered by Digikloud provides a holistic solution. By
+                    connecting your sensor devices to the platform, you can
+                    effortlessly commence the management of your waste-related
+                    data. Seize this chance by enrolling in a complimentary
+                    trial and embarking on your journey with simplicity.
                   </Typography>
                   <Button
                     target="_blank"
-                    href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"
+                    href="https://app-demo.digikloudsystems.com/dashboard/923a4bc0-2148-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d"
                     style={{
                       borderRadius: 10,
                       backgroundColor: "#00b894",
@@ -307,7 +293,12 @@ function SolarMonitoring() {
             </Grid>
             <Grid item xs={12} md={6}>
               <article>
-                <img src={solar03} alt="solar monitor" height="100%" width="100%" />
+                <img
+                  src={waste02}
+                  alt="solar monitor"
+                  height="100%"
+                  width="100%"
+                />
               </article>
             </Grid>
           </Grid>
@@ -317,7 +308,7 @@ function SolarMonitoring() {
     </>
   );
 }
-export default SolarMonitoring;
+export default WasteManagementIoT;
 
 export function Img() {
   return (

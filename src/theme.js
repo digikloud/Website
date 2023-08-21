@@ -20,7 +20,7 @@ const theme = createTheme({
     h2: {
       fontSize: "40px",
       fontWeight: 500,
-      fontFamily: "'Open Sans', sans-serif",
+      fontFamily : " 'Montserrat', ",
       color : "#00b894" ,
     },
     h3: {
@@ -45,7 +45,7 @@ const theme = createTheme({
     body1: {
       fontSize: "16px",
       fontWeight: 700,
-      fontFamily: "'Open Sans', sans-serif",
+      fontFamily : " 'Montserrat', "
     },
     p: {
       fontSize: "16px",
