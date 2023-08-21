@@ -10,6 +10,10 @@
 }
 .heading > h1 {
     font-size: 3rem;
+    margin-top: 3rem;
+}
+.heading > h2 {
+    width: 50%;
 }
 .heading > h2 , .solar_features > h4{
     text-align: center;
@@ -48,12 +52,13 @@
     background: white;
     border:1px solid #c8e3f2;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 3rem;
 }
 .key_elements_solar > h2 {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     background: #a9eedf;
     border-radius: 5px;
+    font-size: 1.25rem;
 }
 .solar_layer_technology > h2{
     padding: 3rem 7rem;
@@ -114,9 +119,12 @@
     }
     .heading > h1 {
         font-size: 1.5rem;
+        margin-top: 5rem;
+        padding-left: 10px;
     }
     .heading > h2{
         font-size: 1rem;
+        width: 90%;
     }
     .iotdashboard_image_container {
         height: 350px;
