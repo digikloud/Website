@@ -21,7 +21,7 @@ function Navbar() {
     navRef.current.classList.toggle("responsive_nav");
   };
 
-  window.addEventListener("click", function(){
+  window.addEventListener("click", function () {
     console.log("clicked");
   });
   const listenScrollEvent = (e) => {
@@ -33,12 +33,18 @@ function Navbar() {
   };
 
   const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorElIoT, setanchorElIoT] = useState(null);
   const open = Boolean(anchorEl);
+  const iotopen = Boolean(anchorElIoT);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+  const handleClick1 = (event) => {
+    setanchorElIoT(event.currentTarget);
+  };
   const handleClose = () => {
     setAnchorEl(null);
+    setanchorElIoT(null);
   };
   const health = () => {
     navigate("/solution/healthmanagement");
@@ -56,10 +62,15 @@ function Navbar() {
     navigate("/solution/workplacemanagement");
     window.scrollTo(0, 0);
   };
+  const iotwaste = () => {
+    navigate("/iotdashboards/wastemonitoring");
+    window.scrollTo(0, 0);
+  };
   const iotSolar = () => {
     navigate("/iotdashboards/solar");
     window.scrollTo(0, 0);
-  }
+  };
+
   // const company = () => {
   //   navigate("/company");
   //   window.scrollTo(0, 0);
@@ -94,7 +105,17 @@ function Navbar() {
             Solution
           </Typography>
           <Typography variant="h4">Services </Typography>
-          <Typography variant="h4" onClick={iotSolar}>IoT Dashboards</Typography>
+          <Typography
+            variant="h4"
+            id="basic-button1"
+            aria-controls={iotopen ? "basic-menu1" : undefined}
+            aria-haspopup="true"
+            aria-expanded={iotopen ? "true" : undefined}
+            onClick={handleClick1}
+          >
+            IoT Dashboards
+          </Typography>
+          {/* <Typography variant="h4" onClick={iotSolar}>IoT Dashboards</Typography> */}
           <Typography variant="h4">Company </Typography>
           <Typography variant="h4">Contact Us</Typography>
           {/* <Typography variant="h4"  onClick={company}>Company </Typography> */}
@@ -117,6 +138,20 @@ function Navbar() {
             </MenuItem>
 
             <MenuItem onClick={workplace}>Smart Workplace Management</MenuItem>
+          </Menu>
+          <Menu
+            id="basic-menu1"
+            anchorEl={anchorElIoT}
+            open={iotopen}
+            onClose={handleClose}
+            MenuListProps={{
+              "aria-labelledby": "basic-button1",
+            }}
+            onTouchMoveCapture={true}
+            color="primary"
+          >
+            <MenuItem onClick={iotSolar}>Solar Monitoring</MenuItem>
+            <MenuItem onClick={iotwaste}>Waste Monitoring</MenuItem>
           </Menu>
           <CloseIcon className="nav-btn nav-close-btn" onClick={showNavbar} />
         </nav>
