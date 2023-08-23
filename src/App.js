@@ -12,6 +12,7 @@ import Company from './Pages/Company';
 import SolarMonitoring from './Pages/IoTdashboards/solarMonitoring';
 import WasteManagementIoT from './Pages/IoTdashboards/wasteManagement';
 import HealthManagementIoT from './Pages/IoTdashboards/healthManagement';
+import Product from './Pages/product';
 
 const Home = React.lazy(() => import("./page/home"))
 
@@ -32,6 +33,7 @@ function App() {
             <Route path='iotdashboards/solar' element={<SolarMonitoring />} />
             <Route path='iotdashboards/wastemonitoring' element={<WasteManagementIoT />} />
             <Route path='iotdashboards/healthmonitoring' element={<HealthManagementIoT />} />
+            <Route path='product' element={<Product />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

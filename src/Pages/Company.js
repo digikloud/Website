@@ -1,8 +1,7 @@
 import React from "react";
 import Navbar from "../page/home/navbar";
-import { Avatar, Divider, Grid, Typography } from "@mui/material";
+import { Avatar,  Grid, Typography } from "@mui/material";
 import "./company.css";
-import video from "../assets/CompanyPage/Digikloud Systems.mp4";
 
 function Company() {
   return (

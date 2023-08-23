@@ -1,5 +1,5 @@
 import { Alert, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grid, Snackbar, TextField } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import image from "../../assets/bookdemoImg.png";
@@ -14,9 +14,8 @@ function Bookdemo() {
   const handleClose = () => {
     setOpen(false);
   };
-  const [data, setData] = useState(null);
+
   const [SnackbarOpen, setSnackbarOpen] = useState(false);
-  // const { vertical, horizontal, open } = SnackbarOpen;
 
   const validationSchema = yup.object({
     name: yup.string("Enter your name here").required("Name is required"),
@@ -51,7 +50,6 @@ function Bookdemo() {
         .then((result) => console.log(result))
         .catch((error) => console.log("error", error));
       resetForm(); 
-      console.log(data);
       setSnackbarOpen(true);
       setTimeout(handleClose ,3000)
     },
@@ -69,7 +67,7 @@ function Bookdemo() {
     <article className="homeContainer">
       <Grid container className="bookDemoContainer">
         <Grid item xs={12} md={6} className="costsaving_content_image">
-          <img src={image} alt="iot bookedemo image" className="bookdemo_image" />
+          <img src={image} alt="iot_bookedemo_image" className="bookdemo_image" />
         </Grid>
         <Grid item xs={12} md={6} className="bookdemo_content">
           <h1 className="typography_heading">
@@ -205,7 +203,6 @@ function Bookdemo() {
           </Snackbar>
         </DialogContent>
         <DialogActions>
-          {/* <Button onClick={handleClose} style={{color:'#757e8c'}}>Cancel</Button> */}
         </DialogActions>
       </Dialog>
     </article>

@@ -5,8 +5,6 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import { Link } from "react-router-dom";
 import digikloud from "../../assets/digikloud.png";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function Footer() {
   return (
@@ -64,20 +62,6 @@ function Footer() {
               </div>
             </Stack>
             <Stack direction="row" spacing={2}>
-              {/* <div>
-                <Link to="/#" style={{ textDecoration: "none" }}>
-                  <div className="footer_icon_social">
-                    <FacebookIcon />
-                  </div>
-                </Link>
-              </div>
-              <div>
-                <Link to="/#" style={{ textDecoration: "none" }}>
-                  <div className="footer_icon_social">
-                    <TwitterIcon />
-                  </div>
-                </Link>
-              </div> */}
               <div>
                 <Link to="https://www.linkedin.com/company/digikloud-system/?viewAsMember=true" target="_blank" style={{ textDecoration: "none" }}>
                   <div className="footer_icon_social">

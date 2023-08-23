@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../../page/home/navbar";
 import { Grid, Typography } from "@mui/material";
-import workplace1 from "../../assets/workplace_image.png";
 import workplace from "../../assets/3.png";
 import smart_workplace_sensors from "../../assets/smart_workplace_sensors.png";
 import workplace_security from "../../assets/workplace_security.png";

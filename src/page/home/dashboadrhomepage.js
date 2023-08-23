@@ -4,14 +4,9 @@ import building from "../../assets/smart building.png";
 import solar from "../../assets/solar1.png";
 import waste from "../../assets/waste management.png";
 import hospital from "../../assets/health management.png";
-import irrigation from "../../assets/smart irrigation.png";
 import occupancy from "../../assets/occupancy management.png";
-import { Navigate } from "react-router";
 import { useNavigate } from "react-router";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import db from "../../assets/dashboard_ref.gif";
-import ImageSlider from "../../components/imageSlider";
-import { SliderData } from "../../components/dashboardSlider";
 import "../../components/imageSlider.css";
 
 function Dashboadrhomepage() {

@@ -17,11 +17,58 @@ function Customer() {
   const customers = [
     {
       id: 1,
-      icon: { sasa },
+      img: "./images/Customers/ambit.png",
+      alt: "ambit",
     },
     {
       id: 2,
-      icon: "https://keystoneit.tech/assets/img/root/logo-black.png",
+      img: "./images/Customers/axis.png",
+      alt: "axis",
+    },
+    {
+      id: 3,
+      img: "./images/Customers/axs.png",
+      alt: "axs",
+    },
+    {
+      id: 4,
+      img: "./images/Customers/elausys.png",
+      alt: "elausys",
+    },
+    {
+      id: 5,
+      img: "./images/Customers/hilcher.png",
+      alt: "hilcher",
+    },
+    {
+      id: 6,
+      img: "./images/Customers/keystone.png",
+      alt: "keystone",
+    },
+    {
+      id: 7,
+      img: "./images/Customers/log5data.png",
+      alt: "amblog5datait",
+    },
+    {
+      id: 8,
+      img: "./images/Customers/maxbyte.png",
+      alt: "maxbyte",
+    },
+    {
+      id: 9,
+      img: "./images/Customers/mfc.png",
+      alt: "mfc",
+    },
+    {
+      id: 19,
+      img: "./images/Customers/sasa.png",
+      alt: "sasa",
+    },
+    {
+      id: 11,
+      img: "./images/Customers/tecnosoft.png",
+      alt: "tecnosoft",
     },
   ];
 
@@ -33,19 +80,18 @@ function Customer() {
         </Grid>
         <Grid item lg={12} xs={12} style={{ display: "flex" }} p={5}>
           <Marquee>
-            {/* {
-              customers.map((logo) =>
-               <div key={logo.id} className="image_wrapper">
-                  <p>{logo.id}</p>
-                  <img src={logo.icon} key={logo.id} />
-               </div>
-              )
-            } */}
-            <div className="image_wrapper">
+            {customers.map((img , id) => {
+              return (
+                <div key={id} className="image_wrapper">
+                  <img  src={img.img} alt={img.alt} height="150px" width="150px"/>
+                </div>
+              );
+            })}
+            {/* <div className="image_wrapper">
               <img src={sasa} alt="sasa" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
-              <img src={ambit} alt="ambit" height="150px" width="150px" />
+              <img src="./images/Customers/ambit.png" alt="ambit" height="150px" width="150px" />
             </div>
             <div className="image_wrapper">
               <img src={axis} alt="axis" height="150px" width="150px" />
@@ -73,7 +119,7 @@ function Customer() {
             </div>
             <div className="image_wrapper">
               <img src={tecnosoft} alt="tecnosoft" height="150px" width="150px" />
-            </div>
+            </div> */}
           </Marquee>
         </Grid>
       </Grid>

@@ -20,10 +20,7 @@ function Navbar() {
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
-
-  window.addEventListener("click", function () {
-    console.log("clicked");
-  });
+  
   const listenScrollEvent = (e) => {
     if (window.scrollY > 0) {
       setColor("white_nav");
