@@ -1,5 +1,5 @@
 import digikloud from "../../assets/final file.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import React, { useRef, useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -20,7 +20,7 @@ function Navbar() {
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
-  
+
   const listenScrollEvent = (e) => {
     if (window.scrollY > 0) {
       setColor("white_nav");
@@ -68,6 +68,42 @@ function Navbar() {
     window.scrollTo(0, 0);
   };
 
+  const solution = [
+    {
+      id: 1,
+      title: "Solar Monitoring",
+      click: solar,
+    },
+    {
+      id: 2,
+      title: "Waste Monitoring",
+      click: waste,
+    },
+    {
+      id: 3,
+      title: "Health Management",
+      click: health,
+    },
+    {
+      id: 4,
+      title: "Workplace Management",
+      click: workplace,
+    },
+  ];
+
+  const iotdashboards = [
+    {
+      id: 1,
+      title: "Solar Monitoring",
+      click: iotSolar,
+    },
+    {
+      id: 2,
+      title: "Waste Monitoring",
+      click: iotwaste,
+    },
+  ];
+
   // const company = () => {
   //   navigate("/company");
   //   window.scrollTo(0, 0);
@@ -91,7 +127,7 @@ function Navbar() {
         </div>
         <nav ref={navRef}>
           <Typography variant="h4">Product</Typography>
-          <Typography
+          {/* <Typography
             variant="h4"
             id="basic-button"
             aria-controls={open ? "basic-menu" : undefined}
@@ -100,9 +136,41 @@ function Navbar() {
             onClick={handleClick}
           >
             Solution
-          </Typography>
+          </Typography> */}
+          <div className="dropdown">
+            <div className="content">
+              <Typography variant="h4">Solution</Typography>
+            </div>
+            <button type="button"></button>
+            <div className="menu sol">
+              {/* <a>
+                <Typography onClick={solar}>Solar Monitoring</Typography>
+              </a>
+              <a>
+                <Typography onClick={waste}>Waste Monitoring</Typography>
+              </a>
+              <a>
+                <Typography onClick={health}>Health Management</Typography>
+              </a>
+              <a>
+                <Typography onClick={workplace}>
+                  Smart Workplace Management
+                </Typography>
+              </a> */}
+
+              {solution.map((solution, id) => {
+                return (
+                  <a key={solution.id}>
+                    <Typography onClick={solution.click}>
+                      {solution.title}
+                    </Typography>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
           <Typography variant="h4">Services </Typography>
-          <Typography
+          {/* <Typography
             variant="h4"
             id="basic-button1"
             aria-controls={iotopen ? "basic-menu1" : undefined}
@@ -111,7 +179,39 @@ function Navbar() {
             onClick={handleClick1}
           >
             IoT Dashboards
-          </Typography>
+          </Typography> */}
+          <div className="dropdown">
+            <div className="content">
+              <Typography variant="h4">IoT Dashboards</Typography>
+            </div>
+            <button type="button"></button>
+            <div className="menu">
+              {/* <a>
+                <Typography onClick={solar}>Solar Monitoring</Typography>
+              </a>
+              <a>
+                <Typography onClick={waste}>Waste Monitoring</Typography>
+              </a>
+              <a>
+                <Typography onClick={health}>Health Management</Typography>
+              </a>
+              <a>
+                <Typography onClick={workplace}>
+                  Smart Workplace Management
+                </Typography>
+              </a> */}
+
+              {iotdashboards.map((solution, id) => {
+                return (
+                  <a key={solution.id}>
+                    <Typography onClick={solution.click}>
+                      {solution.title}
+                    </Typography>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
           {/* <Typography variant="h4" onClick={iotSolar}>IoT Dashboards</Typography> */}
           <Typography variant="h4">Company </Typography>
           <Typography variant="h4">Contact Us</Typography>
@@ -159,3 +259,9 @@ function Navbar() {
 }
 
 export default Navbar;
+
+// export function Link(){
+//   return (
+//     <Link />
+//   )
+// }

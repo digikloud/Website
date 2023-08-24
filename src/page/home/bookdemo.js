@@ -2,7 +2,7 @@ import { Alert, Button, Dialog, DialogActions, DialogContent, DialogContentText,
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
-import image from "../../assets/bookdemoImg.png";
+import image from "../../assets/bookdemoImg.webp";
 
 function Bookdemo() {
     const [open, setOpen] = React.useState(false);

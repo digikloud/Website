@@ -65,8 +65,8 @@ function ProtocolsHome() {
             <div className="Dashboadrhomecardlayout">
               {data.map((img, id) => {
                 return (
-                  <>
-                    <div className="card">
+                  // <>
+                    <div className="card" key={img.id}>
                       <div className="front">
                         <div className="logoFlip">
                           <Stack direction="row">
@@ -91,7 +91,7 @@ function ProtocolsHome() {
                         </Typography>
                       </div>
                     </div>
-                  </>
+                  // </>
                 );
               })}
               {/* <div className="card">
