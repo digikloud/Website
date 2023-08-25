@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../../page/home/navbar";
 import "./iotdashboard.css";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import waste01 from "../../assets/iotDashboard/waste01.png";
-import waste02 from "../../assets/iotDashboard/waste02.png";
+import waste01 from "../../assets/iotDashboard/waste01.webp";
+import waste02 from "../../assets/iotDashboard/waste02.webp";
 import bulb from "../../assets/iotDashboard/bulb01.png";
 import star02 from "../../assets/iotDashboard/star02.png";
 import Footer from "../../page/home/Footer";
@@ -13,7 +13,7 @@ function WasteManagementIoT() {
     <>
       <Navbar />
       <section className="heading">
-        <h1>IoT Waste management solution</h1>
+        <h1>IoT Waste Managment Solution</h1>
         <h2>
           Utilize Digikloud's innovative template feature as a foundation to
           kickstart the development of your waste management solution.

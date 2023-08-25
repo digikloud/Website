@@ -104,10 +104,10 @@ function Navbar() {
     },
   ];
 
-  // const company = () => {
-  //   navigate("/company");
-  //   window.scrollTo(0, 0);
-  // };
+  const company = () => {
+    navigate("/company");
+    window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     const home = () => {
@@ -213,9 +213,9 @@ function Navbar() {
             </div>
           </div>
           {/* <Typography variant="h4" onClick={iotSolar}>IoT Dashboards</Typography> */}
-          <Typography variant="h4">Company </Typography>
+          {/* <Typography variant="h4">Company </Typography> */}
+          <Typography variant="h4"  onClick={company}>Company </Typography>
           <Typography variant="h4">Contact Us</Typography>
-          {/* <Typography variant="h4"  onClick={company}>Company </Typography> */}
 
           <Menu
             id="basic-menu"

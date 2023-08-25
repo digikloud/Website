@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../../page/home/navbar";
 import "./iotdashboard.css";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import health01 from "../../assets/iotDashboard/Health01.png";
-import health02 from "../../assets/iotDashboard/Health02.png";
+import health01 from "../../assets/iotDashboard/Health01.webp";
+import health02 from "../../assets/iotDashboard/Health02.webp";
 import bulb from "../../assets/iotDashboard/bulb01.png";
 import star02 from "../../assets/iotDashboard/star02.png";
 import Footer from "../../page/home/Footer";
@@ -13,7 +13,7 @@ function HealthManagementIoT() {
     <>
       <Navbar />
       <section className="heading">
-        <h1>IoT Health Management solution</h1>
+        <h1>IoT Health Management Solution</h1>
         <h2>
           Utilize Digikloud's innovative template feature as a foundational
           element for building your health management solution

@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../../page/home/navbar";
 import "./iotdashboard.css";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import solar01 from "../../assets/iotDashboard/solar02.png";
-import solar03 from "../../assets/iotDashboard/solar03.png";
+import solar01 from "../../assets/iotDashboard/solar01.webp";
+import solar02 from "../../assets/iotDashboard/solar02.webp";
 import bulb from "../../assets/iotDashboard/bulb01.png";
 import star02 from "../../assets/iotDashboard/star02.png";
 import Footer from "../../page/home/Footer";
@@ -13,7 +13,7 @@ function SolarMonitoring() {
     <>
       <Navbar />
       <section className="heading">
-        <h1>IoT Solar Monitoring solution</h1>
+        <h1>IoT Solar Monitoring Solution</h1>
         <h2>
           Digikloud's new template feature as a starting point to develop your
           Solar monitoring solution
@@ -91,11 +91,7 @@ function SolarMonitoring() {
               </article>
             </Grid>
 
-            <Grid
-              item
-              xs={12}
-              md={6}
-            >
+            <Grid item xs={12} md={6}>
               <article className="key_element_card">
                 <Img />
                 <Typography variant="p">
@@ -207,18 +203,7 @@ function SolarMonitoring() {
           <Typography variant="h4">Features</Typography>
           <Typography variant="h3">Solar Monitoring with DiGiKloud</Typography>
           <Grid container spacing={1}>
-            <Grid
-              // style={{
-              //   display: "grid",
-              //   justifyItems: "center",
-              //   justifyContent: "space-evenly",
-              //   alignContent: "space-evenly",
-              //   alignItems: "center",
-              // }}
-              item
-              xs={12}
-              md={6}
-            >
+            <Grid item xs={12} md={6}>
               <article className="key_element_card">
                 <StarIcon />
                 <Typography variant="p">
@@ -240,11 +225,7 @@ function SolarMonitoring() {
               </article>
             </Grid>
 
-            <Grid
-              item
-              xs={12}
-              md={6}
-            >
+            <Grid item xs={12} md={6}>
               <article className="key_element_card">
                 <StarIcon />
                 <Typography variant="p">
@@ -307,7 +288,12 @@ function SolarMonitoring() {
             </Grid>
             <Grid item xs={12} md={6}>
               <article>
-                <img src={solar03} alt="solar monitor" height="100%" width="100%" />
+                <img
+                  src={solar02}
+                  alt="solar monitor"
+                  height="100%"
+                  width="100%"
+                />
               </article>
             </Grid>
           </Grid>

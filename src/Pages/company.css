@@ -32,8 +32,7 @@ text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
 }
 .company_page_detail {
     width: 80% !important;
-    height: fit-content;
-    padding: 50px 100px;
+    padding: 10px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,28 +41,40 @@ text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
     display: flex;
     justify-content: center;
 }
-
+.company_top01{
+    height: 350px;
+}
 .company_platform_container {
     display: flex;
 }
-
+.iotPlatformContainer{
+    height: 50vh;
+    width: 100%;
+    display: grid;
+}
 .company_platform ,.company_vision {
-    background: #00b894;
-    color: white;
-    border: 1px solid white;
+    background: #f4f7f9;
+    margin: 0 5px;
+    border: 1px solid #6c8aac;
     height: 200px;
     display: flex;
     flex-direction: column !important;
     justify-content: space-evenly;
+    border-radius: 10px;
 }
 
-.company_platform>.inner_head {
+.comapny_vision_platform_container{
+    width: 80%;
+    padding: 50px;
+}
+.company_platform, .vision_card >.inner_head {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .company_platform ,.vision_card > .text{
     /* text-align: center; */
+    /* background-color: red; */
     padding: 0 15px;
 }
 .company_vision_container{
@@ -71,21 +82,43 @@ text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
     justify-content: space-between;
 }
 .vision_bg{
-    background: url("../assets/CompanyPage/ourVisonBg.png");
-    width: 100 !important;
+    /* background: url("../assets/CompanyPage/ourVisonBg.png"); */
+    background:linear-gradient(#00b894,#6c8aac);
+    /* width: 100 !important; */
     background-position: center;
     background-size: cover;
 }
 .vision_card{
-    height: 250px;
+    /* height: 250px; */
     width: 30%;
     background: #f4f7f9;
-    border-radius: 30px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     /* color: white; */
+}
+.support{
+    height: 250px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: #00b894; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.support_info{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.support_info > h6{
+    width: 75%;
+}
+.support > h6 {
+    /* background: red; */
+    color: red !important;
 }
 
 @media screen and (max-width : 600px) {
@@ -94,7 +127,7 @@ text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
         width: 100vw;
     }
     .company_page_detail {
-        width: 80% !important;
+        width: 90% !important;
     }
     .companypage_tophead {
         height: 20%;
@@ -130,7 +163,7 @@ text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
         display: block;
     }    
     .vision_card{
-        /* height: 250px; */
+        height: 250px;
         width: 100%;
         background: #f4f7f9;
         border-radius: 10px;
@@ -139,6 +172,23 @@ text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
         justify-content: space-evenly;
         align-items: center;
         margin: 10px 0;
-        /* color: white; */
+    }
+    .company_top01{
+        height: fit-content;
+    }
+    .comapny_vision_platform_container{
+        padding: 0;
+    }
+    .vision_bg{
+        background:linear-gradient(#00b894,#6c8aac);
+    }
+    .iotPlatformContainer{
+        height: fit-content;
+        width: 100%;
+        display: grid;
+    }
+    .support{
+    height: 300px;
+    width: 90%;
     }
 }
