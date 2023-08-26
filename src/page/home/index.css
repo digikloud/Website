@@ -618,6 +618,9 @@
   .footer_icon_nav_link ,.footer_address {
     font-size: 14px;
   }
+  .footer_dashboard_links > h6{
+    margin-top: 10px;
+  }
 /* .dashboard_image_slider{
   width: 100%;
   display: flex;

@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../page/home/navbar";
 import "./product.css";
 import { Button, Grid, Stack, Typography } from "@mui/material";
-// import prod from "../assets/Product/product01.gif";
+import prod from "../assets/Product/product_home.mp4";
 
 function Product() {
   return (
@@ -10,6 +10,20 @@ function Product() {
       <Navbar />
       <section className="product_homepage">
         <article>
+        <video
+         className="prod_page_video"
+         muted autoPlay loop
+              // height="300px"
+              // width="300px"
+              // controls
+              // style={{ borderRadius: "10px" }}
+            >
+              <source
+                src={prod}
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
           {/* <img src="" className="prod_page_video" /> */}
           <header className="product_top_innertext">
             <Stack
@@ -118,3 +132,50 @@ function Product() {
   );
 }
 export default Product;
+
+// import React from "react";
+// import Navbar from "../page/home/navbar";
+// import "./product.css";
+// import { Button, Grid, Stack, Typography } from "@mui/material";
+// import prod from "../assets/Product/product_home.mp4";
+// function Product(){
+//   return (
+//     <>
+//     <Navbar />
+//     <section className="product_homepage">
+//         <article>
+//           <video className="prod_page_video" muted autoPlay loop>
+//             <source src={prod} type="video/mp4" />
+//             Your browser does not support the video tag.
+//           </video>
+//           <header className="product_top_innertext">
+//             <Stack
+//               direction="column"
+//               justifyContent="center"
+//               alignItems="center"
+//               spacing={6}
+//             >
+//               <Typography variant="h1">ThingsKloud</Typography>
+//               <Typography variant="h3">
+//                 Open-source IoT Platform Simplified device handling, data
+//                 compilation, data analysis, and graphical representation to
+//                 empower your IoT solution
+//               </Typography>
+//               <Button
+//                 style={{
+//                   borderRadius: 10,
+//                   backgroundColor: "#00b894",
+//                   color: "white",
+//                   fontSize: "18px",
+//                 }}
+//               >
+//                 Learn More
+//               </Button>
+//             </Stack>
+//           </header>
+//         </article>
+//       </section>
+//     </>
+//   )
+// }
+// export default Product;
