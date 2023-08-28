@@ -233,7 +233,7 @@ nav > a , .content > a , .menu > a {
   color: #00b894;
   width: 220px;
   padding: 0 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .dropdown>.menu>a:hover {

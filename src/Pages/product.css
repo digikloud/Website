@@ -66,7 +66,7 @@
     }
     .product_top_innertext {
         position: absolute;
-        top: 40%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
