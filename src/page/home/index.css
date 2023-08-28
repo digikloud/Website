@@ -87,6 +87,8 @@
 .footer_icon_nav_link {
   color: white;
   display: flex;
+  font-size: 18px;
+  font-weight: 0 !important;
 }
 
 .footer_icon_nav_link:hover {

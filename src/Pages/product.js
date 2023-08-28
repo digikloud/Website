@@ -3,6 +3,11 @@ import Navbar from "../page/home/navbar";
 import "./product.css";
 import { Button, Grid, Stack, Typography } from "@mui/material";
 import prod from "../assets/Product/product_home.mp4";
+import prod01 from "../assets/Product/prod01.webp";
+import prod02 from "../assets/Product/prod02.webp";
+import prod03 from "../assets/Product/prod03.webp";
+import prod04 from "../assets/Product/prod04.webp";
+import Footer from "../page/home/Footer";
 
 function Product() {
   return (
@@ -13,10 +18,6 @@ function Product() {
         <video
          className="prod_page_video"
          muted autoPlay loop
-              // height="300px"
-              // width="300px"
-              // controls
-              // style={{ borderRadius: "10px" }}
             >
               <source
                 src={prod}
@@ -24,14 +25,13 @@ function Product() {
               />
               Your browser does not support the video tag.
             </video>
-          {/* <img src="" className="prod_page_video" /> */}
           <header className="product_top_innertext">
-            <Stack
+            {/* <Stack
               direction="column"
               justifyContent="center"
               alignItems="center"
               spacing={6}
-            >
+            > */}
               <Typography variant="h1">ThingsKloud</Typography>
               <Typography variant="h3">
                 Open-source IoT Platform Simplified device handling, data
@@ -48,14 +48,17 @@ function Product() {
               >
                 Learn More
               </Button>
-            </Stack>
+            {/* </Stack> */}
           </header>
         </article>
       </section>
       <section className="productpagecontainer">
         <article className="thingskloud_info">
-          <Typography variant="p">
-            Empower your IoT solution with the versatility of Thingskloud. Our
+          <Typography variant="h3" className="highlight_text">
+          Empower your IoT solution with the versatility of Thingskloud
+          </Typography>
+          <Typography variant="h6">
+            Our
             platform enables effortless device connectivity through widely
             recognized IoT protocols, including MQTT, CoAP, and HTTP. With
             support for both cloud and on-premises deployments, Thingskloud
@@ -77,11 +80,16 @@ function Product() {
               creating a seamless IoT ecosystem.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}></Grid>
+          <Grid item xs={12} md={6} lg={6}>
+            <img src={prod01} className="product_image"/>
+          </Grid>
         </Grid>
       </section>
       <section className="productpagecontainer">
         <Grid container className="product_deails">
+        <Grid item xs={12} md={6} lg={6}>
+          <img src={prod03} className="product_image" />
+          </Grid>
           <Grid item xs={12} md={6} lg={6}>
             <h1 className="typography_heading">
               Data at Your Fingertips with Thingskloud
@@ -92,7 +100,7 @@ function Product() {
               empowering you with the information you need.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}></Grid>
+          
         </Grid>
       </section>
       <section className="productpagecontainer">
@@ -109,11 +117,16 @@ function Product() {
               insights.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}></Grid>
+          <Grid item xs={12} md={6} lg={6}>
+          <img src={prod02} className="product_image" />
+          </Grid>
         </Grid>
       </section>
       <section className="productpagecontainer">
         <Grid container className="product_deails">
+        <Grid item xs={12} md={6} lg={6}>
+          <img src={prod04} className="product_image" />
+          </Grid>
           <Grid item xs={12} md={6} lg={6}>
             <h1 className="typography_heading">IoT Rule Engine</h1>
             <Typography variant="p">
@@ -122,60 +135,11 @@ function Product() {
               precisely match your application's unique requirements.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}></Grid>
+         
         </Grid>
       </section>
-      <section className="productpagecontainer">
-        <Grid item xs={12} md={6} lg={6}></Grid>
-      </section>
+      <Footer />
     </>
   );
 }
 export default Product;
-
-// import React from "react";
-// import Navbar from "../page/home/navbar";
-// import "./product.css";
-// import { Button, Grid, Stack, Typography } from "@mui/material";
-// import prod from "../assets/Product/product_home.mp4";
-// function Product(){
-//   return (
-//     <>
-//     <Navbar />
-//     <section className="product_homepage">
-//         <article>
-//           <video className="prod_page_video" muted autoPlay loop>
-//             <source src={prod} type="video/mp4" />
-//             Your browser does not support the video tag.
-//           </video>
-//           <header className="product_top_innertext">
-//             <Stack
-//               direction="column"
-//               justifyContent="center"
-//               alignItems="center"
-//               spacing={6}
-//             >
-//               <Typography variant="h1">ThingsKloud</Typography>
-//               <Typography variant="h3">
-//                 Open-source IoT Platform Simplified device handling, data
-//                 compilation, data analysis, and graphical representation to
-//                 empower your IoT solution
-//               </Typography>
-//               <Button
-//                 style={{
-//                   borderRadius: 10,
-//                   backgroundColor: "#00b894",
-//                   color: "white",
-//                   fontSize: "18px",
-//                 }}
-//               >
-//                 Learn More
-//               </Button>
-//             </Stack>
-//           </header>
-//         </article>
-//       </section>
-//     </>
-//   )
-// }
-// export default Product;

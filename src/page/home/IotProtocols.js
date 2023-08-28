@@ -86,8 +86,7 @@ function ProtocolsHome() {
                           variant="h6"
                           className="flipcard_back_content"
                         >
-                          Unleash the Potential of Long-Range IoT with LoRaWAN
-                          Connectivity
+                         {img.info}
                         </Typography>
                       </div>
                     </div>

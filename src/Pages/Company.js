@@ -5,6 +5,7 @@ import "./company.css";
 import consultation from "../assets/CompanyPage/consultation.png";
 import maintenance from "../assets/CompanyPage/maintanence.png";
 import innovation from "../assets/CompanyPage/innovation.png";
+import video from "../assets/CompanyPage/Digikloud Systems (1).mp4";
 import Footer from "../page/home/Footer";
 
 function Company() {
@@ -38,13 +39,15 @@ function Company() {
           </Grid>
           <Grid item md={6} xs={12} className="companyVideo">
             <video
-              height="300px"
-              width="300px"
+              // height="300px"
+              // width="100%"
+              className="compny_video_ref"
               controls
               style={{ borderRadius: "10px" }}
             >
               <source
-                src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/Digikloud+Systems.mp4"
+              src={video}
+                // src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/Digikloud+Systems.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.
@@ -70,72 +73,6 @@ function Company() {
         </Grid>
         <Grid container className="companyPagecontainer vision_bg">
           <section className="comapny_vision_platform_container">
-            {/* <article className="iotPlatformContainer"> */}
-            {/* <Grid item md={12} xs={12}>
-                <h1
-                  className="typography_heading_solution"
-                  style={{ color: "white" }}
-                >
-                  Why Choose Our IoT Platform?
-                </h1>
-                <div className="content_text">
-                  <h3 className="homepageSubhead" style={{ color: "white" }}>
-                    At Digikloud, we understand that selecting the right IoT
-                    platform is a critical decision.Beyond providing a platform,
-                    we offer comprehensive support throughout your IoT journey.
-                    From consultation and implementation to monitoring and
-                    continuous innovation, we're here for you every step of the
-                    way..
-                  </h3>
-                </div>
-              </Grid> */}
-            {/* <Grid item xs={12} md={12} className="company_platform_container">
-                
-                <Grid item xs={12} md={4} lg={4} className="company_platform">
-                  
-                  <div className="inner_head">
-                    <Avatar>01</Avatar>
-                    <Typography variant="h6">Data-Driven Insights</Typography>
-                  </div>
-                  <div className="text">
-                    <Typography variant="p">
-                      Write here a key feature of the app or software that is
-                      being advertised here.
-                    </Typography>
-                  </div>
-                </Grid>
-                <Grid item xs={12} md={4} lg={4} className="company_platform">
-                  <div className="inner_head">
-                    <Avatar>02</Avatar>
-                    <Typography variant="h6">
-                      Scalability and Security
-                    </Typography>
-                  </div>
-                  <div className="text">
-                    <Typography variant="p">
-                      Write here a key feature of the app or software that is
-                      being advertised here.
-                    </Typography>
-                  </div>
-                </Grid>
-
-                <Grid item xs={12} md={4} lg={4} className="company_platform">
-                  <div className="inner_head">
-                    <Avatar>03</Avatar>
-                    <Typography variant="h6">
-                      Cross-Industry Expertise
-                    </Typography>
-                  </div>
-                  <div className="text">
-                    <Typography variant="p">
-                      Write here a key feature of the app or software that is
-                      being advertised here.
-                    </Typography>
-                  </div>
-                </Grid>
-              </Grid> */}
-
-            {/* </article> */}
             <article className="iotPlatformContainer">
               <Grid item xs={12} md={12}>
                 <h1 className="typography_heading" style={{ color: "white" }}>
@@ -158,8 +95,9 @@ function Company() {
                   </div>
                   <div className="text">
                     <Typography variant="p">
-                      Write here a key feature of the app or software that is
-                      being advertised here.
+                      IoT devices are interconnected smart devices embedded with
+                      sensors, software, and other technologies that enable them
+                      to collect and exchange data over the internet.
                     </Typography>
                   </div>
                 </div>
@@ -172,8 +110,10 @@ function Company() {
                   </div>
                   <div className="text">
                     <Typography variant="p">
-                      Write here a key feature of the app or software that is
-                      being advertised here.
+                      Implement strong authentication mechanisms to ensure that
+                      only authorized devices can access the network and data.
+                      This can involve using unique device identifiers, secure
+                      keys, and certificates.
                     </Typography>
                   </div>
                 </div>
@@ -186,8 +126,11 @@ function Company() {
                   </div>
                   <div className="text">
                     <Typography variant="p">
-                      Write here a key feature of the app or software that is
-                      being advertised here.
+                      {/* Ideas that have been successful in one industry can
+                      inspire innovative solutions in others.  */}
+                      Cross-industry expertise encourages the transfer of ideas,
+                      technologies, and best practices that can lead to
+                      breakthroughs and advancements.
                     </Typography>
                   </div>
                 </div>
@@ -239,18 +182,70 @@ function Company() {
           </section>
         </Grid>
         <Grid container className="company_page_detail company_top01">
-          <Grid item md={6} xs={12}>
+          <Grid item md={12} xs={12}>
             <h1 className="typography_heading_solution">Our Promise</h1>
             <div className="content_text">
+              <article>
               <Typography variant="p">
-                At Digikloud, we understand that navigating the IoT landscape
-                can be complex. That's why we provide end-to-end support to
-                guide you through every step of your IoT journey
+                We don't just provide solutions; we provide a partnership. From
+                the conceptualization stage to implementation, and from
+                deployment to ongoing management, our end-to-end support ensures
+                that you're never alone in your IoT journey. Our team of experts
+                will be there to address your questions, provide guidance, and
+                offer solutions tailored to your specific needs.
               </Typography>
+              </article>
+             <article>
+             <Typography variant="p">
+                We understand that every organization's IoT needs are unique.
+                Our approach is not one-size-fits-all. Instead, we collaborate
+                closely with you to understand your objectives, challenges, and
+                requirements. This allows us to craft customized IoT solutions
+                that align with your goals and drive meaningful results.
+              </Typography>
+             </article>
             </div>
           </Grid>
-          <Grid item md={6} xs={12} className="companyVideo">
-            <section className="support">
+          <Grid item md={12} xs={12} className="promise_image_container">
+          <div className="support_info">
+              {/* <Typography variant="h1">50+</Typography> */}
+              {/* <article className=""> */}
+              <img
+                  src={consultation}
+                  alt="consultation"
+                  height="50px"
+                  width="50px"
+                />
+              <Typography variant="h6" >
+                Consultation
+              </Typography>
+              {/* </article> */}
+            </div>
+            <div className="support_info">
+              {/* <Typography variant="h1">200+</Typography> */}
+              <img
+                  src={maintenance}
+                  alt="maintanence"
+                  height="50px"
+                  width="50px"
+                />
+              <Typography variant="h6" >
+                 Monitoring and Maintenance
+              </Typography>
+            </div>
+            <div className="support_info">
+              {/* <Typography variant="h1">1000+</Typography> */}
+              <img
+                  src={innovation}
+                  alt="innovation"
+                  height="50px"
+                  width="50px"
+                />
+              <Typography variant="h6" >
+              Continuous Innovation
+              </Typography>
+            </div>
+            {/* <section className="support">
               <article className="support_info">
                 <Typography variant="h6">Consultation</Typography>
                 <img
@@ -262,13 +257,23 @@ function Company() {
               </article>
               <article className="support_info">
                 <Typography variant="h6">Monitoring and Maintenance</Typography>
-                <img src={maintenance} height="50px" width="50px" />
+                <img
+                  src={maintenance}
+                  alt="maintanence"
+                  height="50px"
+                  width="50px"
+                />
               </article>
               <article className="support_info">
                 <Typography variant="h6">Continuous Innovation</Typography>
-                <img src={innovation} height="50px" width="50px" />
+                <img
+                  src={innovation}
+                  alt="innovation"
+                  height="50px"
+                  width="50px"
+                />
               </article>
-            </section>
+            </section> */}
           </Grid>
         </Grid>
         <Grid container className="company_page_detail company_top01">
