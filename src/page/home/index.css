@@ -87,7 +87,7 @@
 .footer_icon_nav_link {
   color: white;
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 0 !important;
 }
 
@@ -372,33 +372,63 @@
 
 .contact_us_page {
   width: 80% !important;
-  height: 600px;
-  padding: 0 100px;
-  margin-bottom: 100px;
+  height: 100vh;
+  /* padding: 0 100px; */
+  /* position: relative; */
+  /* padding-bottom: 30px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 100px; */
+  /* background-color: red; */
 }
 
-.contact_us_form {
-  background-color: white;
-  border-radius: 20px;
-  padding: 0;
-  padding-bottom: 50px;
-  border-bottom: 10px;
+.contact_us_page{
+  width: 80% !important;
+  display: flex;
+  /* height: 100vh; */
 }
+.contact_us_top_container{
+  /* height: 25vh; */
+  padding: 20px 0px;
+  text-align: center;
+}
+.contact_us_bottom_container{
+  /* height: 75vh; */
+  /* background: red; */
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+/* .contact_us_form { */
+  /* position: absolute; */
+  /* top: 10; */
+  /* background-color: white; */
+  
+ 
+  /* padding: 0; */
+  /* padding-bottom: 50px;
+  border-bottom: 10px; */
+  /* width: 80% !important; */
+/* } */
 
 .test {
   height: 100%;
-  width: 80%;
+  width: 50%;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .contactusFormLabel {
   width: 100%;
   font-size: 16px;
   padding-left: 10px;
+  /* background: red; */
 }
 
 .bookDemoContainer {
@@ -521,7 +551,9 @@
     object-fit: cover;
     object-position: center;
   }
-
+  .test{
+    width: 100%;
+  }
   .background_nav {
     position: relative;
     min-height: 0;

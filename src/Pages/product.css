@@ -11,7 +11,7 @@
 
 .product_top_innertext {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -22,11 +22,16 @@
     width: 70%;
     color: #ffffff;
 }
+.product_image{
+    height: 300px;
+    width: 400px;
+}
 
 .productpagecontainer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #f4f7f9;
 }
 .product_deails {
     width: 90% !important;
@@ -49,6 +54,12 @@
 .highlight_text {
     color: #00b894;
     padding: 10px;
+}
+.product_images_container{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width : 600px) {

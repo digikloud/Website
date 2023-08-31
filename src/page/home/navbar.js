@@ -32,12 +32,12 @@ function Navbar() {
   const [anchorElIoT, setanchorElIoT] = useState(null);
   const open = Boolean(anchorEl);
   const iotopen = Boolean(anchorElIoT);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClick1 = (event) => {
-    setanchorElIoT(event.currentTarget);
-  };
+  // const handleClick = (event) => {
+  //   setAnchorEl(event.currentTarget);
+  // };
+  // const handleClick1 = (event) => {
+  //   setanchorElIoT(event.currentTarget);
+  // };
   const handleClose = () => {
     setAnchorEl(null);
     setanchorElIoT(null);
@@ -103,10 +103,18 @@ function Navbar() {
     },
   ];
 
-  const company = () => {
-    navigate("/company");
-    window.scrollTo(0, 0);
-  };
+  const product = [
+    {
+      id : 1 ,
+      title : "Thingskloud" ,
+      click : "/product"
+    }
+  ]
+
+  // const contactus = () => {
+  //   navigate("/contact-us");
+  //   window.scrollTo(0, 0);
+  // };
 
   useEffect(() => {
     const home = () => {
@@ -125,15 +133,30 @@ function Navbar() {
           <img src={digikloud} alt="iot company name" width="200px" id="logo" />
         </div>
         <nav ref={navRef}>
-          <Link
-            underline="none"
-            to="/product"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-          >
-            Product
-          </Link>
+          <div className="dropdown">
+            <div className="content">
+              <Link underline="none" to="#">
+              Product
+              </Link>
+            </div>
+            <button type="button"></button>
+            <div className="menu">
+              {product.map((solution, id) => {
+                return (
+                  <Link
+                    underline="none"
+                    to={solution.click}
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                    }}
+                    key={solution.id}
+                  >
+                    {solution.title}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
           <div className="dropdown">
             <div className="content">
               <Link underline="none" to="#">
@@ -177,15 +200,6 @@ function Navbar() {
             <div className="menu">
               {iotdashboards.map((solution, id) => {
                 return (
-                  // <Link
-                  //   to={solution.click}
-                  //   onClick={() => {
-                  //     window.scrollTo(0, 0);
-                  //   }}
-                  //   key={solution.id}
-                  // >
-                  //   {solution.title}
-                  // </Link>
                   <Link
                     underline="none"
                     to={solution.click}
@@ -211,7 +225,7 @@ function Navbar() {
           </Link>
           <Link
             underline="none"
-            to="#"
+            to="/contact-us"
             onClick={() => {
               window.scrollTo(0, 0);
             }}

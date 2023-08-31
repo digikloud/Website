@@ -68,7 +68,7 @@ function Product() {
         </article>
       </section>
       <section className="productpagecontainer">
-        <Grid container className="product_deails">
+        <Grid container className="product_deails" >
           <Grid item xs={12} md={6} lg={6}>
             <h1 className="typography_heading">
               Provision and Manage Devices and Assets with Ease
@@ -80,14 +80,14 @@ function Product() {
               creating a seamless IoT ecosystem.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={6} lg={6}  className="product_images_container">
             <img src={prod01} className="product_image"/>
           </Grid>
         </Grid>
       </section>
       <section className="productpagecontainer">
-        <Grid container className="product_deails">
-        <Grid item xs={12} md={6} lg={6}>
+        <Grid container className="product_deails" >
+        <Grid item xs={12} md={6} lg={6} className="product_images_container" >
           <img src={prod03} className="product_image" />
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
@@ -104,8 +104,8 @@ function Product() {
         </Grid>
       </section>
       <section className="productpagecontainer">
-        <Grid container className="product_deails">
-          <Grid item xs={12} md={6} lg={6}>
+        <Grid container className="product_deails" >
+          <Grid item xs={12} md={6} lg={6} >
             <h1 className="typography_heading">
               Data Processing and Intelligent Reaction with Thingskloud
             </h1>
@@ -117,14 +117,14 @@ function Product() {
               insights.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={6} lg={6} className="product_images_container" >
           <img src={prod02} className="product_image" />
           </Grid>
         </Grid>
       </section>
       <section className="productpagecontainer">
-        <Grid container className="product_deails">
-        <Grid item xs={12} md={6} lg={6}>
+        <Grid container className="product_deails" >
+        <Grid item xs={12} md={6} lg={6} className="product_images_container">
           <img src={prod04} className="product_image" />
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
