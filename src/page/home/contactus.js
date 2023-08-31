@@ -251,7 +251,7 @@ function ContactUs() {
             </h3>
           </Grid>
           <Grid item xs={12} className="contact_us_bottom_container">
-            <form onSubmit={formik.handleSubmit} className="test">
+            <form onSubmit={formik.handleSubmit} className="test contact_us_page_form">
               {/* <label className="contactusFormLabel">Name</label>
               <TextField
                 variant="outlined"
