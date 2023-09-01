@@ -13,6 +13,7 @@ import ProtocolsHome from "./IotProtocols";
 import Bookdemo from "./bookdemo";
 import { Helmet } from "react-helmet";
 import Dashboard from "./dashboard";
+import { Fade } from "react-awesome-reveal";
 
 function HomeIndex() {
   return (
@@ -42,9 +43,12 @@ function HomeIndex() {
           loop
         />
         <header className="home_top_innertext">
-            <Typography variant="h1">
-              IoT Solutions that Transform your Business
-            </Typography>
+          
+          <Fade down>
+          <Typography variant="h1">
+            IoT Solutions that Transform your Business
+          </Typography>
+          </Fade>
         </header>
       </section>
 
