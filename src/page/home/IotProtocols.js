@@ -1,6 +1,6 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import React from "react";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 
 function ProtocolsHome() {
   const data = [
@@ -40,7 +40,7 @@ function ProtocolsHome() {
     <article className="homeContainer">
       <Grid container className="iotProtocols">
         <Grid item xs={12} md={12} lg={12}>
-          <Fade bottom>
+          {/* <Fade bottom> */}
             <h1 className="typography_heading">Supported IoT protocols</h1>
             <h3 className="homepageSubhead">
               Seamless Connectivity, Boundless Possibilities
@@ -57,9 +57,9 @@ function ProtocolsHome() {
                 seamless integration between devices and applications.
               </Typography>
             </div>
-          </Fade>
+          {/* </Fade> */}
           <div className="Dashboadrhomepagediv">
-            <Fade bottom duration={2000}>
+            {/* <Fade bottom duration={2000}> */}
               <div className="Dashboadrhomecardlayout">
                 {data.map((img, id) => {
                   return (
@@ -90,7 +90,7 @@ function ProtocolsHome() {
                   );
                 })}
               </div>
-            </Fade>
+            {/* </Fade> */}
           </div>
         </Grid>
       </Grid>

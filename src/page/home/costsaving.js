@@ -1,14 +1,14 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import cost from "../../assets/cost saving insight.png";
-import Slide from "react-reveal/Slide";
+// import Slide from "react-reveal/Slide";
 
 function Costsaving() {
   return (
     <article className="homeContainer">
       <Grid container className="costSaving">
         <Grid item xs={12} md={6}>
-          <Slide left>
+          {/* <Slide left> */}
             <h1 className="typography_heading">Cost-Saving Insights</h1>
             <h3 className="homepageSubhead">
               Minimize Downtimes, Optimize Operations with IoT Analytics
@@ -23,17 +23,17 @@ function Costsaving() {
                 and gain a competitive edge.
               </Typography>
             </article>
-          </Slide>
+          {/* </Slide> */}
         </Grid>
         <Grid item xs={12} md={6} className="costsaving_content_image">
-          <Slide right>
+          {/* <Slide right> */}
             <img
               src={cost}
               alt="iot costsaving_image"
               height="300px"
               width="300px"
             />
-          </Slide>
+          {/* </Slide> */}
         </Grid>
       </Grid>
     </article>

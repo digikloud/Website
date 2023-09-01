@@ -1,23 +1,23 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import analyze from "../../assets/analyze.png";
-import Slide from "react-reveal/Slide";
+// import Slide from "react-reveal/Slide";
 
 function Analyzehome() {
   return (
     <article className="homeContainer">
       <Grid container className="analyzehome">
         <Grid item xs={12} md={6}>
-          <Slide left>
+          {/* <Slide left> */}
             <h1 className="typography_heading">Uncover, Analyze, Optimize</h1>
             <h3 className="homepageSubhead">
               Extracting Actionable Insights from Raw Data
             </h3>
             <img src={analyze} alt="iot analyze" className="homeAboutImages" />
-          </Slide>
+          {/* </Slide> */}
         </Grid>
         <Grid item xs={12} md={6} className="analyze_content">
-          <Slide right>
+          {/* <Slide right> */}
             <Typography variant="p" align="justify">
               The Internet of Things (IoT) has revolutionized the way businesses
               operate, providing unprecedented connectivity and data-driven
@@ -31,7 +31,7 @@ function Analyzehome() {
               <li>Real-time data collection and integration</li>
               <li>Improving resource allocation and cost efficiency</li>
             </ul>
-          </Slide>
+          {/* </Slide> */}
         </Grid>
       </Grid>
     </article>
