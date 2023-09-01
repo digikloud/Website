@@ -8,6 +8,7 @@ import occupancy from "../../assets/occupancy management.png";
 import { useNavigate } from "react-router";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import "../../components/imageSlider.css";
+import { Fade } from "react-awesome-reveal";
 
 function Dashboadrhomepage() {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ function Dashboadrhomepage() {
     <article className="homeContainer">
       <Grid container className="Dashboadrhomepage">
         <Grid item xs={12} md={12}>
+          <Fade direction="up" triggerOnce={true} duration={2000}>
           <h1 className="typography_heading">
             Harness IoT to aggregate data from every asset
           </h1>
@@ -27,7 +29,9 @@ function Dashboadrhomepage() {
               making,optimization,andefficiency improvements.
             </Typography>
           </div>
+          </Fade>
           <div className="Dashboadrhomepagediv">
+          <Fade direction="up" triggerOnce={true} duration={1500}>
             <div className="Dashboadrhomecardlayout">
               <div className="Dashboadrhomecard" mt={"10px"}>
                 <img
@@ -106,6 +110,7 @@ function Dashboadrhomepage() {
                 <ArrowForwardIcon />
               </div>
             </div>
+            </Fade>
           </div>
         </Grid>
       </Grid>

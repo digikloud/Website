@@ -43,7 +43,7 @@ function HomeIndex() {
           loop
         />
         <header className="home_top_innertext">
-          <Fade direction="up" duration={2000}>
+          <Fade direction="up" duration={2000} triggerOnce={true}>
             <Typography variant="h1">
               IoT Solutions that Transform your Business
             </Typography>

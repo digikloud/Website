@@ -179,10 +179,12 @@
 }
 
 .homeAboutImages {
-  /* height: 400px;
-  width: 400px; */
   height: 80%;
   width: 80%;
+}
+.homeAboutImages01{
+  height: 100%;
+  width: 100%;
 }
 
 .homeContainer {
@@ -198,7 +200,7 @@
 }
 
 .projectcard {
-  width: 33%;
+  width: 103%;
   text-align: center;
   /* padding: 15px; */
 }
