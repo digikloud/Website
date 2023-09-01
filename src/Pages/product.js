@@ -33,7 +33,7 @@ function Product() {
               spacing={6}
             > */}
               <Typography variant="h1">ThingsKloud</Typography>
-              <Typography variant="h3">
+              <Typography variant="h3" style={{textAlign :'center'}}>
                 Open-source IoT Platform Simplified device handling, data
                 compilation, data analysis, and graphical representation to
                 empower your IoT solution

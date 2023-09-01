@@ -39,17 +39,11 @@ function Company() {
           </Grid>
           <Grid item md={6} xs={12} className="companyVideo">
             <video
-              // height="300px"
-              // width="100%"
               className="compny_video_ref"
               controls
               style={{ borderRadius: "10px" }}
             >
-              <source
-              src={video}
-                // src="https://digikloudwebsite.s3.ap-south-1.amazonaws.com/Digikloud+Systems.mp4"
-                type="video/mp4"
-              />
+              <source src={video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Grid>
@@ -126,8 +120,6 @@ function Company() {
                   </div>
                   <div className="text">
                     <Typography variant="p">
-                      {/* Ideas that have been successful in one industry can
-                      inspire innovative solutions in others.  */}
                       Cross-industry expertise encourages the transfer of ideas,
                       technologies, and best practices that can lead to
                       breakthroughs and advancements.
@@ -186,94 +178,55 @@ function Company() {
             <h1 className="typography_heading_solution">Our Promise</h1>
             <div className="content_text">
               <article>
-              <Typography variant="p">
-                We don't just provide solutions; we provide a partnership. From
-                the conceptualization stage to implementation, and from
-                deployment to ongoing management, our end-to-end support ensures
-                that you're never alone in your IoT journey. Our team of experts
-                will be there to address your questions, provide guidance, and
-                offer solutions tailored to your specific needs.
-              </Typography>
+                <Typography variant="p">
+                  We don't just provide solutions; we provide a partnership.
+                  From the conceptualization stage to implementation, and from
+                  deployment to ongoing management, our end-to-end support
+                  ensures that you're never alone in your IoT journey. Our team
+                  of experts will be there to address your questions, provide
+                  guidance, and offer solutions tailored to your specific needs.
+                </Typography>
               </article>
-             <article>
-             <Typography variant="p">
-                We understand that every organization's IoT needs are unique.
-                Our approach is not one-size-fits-all. Instead, we collaborate
-                closely with you to understand your objectives, challenges, and
-                requirements. This allows us to craft customized IoT solutions
-                that align with your goals and drive meaningful results.
-              </Typography>
-             </article>
+              <article>
+                <Typography variant="p">
+                  We understand that every organization's IoT needs are unique.
+                  Our approach is not one-size-fits-all. Instead, we collaborate
+                  closely with you to understand your objectives, challenges,
+                  and requirements. This allows us to craft customized IoT
+                  solutions that align with your goals and drive meaningful
+                  results.
+                </Typography>
+              </article>
             </div>
           </Grid>
           <Grid item md={12} xs={12} className="promise_image_container">
-          <div className="support_info">
-              {/* <Typography variant="h1">50+</Typography> */}
-              {/* <article className=""> */}
+            <div className="support_info">
               <img
-                  src={consultation}
-                  alt="consultation"
-                  height="50px"
-                  width="50px"
-                />
-              <Typography variant="h6" >
-                Consultation
-              </Typography>
-              {/* </article> */}
+                src={consultation}
+                alt="consultation"
+                height="50px"
+                width="50px"
+              />
+              <Typography variant="h6">Consultation</Typography>
             </div>
             <div className="support_info">
-              {/* <Typography variant="h1">200+</Typography> */}
               <img
-                  src={maintenance}
-                  alt="maintanence"
-                  height="50px"
-                  width="50px"
-                />
-              <Typography variant="h6" >
-                 Monitoring and Maintenance
-              </Typography>
+                src={maintenance}
+                alt="maintanence"
+                height="50px"
+                width="50px"
+              />
+              <Typography variant="h6">Monitoring and Maintenance</Typography>
             </div>
             <div className="support_info">
-              {/* <Typography variant="h1">1000+</Typography> */}
               <img
-                  src={innovation}
-                  alt="innovation"
-                  height="50px"
-                  width="50px"
-                />
-              <Typography variant="h6" >
-              Continuous Innovation
-              </Typography>
+                src={innovation}
+                alt="innovation"
+                height="50px"
+                width="50px"
+              />
+              <Typography variant="h6">Continuous Innovation</Typography>
             </div>
-            {/* <section className="support">
-              <article className="support_info">
-                <Typography variant="h6">Consultation</Typography>
-                <img
-                  src={consultation}
-                  alt="consultation"
-                  height="50px"
-                  width="50px"
-                />
-              </article>
-              <article className="support_info">
-                <Typography variant="h6">Monitoring and Maintenance</Typography>
-                <img
-                  src={maintenance}
-                  alt="maintanence"
-                  height="50px"
-                  width="50px"
-                />
-              </article>
-              <article className="support_info">
-                <Typography variant="h6">Continuous Innovation</Typography>
-                <img
-                  src={innovation}
-                  alt="innovation"
-                  height="50px"
-                  width="50px"
-                />
-              </article>
-            </section> */}
           </Grid>
         </Grid>
         <Grid container className="company_page_detail company_top01">
