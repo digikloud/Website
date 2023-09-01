@@ -14,7 +14,7 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import image from "../../assets/bookdemoImg.webp";
-// import Slide from "react-reveal/Slide";
+
 
 function Bookdemo() {
   const [open, setOpen] = React.useState(false);
@@ -78,16 +78,13 @@ function Bookdemo() {
     <article className="homeContainer">
       <Grid container className="bookDemoContainer">
         <Grid item xs={12} md={6} className="costsaving_content_image">
-          {/* <Slide left> */}
             <img
               src={image}
               alt="iot_bookedemo_image"
               className="bookdemo_image"
             />
-          {/* </Slide> */}
         </Grid>
         <Grid item xs={12} md={6} className="bookdemo_content">
-          {/* <Slide right> */}
             <h1 className="typography_heading">
               Ready to Create Something Extraordinary ?
             </h1>
@@ -109,7 +106,6 @@ function Bookdemo() {
             >
               Book Demo
             </Button>
-          {/* </Slide> */}
         </Grid>
       </Grid>
       <Dialog

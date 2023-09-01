@@ -1,6 +1,5 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import React from "react";
-// import Fade from "react-reveal/Fade";
 
 function ProtocolsHome() {
   const data = [
@@ -40,57 +39,53 @@ function ProtocolsHome() {
     <article className="homeContainer">
       <Grid container className="iotProtocols">
         <Grid item xs={12} md={12} lg={12}>
-          {/* <Fade bottom> */}
-            <h1 className="typography_heading">Supported IoT protocols</h1>
-            <h3 className="homepageSubhead">
-              Seamless Connectivity, Boundless Possibilities
-            </h3>
-            <div className="content_text">
-              <Typography variant="p" align="justify">
-                At DiGiKloud, we specialize in delivering cutting-edge Internet
-                of Things (IoT) solutions that empower businesses and
-                individuals to succeed in an interconnected world. With our
-                expertise and commitment to staying at the forefront of
-                technology, we support a range of industry-leading IoT
-                protocols. These protocols serve as the foundation of our IoT
-                ecosystem, facilitating smooth communication, data exchange, and
-                seamless integration between devices and applications.
-              </Typography>
-            </div>
-          {/* </Fade> */}
+          <h1 className="typography_heading">Supported IoT protocols</h1>
+          <h3 className="homepageSubhead">
+            Seamless Connectivity, Boundless Possibilities
+          </h3>
+          <div className="content_text">
+            <Typography variant="p" align="justify">
+              At DiGiKloud, we specialize in delivering cutting-edge Internet of
+              Things (IoT) solutions that empower businesses and individuals to
+              succeed in an interconnected world. With our expertise and
+              commitment to staying at the forefront of technology, we support a
+              range of industry-leading IoT protocols. These protocols serve as
+              the foundation of our IoT ecosystem, facilitating smooth
+              communication, data exchange, and seamless integration between
+              devices and applications.
+            </Typography>
+          </div>
           <div className="Dashboadrhomepagediv">
-            {/* <Fade bottom duration={2000}> */}
-              <div className="Dashboadrhomecardlayout">
-                {data.map((img, id) => {
-                  return (
-                    <div className="card" key={img.id}>
-                      <div className="front">
-                        <div className="logoFlip">
-                          <Stack direction="row">
-                            <img
-                              src={img.img}
-                              alt={img.title}
-                              className="img_flipCard"
-                            />
-                          </Stack>
-                          <Typography variant="h6" className="flipCard_subhead">
-                            {img.title}
-                          </Typography>
-                        </div>
-                      </div>
-                      <div className="back">
-                        <Typography
-                          variant="h6"
-                          className="flipcard_back_content"
-                        >
-                          {img.info}
+            <div className="Dashboadrhomecardlayout">
+              {data.map((img, id) => {
+                return (
+                  <div className="card" key={img.id}>
+                    <div className="front">
+                      <div className="logoFlip">
+                        <Stack direction="row">
+                          <img
+                            src={img.img}
+                            alt={img.title}
+                            className="img_flipCard"
+                          />
+                        </Stack>
+                        <Typography variant="h6" className="flipCard_subhead">
+                          {img.title}
                         </Typography>
                       </div>
                     </div>
-                  );
-                })}
-              </div>
-            {/* </Fade> */}
+                    <div className="back">
+                      <Typography
+                        variant="h6"
+                        className="flipcard_back_content"
+                      >
+                        {img.info}
+                      </Typography>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </Grid>
       </Grid>

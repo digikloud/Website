@@ -1,15 +1,12 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import resilence from "../../assets/Home Page/resilence_in_iot.png";
-// import Slide from "react-reveal/Slide";
-// import Fade from "react-reveal/Fade";
 
 function HomeAbout() {
   return (
     <article className="homeContainer">
       <Grid container className="HomeAbout">
         <Grid item xs={12} md={6}>
-          {/* <Slide left> */}
             <h1 className="typography_heading">
               Resilience in IoT platform for your Business
             </h1>
@@ -24,15 +21,11 @@ function HomeAbout() {
                 enabling long-term success.
               </Typography>
             </article>
-          {/* </Slide> */}
         </Grid>
         <Grid item xs={12} md={6} className="home_content_image">
-          {/* <Slide right> */}
             <img src={resilence} alt="Digikloud" className="homeAboutImages" />
-          {/* </Slide> */}
         </Grid>
         <Grid item xs={12} md={12} className="projects_data">
-          {/* <Fade bottom> */}
             <div className="projectcard">
               <Typography variant="h1">50+</Typography>
               <Typography variant="body" className="homepageSubhead">
@@ -51,7 +44,6 @@ function HomeAbout() {
                 Messages Per Second
               </Typography>
             </div>
-          {/* </Fade> */}
         </Grid>
       </Grid>
     </article>
