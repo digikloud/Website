@@ -1,14 +1,15 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { Helmet } from "react-helmet";
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./solutionpage.css";
 import solarenergy from "../../assets/solar energy management.png";
 import iotsolar from "../../assets/IoTsolar.png";
 import Navbar from "../../page/home/navbar";
 import remoteMonitoring from "../../assets/remote monitoring solar.png";
 import energyMonitoring from "../../assets/energy monitoring.png";
-import solarDashboard from "../../assets/solar_dashboard_ref.gif"
+import solarDashboard from "../../assets/solar_dashboard_ref.gif";
 import Footer from "../../page/home/Footer";
+import { Slide } from "react-awesome-reveal";
 
 function Solarpage() {
   const [button, setButton] = useState("livedemo_btn_home");
@@ -27,7 +28,7 @@ function Solarpage() {
   return (
     <div>
       <Helmet>
-        <title>Solar IoT Dashboard</title>
+        <title>Solar Monitoring Solution</title>
         <meta
           name="description"
           content="Solar monitoring using IoT (Internet of Things) involves leveraging IoT technology to monitor, analyze, and manage solar energy systems in a more intelligent and connected manner."
@@ -37,17 +38,22 @@ function Solarpage() {
           name="keywords"
           content="digikloud,iot,dasboard,solar monitoring dashboard using iot,solar dashboard,solar monitoring"
         ></meta>
-        <link rel="canonical" href="https://digikloud.io/solution/solarmonitoring" />
+        <link
+          rel="canonical"
+          href="https://digikloud.io/solution/solarmonitoring"
+        />
         <meta property="og:type" content="website" />
       </Helmet>
       <Navbar />
       <Grid container className="companyPagecontainer">
-         <Grid className="solution_solar_page_top_image">
+        <Grid className="solution_solar_page_top_image">
           <div className="solution_home_head ">
-            <h1 className="solutionTopTag">
-            Step into the Solar Revolution with Digikloud's IoT-enabled
-              Solutions
-            </h1>
+            <Slide triggerOnce={true} direction="up">
+              <h1 className="solutionTopTag">
+                Step into the Solar Revolution with Digikloud's IoT-enabled
+                Solutions
+              </h1>
+            </Slide>
           </div>
         </Grid>
         <div className={`${button}`}>
@@ -58,7 +64,7 @@ function Solarpage() {
             style={{
               backgroundColor: "#00b894",
               fontSize: "18px",
-              color: 'white'
+              color: "white",
             }}
           >
             Live Demo
@@ -66,6 +72,7 @@ function Solarpage() {
         </div>
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
+            <Slide triggerOnce={true} >
             <h1 className="typography_heading_solution">
               Solar Energy Management
             </h1>
@@ -83,9 +90,16 @@ function Solarpage() {
                 monitoring, and control of solar power systems.
               </Typography>
             </div>
+            </Slide>
           </Grid>
           <Grid item md={6} xs={12}>
-            <img src={solarenergy} alt="iot solar dahboard" className="images" />
+            <Slide duration={1500} triggerOnce={true} direction="right" >
+            <img
+              src={solarenergy}
+              alt="iot solar dahboard"
+              className="images"
+            />
+            </Slide>
           </Grid>
         </Grid>
         <Grid container className="solution_page_detail">
@@ -93,7 +107,7 @@ function Solarpage() {
             <h1 className="typography_heading_solution">
               IoT-enabled Solar Energy Monitoring
             </h1>
-            <img src={iotsolar} alt="iot solar dahboard"  className="images" />
+            <img src={iotsolar} alt="iot solar dahboard" className="images" />
           </Grid>
           <Grid item md={6} xs={12}>
             <div className="content_text">
@@ -136,7 +150,11 @@ function Solarpage() {
             <h1 className="typography_heading_solution">
               Energy Monitoring and Analytics
             </h1>
-            <img src={energyMonitoring} alt="iot solar dahboard"  className="images" />
+            <img
+              src={energyMonitoring}
+              alt="iot solar dahboard"
+              className="images"
+            />
           </Grid>
           <Grid item md={6} xs={12}>
             <div className="content_text">
@@ -168,8 +186,12 @@ function Solarpage() {
               </Typography>
             </div>
           </Grid>
-          <Grid item md={12} xs={12} >
-            <img src={solarDashboard} alt="iot solar dahboard" className=" dashboard" />        
+          <Grid item md={12} xs={12}>
+            <img
+              src={solarDashboard}
+              alt="iot solar dahboard"
+              className=" dashboard"
+            />
           </Grid>
         </Grid>
       </Grid>

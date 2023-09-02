@@ -50,7 +50,7 @@ function HomeIndex() {
           </Fade>
         </header>
       </section>
-
+      
       <HomeAbout />
       <Customer />
       <Dashboadrhomepage />

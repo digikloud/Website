@@ -11,7 +11,7 @@ function Workplacemanagement() {
   return (
     <div>
       <Helmet>
-        <title>Workplace IoT Dashboard</title>
+        <title>Workplace Monitoring Solution</title>
         <meta
           name="description"
           content="DiGiKloud is dedicated to providing businesses with secure, dependable, and cutting-edge IoT solutions, empowering them to overcome challenges and achieve their goals. We offer comprehensive services, from analyzing your business needs to implementing and securing your IoT ecosystem."

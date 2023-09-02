@@ -7,10 +7,14 @@ import solar02 from "../../assets/iotDashboard/solar02.webp";
 import bulb from "../../assets/iotDashboard/bulb01.png";
 import star02 from "../../assets/iotDashboard/star02.png";
 import Footer from "../../page/home/Footer";
+import { Helmet } from "react-helmet";
 
 function SolarMonitoring() {
   return (
     <>
+    <Helmet>
+      <title>Solar Monitoring IoT Dashboard </title>
+    </Helmet>
       <Navbar />
       <section className="heading">
         <h1>IoT Solar Monitoring Solution</h1>

@@ -5,10 +5,14 @@ import "./contactus.css";
 import img01 from "../assets/contactusbg.webp";
 import { Typography } from "@mui/material";
 import ContactUsForm from "../page/home/contactus";
+import { Helmet } from "react-helmet";
 
 function ContactUs() {
   return (
     <>
+    <Helmet>
+      <title>Contact Us</title>
+    </Helmet>
       <Navbar />
       <section className="contactuspage_homepage">
         <img src={img01} alt="digikloud company" />

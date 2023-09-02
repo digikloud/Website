@@ -7,10 +7,14 @@ import maintenance from "../assets/CompanyPage/maintanence.png";
 import innovation from "../assets/CompanyPage/innovation.png";
 import video from "../assets/CompanyPage/Digikloud Systems (1).mp4";
 import Footer from "../page/home/Footer";
+import { Helmet } from "react-helmet";
 
 function Company() {
   return (
     <div>
+      <Helmet>
+        <title>Company | DiGiKloud</title>
+      </Helmet>
       <Navbar />
       <Grid container className="companyPagecontainer">
         <Grid item xs={12} md={12} className="companyHomepage">

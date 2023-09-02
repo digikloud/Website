@@ -26,7 +26,7 @@ function Costsaving() {
             </Slide>
         </Grid>
         <Grid item xs={12} md={6} className="costsaving_content_image">
-        <Slide direction="right" triggerOnce={true} duration={1500}>
+        <Slide direction="right" triggerOnce={true} duration={1000}>
             <img
               src={cost}
               alt="iot costsaving_image"

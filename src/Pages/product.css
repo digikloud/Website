@@ -5,7 +5,7 @@
 
 .prod_page_video {
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     object-fit: cover;
 }
 
@@ -35,12 +35,10 @@
 }
 .product_deails {
     width: 90% !important;
-    padding: 10px 100px;
-    /* height: 50vh; */
+    padding: 10px 100px
 }
 .thingskloud_info{
-    padding: 0px 100px;
-    height: 40vh;
+    padding: 50px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +54,6 @@
     padding: 10px;
 }
 .product_images_container{
-    /* background: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,23 +73,15 @@
         padding: 0 10px;
     }
     .product_top_innertext {
-        position: absolute;
         top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column !important;
-        justify-content: center;
-        align-items: center;
         gap: 1rem;
         width: 100%;
-        color: #ffffff;
     }
-    .product_top_innertext > h1 , .product_top_innertext > h3{
-        font-size: 20px;
+    .product_top_innertext > h1 , .product_top_innertext > h3 ,.aysgud{
+        font-size:18px !important;
     }
     .highlight_text{
-        font-size: 25px !important;
+        font-size: 18px !important;
         padding: 10px 0px;
     }
     .thingskloud_info > h6 {

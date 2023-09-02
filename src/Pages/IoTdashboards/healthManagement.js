@@ -7,10 +7,14 @@ import health02 from "../../assets/iotDashboard/Health02.webp";
 import bulb from "../../assets/iotDashboard/bulb01.png";
 import star02 from "../../assets/iotDashboard/star02.png";
 import Footer from "../../page/home/Footer";
+import { Helmet } from "react-helmet";
 
 function HealthManagementIoT() {
   return (
     <>
+    <Helmet>
+      <title>Helath Monitoring IoT Dashboard</title>
+    </Helmet>
       <Navbar />
       <section className="heading">
         <h1>IoT Health Management Solution</h1>
