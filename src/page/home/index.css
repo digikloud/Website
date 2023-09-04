@@ -172,7 +172,7 @@
 
 .HomeAbout {
   width: 80% !important;
-  height: 700px;
+  /* height: 700px; */
   margin-top: 50px;
   padding: 0 100px;
   background: #f4f7f9;
@@ -200,9 +200,12 @@
 }
 
 .projectcard {
-  width: 103%;
+  width: 100%;
   text-align: center;
-  /* padding: 15px; */
+  background: #e4e4e6;
+  padding: 15px 0;
+  border-radius: 10px;
+  margin: 0 1px;
 }
 
 .homeHead {
@@ -545,6 +548,14 @@
   }
   .homeAboutImages {
     width: 100%;
+  }
+  .projectcard {
+    width: 100%;
+    text-align: center;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
   }
 
   .projectcard h1 {

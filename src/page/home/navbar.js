@@ -109,6 +109,12 @@ function Navbar() {
       title : "Thingskloud" ,
       click : "/product"
     }
+    ,
+    {
+      id : 2 ,
+      title : "IoT X" ,
+      click : "/iot-x"
+    }
   ]
 
   // const contactus = () => {

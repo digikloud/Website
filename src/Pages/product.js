@@ -9,7 +9,7 @@ import prod03 from "../assets/Product/prod03.webp";
 import prod04 from "../assets/Product/prod04.webp";
 import Footer from "../page/home/Footer";
 import { Helmet } from "react-helmet";
-import {  Slide } from "react-awesome-reveal";
+import {  Fade, Slide } from "react-awesome-reveal";
 
 function Product() {
   return (
@@ -28,13 +28,12 @@ function Product() {
       </Helmet>
       <Navbar />
       <section className="product_homepage">
-        <article>
           <video className="prod_page_video" muted autoPlay loop>
             <source src={prod} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          {/* <Slide triggerOnce={true}> */}
           <header className="product_top_innertext" >
+          <Fade direction="up" duration={2000} triggerOnce={true}>
               <Typography variant="h1" >ThingsKloud</Typography>
               <Typography variant="h3"  style={{ textAlign: "center" }}>
                 Open-source IoT Platform Simplified device handling, data
@@ -51,10 +50,35 @@ function Product() {
               >
                 Learn More
               </Button>
+              </Fade>
           </header>
-          {/* </Slide> */}
-        </article>
       </section>
+      {/* <section className="producti_hompepage">
+        <video className="i01" muted autoPlay loop>
+          <source src={prod} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <header className="iotx_top_innertext">
+        <Fade direction="up" duration={2000} triggerOnce={true}>
+        <Typography variant="h1" >ThingsKloud</Typography>
+              <Typography variant="h3"  style={{ textAlign: "center" }}>
+                Open-source IoT Platform Simplified device handling, data
+                compilation, data analysis, and graphical representation to
+                empower your IoT solution
+              </Typography>
+              <Button
+                style={{
+                  borderRadius: 10,
+                  backgroundColor: "#00b894",
+                  color: "white",
+                  fontSize: "18px",
+                }}                
+              >
+                Learn More
+              </Button>
+        </Fade>
+        </header>
+      </section> */}
       <section className="productpagecontainer">
         <article className="thingskloud_info">
             <Typography variant="h3" className="highlight_text">
