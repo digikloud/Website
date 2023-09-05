@@ -9,7 +9,7 @@ import prod03 from "../assets/Product/prod03.webp";
 import prod04 from "../assets/Product/prod04.webp";
 import Footer from "../page/home/Footer";
 import { Helmet } from "react-helmet";
-import {  Fade, Slide } from "react-awesome-reveal";
+// import {  Fade, Slide } from "react-awesome-reveal";
 
 function Product() {
   return (
@@ -33,7 +33,7 @@ function Product() {
             Your browser does not support the video tag.
           </video>
           <header className="product_top_innertext" >
-          <Fade direction="up" duration={2000} triggerOnce={true}>
+          {/* <Fade direction="up" duration={2000} triggerOnce={true}> */}
               <Typography variant="h1" >ThingsKloud</Typography>
               <Typography variant="h3"  style={{ textAlign: "center" }}>
                 Open-source IoT Platform Simplified device handling, data
@@ -50,7 +50,7 @@ function Product() {
               >
                 Learn More
               </Button>
-              </Fade>
+              {/* </Fade> */}
           </header>
       </section>
       {/* <section className="producti_hompepage">
@@ -96,7 +96,7 @@ function Product() {
       <section className="productpagecontainer">
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6}>
-            <Slide triggerOnce={true}>
+            {/* <Slide triggerOnce={true}> */}
               <h1 className="typography_heading">
                 Provision and Manage Devices and Assets with Ease
               </h1>
@@ -106,24 +106,24 @@ function Product() {
                 effortlessly provision, monitor, and manage a wide array of
                 devices and assets, creating a seamless IoT ecosystem.
               </Typography>
-            </Slide>
+            {/* </Slide> */}
           </Grid>
           <Grid item xs={12} md={6} lg={6} className="product_images_container">
-            <Slide triggerOnce={true} direction="right" duration={1500}>
+            {/* <Slide triggerOnce={true} direction="right" duration={1500}> */}
               <img src={prod01} alt="" className="product_image" />
-            </Slide>
+            {/* </Slide> */}
           </Grid>
         </Grid>
       </section>
       <section className="productpagecontainer">
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6} className="product_images_container">
-            <Slide triggerOnce={true}>
+            {/* <Slide triggerOnce={true}> */}
               <img src={prod03} alt="" className="product_image" />
-            </Slide>
+            {/* </Slide> */}
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
-            <Slide triggerOnce={true} direction="right" duration={1500}>
+            {/* <Slide triggerOnce={true} direction="right" duration={1500}> */}
               <h1 className="typography_heading">
                 Data at Your Fingertips with Thingskloud
               </h1>
@@ -132,14 +132,14 @@ function Product() {
                 visualization. Thingskloud brings your IoT data to life,
                 empowering you with the information you need.
               </Typography>
-            </Slide>
+            {/* </Slide> */}
           </Grid>
         </Grid>
       </section>
       <section className="productpagecontainer">
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6}>
-            <Slide triggerOnce={true}>
+            {/* <Slide triggerOnce={true}> */}
               <h1 className="typography_heading">
                 Data Processing and Intelligent Reaction with Thingskloud
               </h1>
@@ -150,31 +150,31 @@ function Product() {
                 various events, ensuring proactive monitoring and actionable
                 insights.
               </Typography>
-            </Slide>
+            {/* </Slide> */}
           </Grid>
           <Grid item xs={12} md={6} lg={6} className="product_images_container">
-            <Slide triggerOnce={true} direction="right" duration={1500}>
+            {/* <Slide triggerOnce={true} direction="right" duration={1500}> */}
               <img src={prod02} alt="" className="product_image" />
-            </Slide>
+            {/* </Slide> */}
           </Grid>
         </Grid>
       </section>
       <section className="productpagecontainer">
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6} className="product_images_container">
-            <Slide duration={1500} triggerOnce={true}>
+            {/* <Slide duration={1500} triggerOnce={true}> */}
               <img src={prod04} alt="" className="product_image" />
-            </Slide>
+            {/* </Slide> */}
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
-            <Slide direction="right" triggerOnce={true}>
+            {/* <Slide direction="right" triggerOnce={true}> */}
               <h1 className="typography_heading">IoT Rule Engine</h1>
               <Typography variant="p">
                 Our platform empowers you to create custom, intricate Rule
                 Chains that process data directly from your devices, tailored to
                 precisely match your application's unique requirements.
               </Typography>
-            </Slide>
+            {/* </Slide> */}
           </Grid>
         </Grid>
       </section>
