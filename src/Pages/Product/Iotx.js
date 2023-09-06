@@ -418,7 +418,7 @@ function Iotx() {
   const [NextGenData, setNextGenData] = useState(
     "Our team of experts specializes in MQTT, Modbus, OPC UA, PLCs, and SCADA, ensuring seamless integration and transformation."
   );
-  const [img, setImg] = useState("./images/products/nextGen/nxtgen01.webp");
+  const [img, setImg] = useState("../images/products/nextGen/nxtgen01.webp");
   return (
     <>
     <Helmet>
