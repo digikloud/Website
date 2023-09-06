@@ -91,6 +91,7 @@
     padding: 10px;
     margin: 0;
     width: 50%;
+    z-index: 1;
 }
 .product_deails {
     width: 85% !important;
@@ -207,7 +208,8 @@
 }
 .biop_services_container{
     border: 1px solid #f4f7f9;
-    background-color: #5aedd0;
+    background-color: #cefff3;
+    border-radius: 10px;
     /* height: 400px; */
     height: fit-content;
     width: 95%;
@@ -218,11 +220,26 @@
     padding: 10px;
     margin-top: 20px;
 }
+.byop_technology{
+    height: 100vh;
+}
+
+.byop_contact{
+    height: 30vh;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
   @media only screen and (max-width: 600px) {
     .homepage{
       height: 50vh;
     }
+    .byop_top_innertext {
+        width: 100%;
+    }
+
     .byop_top_innertext h1 {
       font-size: 25px !important;
     }

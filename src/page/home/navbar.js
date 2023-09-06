@@ -116,11 +116,11 @@ function Navbar() {
       click : "/product/iot-x"
     }
     ,
-    // {
-    //   id : 3 ,
-    //   title : "BYOP" ,
-    //   click : "/product/byop"
-    // }
+    {
+      id : 3 ,
+      title : "BYOP" ,
+      click : "/product/byop"
+    }
   ]
 
   // const contactus = () => {
