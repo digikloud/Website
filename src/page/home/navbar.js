@@ -107,14 +107,20 @@ function Navbar() {
     {
       id : 1 ,
       title : "Thingskloud" ,
-      click : "/product"
+      click : "/product/thingskloud"
     }
     ,
     {
       id : 2 ,
       title : "IoT X" ,
-      click : "/iot-x"
+      click : "/product/iot-x"
     }
+    ,
+    // {
+    //   id : 3 ,
+    //   title : "BYOP" ,
+    //   click : "/product/byop"
+    // }
   ]
 
   // const contactus = () => {

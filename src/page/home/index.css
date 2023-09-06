@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
 .backgroundvideo {
+  /* width: 100%; */
+  /* top: 0; */
+  /* height: 100%; */
+  /* width: 100%;
+  height: 100%; */
+  /* -o-object-fit: cover; */
+  /* object-fit: cover; */
+
   width: 100%;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.90;
 }
 
 .typography_heading {

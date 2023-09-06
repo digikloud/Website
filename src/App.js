@@ -15,6 +15,7 @@ import HealthManagementIoT from './Pages/IoTdashboards/healthManagement';
 import Product from './Pages/product';
 import ContactUs from './Pages/ContactUs';
 import Iotx from './Pages/Product/Iotx';
+import Byop from './Pages/Product/Byop';
 
 const Home = React.lazy(() => import("./page/home"))
 
@@ -35,8 +36,9 @@ function App() {
             <Route path='iotdashboards/solar' element={<SolarMonitoring />} />
             <Route path='iotdashboards/wastemonitoring' element={<WasteManagementIoT />} />
             <Route path='iotdashboards/healthmonitoring' element={<HealthManagementIoT />} />
-            <Route path='product' element={<Product />} />
-            <Route path='iot-x' element={<Iotx />} />
+            <Route path='product/thingskloud' element={<Product />} />
+            <Route path='product/iot-x' element={<Iotx />} />
+            <Route path='product/byop' element={<Byop />} />
             <Route path='contact-us' element={<ContactUs />} />
           </Routes>
         </BrowserRouter>

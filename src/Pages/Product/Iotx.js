@@ -361,13 +361,14 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Navbar from "../../page/home/navbar";
 import Footer from "../../page/home/Footer";
+import { Helmet } from "react-helmet";
 
 const Buttons = styled.button`
   /* Same as above */
 `;
 const ButtonToggle = styled(Buttons)`
   opacity: 0.9;
-  width : 20%
+  width : 20% ;
   ${({ active }) =>
     active &&
     `
@@ -385,31 +386,31 @@ const NextGenBtn = [
     id: 1,
     title: "IoT Expertise",
     data: "Our team of experts specializes in MQTT, Modbus, OPC UA, PLCs, and SCADA, ensuring seamless integration and transformation.",
-    img: "./images/products/nextGen/nxtgen01.webp",
+    img: "../images/products/nextGen/nxtgen01.webp",
   },
   {
     id: 2,
     title: "Industry 4.0 Pioneers",
     data: "Embrace the future of manufacturing with our Industry 4.0 solutions, driving innovation and competitiveness.",
-    img: "./images/products/nextGen/nxtgen02.webp",
+    img: "../images/products/nextGen/nxtgen02.webp",
   },
   {
     id: 3,
     title: "Secure Connectivity",
     data: "Our proficiency in MQTT, Modbus, and OPC UA ensures your data remains secure during transmission and storage.",
-    img: "./images/products/nextGen/nxtgen03.webp",
+    img: "../images/products/nextGen/nxtgen03.webp",
   },
   {
     id: 4,
     title: "Tailored Solutions",
     data: "We understand the unique needs of different industries. Our solutions are customized to align with your business goals.",
-    img: "./images/products/nextGen/nxtgen04.webp",
+    img: "../images/products/nextGen/nxtgen04.webp",
   },
   {
     id: 5,
     title: " Global Reach",
     data: "Regardless of your location, our services are designed to be accessible and adaptable on a global scale.",
-    img: "./images/products/nextGen/nxtgen05.webp",
+    img: "../images/products/nextGen/nxtgen05.webp",
   },
 ];
 function Iotx() {
@@ -418,9 +419,20 @@ function Iotx() {
     "Our team of experts specializes in MQTT, Modbus, OPC UA, PLCs, and SCADA, ensuring seamless integration and transformation."
   );
   const [img, setImg] = useState("./images/products/nextGen/nxtgen01.webp");
-  console.log(active);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Product | IoT X</title>
+        <meta
+          name="description"
+          content="Empower your IoT solution with the versatility of Thingskloud"
+        />
+        <meta
+          name="keywords"
+          content="iot thingskloud , digikloud , iot , dashboards , "
+        />
+      </Helmet>
       <Navbar />
       <section className="product_homepage">
         <video className="prod_page_video" muted autoPlay loop>
@@ -490,8 +502,7 @@ function Iotx() {
                     fontSize: "15px",
                     fontWeight: "600",
                     padding : "10px 0",
-                    border : '1px solid #00b894',
-                    // margin : '1px'
+                    border : '1px solid #cdf5ed',
                   }}
                   onClick={() => {
                     setActive(type);
@@ -503,51 +514,6 @@ function Iotx() {
                 </ButtonToggle>
               ))}
             </ButtonGroup>
-            {/* <ButtonGroup>
-      {NextGenBtn.map((id ,ind) => (
-        <ButtonToggle
-          key={ind}
-          active={active === id}
-          style={{
-            cursor: "pointer",
-            width: "20%",
-            fontSize: "15px",
-            fontWeight: "600",
-          }}
-          // onClick={() => setActive(id)}
-          onClick={() => {
-            setNextGenData(id.data);
-            setImg(id.img);
-            setColor("current_button");
-            setActive(id)
-          }}
-        >
-          {id.title}
-        </ButtonToggle>
-      ))}
-    </ButtonGroup> */}
-            {/* {NextGenBtn.map((id, ind) => {
-              return (
-                <Button
-                  key={ind}
-                  className={`${color}`}
-                  // className="current_button"
-                  onClick={() => {
-                    setNextGenData(id.data);
-                    setImg(id.img);
-                    setColor("current_button");
-                  }}
-                  style={{
-                    cursor: "pointer",
-                    width: "20%",
-                    fontSize: "15px",
-                    fontWeight: "600",
-                  }}
-                >
-                  {id.title}
-                </Button>
-              );
-            })} */}
           </Grid>
           <Grid item md={12}>
             <article className="teue">
