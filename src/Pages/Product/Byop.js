@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "../../page/home/navbar";
 import { Avatar, Button, Grid, Typography } from "@mui/material";
@@ -11,8 +11,66 @@ import services03 from "../../assets/Product/services03.png";
 import "../product.css";
 import { Fade, Slide } from "react-awesome-reveal";
 import Footer from "../../page/home/Footer";
+import styled from "styled-components";
 
+const Buttons = styled.button`
+  /* Same as above */
+`;
+const ButtonToggle = styled(Buttons)`
+  opacity: 0.9;
+  background : #f4f7f9 ;
+  width : 20% ;
+  ${({ active }) =>
+    active &&
+    `
+    opacity: 1;
+    background : #00b894;
+    width : 20%
+  `}
+`;
+const ButtonGroup = styled.div`
+  display: flex;
+`;
+const BYOP = [
+  {
+    id: "1",
+    title: "Customization at Its Best",
+    img: "../images/products/BYOP/byop01.webp",
+    data: "Our BYOP services revolve around your specific requirements, ensuring a platform that mirrors your goals and objectives.",
+  },
+  {
+    id: "2",
+    title: "Expert Consultancy",
+    img: "../images/products/BYOP/byop02.webp",
+    data: "Our seasoned consultants collaborate closely with you to understand your needs, objectives, and challenges, guiding you towards the ideal IoT architecture.",
+  },
+  {
+    id: "3",
+    title: "Engineering Excellence",
+    img: "../images/products/BYOP/byop03.webp",
+    data: "Our engineering team is well-versed in a multitude of IoT technologies. From device connectivity to data management, we construct each layer with precision.",
+  },
+  {
+    id: "4",
+    title: "Scalable Solutions",
+    img: "../images/products/BYOP/byop04.webp",
+    data: "Your IoT platform should grow as your business does. Our solutions are designed with scalability in mind, accommodating your evolving needs.",
+  },
+  {
+    id: "5",
+    title: "Unparalleled Maintenance and Support",
+    img: "../images/products/BYOP/byop05.webp",
+    data: "Building an IoT platform is just the beginning. We're here for the long haul, providing ongoing maintenance, updates, and support.",
+  },
+];
 function Byop() {
+  
+  const [active, setActive] = useState(BYOP[0]);
+  const [BYOPdata, setBYOPdata] = useState(
+    "Our BYOP services revolve around your specific requirements, ensuring a platform that mirrors your goals and objectives."
+  );
+  const [img, setImg] = useState("../images/products/BYOP/byop01.webp");
+
   return (
     <>
       <Helmet>
@@ -29,7 +87,7 @@ function Byop() {
       </Helmet>
       <Navbar />
       <section className="homepage">
-        <video className="backgroundvideo" muted autoPlay loop>
+        <video className="backgroundvideo" style={{objectFit : 'cover'}} muted autoPlay loop>
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -62,6 +120,53 @@ function Byop() {
                 <img src={byop01} alt="" className="byop_images" />
               </article>
             </Fade>
+          </Grid>
+        </Grid>
+      </section>
+
+      <section className="productpagecontainer">
+        <Grid container className="product_deails">
+          <Grid item md={12} style={{padding : '10px 0'}}>
+            <Fade direction="left" duration={2000} triggerOnce={true}>
+            <h1 className="typography_heading">
+            Why Choose BYOP with  DiGiKloud ?
+            </h1>
+            </Fade>
+          </Grid>
+          <Grid item md={12} lg={12} style={{paddingBottom : '10px'}}>
+            <Fade direction="up" duration={1500} triggerOnce={true}>
+            <ButtonGroup>
+              {BYOP.map((type, ind) => (
+                <ButtonToggle
+                  key={ind}
+                  active={active === type}
+                  style={{
+                    cursor: "pointer",
+                    width: "20%",
+                    fontSize: "15px",
+                    fontWeight: "600",
+                    padding : "10px 0",
+                    border : '1px solid #cdf5ed',
+                  }}
+                  onClick={() => {
+                    setActive(type);
+                    setBYOPdata(type.data);
+                    setImg(type.img);
+                  }}
+                >
+                  {type.title}
+                </ButtonToggle>
+              ))}
+            </ButtonGroup>
+            </Fade>
+          </Grid>
+          <Grid item md={12}>
+            <Slide direction="right" triggerOnce={true} >
+            <article className="teue" style={{height : '500px'}}>
+              <img src={img} alt="" className="" style={{height :'80%' ,width : '100%'  }} />
+              <Typography variant="h5">{BYOPdata}</Typography>
+            </article>
+            </Slide>
           </Grid>
         </Grid>
       </section>
@@ -252,7 +357,7 @@ function Byop() {
               </Typography>
             </Slide>
           </Grid>
-          <Grid xs={12} md={6} className="byop_image_container">
+          <Grid item xs={12} md={6} className="byop_image_container">
             <Slide direction="right" triggerOnce={true}>
               <img src={byop02} alt="" className="nextgen_images" />
             </Slide>
@@ -262,15 +367,16 @@ function Byop() {
 
       <section className="byoppagecontainer">
         <Grid container className="byop_deails">
-          <Grid xs={12} md={12} className="byop_contact">
-            <Fade direction="up" triggerOnce={true} >
-            <article>
-              <Typography variant="h4">
-                Empower your vision with "Build Your Own IoT Platform" services
-                from Digikloud. Together, we'll make your IoT dreams a reality.
-              </Typography>
-            </article>
-            <Button
+          <Grid item xs={12} md={12} className="byop_contact">
+            <Fade direction="up" triggerOnce={true}>
+              <article>
+                <Typography variant="h4">
+                  Empower your vision with "Build Your Own IoT Platform"
+                  services from Digikloud. Together, we'll make your IoT dreams
+                  a reality.
+                </Typography>
+              </article>
+              <Button
                 aria-label="book demo"
                 style={{
                   borderRadius: 35,
@@ -284,7 +390,7 @@ function Byop() {
               >
                 Book Demo
               </Button>
-              </Fade>
+            </Fade>
           </Grid>
         </Grid>
       </section>

@@ -208,7 +208,7 @@
 }
 .biop_services_container{
     border: 1px solid #f4f7f9;
-    background-color: #cefff3;
+    /* background-color: #cefff3; */
     border-radius: 10px;
     /* height: 400px; */
     height: fit-content;
