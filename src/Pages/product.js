@@ -15,7 +15,6 @@ function Product() {
   return (
     <>
       <Helmet>
-        <meta charSet="utf-8" />
         <title>Product | ThingsKloud</title>
         <meta
           name="description"

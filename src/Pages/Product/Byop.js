@@ -74,7 +74,6 @@ function Byop() {
   return (
     <>
       <Helmet>
-        <meta charSet="utf-8" />
         <title>Product | BYOP</title>
         <meta
           name="description"

@@ -73,7 +73,6 @@ function Iotx() {
   return (
     <>
     <Helmet>
-        <meta charSet="utf-8" />
         <title>Product | IoT X</title>
         <meta
           name="description"
