@@ -195,7 +195,7 @@ function Navbar() {
           </div>
           <Link
             underline="none"
-            to="#"
+            to="/services"
             onClick={() => {
               window.scrollTo(0, 0);
             }}
