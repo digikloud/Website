@@ -225,7 +225,7 @@ function Navbar() {
               })}
             </div>
           </div>
-          <Link
+          {/* <Link
             underline="none"
             to="/services"
             onClick={() => {
@@ -233,7 +233,7 @@ function Navbar() {
             }}
           >
             Services
-          </Link>
+          </Link> */}
           <div className="dropdown">
             <div className="content">
               <Link underline="none" to="#">
