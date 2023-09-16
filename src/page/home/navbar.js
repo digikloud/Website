@@ -123,6 +123,14 @@ function Navbar() {
     }
   ]
 
+  const services = [ 
+    {
+      id : 1 ,
+      title : "IIoT" ,
+      click : "/services/iiot"
+    }
+  ]
+
   // const contactus = () => {
   //   navigate("/contact-us");
   //   window.scrollTo(0, 0);
@@ -188,6 +196,30 @@ function Navbar() {
                     key={solution.id}
                   >
                     {solution.title}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+          <div className="dropdown">
+            <div className="content">
+              <Link underline="none" to="#">
+                Services
+              </Link>
+            </div>
+            <button type="button"></button>
+            <div className="menu">
+              {services.map((services, id) => {
+                return (
+                  <Link
+                    underline="none"
+                    to={services.click}
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                    }}
+                    key={services.id}
+                  >
+                    {services.title}
                   </Link>
                 );
               })}

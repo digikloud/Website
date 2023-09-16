@@ -2,18 +2,26 @@ import React from "react";
 import Navbar from "../../page/home/navbar";
 import background from "../../assets/Services/iiot_services_bg.webp";
 import { Fade, Slide } from "react-awesome-reveal";
-import { Grid, Typography } from "@mui/material";
+import { Avatar, Grid, Typography } from "@mui/material";
 import styled from "styled-components";
 import { useState } from "react";
+import iiot09 from "../../assets/Services/iiot09.webp";
+import iiot10 from "../../assets/Services/iiot10.webp";
+import iiot11 from "../../assets/Services/iiot11.webp";
+import iiot12 from "../../assets/Services/iiot12.webp";
+import iiot13 from "../../assets/Services/iiot13.webp";
+import iiot14 from "../../assets/Services/iiot14.webp";
+import iiot15 from "../../assets/Services/iiot15.webp";
+
 
 const Buttons = styled.button`
   /* Same as above */
 `;
 const ButtonToggle = styled(Buttons)`
   opacity: 0.9;
-  background : #f4f7f9 ;
-  width : 20% ;
-  height : 100px ;
+  background: #f4f7f9;
+  width: 20%;
+  height: 100px;
   ${({ active }) =>
     active &&
     `
@@ -25,7 +33,6 @@ const ButtonToggle = styled(Buttons)`
 const ButtonGroup = styled.div`
   display: flex;
 `;
-
 
 const iiot = [
   {
@@ -79,7 +86,7 @@ const iiot = [
 ];
 
 function Iiot() {
-    const [active, setActive] = useState(iiot[0]);
+  const [active, setActive] = useState(iiot[0]);
   const [iiotdata, setIiotdata] = useState(
     "Our BYOP services revolve around your specific requirements, ensuring a platform that mirrors your goals and objectives."
   );
@@ -105,45 +112,160 @@ function Iiot() {
       </section>
 
       <section>
-      <Fade direction="up" duration={1500} triggerOnce={true}>
-            <ButtonGroup>
-              {iiot.map((type, ind) => (
-                <ButtonToggle
-                  key={ind}
-                  active={active === type}
-                  style={{
-                    cursor: "pointer",
-                    width: "20%",
-                    fontSize: "15px",
-                    fontWeight: "600",
-                    padding : "10px 0",
-                    border : '1px solid #cdf5ed',
-                  }}
-                  onClick={() => {
-                    setActive(type);
-                    setIiotdata(type.data);
-                    setImg(type.img);
-                  }}
-                >
-                  {type.title}
-                </ButtonToggle>
-              ))}
-            </ButtonGroup>
-            </Fade>
-            <Slide direction="right" triggerOnce={true} >
-            <article className="teue" style={{height : '500px'}}>
-              <img src={img} alt="" className=""  style={{height :'80%'   }}/>
-              <Typography variant="h5">{iiotdata}</Typography>
-            </article>
-            </Slide>
+        <Fade direction="up" duration={1500} triggerOnce={true}>
+          <ButtonGroup>
+            {iiot.map((type, ind) => (
+              <ButtonToggle
+                key={ind}
+                active={active === type}
+                style={{
+                  cursor: "pointer",
+                  width: "20%",
+                  fontSize: "15px",
+                  fontWeight: "600",
+                  padding: "10px 0",
+                  border: "1px solid #cdf5ed",
+                }}
+                onClick={() => {
+                  setActive(type);
+                  setIiotdata(type.data);
+                  setImg(type.img);
+                }}
+              >
+                {type.title}
+              </ButtonToggle>
+            ))}
+          </ButtonGroup>
+        </Fade>
+        <Slide direction="right" triggerOnce={true}>
+          <article className="teue" style={{ height: "500px" }}>
+            <img src={img} alt="" className="" style={{ height: "80%" }} />
+            <Typography variant="h5">{iiotdata}</Typography>
+          </article>
+        </Slide>
       </section>
 
-      <section>
+      {/* <section>
         <Grid container>
-          <Grid item>
-            
+          <Grid item xs={12}>
+            <Fade direction="left" duration={2000} triggerOnce={true}>
+              <h1
+                className="typography_heading"
+                style={{ textAlign: "center" }}
+              >
+                Our Services
+              </h1>
+            </Fade>
           </Grid>
+        </Grid>
+      </section> */}
 
+      <section className="byoppagecontainer">
+        <Grid container style={{ width: "90%" }}>
+          <Grid item xs={12} md={12}>
+            <Fade direction="up" triggerOnce={true} duration={2000}>
+              <h1
+                className="typography_heading"
+                style={{ textAlign: "center" }}
+              >
+                Our Services
+              </h1>
+            </Fade>
+          </Grid>
+          <Grid item xs={12} md={3} lg={3}>
+          <Fade direction="up" triggerOnce={true} duration={1000}>
+              <article className="biop_services_container">
+                <Avatar sx={{ width: "80%", height: "80%" }} src={iiot09} />
+                <Typography variant="h6">Industry 4.0 Solutions</Typography>
+                <Typography variant="p">
+                  Seamlessly integrate the physical and digital realms of your
+                  business with our Industry 4.0 solutions. Enhance efficiency,
+                  automate processes, and achieve unprecedented levels of
+                  productivity.
+                </Typography>
+              </article>
+            </Fade>
+          </Grid>
+          <Grid item xs={12} md={3} lg={3}>
+          <Fade direction="up" triggerOnce={true} duration={2000}>
+              <article className="biop_services_container">
+                <Avatar sx={{ width: "80%", height: "80%" }} src={iiot10} />
+                <Typography variant="h6">Device Connectivity</Typography>
+                <Typography variant="p">
+                  We specialize in MQTT, Modbus, and OPC UA protocols, enabling
+                  seamless and secure device connectivity. Connect disparate
+                  devices, sensors, and equipment for real-time data exchange.
+                </Typography>
+              </article>
+            </Fade>
+          </Grid>
+          <Grid item xs={12} md={3} lg={3}>
+            <Fade direction="up" triggerOnce={true} duration={2000}>
+              <article className="biop_services_container">
+                <Avatar sx={{ width: "80%", height: "80%" }} src={iiot11} />
+                <Typography variant="h6">Data Integration</Typography>
+                <Typography variant="p">
+                  Integrate data from various sources using industry-standard
+                  protocols. Our expertise in MQTT and Modbus ensures seamless
+                  integration, creating a unified data ecosystem.
+                </Typography>
+              </article>
+            </Fade>
+          </Grid>
+          <Grid item xs={12} md={3} lg={3}>
+            <Fade direction="up" triggerOnce={true} duration={2000}>
+              <article className="biop_services_container">
+                <Avatar sx={{ width: "80%", height: "80%" }} src={iiot12} />
+                <Typography variant="h6">
+                  Data Storage and Visualization
+                </Typography>
+                <Typography variant="p">
+                  Leverage our cloud-based storage solutions to securely manage
+                  your data. Visualize complex data sets through SCADA systems
+                  and other advanced visualization tools.
+                </Typography>
+              </article>
+            </Fade>
+          </Grid>
+          <Grid item xs={12} md={4} lg={4}>
+            <Fade direction="up" triggerOnce={true} duration={2000}>
+              <article className="biop_services_container">
+                <Avatar sx={{ width: "60%", height: "60%" }} src={iiot13} />
+                <Typography variant="h6">
+                API Development
+                </Typography>
+                <Typography variant="p">
+                Facilitate cross-platform communication with our API development services. Unlock the potential of data exchange between IoT devices, PLCs, and external applications.
+                </Typography>
+              </article>
+            </Fade>
+          </Grid>
+          <Grid item xs={12} md={4} lg={4}>
+            <Fade direction="up" triggerOnce={true} duration={2000}>
+              <article className="biop_services_container">
+                <Avatar sx={{ width: "60%", height: "60%" }} src={iiot14} />
+                <Typography variant="h6">
+                Alert & Notification System
+                </Typography>
+                <Typography variant="p">
+                Utilize MQTT's publish-subscribe model for instant alerts. Receive notifications through MQTT-enabled devices, ensuring timely responses to critical events.                                    
+                </Typography>
+              </article>
+            </Fade>
+          </Grid>
+          <Grid item xs={12} md={4} lg={4}>
+            <Fade direction="up" triggerOnce={true} duration={2000}>
+              <article className="biop_services_container">
+                <Avatar sx={{ width: "60%", height: "60%" }} src={iiot15} />
+                <Typography variant="h6">
+                Reports and Analytics
+                </Typography>
+                <Typography variant="p">
+                Enhance decision-making with comprehensive reports and analytics. Extract insights from your IoT data, PLCs, and SCADA systems for optimized operations.
+                </Typography>
+              </article>
+            </Fade>
+          </Grid>
         </Grid>
       </section>
     </>
