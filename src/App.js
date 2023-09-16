@@ -17,6 +17,7 @@ import ContactUs from './Pages/ContactUs';
 import Iotx from './Pages/Product/Iotx';
 import Byop from './Pages/Product/Byop';
 import Services from './Pages/Services/Services';
+import Iiot from './Pages/Services/Iiot';
 
 const Home = React.lazy(() => import("./page/home"))
 
@@ -41,6 +42,7 @@ function App() {
             <Route path='product/iot-x' element={<Iotx />} />
             <Route path='product/byop' element={<Byop />} />
             <Route path='services' element={<Services />} />
+            <Route path='services/iiot' element={<Iiot/>} />
             <Route path='contact-us' element={<ContactUs />} />
           </Routes>
         </BrowserRouter>
