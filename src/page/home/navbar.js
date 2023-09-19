@@ -126,8 +126,20 @@ function Navbar() {
   const services = [ 
     {
       id : 1 ,
-      title : "IIoT" ,
+      title : "IoT Service" ,
+      click : "/services"
+    }
+    ,
+    {
+      id : 2 ,
+      title : "IIoT Service" ,
       click : "/services/iiot"
+    }
+    ,
+    {
+      id : 3 ,
+      title : "AWS IoT Service" ,
+      click : "/services/aws"
     }
   ]
 

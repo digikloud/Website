@@ -208,9 +208,7 @@
 }
 .biop_services_container{
     border: 1px solid #f4f7f9;
-    /* background-color: #cefff3; */
     border-radius: 10px;
-    /* height: 400px; */
     height: fit-content;
     width: 95%;
     display: flex;
@@ -224,12 +222,15 @@
     height: 100vh;
 }
 
-.byop_contact{
+.byop_contact , .awsIoT_contact{
     height: 30vh;
     display: flex;
     flex-direction: column !important;
     align-items: center;
     justify-content: space-evenly;
+}
+.awsIoT_contact{
+    height: 50vh ;
 }
 
   @media only screen and (max-width: 600px) {
