@@ -19,6 +19,7 @@ import Byop from './Pages/Product/Byop';
 import Services from './Pages/Services/Services';
 import Iiot from './Pages/Services/Iiot';
 import AwsIot from './Pages/Services/AwsIot';
+import Azure from './Pages/Services/Azure';
 
 const Home = React.lazy(() => import("./page/home"))
 
@@ -45,6 +46,7 @@ function App() {
             <Route path='services' element={<Services />} />
             <Route path='services/iiot' element={<Iiot/>} />
             <Route path='services/aws' element={<AwsIot />} />
+            <Route path='services/azure' element={<Azure />} />
             <Route path='contact-us' element={<ContactUs />} />
           </Routes>
         </BrowserRouter>
