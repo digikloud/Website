@@ -142,11 +142,11 @@ function Navbar() {
       click : "/services/aws"
     }
     ,
-    // {
-    //   id : 4 ,
-    //   title : "Azure IoT Service" ,
-    //   click : "/services/azure"
-    // }
+    {
+      id : 4 ,
+      title : "Azure IoT Service" ,
+      click : "/services/azure"
+    }
   ]
 
   // const contactus = () => {
