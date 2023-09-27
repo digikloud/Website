@@ -12,6 +12,7 @@ import iiot12 from "../../assets/Services/iiot12.webp";
 import iiot13 from "../../assets/Services/iiot13.webp";
 import iiot14 from "../../assets/Services/iiot14.webp";
 import iiot15 from "../../assets/Services/iiot15.webp";
+import Footer from "../../page/home/Footer";
 
 
 const Buttons = styled.button`
@@ -145,21 +146,6 @@ function Iiot() {
         </Slide>
       </section>
 
-      {/* <section>
-        <Grid container>
-          <Grid item xs={12}>
-            <Fade direction="left" duration={2000} triggerOnce={true}>
-              <h1
-                className="typography_heading"
-                style={{ textAlign: "center" }}
-              >
-                Our Services
-              </h1>
-            </Fade>
-          </Grid>
-        </Grid>
-      </section> */}
-
       <section className="byoppagecontainer">
         <Grid container style={{ width: "90%" }}>
           <Grid item xs={12} md={12}>
@@ -268,6 +254,7 @@ function Iiot() {
           </Grid>
         </Grid>
       </section>
+      <Footer />
     </>
   );
 }

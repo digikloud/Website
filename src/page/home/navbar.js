@@ -147,6 +147,12 @@ function Navbar() {
       title : "Azure IoT Service" ,
       click : "/services/azure"
     }
+    ,
+    {
+      id : 5,
+      title : "Featured IOT Services",
+      click : "/services/featured"
+    }
   ]
 
   // const contactus = () => {
