@@ -3,8 +3,31 @@
     width: 100%;
 }
 
+.feautured_info{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.feautured{
+    height: 400px;
+}
+.feautured > Grid {
+    background-color: red;
+}
+.feautured_data{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-evenly;
+    padding: 0 50px;
+}
+.feautured_info p {
+    padding-left: 50px;
+    color: red;
+}
+
 .servicesTopHead,
-.iiotTopHead {
+.iiotTopHead,
+.feauturedTopHead {
     width: 50%;
     position: absolute;
     left: 5%;
@@ -23,7 +46,8 @@
 }
 
 .iiotTopHead,
-.awsiotTopHead {
+.awsiotTopHead,
+.feauturedTopHead {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -47,7 +71,6 @@
     border: 1px solid #f4f7f9;
     border-radius: 10px;
     height: fit-content;
-    /* width: 400px; */
     width: 95%;
     display: flex;
     justify-content: center;
@@ -63,7 +86,7 @@
     width: 80% !important;
 }
 
-.node_red , .influxDB {
+.node_red , .influxDB , .grafana {
     background: linear-gradient(to left, #00B894, #1CB5B9);
     height: 70vh;
     width: 100%;
@@ -72,6 +95,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.grafana_header{
+    position: absolute;
+    top: 50;
+    left: 50px;
+    width: 50%;
 }
 
 .telegraf {
@@ -121,15 +150,18 @@
     width: 50%;
 }
 
-.nodered_container {
+.nodered_container , .grafana_container {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f4f7f9;
 }
 
-.nodered_details {
-    width: 80%;
+.nodered_details ,.grafana_detatils {
+    width: 80% !important;
+}
+.grafana_info{
+    padding: 30px 0;
 }
 
 .nodered_details_info , .telegraf_details_info,.influxDB_info {
@@ -147,13 +179,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     height: 300px;
     padding: 0 50px 50px;
 }
 
 @media only screen and (max-width: 600px) {
-    .servicesTopHead h1 {
+    .servicesTopHead h1 , .feauturedTopHead h1 , .nodered_header h1 , .telegraf_header h1 , .influxDB_header h1 , .grafana_header h1  {
         font-size: 25px;
     }
 
@@ -161,12 +192,65 @@
         font-size: 20px;
     }
 
-    .awsiotTopHead h4 {
+    .awsiotTopHead h4 , .feauturedTopHead h4 {
         font-size: 16px;
     }
 
     .services_container {
         flex-direction: column;
         height: fit-content;
+    }
+
+    .feauturedTopHead {
+        width: 100%;
+        left: 0;
+    }
+    .node_red{
+        height: 400px;
+    }
+    .nodered_details , .grafana_detatils{
+        width: 90% !important;
+    }
+    .nodered_header{
+        height: 50%;
+    }
+    .nodered_details_info{
+        height: fit-content;
+    }
+    .nodered_details_info h6 , .telegraf_details_info h6{
+        line-height: 2;
+        font-size: 16px;
+        font-weight: 400 !important;
+    }
+    .nodered_services_info{
+        height: fit-content;
+        padding: 0 30px;
+    }
+    .nodered_image {
+        width: 100%;
+    }
+    .telegraf {
+        background: url(../../assets/Services/Feautured/telegraf_bg.webp);
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .influxDB , .grafana{
+        height: 400px;
+    }
+    .influxDB_header-image{
+        display: none;
+    }
+    .grafana_header {
+        position: absolute;
+        top: 50;
+        left: 0;
+        width: 100%;
+    }
+    .feautured_data{
+        height: fit-content;
+        padding: 10px;
     }
 }

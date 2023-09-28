@@ -5,9 +5,12 @@ import nodered_bg from "../../assets/Services/Feautured/nodered_bg.webp";
 import nodered01 from "../../assets/Services/Feautured/nodered01.webp";
 import telegraf01 from "../../assets/Services/Feautured/telegraf01.webp";
 import telegraf02 from "../../assets/Services/Feautured/telegraf02.webp";
+import grafana01 from "../../assets/Services/Feautured/grafan01.webp";
+import grafana02 from "../../assets/Services/Feautured/grafana02.png";
 import influxDB from "../../assets/Services/Feautured/influxDB.webp";
-import { Fade } from "react-awesome-reveal";
-import { Typography } from "@mui/material";
+import tick from "../../assets/Services/Feautured/tick.webp";
+import { Fade, Slide } from "react-awesome-reveal";
+import { Grid, Typography } from "@mui/material";
 import Footer from "../../page/home/Footer";
 
 function FeaturedServices() {
@@ -29,6 +32,12 @@ function FeaturedServices() {
     "Retention policies and data lifecycle management.",
     "Integration with data analytics tools and visualization platforms.",
   ];
+  const grafana_services = [
+    "Dashboard creation tailored to your IoT data and KPIs.",
+    "Real-time visualization of incoming data streams.",
+    "Integration with data sources, including InfluxDB and other databases.",
+    "Alerting and notification setup for critical events.",
+  ];
   return (
     <>
       <Navbar />
@@ -38,7 +47,7 @@ function FeaturedServices() {
           alt="Digikloud Company"
           className="services_background_image"
         />
-        <header className="iiotTopHead">
+        <header className="feauturedTopHead">
           <Fade direction="up" duration={2000} triggerOnce={true}>
             <Typography variant="h1"> Welcome to DiGiKloud </Typography>
             <Typography variant="h4">
@@ -64,12 +73,10 @@ function FeaturedServices() {
 
       <section className="node_red">
         <article className="nodered_header">
-          <Fade direction="up" duration={2000} triggerOnce={true}>
-            <Typography variant="h1" textAlign={"center"} color={"white"}>
-              Edge Device Connectivity with Node-RED
-            </Typography>
-            <img src={nodered_bg} alt="" className="nodered_bg_img" />
-          </Fade>
+          <Typography variant="h1" textAlign={"center"} color={"white"}>
+            Edge Device Connectivity with Node-RED
+          </Typography>
+          <img src={nodered_bg} alt="" className="nodered_bg_img" />
         </article>
       </section>
 
@@ -209,6 +216,107 @@ function FeaturedServices() {
           </Fade>
         </section>
       </section>
+      <section className="grafana">
+        <article className="grafana_header">
+          <Fade direction="up" duration={2000} triggerOnce={true}>
+            <Typography variant="h1" textAlign={"center"} color={"white"}>
+              Monitoring and Visualization with Grafana
+            </Typography>
+          </Fade>
+        </article>
+        <article className="influxDB_header-image">
+          <img src={grafana01} alt="" />
+        </article>
+      </section>
+
+      <section className="grafana_container">
+        <Grid container className="grafana_detatils">
+          <Grid item xs={12} md={12}>
+            <h1
+              className="typography_heading"
+              style={{ textAlign: "center", paddingTop: "50px" }}
+            >
+              Visualize Insights, Empower Decisions
+            </h1>
+          </Grid>
+          <Grid item xs={12} md={6} className="grafana_info">
+            <Slide direction="left" triggerOnce={true} duration={1500}>
+              <article className="content_text">
+                <Typography variant="p" align="justify">
+                  Grafana transforms raw data into actionable insights. Our
+                  Grafana services enable you to visualize, analyze, and monitor
+                  your IoT data with customizable dashboards. We help you create
+                  meaningful visualizations that provide real-time insights,
+                  empowering you to make informed decisions.
+                </Typography>
+              </article>
+            </Slide>
+          </Grid>
+          <Grid item xs={12} md={6} className="costsaving_content_image">
+            <Slide direction="right" triggerOnce={true} duration={1000}>
+              <img
+                src={grafana02}
+                alt="iot costsaving_image"
+                height="300px"
+                width="300px"
+              />
+            </Slide>
+          </Grid>
+          <Grid item xs={12}>
+            <article className="nodered_services_info">
+              <h1
+                className="typography_heading"
+                style={{ textAlign: "center" }}
+              >
+                Our Grafana Services
+              </h1>
+              <ul style={{ lineHeight: "3" }}>
+                {grafana_services.map((data, ind) => {
+                  return <li key={ind}>{data}</li>;
+                })}
+              </ul>
+            </article>
+          </Grid>
+        </Grid>
+      </section>
+
+      <Grid container className="feautured">
+        <Grid item xs={12} md={6} style={{background : '#00b894'}} >
+          <article>
+          <h1
+                className="typography_heading"
+                style={{ textAlign: "center" ,padding:'50px' ,color : 'white'}}
+              >
+                Why Choose DiGiKloud?
+              </h1>
+            {/* <Typography variant="h1">Why Choose DiGiKloud?</Typography> */}
+          </article>
+        </Grid>
+        <Grid item xs={12} md={6} className="feautured_data">
+          <article className="feautured_info">
+            <Img />
+            <Typography variant="p">
+              Our team consists of experts with deep knowledge of IoT
+              technologies.
+            </Typography>
+          </article>
+          <article className="feautured_info">
+            <Img />
+            <Typography variant="p">
+              We offer essential IoT services to kickstart your IoT
+              initiatives.Our services are customized to align with your
+              specific use cases and goals.
+            </Typography>
+          </article>
+          <article className="feautured_info">
+            <Img />
+            <Typography variant="p">
+              We empower you to extract insights from your IoT data for better
+              decision-making.
+            </Typography>
+          </article>
+        </Grid>
+      </Grid>
 
       <Footer />
     </>
@@ -216,3 +324,7 @@ function FeaturedServices() {
 }
 
 export default FeaturedServices;
+
+export function Img() {
+  return <img src={tick} height="50px" width="50px" alt="" />;
+}
