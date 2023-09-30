@@ -270,7 +270,7 @@ function Thingsboard() {
                     className="typography_heading"
                     style={{ textAlign: "center" }}
                   >
-                    Our ThingsBoard Automation Services:
+                    Our ThingsBoard Automation Services
                   </h1>
                   <ul style={{ lineHeight: "3" }}>
                     {thingsboard_automationServices.map((data, ind) => {
