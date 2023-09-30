@@ -81,9 +81,12 @@
     cursor: pointer;
 }
 
-.azure_services_container {
+.azure_services_container , .thingsboard_container {
     padding: 50px 10px;
     width: 80% !important;
+}
+.thingsboard_container{
+    padding: 10px 10px;
 }
 
 .node_red , .influxDB , .grafana {
@@ -180,7 +183,7 @@
     flex-direction: column;
     justify-content: center;
     height: 300px;
-    padding: 0 50px 50px;
+    padding: 10 50px 50px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -250,7 +253,6 @@
         width: 100%;
     }
     .feautured_data{
-        height: fit-content;
         padding: 10px;
     }
 }

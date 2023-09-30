@@ -21,6 +21,7 @@ import Iiot from './Pages/Services/Iiot';
 import AwsIot from './Pages/Services/AwsIot';
 import Azure from './Pages/Services/Azure';
 import FeaturedServices from './Pages/Services/FeaturedServices';
+import Thingsboard from './Pages/Services/Thingsboard';
 
 const Home = React.lazy(() => import("./page/home"))
 
@@ -49,6 +50,7 @@ function App() {
             <Route path='services/aws' element={<AwsIot />} />
             <Route path='services/azure' element={<Azure />} />
             <Route path='services/featured' element={<FeaturedServices />} />
+            <Route path='services/thingsboard' element={<Thingsboard />} />
             <Route path='contact-us' element={<ContactUs />} />
           </Routes>
         </BrowserRouter>

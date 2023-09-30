@@ -58,7 +58,7 @@ function FeaturedServices() {
       </section>
       <section className="productpagecontainer">
         <Fade direction="up" duration={2000} triggerOnce={true}>
-          <article className="thingskloud_info" style={{ height: "50vh" }}>
+          <article className="thingskloud_info" style={{ height: "50vh" , textAlign : 'center'}}>
             <Typography variant="h6">
               At DiGiKloud , we specialize in delivering fundamental IoT
               services that streamline edge device connectivity, data storage,

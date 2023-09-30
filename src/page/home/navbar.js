@@ -153,6 +153,12 @@ function Navbar() {
       title : "Featured IOT Services",
       click : "/services/featured"
     }
+    ,
+    {
+      id : 6 ,
+      title : "Thingsboard Services" ,
+      click : "/services/thingsboard"
+    }
   ]
 
   // const contactus = () => {
