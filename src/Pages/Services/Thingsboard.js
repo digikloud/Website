@@ -46,7 +46,7 @@ function Thingsboard() {
           alt="Digikloud Company"
           className="services_background_image"
         />
-        <header className="servicesTopHead">
+        <header className="thingsboardTopHead">
           <Fade direction="up" duration={2000} triggerOnce={true}>
             <Typography variant="h1">
               Explore the Power of ThingsBoard IoT Services with DiGiKloud
@@ -74,8 +74,8 @@ function Thingsboard() {
       </section>
 
       <section>
-        <article className="homeContainer">
-          <Grid container className="thingsboard_container">
+        <article className="thingsboardContainer">
+          <Grid container className="thingsboard_details">
             <Grid item xs={12} md={6}>
               <Slide direction="left" triggerOnce={true} duration={1500}>
                 <h1 className="typography_heading">
@@ -126,8 +126,8 @@ function Thingsboard() {
         </article>
       </section>
       <section>
-        <article className="homeContainer">
-          <Grid container className="thingsboard_container">
+        <article className="thingsboardContainer">
+          <Grid container className="thingsboard_details">
             <Grid item xs={12} md={6} className="costsaving_content_image">
               <Slide direction="left" triggerOnce={true} duration={1000}>
                 <img
@@ -177,8 +177,8 @@ function Thingsboard() {
         </article>
       </section>
       <section>
-        <article className="homeContainer">
-          <Grid container className="thingsboard_container">
+        <article className="thingsboardContainer">
+          <Grid container className="thingsboard_details">
             <Grid item xs={12} md={6}>
               <Slide direction="left" triggerOnce={true} duration={1500}>
                 <h1 className="typography_heading">
@@ -231,8 +231,8 @@ function Thingsboard() {
       </section>
 
       <section>
-        <article className="homeContainer">
-          <Grid container className="thingsboard_container">
+        <article className="thingsboardContainer">
+          <Grid container className="thingsboard_details">
             <Grid item xs={12} md={6} className="costsaving_content_image">
               <Slide direction="left" triggerOnce={true} duration={1000}>
                 <img
@@ -285,40 +285,43 @@ function Thingsboard() {
       </section>
 
       <Grid container className="feautured">
-        <Grid item xs={12} md={6} style={{background : '#00b894'}} >
+        <Grid item xs={12} md={6} style={{ background: "#00b894" }}>
           <article>
-          <h1
-                className="typography_heading"
-                style={{ textAlign: "center" ,padding:'50px' ,color : 'white'}}
-              >
-                Why Choose DiGiKloud?
-              </h1>
-            {/* <Typography variant="h1">Why Choose DiGiKloud?</Typography> */}
+            <h1
+              className="typography_heading"
+              style={{ textAlign: "center", padding: "50px", color: "white" }}
+            >
+              Why Choose DiGiKloud?
+            </h1>
           </article>
         </Grid>
         <Grid item xs={12} md={6} className="feautured_data">
           <article className="feautured_info">
             <Img />
             <Typography variant="p">
-            ThingsBoard Expertise: Our team of professionals is well-versed in the intricacies of ThingsBoard IoT services.
+              ThingsBoard Expertise: Our team of professionals is well-versed in
+              the intricacies of ThingsBoard IoT services.
             </Typography>
           </article>
           <article className="feautured_info">
             <Img />
             <Typography variant="p">
-            Comprehensive Solutions: We offer end-to-end services, covering device management, data processing, visualization, and automation.
+              Comprehensive Solutions: We offer end-to-end services, covering
+              device management, data processing, visualization, and automation.
             </Typography>
           </article>
           <article className="feautured_info">
             <Img />
             <Typography variant="p">
-            Custom Tailoring: Our solutions are customized to meet your unique business needs and challenges.
+              Custom Tailoring: Our solutions are customized to meet your unique
+              business needs and challenges.
             </Typography>
           </article>
           <article className="feautured_info">
             <Img />
             <Typography variant="p">
-            Data-Driven Decisions: We empower you to extract actionable insights from your IoT data
+              Data-Driven Decisions: We empower you to extract actionable
+              insights from your IoT data
             </Typography>
           </article>
         </Grid>
