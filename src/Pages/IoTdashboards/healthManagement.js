@@ -12,19 +12,19 @@ import { Helmet } from "react-helmet";
 function HealthManagementIoT() {
   return (
     <>
-    <Helmet>
-      <title>Helath Monitoring IoT Dashboard</title>
-    </Helmet>
+      <Helmet>
+        <title>Helath Monitoring IoT Dashboard</title>
+      </Helmet>
       <Navbar />
       <section className="heading">
-        <h1>IoT Health Management Solution</h1>
+        <h1>IoT Health Monitoring solution</h1>
         <h2>
-          Utilize Digikloud's innovative template feature as a foundational
-          element for building your health management solution
+          Utilize Digikloud's latest template feature as a foundation for
+          building your health monitoring solution
         </h2>
         <Button
-        //   target="_blank"
-        //   href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"
+          //   target="_blank"
+          //   href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"
           style={{
             borderRadius: 15,
             backgroundColor: "#00b894",
@@ -48,24 +48,24 @@ function HealthManagementIoT() {
         <article className="solar_info">
           <Typography variant="h3">What is Health Management?</Typography>
           <Typography variant="h4">
-            Health management using IoT (Internet of Things) refers to the
-            application of IoT technology in monitoring, analyzing, and
-            improving various aspects of healthcare and wellness.
+            Health monitoring using IoT (Internet of Things) refers to the use
+            of connected devices and sensors to collect and transmit
+            health-related data from individuals or patients to healthcare
+            providers, caregivers, or individuals themselves.
           </Typography>
           <Typography variant="h5">
-            This approach involves the integration of interconnected devices,
-            sensors, and data analytics to gather real-time health-related
-            information, enabling better decision-making, personalized
-            treatments, and proactive intervention
+            IoT technology enables continuous and remote monitoring of various
+            health parameters, allowing for timely interventions, better disease
+            management, and improved overall health outcomes
           </Typography>
         </article>
       </section>
       <section className="iotdashboard_container key_elements_solar_container">
         <article className="key_elements_solar">
           <h2>
-            Here are the essential components that form a health management
-            scenario designed for businesses seeking to optimize operational
-            expenses and improve effectiveness
+            Here are the key elements that constitute a Health Monitoring
+            scenario for businesses aiming to streamline their operational costs
+            and enhance efficiency
           </h2>
           <Grid container spacing={1}>
             <Grid
@@ -83,16 +83,17 @@ function HealthManagementIoT() {
               <article className="key_element_card">
                 <Img />
                 <Typography variant="p">
-                  Enabling patients to be monitored remotely by healthcare
-                  providers, reducing the need for frequent in-person visits.
+                  Implement health monitoring software or mobile apps that allow
+                  employees to log their health data and receive personalized
+                  insights and recommendations.
                 </Typography>
               </article>
               <article className="key_element_card">
                 <Img />
                 <Typography variant="p">
-                  Utilizing IoT-enabled wearable devices like smartwatches,
-                  fitness trackers, and health monitors to continuously collect
-                  health-related data..
+                  Continuously collect health data from employees using IoT
+                  sensors and wearable devices. Ensure that this data is
+                  securely transmitted to a centralized system for analysis.
                 </Typography>
               </article>
             </Grid>
@@ -101,32 +102,31 @@ function HealthManagementIoT() {
               <article className="key_element_card">
                 <Img />
                 <Typography variant="p">
-                  Storing and processing health data on cloud platforms,
-                  allowing for scalable data storage, real-time analytics, and
-                  data-driven insights.
+                  IoT-enabled sensors can be embedded in various medical devices
+                  or placed in the environment to collect data.
                 </Typography>
               </article>
               <article className="key_element_card">
                 <Img />
                 <Typography variant="p">
-                  Monitoring and reminding patients to take medications on
-                  schedule through IoT-enabled medication dispensers and
-                  reminders.
+                  The received data is processed and analyzed using advanced
+                  algorithms and machine learning techniques to detect patterns,
+                  trends, and anomalies.
                 </Typography>
               </article>
               <article className="key_element_card">
                 <Img />
                 <Typography variant="p">
-                  Integrating emergency response features that can automatically
-                  alert caregivers or medical professionals in case of critical
-                  health events.
+                  IoT health monitoring systems can generate alerts and
+                  notifications in real-time when critical health parameters
+                  deviate from the normal range.
                 </Typography>
               </article>
             </Grid>
           </Grid>
           <article className="solar_layer_technology">
-            <h2>
-              IoT-based Health management solutions typically consist of
+            <h2>  
+              IoT-based Health Monitoring solutions typically consist of
               multiple layers of technology
             </h2>
             <Grid container>
@@ -212,11 +212,7 @@ function HealthManagementIoT() {
           <Typography variant="h4">Features</Typography>
           <Typography variant="h3">Health Management with DiGiKloud</Typography>
           <Grid container spacing={1}>
-            <Grid
-              item
-              xs={12}
-              md={6}
-            >
+            <Grid item xs={12} md={6}>
               <article className="key_element_card">
                 <StarIcon />
                 <Typography variant="p">Real-time remote monitoring</Typography>

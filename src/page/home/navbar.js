@@ -101,6 +101,11 @@ function Navbar() {
       title: "Waste Monitoring",
       click: "/iotdashboards/wastemonitoring",
     },
+    {
+      id: 3,
+      title: "Health Monitoring",
+      click: "/iotdashboards/healthmonitoring",
+    },
   ];
 
   const product = [
