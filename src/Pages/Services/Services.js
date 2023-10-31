@@ -21,7 +21,7 @@ import { Helmet } from "react-helmet";
 function Services() {
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Services</title>
         <meta
           name="description"
@@ -61,13 +61,15 @@ function Services() {
           <Grid item xs={12} md={6}>
             <Slide direction="right" triggerOnce={true} duration={1500}>
               <h1 className="typography_heading">Trusted Platform</h1>
-              <Typography variant="p" align="justify">
-                Empower your business with the limitless possibilities of the
-                Internet of Things (IoT). At NextGen IoT Services, we specialize
-                in providing comprehensive and innovative solutions that enable
-                you to connect, manage, and leverage data from your devices like
-                never before.
-              </Typography>
+              <article className="iotServicesContent">
+                <Typography variant="p" align="justify">
+                  Empower your business with the limitless possibilities of the
+                  Internet of Things (IoT). At NextGen IoT Services, we
+                  specialize in providing comprehensive and innovative solutions
+                  that enable you to connect, manage, and leverage data from
+                  your devices like never before.
+                </Typography>
+              </article>
             </Slide>
           </Grid>
         </Grid>
@@ -86,12 +88,12 @@ function Services() {
             </Fade>
           </Grid>
           <Grid item xs={12} md={6}>
-          <Slide triggerOnce={true}>
-            <h1 className="typography_heading">End-to-End Solutions</h1>
-            <Typography variant="p">
-              From device connectivity to data analysis, we offer a complete
-              suite of IoT services to address all your needs
-            </Typography>
+            <Slide triggerOnce={true}>
+              <h1 className="typography_heading">End-to-End Solutions</h1>
+              <Typography variant="p">
+                From device connectivity to data analysis, we offer a complete
+                suite of IoT services to address all your needs
+              </Typography>
             </Slide>
           </Grid>
           <Grid item xs={12} md={6} className="byop_image_container">
@@ -100,27 +102,28 @@ function Services() {
             </Slide>
           </Grid>
 
-          
           <Grid item xs={12} md={6} className="byop_image_container">
             <Slide triggerOnce={true}>
               <img src={services09} alt="" className="nextgen_images" />
             </Slide>
           </Grid>
           <Grid item xs={12} md={6}>
-          <Slide direction="right" triggerOnce={true} duration={1500}>
-            <h1 className="typography_heading">Scalable Infrastructure</h1>
-            <Typography variant="p">
-            Our services are designed to accommodate growth, ensuring your IoT ecosystem can expand seamlessly.
-            </Typography>
+            <Slide direction="right" triggerOnce={true} duration={1500}>
+              <h1 className="typography_heading">Scalable Infrastructure</h1>
+              <Typography variant="p">
+                Our services are designed to accommodate growth, ensuring your
+                IoT ecosystem can expand seamlessly.
+              </Typography>
             </Slide>
           </Grid>
 
           <Grid item xs={12} md={6}>
-          <Slide triggerOnce={true}>
-            <h1 className="typography_heading">Security First</h1>
-            <Typography variant="p">
-            We prioritize the security of your data and devices, implementing the latest encryption and authentication measures.
-            </Typography>
+            <Slide triggerOnce={true}>
+              <h1 className="typography_heading">Security First</h1>
+              <Typography variant="p">
+                We prioritize the security of your data and devices,
+                implementing the latest encryption and authentication measures.
+              </Typography>
             </Slide>
           </Grid>
           <Grid item xs={12} md={6} className="byop_image_container">
@@ -129,25 +132,22 @@ function Services() {
             </Slide>
           </Grid>
 
-          
           <Grid item xs={12} md={6} className="byop_image_container">
             <Slide triggerOnce={true}>
               <img src={services11} alt="" className="nextgen_images" />
             </Slide>
           </Grid>
           <Grid item xs={12} md={6}>
-          <Slide direction="right" triggerOnce={true} duration={1500}>
-            <h1 className="typography_heading">Expertise and Experience</h1>
-            <Typography variant="p">
-            Our team of IoT experts brings years of experience to the table, guiding you through every step of the IoT journey.
-            </Typography>
+            <Slide direction="right" triggerOnce={true} duration={1500}>
+              <h1 className="typography_heading">Expertise and Experience</h1>
+              <Typography variant="p">
+                Our team of IoT experts brings years of experience to the table,
+                guiding you through every step of the IoT journey.
+              </Typography>
             </Slide>
           </Grid>
-          
         </Grid>
-        
       </section>
-
 
       <section className="byoppagecontainer">
         <Grid container className="byop_deails">
@@ -162,99 +162,100 @@ function Services() {
             </Fade>
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
-          <Slide triggerOnce={true} >
-            <article className="services_container">
-              <img src={services02} alt="" className="services_images" />
-              <article>
-                
-                <Typography variant="h6">Device Connectivity</Typography>
-                <Typography variant="p">
-                  Seamlessly integrate your devices into the IoT ecosystem.
-                  Monitor and control them remotely for unprecedented
-                  convenience and efficiency.
-                </Typography>
-                
+            <Slide triggerOnce={true}>
+              <article className="services_container">
+                <img src={services02} alt="" className="services_images" />
+                <article>
+                  <Typography variant="h6">Device Connectivity</Typography>
+                  {/* <article className="services_info"> */}
+                    <Typography variant="p">
+                      Seamlessly integrate your devices into the IoT ecosystem.
+                      Monitor and control them remotely for unprecedented
+                      convenience and efficiency.
+                    </Typography>
+                  {/* </article> */}
+                </article>
               </article>
-            </article>
             </Slide>
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
-          <Slide triggerOnce={true} direction="right">
-            <article className="services_container">
-              <img src={services03} alt="" className="services_images" />
-              <article>
-                <Typography variant="h6">Personal Data Security</Typography>
-                <Typography variant="p">
-                  Unlock the potential of data by integrating information from
-                  various sources. Gain a holistic view of your operations for
-                  more informed decision-making.
-                </Typography>
+            <Slide triggerOnce={true} direction="right">
+              <article className="services_container">
+                <img src={services03} alt="" className="services_images" />
+                <article>
+                  <Typography variant="h6">Personal Data Security</Typography>
+                  <Typography variant="p">
+                    Unlock the potential of data by integrating information from
+                    various sources. Gain a holistic view of your operations for
+                    more informed decision-making.
+                  </Typography>
+                </article>
               </article>
-            </article>
             </Slide>
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
-          <Slide triggerOnce={true} >
-            <article className="services_container">
-              <img src={services04} alt="" className="services_images" />
-              <article>
-                <Typography variant="h6">
-                  Data Storage and Visualization
-                </Typography>
-                <Typography variant="p">
-                  Store and visualize your data with ease. Our scalable cloud
-                  solutions and visualization tools turn complex data into
-                  actionable insights.
-                </Typography>
+            <Slide triggerOnce={true}>
+              <article className="services_container">
+                <img src={services04} alt="" className="services_images" />
+                <article>
+                  <Typography variant="h6">
+                    Data Storage and Visualization
+                  </Typography>
+                  <Typography variant="p">
+                    Store and visualize your data with ease. Our scalable cloud
+                    solutions and visualization tools turn complex data into
+                    actionable insights.
+                  </Typography>
+                </article>
               </article>
-            </article>
             </Slide>
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
-          <Slide triggerOnce={true} direction="right">
-            <article className="services_container">
-              <img src={services05} alt="" className="services_images" />
-              <article>
-                <Typography variant="h6">API Development</Typography>
-                <Typography variant="p">
-                  Foster collaboration and innovation by developing APIs that
-                  enable seamless communication between devices and third-party
-                  applications.
-                </Typography>
+            <Slide triggerOnce={true} direction="right">
+              <article className="services_container">
+                <img src={services05} alt="" className="services_images" />
+                <article>
+                  <Typography variant="h6">API Development</Typography>
+                  <Typography variant="p">
+                    Foster collaboration and innovation by developing APIs that
+                    enable seamless communication between devices and
+                    third-party applications.
+                  </Typography>
+                </article>
               </article>
-            </article>
             </Slide>
           </Grid>
 
           <Grid item xs={12} md={6} lg={6}>
-          <Slide triggerOnce={true} >
-            <article className="services_container">
-              <img src={services06} alt="" className="services_images" />
-              <article>
-                <Typography variant="h6">
-                  Alert & Notification System
-                </Typography>
-                <Typography variant="p">
-                  Stay in the loop with real-time alerts. Set custom thresholds
-                  and receive notifications through your preferred channels.
-                </Typography>
+            <Slide triggerOnce={true}>
+              <article className="services_container">
+                <img src={services06} alt="" className="services_images" />
+                <article>
+                  <Typography variant="h6">
+                    Alert & Notification System
+                  </Typography>
+                  <Typography variant="p">
+                    Stay in the loop with real-time alerts. Set custom
+                    thresholds and receive notifications through your preferred
+                    channels.
+                  </Typography>
+                </article>
               </article>
-            </article>
             </Slide>
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
-          <Slide triggerOnce={true} direction="right">
-            <article className="services_container">
-              <img src={services07} alt="" className="services_images" />
-              <article>
-                <Typography variant="h6">Reports and Analytics</Typography>
-                <Typography variant="p">
-                  Make informed decisions based on data-driven insights. Our
-                  detailed reports and analytics help you optimize processes and
-                  drive excellence.
-                </Typography>
+            <Slide triggerOnce={true} direction="right">
+              <article className="services_container">
+                <img src={services07} alt="" className="services_images" />
+                <article>
+                  <Typography variant="h6">Reports and Analytics</Typography>
+                  <Typography variant="p">
+                    Make informed decisions based on data-driven insights. Our
+                    detailed reports and analytics help you optimize processes
+                    and drive excellence.
+                  </Typography>
+                </article>
               </article>
-            </article>
             </Slide>
           </Grid>
         </Grid>

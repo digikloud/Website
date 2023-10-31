@@ -109,7 +109,7 @@ function AwsIot() {
           <Typography variant="h3" className="highlight_text">
             Deliver smart, connected solutions for growth
           </Typography>
-          <Typography variant="h6">
+          <Typography variant="h5">
             At DiGiKloud , we specialize in providing a comprehensive suite of
             AWS IoT services that empower businesses to harness the full
             potential of the Internet of Things (IoT) technology. With our

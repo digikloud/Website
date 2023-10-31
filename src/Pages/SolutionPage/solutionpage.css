@@ -106,7 +106,7 @@
   align-items: center;
 }
 .dashboardpage{
-  height: 1000px !important;
+  height: 900px !important;
 }
 .v{
   height: 500px;
@@ -162,6 +162,11 @@
 }
 /* Media Query */
 
+@media only screen and (max-width: 1600px){
+  .solutionTopTag{
+    line-height: 1.25;
+  }
+}
 @media only screen and (max-width: 600px) {
   .solution_page_top_image {
     height: 50vh;

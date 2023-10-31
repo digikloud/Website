@@ -14,7 +14,7 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import image from "../../assets/bookdemoImg.webp";
-import { Slide } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 function Bookdemo() {
   const [open, setOpen] = React.useState(false);
@@ -87,7 +87,7 @@ function Bookdemo() {
           </Slide>
         </Grid>
         <Grid item xs={12} md={6} className="bookdemo_content">
-          <Slide direction="right" triggerOnce={true} duration={1500}>
+          <Fade direction="right" triggerOnce={true} >
             <h1 className="typography_heading">
               Ready to Create Something Extraordinary ?
             </h1>
@@ -109,7 +109,7 @@ function Bookdemo() {
             >
               Book Demo
             </Button>
-          </Slide>
+          </Fade>
         </Grid>
       </Grid>
       <Dialog

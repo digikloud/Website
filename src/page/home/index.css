@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 
 .backgroundvideo {
   height: 100%;
   width: 100%;
-  opacity: 0.90;
+  opacity: 0.9;
 }
 
 .typography_heading {
@@ -235,7 +235,7 @@
 .Dashboadrhomepagehead {
   color: #00b894;
   padding: 0 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Dashboadrhomepagecontent {
@@ -254,7 +254,7 @@
   height: 200px;
   width: 200px;
   margin: 5px 0;
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -264,7 +264,7 @@
 }
 
 .Dashboadrhomecard h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
@@ -284,7 +284,7 @@
   color: #757e8c;
   line-height: 1.5;
   padding-bottom: 10px;
-  font-family: 'Montserrat', ;
+  font-family: "Montserrat";
 }
 
 .Dashboadrhomecardlayout {
@@ -305,7 +305,6 @@
 .costsavinghead {
   padding: 10px;
   height: fit-content;
-
 }
 
 .costsavingcontent {
@@ -348,7 +347,6 @@
   width: 80% !important;
   background: #f4f7f9;
   padding: 0 100px;
-
 }
 
 .home_content_image,
@@ -360,6 +358,10 @@
   flex-direction: column !important;
   justify-content: center;
   align-items: center;
+}
+
+.analyze_content {
+  text-align: justify;
 }
 
 .iotProtocols_content_image {
@@ -412,7 +414,6 @@
 /* top: 10; */
 /* background-color: white; */
 
-
 /* padding: 0; */
 /* padding-bottom: 50px;
   border-bottom: 10px; */
@@ -459,12 +460,11 @@
   transition: all 0.5s ease;
   border-radius: 10px;
   border: 1px solid #e5e5e5;
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
   transform: rotateY(180deg);
-
 }
 
 .front {
@@ -488,7 +488,7 @@
   justify-content: center;
   align-items: center;
   transform: rotateY(180deg);
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
   background: linear-gradient(to bottom, grey, #005242);
   border-radius: 10px;
 }
@@ -512,7 +512,6 @@
 .flipCard_subhead {
   text-transform: uppercase;
   text-align: center;
-
 }
 
 .flipcard_back_content {
@@ -634,7 +633,7 @@
   .Dashboadrhomecard {
     height: 150px;
     width: 90%;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -719,7 +718,7 @@
     transition: all 0.5s ease;
     border-radius: 10px;
     border: 1px solid #e5e5e5;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     margin: 10px 0;
   }
 
@@ -743,10 +742,9 @@
     width: 400px;
     height: 400px;
   }
-
 }
 
-@media only screen and (min-width: 601px) and (max-width:700px) {
+@media only screen and (min-width: 601px) and (max-width: 700px) {
   .HomeAbout {
     width: 100%;
     height: fit-content;
@@ -809,7 +807,7 @@
   .Dashboadrhomecard {
     height: 150px;
     width: 130px;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -850,7 +848,7 @@
   }
 }
 
-@media only screen and (min-width: 701px) and (max-width:900px) {
+@media only screen and (min-width: 701px) and (max-width: 900px) {
   .HomeAbout {
     width: 100%;
     height: fit-content;
@@ -913,7 +911,7 @@
   .Dashboadrhomecard {
     height: 150px;
     width: 130px;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-around;

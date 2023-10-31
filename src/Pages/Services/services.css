@@ -3,23 +3,27 @@
     width: 100%;
 }
 
-.feautured_info{
+.feautured_info {
     display: flex;
     align-items: center;
     padding: 10px;
 }
-.feautured{
+
+.feautured {
     height: fit-content;
 }
-.feautured > Grid {
+
+.feautured>Grid {
     background-color: red;
 }
-.feautured_data{
+
+.feautured_data {
     display: flex;
     flex-direction: column !important;
     justify-content: space-evenly;
     padding: 0 50px;
 }
+
 .feautured_info p {
     padding-left: 50px;
 }
@@ -35,8 +39,24 @@
     color: white;
     text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
 }
-.thingsboardTopHead{
+
+.thingsboardTopHead {
     width: 70%;
+}
+
+.azure_heading {
+    color: #00B894;
+}
+
+.azure_list {
+    display: flex;
+    justify-content: center;
+}
+
+.services_info,
+.azureServicesContent,
+.iotServicesContent {
+    text-align: justify;
 }
 
 .awsiotTopHead {
@@ -84,15 +104,19 @@
     cursor: pointer;
 }
 
-.azure_services_container , .thingsboard_details {
+.azure_services_container,
+.thingsboard_details {
     padding: 50px 10px;
     width: 80% !important;
 }
-.thingsboard_details{
+
+.thingsboard_details {
     padding: 10px 10px;
 }
 
-.node_red , .influxDB , .grafana {
+.node_red,
+.influxDB,
+.grafana {
     background: linear-gradient(to left, #00B894, #1CB5B9);
     height: 70vh;
     width: 100%;
@@ -102,7 +126,8 @@
     align-items: center;
     flex-direction: column;
 }
-.grafana_header{
+
+.grafana_header {
     position: absolute;
     top: 50;
     left: 50px;
@@ -122,16 +147,19 @@
     left: 10%;
     top: 40%;
 }
-.influxDB_header{
+
+.influxDB_header {
     position: absolute;
     left: 10%;
     display: flex;
 }
-.influxDB_header-image{
+
+.influxDB_header-image {
     position: absolute;
     left: 60%;
 }
-.influxDB_details{
+
+.influxDB_details {
     display: flex;
     flex-direction: column;
     flex-direction: column;
@@ -149,28 +177,36 @@
     justify-content: space-between;
 }
 
-.nodered_bg_img , .telegraf_image {
+.nodered_bg_img,
+.telegraf_image {
     width: 100%;
 }
-.nodered_image{
+
+.nodered_image {
     width: 50%;
 }
 
-.nodered_container , .grafana_container , .thingsboardContainer  {
+.nodered_container,
+.grafana_container,
+.thingsboardContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f4f7f9;
 }
 
-.nodered_details ,.grafana_detatils {
+.nodered_details,
+.grafana_detatils {
     width: 80% !important;
 }
-.grafana_info{
+
+.grafana_info {
     padding: 30px 0;
 }
 
-.nodered_details_info , .telegraf_details_info,.influxDB_info {
+.nodered_details_info,
+.telegraf_details_info,
+.influxDB_info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -178,10 +214,12 @@
     padding: 30px 0;
     height: 500px;
 }
-.telegraf_details_info{
+
+.telegraf_details_info {
     height: 600px;
 }
-.nodered_services_info{
+
+.nodered_services_info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,7 +228,14 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .servicesTopHead h1 , .feauturedTopHead h1 , .nodered_header h1 , .telegraf_header h1 , .influxDB_header h1 , .grafana_header h1 ,.thingsboardTopHead h1  {
+
+    .servicesTopHead h1,
+    .feauturedTopHead h1,
+    .nodered_header h1,
+    .telegraf_header h1,
+    .influxDB_header h1,
+    .grafana_header h1,
+    .thingsboardTopHead h1 {
         font-size: 25px;
     }
 
@@ -198,7 +243,8 @@
         font-size: 20px;
     }
 
-    .awsiotTopHead h4 , .feauturedTopHead h4 {
+    .awsiotTopHead h4,
+    .feauturedTopHead h4 {
         font-size: 16px;
     }
 
@@ -211,30 +257,41 @@
         width: 100%;
         left: 0;
     }
-    .node_red{
+
+    .node_red {
         height: 400px;
     }
-    .nodered_details , .grafana_detatils , .thingsboard_details{
+
+    .nodered_details,
+    .grafana_detatils,
+    .thingsboard_details {
         width: 90% !important;
     }
-    .nodered_header{
+
+    .nodered_header {
         height: 50%;
     }
-    .nodered_details_info{
+
+    .nodered_details_info {
         height: fit-content;
     }
-    .nodered_details_info h6 , .telegraf_details_info h6{
+
+    .nodered_details_info h6,
+    .telegraf_details_info h6 {
         line-height: 2;
         font-size: 16px;
         font-weight: 400 !important;
     }
-    .nodered_services_info{
+
+    .nodered_services_info {
         height: fit-content;
         padding: 0 30px;
     }
+
     .nodered_image {
         width: 100%;
     }
+
     .telegraf {
         background: url(../../assets/Services/Feautured/telegraf_bg.webp);
         width: 100%;
@@ -243,19 +300,24 @@
         background-position: center;
         position: relative;
     }
-    .influxDB , .grafana{
+
+    .influxDB,
+    .grafana {
         height: 400px;
     }
-    .influxDB_header-image{
+
+    .influxDB_header-image {
         display: none;
     }
+
     .grafana_header {
         position: absolute;
         top: 50;
         left: 0;
         width: 100%;
     }
-    .feautured_data{
+
+    .feautured_data {
         padding: 10px;
         height: fit-content !important;
     }

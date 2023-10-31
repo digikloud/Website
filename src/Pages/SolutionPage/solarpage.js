@@ -97,7 +97,7 @@ function Solarpage() {
             <img
               src={solarenergy}
               alt="iot solar dahboard"
-              className="images"
+              className="images_rightside"
             />
             </Slide>
           </Grid>
@@ -142,7 +142,7 @@ function Solarpage() {
             </div>
           </Grid>
           <Grid item md={6} xs={12}>
-            <img src={remoteMonitoring} alt="solar iot" className="images" />
+            <img src={remoteMonitoring} alt="solar iot" className="images_rightside" />
           </Grid>
         </Grid>
         <Grid container className="solution_page_detail">

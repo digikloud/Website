@@ -42,7 +42,7 @@
     width: 400px;
 }
 
-.iotx_images_container , .iotx-tf{
+.iotx_images_container , .iotx-tf {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,7 +95,7 @@
 }
 .product_deails {
     width: 85% !important;
-    padding: 0px 100px
+    padding: 0px 100px ;
 }
 .thingskloud_info{
     padding: 50px 100px;
@@ -104,6 +104,9 @@
     justify-content: center;
     align-items: center;
     
+}
+.thingkloudProduct_innerContainer{
+    height: 500px;
 }
 .thingskloud_info > h6 {
     line-height: 2;
@@ -122,9 +125,9 @@
     background: red !important;
 }
 
-@media screen and (max-width : 1600px) {
+@media screen and (max-width : 1500px) {
     .iotx_top_innertext{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
 @media screen and (max-width : 600px) {
@@ -217,6 +220,7 @@
     flex-direction: column;
     padding: 10px;
     margin-top: 20px;
+    text-align: justify;
 }
 .byop_technology{
     height: 100vh;
@@ -253,4 +257,16 @@
         width: 90%;
       }
 
+}
+
+@media only screen and (max-width: 1500px){
+    .iotx-tf > article > .typography_heading{
+        font-size: 1.5rem;
+    }
+    .thingskloud_info > h5 {
+        line-height: 2;
+    }
+    .product_deails > h1{
+        background-color: orange;
+    }
 }

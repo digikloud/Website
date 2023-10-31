@@ -20,7 +20,7 @@ function Dashboadrhomepage() {
           <h1 className="typography_heading">
             Harness IoT to aggregate data from every asset
           </h1>
-          <div className="content_text">
+          <div className="content_text" style={{width : '80%'}}>
             <Typography variant="p" align="justify">
               Collect and consolidate data from a wide range of assets,
               including machinery, equipment, devices, and infrastructure. This
