@@ -12,9 +12,9 @@ import { Helmet } from "react-helmet";
 function SolarMonitoring() {
   return (
     <>
-    <Helmet>
-      <title>Solar Monitoring IoT Dashboard </title>
-    </Helmet>
+      <Helmet>
+        <title>Solar Monitoring IoT Dashboard </title>
+      </Helmet>
       <Navbar />
       <section className="heading">
         <h1>IoT Solar Monitoring Solution</h1>
@@ -267,14 +267,16 @@ function SolarMonitoring() {
                   <Typography variant="h2">
                     IoT Solar Monitoring Dashboard
                   </Typography>
-                  <Typography variant="p">
-                    The pre-built IoT solar monitoring dashboard available on
-                    Digikloud offers a comprehensive solution. By integrating
-                    your sensor into the platform, you can seamlessly begin
-                    managing your solar-related data. Take advantage of this
-                    opportunity by signing up for a complimentary trial and
-                    initiating your journey with ease.
-                  </Typography>
+                  <article className="dashboardinfoContent">
+                    <Typography variant="p">
+                      The pre-built IoT solar monitoring dashboard available on
+                      Digikloud offers a comprehensive solution. By integrating
+                      your sensor into the platform, you can seamlessly begin
+                      managing your solar-related data. Take advantage of this
+                      opportunity by signing up for a complimentary trial and
+                      initiating your journey with ease.
+                    </Typography>
+                  </article>
                   <Button
                     target="_blank"
                     href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"

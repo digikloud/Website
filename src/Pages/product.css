@@ -41,6 +41,9 @@
     height: 300px;
     width: 400px;
 }
+.product_thinhskloud_content{
+    text-align: justify;
+}
 
 .iotx_images_container , .iotx-tf {
     display: flex;

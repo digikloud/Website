@@ -51,7 +51,7 @@ function Workplacemanagement() {
             </div>
           </Grid>
           <Grid item md={6} xs={12}>
-            <img src={workplace} alt="workplace dashboard iot" className="images" />
+            <img src={workplace} alt="workplace dashboard iot" className="images_rightside" />
           </Grid>
         </Grid>
         <Grid container className="solution_page_detail">

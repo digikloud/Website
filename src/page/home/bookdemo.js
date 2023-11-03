@@ -78,7 +78,7 @@ function Bookdemo() {
     <article className="homeContainer">
       <Grid container className="bookDemoContainer">
         <Grid item xs={12} md={6} className="costsaving_content_image">
-          <Slide direction="left" triggerOnce={true} duration={1500}>
+          <Slide direction="up" triggerOnce={true} duration={1500}>
             <img
               src={image}
               alt="iot_bookedemo_image"
@@ -87,7 +87,7 @@ function Bookdemo() {
           </Slide>
         </Grid>
         <Grid item xs={12} md={6} className="bookdemo_content">
-          <Fade direction="right" triggerOnce={true} >
+          <Fade direction="up" triggerOnce={true} duration={1500}>
             <h1 className="typography_heading">
               Ready to Create Something Extraordinary ?
             </h1>

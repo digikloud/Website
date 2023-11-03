@@ -69,22 +69,24 @@ function Company() {
             </div>
           </Grid>
         </Grid>
-        <Grid container className="companyPagecontainer vision_bg">
-          <section className="comapny_vision_platform_container">
-            <article className="iotPlatformContainer">
-              <Grid item xs={12} md={12}>
-                <h1 className="typography_heading" style={{ color: "white" }}>
-                  Why Choose Our IoT Platform?
-                </h1>
-                <h3 className="homepageSubhead" style={{ color: "white" }}>
-                  At Digikloud, we understand that selecting the right IoT
-                  platform is a critical decision.Beyond providing a platform,
-                  we offer comprehensive support throughout your IoT journey.
-                  From consultation and implementation to monitoring and
-                  continuous innovation, we're here for you every step of the
-                  way..
-                </h3>
-              </Grid>
+
+        <Grid container className="companyPagePlatformandValues">
+          <section className="companyPlatformContainer">
+            <Grid item xs={12}>
+              <h1 className="typography_heading" style={{ color: "white" }}>
+                Why Choose Our IoT Platform?
+              </h1>
+            </Grid>
+            <Grid item xs={12}>
+              <h3 className="homepageSubhead" style={{ color: "white" }}>
+                At Digikloud, we understand that selecting the right IoT
+                platform is a critical decision.Beyond providing a platform, we
+                offer comprehensive support throughout your IoT journey. From
+                consultation and implementation to monitoring and continuous
+                innovation, we're here for you every step of the way..
+              </h3>
+            </Grid>
+            <Grid item xs={12}>
               <Grid item xs={12} md={12} className="company_vision_container">
                 <div className="vision_card">
                   <div className="inner_head">
@@ -131,18 +133,22 @@ function Company() {
                   </div>
                 </div>
               </Grid>
-            </article>
-            <article className="iotPlatformContainer">
-              <Grid item xs={12} md={12}>
-                <h1 className="typography_heading" style={{ color: "white" }}>
-                  Our Vision and Values
-                </h1>
-                <h3 className="homepageSubhead" style={{ color: "white" }}>
-                  At Digikloud, our vision is clear: to create a connected world
-                  where innovation knows no bounds. Our values guide us along
-                  this path
-                </h3>
-              </Grid>
+            </Grid>
+          </section>
+          <section className="companyValuesContainer">
+            <Grid item xs={12}>
+              <h1 className="typography_heading" style={{ color: "white" }}>
+                Our Vision and Values
+              </h1>
+            </Grid>
+            <Grid item xs={12}>
+              <h3 className="homepageSubhead" style={{ color: "white" }}>
+                At Digikloud, our vision is clear: to create a connected world
+                where innovation knows no bounds. Our values guide us along this
+                path
+              </h3>
+            </Grid>
+            <Grid item xs={12}>
               <Grid item xs={12} md={12} className="company_vision_container">
                 <div className="vision_card">
                   <Typography variant="h6">Collaboration</Typography>
@@ -174,9 +180,10 @@ function Company() {
                   </div>
                 </div>
               </Grid>
-            </article>
+            </Grid>
           </section>
         </Grid>
+
         <Grid container className="company_page_detail company_top01">
           <Grid item md={12} xs={12}>
             <h1 className="typography_heading_solution">Our Promise</h1>

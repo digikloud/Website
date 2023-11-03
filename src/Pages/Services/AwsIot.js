@@ -109,15 +109,17 @@ function AwsIot() {
           <Typography variant="h3" className="highlight_text">
             Deliver smart, connected solutions for growth
           </Typography>
-          <Typography variant="h5">
-            At DiGiKloud , we specialize in providing a comprehensive suite of
-            AWS IoT services that empower businesses to harness the full
-            potential of the Internet of Things (IoT) technology. With our
-            expertise in AWS IoT Core, DynamoDB, Python Lambda functions, Amazon
-            Timestream, and API Gateway, we offer you a seamless path towards
-            building smart, connected solutions that drive innovation,
-            efficiency, and growth.
-          </Typography>
+          <article className="awsServicesContent">
+            <Typography variant="h5">
+              At DiGiKloud , we specialize in providing a comprehensive suite of
+              AWS IoT services that empower businesses to harness the full
+              potential of the Internet of Things (IoT) technology. With our
+              expertise in AWS IoT Core, DynamoDB, Python Lambda functions,
+              Amazon Timestream, and API Gateway, we offer you a seamless path
+              towards building smart, connected solutions that drive innovation,
+              efficiency, and growth.
+            </Typography>
+          </article>
         </article>
       </section>
 
@@ -248,32 +250,31 @@ function AwsIot() {
       </section> */}
 
       <section className="productpagecontainer">
-      <Fade direction="up" triggerOnce={true}>
-        <article className="thingskloud_info" >
-          <Typography variant="h3" className="highlight_text">
-          Get Connected Today
-          </Typography>
-          <Typography variant="h6">
-          Elevate your Industry 4.0 journey with NextGen IoT Services.
-                  Experience the power of real-time monitoring and stay in
-                  control with instant email and SMS notifications. Contact us
-                  to explore how our tailored solutions can drive your business
-                  forward.
-          </Typography>
-          <Button
-                aria-label="book demo"
-                style={{
-                  borderRadius: 35,
-                  backgroundColor: "#00b894",
-                  color: "white",
-                  margin: "5px",
-                  fontSize: "18px",
-                }}
-                variant="contained"
-              >
-                Book Demo
-              </Button>
-        </article>
+        <Fade direction="up" triggerOnce={true}>
+          <article className="thingskloud_info">
+            <Typography variant="h3" className="highlight_text">
+              Get Connected Today
+            </Typography>
+            <Typography variant="h6">
+              Elevate your Industry 4.0 journey with NextGen IoT Services.
+              Experience the power of real-time monitoring and stay in control
+              with instant email and SMS notifications. Contact us to explore
+              how our tailored solutions can drive your business forward.
+            </Typography>
+            <Button
+              aria-label="book demo"
+              style={{
+                borderRadius: 35,
+                backgroundColor: "#00b894",
+                color: "white",
+                margin: "5px",
+                fontSize: "18px",
+              }}
+              variant="contained"
+            >
+              Book Demo
+            </Button>
+          </article>
         </Fade>
       </section>
       <Footer />

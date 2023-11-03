@@ -32,6 +32,9 @@
     width: 80%;
     padding: 0 10px;
 }
+.dashboardinfoContent{
+    text-align: justify;
+}
 
 .img-iotDashboard {
     height: 100%;

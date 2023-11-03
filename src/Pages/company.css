@@ -54,6 +54,33 @@
     margin-left: 50px;
 }
 
+.companyPagePlatformandValues {
+    height: 900px;
+    background: linear-gradient(#00b894, #6c8aac);
+    display: flex;
+    justify-content: center;
+}
+
+.companyPlatformContainer {
+    height: 60%;
+    width: 80% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0
+}
+
+.companyValuesContainer {
+    height: 40%;
+    width: 80% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0
+}
+
 .projectcard,
 .support_info {
     width: 33%;
@@ -185,13 +212,38 @@
         display: block;
     }
 
+    .companyPagePlatformandValues {
+        height: fit-content;
+        background: linear-gradient(#00b894, #6c8aac);
+        display: flex;
+        justify-content: center;
+    }
+    .companyPlatformContainer {
+        height: fit-content;
+        width: 90% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    .companyValuesContainer {
+        height: fit-content;
+        width: 90% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
     .company_vision_container {
         margin: 10px 0;
         display: block;
     }
 
     .vision_card {
-        height: 250px;
+        /* height: 250px; */
         width: 100%;
         background: #f4f7f9;
         border-radius: 10px;

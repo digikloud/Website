@@ -12,9 +12,9 @@ import { Helmet } from "react-helmet";
 function WasteManagementIoT() {
   return (
     <>
-    <Helmet>
-      <title>Waste Monitoring IoT Dashboard</title>
-    </Helmet>
+      <Helmet>
+        <title>Waste Monitoring IoT Dashboard</title>
+      </Helmet>
       <Navbar />
       <section className="heading">
         <h1>IoT Waste Managment Solution</h1>
@@ -184,14 +184,16 @@ function WasteManagementIoT() {
                   <Typography variant="h2">
                     IoT Waste Management Dashboard
                   </Typography>
-                  <Typography variant="p">
-                    The pre-built IoT waste management monitoring dashboard
-                    offered by Digikloud provides a holistic solution. By
-                    connecting your sensor devices to the platform, you can
-                    effortlessly commence the management of your waste-related
-                    data. Seize this chance by enrolling in a complimentary
-                    trial and embarking on your journey with simplicity.
-                  </Typography>
+                  <article className="dashboardinfoContent">
+                    <Typography variant="p">
+                      The pre-built IoT waste management monitoring dashboard
+                      offered by Digikloud provides a holistic solution. By
+                      connecting your sensor devices to the platform, you can
+                      effortlessly commence the management of your waste-related
+                      data. Seize this chance by enrolling in a complimentary
+                      trial and embarking on your journey with simplicity.
+                    </Typography>
+                  </article>
                   <Button
                     target="_blank"
                     href="https://app-demo.digikloudsystems.com/dashboard/923a4bc0-2148-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d"

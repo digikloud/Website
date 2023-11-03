@@ -125,7 +125,7 @@ function HealthManagementIoT() {
             </Grid>
           </Grid>
           <article className="solar_layer_technology">
-            <h2>  
+            <h2>
               IoT-based Health Monitoring solutions typically consist of
               multiple layers of technology
             </h2>
@@ -263,13 +263,16 @@ function HealthManagementIoT() {
                   <Typography variant="h2">
                     IoT Health Management Dashboard
                   </Typography>
-                  <Typography variant="p">
-                    The IoT health management dashboard available through
-                    Digikloud offers a seamless resolution for monitoring
-                    health-related data after integrating sensors. Seize this
-                    opportunity by signing up for a complimentary trial and
-                    embarking on your journey with ease.
-                  </Typography>
+                  <article className="dashboardinfoContent">
+                    <Typography variant="p">
+                      The IoT health management dashboard available through
+                      Digikloud offers a seamless resolution for monitoring
+                      health-related data after integrating sensors. Seize this
+                      opportunity by signing up for a complimentary trial and
+                      embarking on your journey with ease.
+                    </Typography>
+                  </article>
+
                   <Button
                     // target="_blank"
                     // href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"
