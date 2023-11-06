@@ -104,12 +104,13 @@ function Solarpage() {
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
-            <h1 className="typography_heading_solution">
-              IoT-enabled Solar Energy Monitoring
-            </h1>
+            
             <img src={iotsolar} alt="iot solar dahboard" className="images" />
           </Grid>
           <Grid item md={6} xs={12}>
+          <h1 className="typography_heading_solution">
+              IoT-enabled Solar Energy Monitoring
+            </h1>
             <div className="content_text">
               <Typography variant="p">
                 IoT devices, such as sensors and smart meters, can be deployed
@@ -147,9 +148,7 @@ function Solarpage() {
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
-            <h1 className="typography_heading_solution">
-              Energy Monitoring and Analytics
-            </h1>
+           
             <img
               src={energyMonitoring}
               alt="iot solar dahboard"
@@ -157,6 +156,9 @@ function Solarpage() {
             />
           </Grid>
           <Grid item md={6} xs={12}>
+          <h1 className="typography_heading_solution">
+              Energy Monitoring and Analytics
+            </h1>
             <div className="content_text">
               <Typography variant="p">
                 With IoT, solar energy system owners and operators gain access
@@ -171,7 +173,7 @@ function Solarpage() {
             </div>
           </Grid>
         </Grid>
-        <Grid container className="solution_page_detail dashboardpage">
+        <Grid container className="dashboardpage">
           <Grid item md={12} xs={12}>
             <h1 className="typography_heading_solution">
               Digikloud Solar Energy Management Dashboard

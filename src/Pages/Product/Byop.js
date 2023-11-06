@@ -162,7 +162,7 @@ function Byop() {
           <Grid item md={12}>
             <Slide direction="right" triggerOnce={true} >
             <article className="teue" style={{height : '500px'}}>
-              <img src={img} alt="" className="" style={{height :'80%' ,width : '100%'  }} />
+              <img src={img} alt="" className="" style={{height :'300px' ,width : '100p'  }} />
               <Typography variant="h5">{BYOPdata}</Typography>
             </article>
             </Slide>

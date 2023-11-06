@@ -3,24 +3,28 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
-.livedemo_btn{
+
+.livedemo_btn {
   position: fixed;
-  top:15%;
+  top: 15%;
   left: 90%;
   display: block;
 }
-.livedemo_btn_home{
+
+.livedemo_btn_home {
   position: fixed;
-  top:15%;
+  top: 15%;
   left: 90%;
   display: block;
   display: none;
 }
-.solutionTopTag{
-    color: white;
-    font-size: 50px;
-    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4); 
+
+.solutionTopTag {
+  color: white;
+  font-size: 50px;
+  text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
 }
+
 .solution_page_top_image {
   height: 70vh;
   width: 100vw;
@@ -29,6 +33,7 @@
   background-size: cover;
   position: relative;
 }
+
 .solution_solar_page_top_image {
   height: 70vh;
   width: 100%;
@@ -37,9 +42,11 @@
   background-size: cover;
   position: relative;
 }
+
 .solutionpagecontent {
   font-family: "Montserrat", sans-serif !important;
 }
+
 .solution_wasteMonitor_page_top_image {
   height: 70vh;
   width: 100%;
@@ -48,76 +55,83 @@
   background-size: cover;
   position: relative;
 }
-.solution_workplace_page_top_image{
+
+.solution_workplace_page_top_image {
   height: 70vh;
   width: 100%;
   background: url("../../assets/workplace_bg.webp");
-  /* background-position: center; */
   background-size: cover;
   position: relative;
 }
+
 .solution_container {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #f4f7f9;
 }
+
 .solution_home_head {
-  /* height: 150px; */
   width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* padding: 10px; */
-  line-height: 2; 
+  line-height: 2;
 }
-.worlplace_solution_home_head{
+
+.worlplace_solution_home_head {
   width: 50%;
-  /* background-color: red; */
   position: absolute;
   left: 5%;
-  top : 40%
+  top: 40%
 }
-.health_text{
+
+.health_text {
   width: 60% !important;
   position: absolute;
   top: 30%;
   left: 5%;
-  /* transform: translate(-50%, -50%); */
-  /* padding: 10px; */
   line-height: 2;
 }
-.health_quote{
+
+.health_quote {
   position: absolute;
   top: 35%;
   left: 10%;
   transform: none;
   height: 150px;
-  /* width: 60%; */
 }
+
 .solution_page_detail {
   width: 80% !important;
-  height: 500px;
-  /* height: fit-content; */
-  padding: 0 100px;
+  padding: 50px 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.dashboardpage{
+
+.dashboardpage {
   height: 900px !important;
+  width: 80% !important;
+  padding: 0px 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.v{
+
+.v {
   height: 500px;
   padding: 0 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .solution_page_detail_head {
   padding: 50px;
 }
+
 .solution_page_detail_p {
   height: 450px;
   padding: 50px;
@@ -128,18 +142,20 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .typography_heading_solution {
   font-size: 40px;
   color: #00b894;
   padding: 10px 10px 10px 0;
 }
+
 .images {
   height: 400px;
   width: 400px;
   display: block;
-  /* margin-left: auto; */
   margin-right: auto;
 }
+
 .images_rightside {
   height: 400px;
   width: 400px;
@@ -147,26 +163,32 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .solutionpagecontent {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px;
 }
-.dashboard{
+
+.dashboard {
   height: 100%;
   width: 100%;
+  margin: 5px 0;
 }
-.content_text{
+
+.content_text {
   text-align: justify;
 }
+
 /* Media Query */
 
-@media only screen and (max-width: 1600px){
-  .solutionTopTag{
+@media only screen and (max-width: 1600px) {
+  .solutionTopTag {
     line-height: 1.25;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .solution_page_top_image {
     height: 50vh;
@@ -176,26 +198,29 @@
     background-size: cover;
     position: relative;
   }
-  .worlplace_solution_home_head{
+
+  .worlplace_solution_home_head {
     color: red !important;
     top: 50%;
-    /* background-color: red; */
   }
-  .livedemo_btn{
+
+  .livedemo_btn {
     position: fixed;
     display: none;
-    top:50%;
+    top: 50%;
     left: 80%;
     display: none;
-}
-.livedemo_btn_home{
-  position: fixed;
-  top:50%;
-  display: none;
-  left: 80%;
-  display: none;
-  background-color: red;
-}
+  }
+
+  .livedemo_btn_home {
+    position: fixed;
+    top: 50%;
+    display: none;
+    left: 80%;
+    display: none;
+    background-color: red;
+  }
+
   .solution_wasteMonitor_page_top_image {
     height: 50vh;
     width: 100%;
@@ -203,7 +228,8 @@
     background-size: cover;
     position: relative;
   }
-  .solution_workplace_page_top_image{
+
+  .solution_workplace_page_top_image {
     height: 50vh;
     width: 100%;
     background: url("../../assets/workplace_bg.png");
@@ -211,9 +237,11 @@
     background-size: cover;
     position: relative;
   }
-  .solution_solar_page_top_image{
+
+  .solution_solar_page_top_image {
     height: 50vh;
   }
+
   .solution_home_head {
     height: 150px;
     width: 90%;
@@ -223,38 +251,46 @@
     padding: 10px;
     transform: none;
   }
-  .solutionTopTag{
+
+  .solutionTopTag {
     font-size: 25px;
   }
+
   .solution_page_detail {
     width: 80% !important;
     height: fit-content;
-    padding: 0 ;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .typography_heading_solution {
     font-size: 25px;
     color: #00b894;
-    padding: 10px 0 ;
+    padding: 10px 0;
   }
+
   .images {
     height: 200px;
     width: 200px;
   }
+
   .images_rightside {
     height: 200px;
     width: 200px;
   }
+
   .solutionpagecontent {
     display: flex;
     padding: 10px 30px;
   }
+
   .images_future {
     width: 100%;
   }
-  .dashboardpage{
+
+  .dashboardpage {
     height: fit-content !important;
   }
 }

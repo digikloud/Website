@@ -92,10 +92,11 @@ function WasteMonitoringPage() {
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={6} lg={6}>
-            <h1 className="typography_heading_solution">Smart Bin Sensor</h1>
+            
             <img src={smartbin} alt="waste dashboard iot" className="images" />
           </Grid>
           <Grid item md={6} xs={12}>
+          <h1 className="typography_heading_solution">Smart Bin Sensor</h1>
             <article className="content_text">
               <Typography variant="p">
                 IoT sensors can be installed in waste bins to monitor their fill
@@ -135,8 +136,8 @@ function WasteMonitoringPage() {
             />
           </Grid>
         </Grid>
-        <Grid container className="solution_page_detail dashboardpage">
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container className=" dashboardpage">
+          <Grid item xs={12} md={12} lg={12}> 
             <h1 className="typography_heading_solution">
               Data-Driven Decision-Making and Continuous Improvement
             </h1>

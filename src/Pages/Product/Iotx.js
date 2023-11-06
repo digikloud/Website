@@ -330,9 +330,9 @@ function Iotx() {
           </Grid>
         </Grid>
       </section>
-      <section className="productpagecontainer">
-        <Grid container className="product_deails">
-          <Grid item xs={12} md={6} className="iotx_images_container">
+      <section className="productpagecontainer" >
+        <Grid container className="product_deails" >
+          <Grid item xs={12} md={6} className="iotx_images_container" >
             <img src={iotx06} alt="" className="iotx_images" />
           </Grid>
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
