@@ -83,11 +83,11 @@ function Navbar() {
       title: "Health Management",
       click: "/solution/healthmanagement",
     },
-    {
-      id: 4,
-      title: "Workplace Management",
-      click: "/solution/workplacemanagement",
-    },
+    // {
+    //   id: 4,
+    //   title: "Workplace Management",
+    //   click: "/solution/workplacemanagement",
+    // },
   ];
 
   const iotdashboards = [
