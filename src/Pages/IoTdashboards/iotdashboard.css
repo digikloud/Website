@@ -56,6 +56,14 @@
     border-radius: 10px;
     margin-bottom: 3rem;
 }
+.key_elements_solars{
+    width: 100%;
+    padding: 50px;
+    background: white;
+    border:1px solid #c8e3f2;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
 .key_elements_solar > h2 {
     padding: 1rem 1rem;
     background: #a9eedf;

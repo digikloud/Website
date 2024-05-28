@@ -58,6 +58,10 @@ function Navbar() {
     navigate("/solution/workplacemanagement");
     window.scrollTo(0, 0);
   };
+  const building= () => {
+    navigate("/solution/smartbuilding");
+    window.scrollTo(0, 0);
+  };
   const iotwaste = () => {
     navigate("/iotdashboards/wastemonitoring");
     window.scrollTo(0, 0);
@@ -88,6 +92,11 @@ function Navbar() {
     //   title: "Workplace Management",
     //   click: "/solution/workplacemanagement",
     // },
+    {
+      id: 5,
+      title: "Smart Building",
+      click: "/solution/smartbuilding",
+    },
   ];
 
   const iotdashboards = [
@@ -325,6 +334,7 @@ function Navbar() {
           >
             <MenuItem onClick={waste}>Waste Monitoring</MenuItem>
             <MenuItem onClick={solar}>Solar Monitoring</MenuItem>
+            <MenuItem onClick={building}>Waste Monitoring</MenuItem>
             <MenuItem onClick={health} id="healthpage">
               Health Management
             </MenuItem>

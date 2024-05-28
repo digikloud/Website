@@ -5,6 +5,11 @@ import React from "react";
 function Customer() {
   const customers = [
     {
+      id: 10,
+      img: "./images/Customers/uog.png",
+      alt: "uog",
+    },
+    {
       id: 1,
       img: "./images/Customers/ambit.png",
       alt: "ambit",

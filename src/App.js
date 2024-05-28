@@ -8,6 +8,7 @@ import Solutionpage from './Pages/SolutionPage/healthMonitoringPage';
 import Solarpage from './Pages/SolutionPage/solarpage';
 import WasteMonitoringPage from './Pages/SolutionPage/wasteMonitoringPage';
 import Workplacemanagement from './Pages/SolutionPage/workplacemanagement';
+import Smartbuilding from './Pages/SolutionPage/smartBuilding';
 import Company from './Pages/Company';
 import SolarMonitoring from './Pages/IoTdashboards/solarMonitoring';
 import WasteManagementIoT from './Pages/IoTdashboards/wasteManagement';
@@ -38,6 +39,7 @@ function App() {
             <Route path='solution/solarmonitoring' element={<Solarpage />} />
             <Route path='solution/wastemonitoring' element={<WasteMonitoringPage />} />
             <Route path='solution/workplacemanagement' element={<Workplacemanagement />} />
+            <Route path='solution/smartbuilding' element={<Smartbuilding />} />
             <Route path='company' element={<Company />} />
             <Route path='iotdashboards/solar' element={<SolarMonitoring />} />
             <Route path='iotdashboards/wastemonitoring' element={<WasteManagementIoT />} />
