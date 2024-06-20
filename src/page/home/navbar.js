@@ -6,6 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import "./navbar.css";
+import { Typography } from "@mui/material";
 
 function Navbar() {
   const [color, setColor] = useState("white_nav");
@@ -199,9 +200,11 @@ function Navbar() {
         <nav ref={navRef}>
           <div className="dropdown">
             <div className="content">
+              {/* <Typography variant="navLink" className="nvaLink"> */}
               <Link underline="none" to="#">
               Product
               </Link>
+              {/* </Typography> */}
             </div>
             <button type="button"></button>
             <div className="menu">

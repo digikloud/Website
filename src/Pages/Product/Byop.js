@@ -127,9 +127,12 @@ function Byop() {
         <Grid container className="product_deails">
           <Grid item md={12} style={{padding : '10px 0'}}>
             <Fade direction="left" duration={2000} triggerOnce={true}>
-            <h1 className="typography_heading">
+            {/* <h1 className="typography_heading">
             Why Choose BYOP with  DiGiKloud ?
-            </h1>
+            </h1> */}
+            <Typography variant="h3" className="typography_heading">
+            Why Choose BYOP with  DiGiKloud ?
+            </Typography>
             </Fade>
           </Grid>
           <Grid item md={12} lg={12} style={{paddingBottom : '10px'}}>
@@ -174,12 +177,15 @@ function Byop() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={12}>
             <Fade direction="up" triggerOnce={true} duration={2000}>
-              <h1
+              {/* <h1
                 className="typography_heading"
                 style={{ textAlign: "center" }}
               >
                 Our BYOP Services
-              </h1>
+              </h1> */}
+              <Typography variant="h3" style={{ textAlign: "center" }} className="typography_heading">
+              Our BYOP Services
+            </Typography>
             </Fade>
           </Grid>
           <Grid item xs={12} md={4} lg={4}>
@@ -244,16 +250,23 @@ function Byop() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={12}>
             <Fade direction="up" triggerOnce={true} duration={2000}>
-              <h1
+              {/* <h1
                 className="typography_heading"
                 style={{ textAlign: "center" }}
               >
                 Getting Started
-              </h1>
-              <h3 className="homepageSubhead" style={{ textAlign: "center" }}>
+              </h1> */}
+              <Typography variant="h3" style={{ textAlign: "center" }} className="typography_heading">
+              Getting Started
+            </Typography>
+              {/* <h3 className="homepageSubhead" style={{ textAlign: "center" }}>
                 Technology brings impactful changes that can make business
                 flourish.
-              </h3>
+              </h3> */}
+              <Typography variant="h5" style={{ textAlign: "center" }} className="homepageSubhead">
+              Technology brings impactful changes that can make business
+                flourish.
+            </Typography>
             </Fade>
 
             <Grid item xs={12} md={12} className="iotx_realtime_card_container">
@@ -266,7 +279,7 @@ function Byop() {
                   style={{ position: "relative" }}
                 >
                   <div className="iotx_realtime_card_innerhead">
-                    <h4>Track Performance</h4>
+                    <Typography variant="p">Track Performance</Typography>
                   </div>
                   {/* <Slide triggerOnce={true}> */}
                   <article className="iotx_realtime_card">
@@ -286,7 +299,7 @@ function Byop() {
                   style={{ position: "relative" }}
                 >
                   <div className="iotx_realtime_card_innerhead">
-                    <h4>Quality Assurance</h4>
+                    <Typography variant="p">Quality Assurance</Typography>
                   </div>
                   <article className="iotx_realtime_card">
                     <Typography variant="p">
@@ -305,7 +318,7 @@ function Byop() {
                   style={{ position: "relative" }}
                 >
                   <div className="iotx_realtime_card_innerhead">
-                    <h4>Predictive Maintenance</h4>
+                    <Typography variant="p">Predictive Maintenance</Typography>
                   </div>
                   <article className="iotx_realtime_card">
                     <Typography variant="p">
@@ -324,7 +337,7 @@ function Byop() {
                   style={{ position: "relative" }}
                 >
                   <div className="iotx_realtime_card_innerhead">
-                    <h4>Operational Visibility</h4>
+                    <Typography variant="p">Operational Visibility</Typography>
                   </div>
                   <article className="iotx_realtime_card">
                     <Typography variant="p">
@@ -345,9 +358,12 @@ function Byop() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={6}>
             <Slide triggerOnce={true} duration={1500}>
-              <h1 className="typography_heading">
+              {/* <h1 className="typography_heading">
                 Experience the Future Today
-              </h1>
+              </h1> */}
+              <Typography variant="h3" className="typography_heading">
+              Experience the Future Today
+            </Typography>
               <Typography variant="p" align="justify">
                 With DiGiKloud's BYOP services, you're not just building an IoT
                 platform you're crafting a transformative solution that elevates

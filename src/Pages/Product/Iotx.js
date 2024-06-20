@@ -100,9 +100,12 @@ function Iotx() {
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              <h1 className="typography_heading">
+              {/* <h1 className="typography_heading">
                 Unlock the Power of IoT with Our Comprehensive Services
-              </h1>
+              </h1> */}
+              <Typography variant="h3" className="typography_heading">
+              Unlock the Power of IoT with Our Comprehensive Services
+            </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   In a world driven by technology, harnessing the potential of
@@ -136,9 +139,12 @@ function Iotx() {
       <section className="productpagecontainer">
         <Grid container className="product_deails">
           <Grid item md={12} style={{padding : '10px 0'}}>
-            <h1 className="typography_heading">
+            {/* <h1 className="typography_heading">
               Why Choose NextGen IoT Services?
-            </h1>
+            </h1> */}
+            <Typography variant="h3" className="typography_heading">
+            Why Choose NextGen IoT Services?
+            </Typography>
           </Grid>
           <Grid item md={12} lg={12} style={{paddingBottom : '10px'}}>
             <ButtonGroup>
@@ -180,10 +186,16 @@ function Iotx() {
           </Grid>
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              <h1 className="typography_heading">Device Connectivity</h1>
-              <h3 className="homepageSubhead">
+              {/* <h1 className="typography_heading">Device Connectivity</h1> */}
+              <Typography variant="h3" className="typography_heading">
+              Device Connectivity
+            </Typography>
+              {/* <h3 className="homepageSubhead">
                 Seamless Integration, Boundless Possibilities
-              </h3>
+              </h3> */}
+              <Typography variant="h5" className="homepageSubhead">
+              Seamless Integration, Boundless Possibilities
+            </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Our Device Connectivity services ensure that your IoT devices
@@ -202,8 +214,14 @@ function Iotx() {
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              <h1 className="typography_heading">Data Integration</h1>
-              <h3 className="homepageSubhead">Unify Data, Unleash Insights</h3>
+              {/* <h1 className="typography_heading">Data Integration</h1> */}
+              <Typography variant="h3" className="typography_heading">
+              Data Integration
+            </Typography>
+              {/* <h3 className="homepageSubhead">Unify Data, Unleash Insights</h3> */}
+              <Typography variant="h5" className="homepageSubhead">
+              Unify Data, Unleash Insights
+            </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Unlock the true potential of your data with our Data
@@ -225,7 +243,10 @@ function Iotx() {
         <Grid container className="product_deails">
           <Grid item xs={12} md={12} lg={12} className="iotx-tf">
             <article>
-              <h1 className="typography_heading">Real-Time Monitoring</h1>
+              {/* <h1 className="typography_heading">Real-Time Monitoring</h1> */}
+              <Typography variant="h3" className="typography_heading">
+              Real-Time Monitoring
+            </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Real-time monitoring lies at the heart of Industry 4.0,
@@ -308,10 +329,16 @@ function Iotx() {
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              <h1 className="typography_heading">
+              {/* <h1 className="typography_heading">
                 Alert & Notification System
-              </h1>
-              <h3 className="homepageSubhead">Stay Informed, Act Swiftlys</h3>
+              </h1> */}
+              <Typography variant="h3" className="typography_heading">
+              Alert & Notification System
+            </Typography>
+              {/* <h3 className="homepageSubhead">Stay Informed, Act Swiftlys</h3> */}
+              <Typography variant="h5" className="homepageSubhead">
+              Stay Informed, Act Swiftlys
+            </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Respond promptly to critical events with our Alert &
@@ -337,10 +364,16 @@ function Iotx() {
           </Grid>
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              <h1 className="typography_heading">Reports and Analytics</h1>
-              <h3 className="homepageSubhead">
+              {/* <h1 className="typography_heading">Reports and Analytics</h1> */}
+              <Typography variant="h3" className="typography_heading">
+              Reports and Analytics
+            </Typography>
+              {/* <h3 className="homepageSubhead">
                 Insights that Drive Excellence
-              </h3>
+              </h3> */}
+              <Typography variant="h5" className="homepageSubhead">
+              Insights that Drive Excellence
+            </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Make informed decisions backed by data-driven insights through
@@ -358,8 +391,14 @@ function Iotx() {
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              <h1 className="typography_heading">REST API Service</h1>
-              <h3 className="homepageSubhead">Empower Your Ecosystem</h3>
+              {/* <h1 className="typography_heading">REST API Service</h1> */}
+              <Typography variant="h3" className="typography_heading">
+              REST API Service
+            </Typography>
+              {/* <h3 className="homepageSubhead">Empower Your Ecosystem</h3> */}
+              <Typography variant="h5" className="homepageSubhead">
+              Empower Your Ecosystem
+            </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Our API Development services enable you to open new avenues of

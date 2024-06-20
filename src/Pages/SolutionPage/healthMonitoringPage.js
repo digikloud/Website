@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet";
 function Healthpage() {
   return (
     <div>
-       <Helmet>
+      <Helmet>
         <title>Helath Management Solution</title>
         <meta
           name="description"
@@ -31,7 +31,8 @@ function Healthpage() {
         <Grid className="solution_page_top_image">
           <div className=" health_text">
             <h1 className="solutionTopTag">
-              Connecting Health for a Smarter Future IoT in Healthcare Management
+              Connecting Health for a Smarter Future IoT in Healthcare
+              Management
             </h1>
           </div>
         </Grid>
@@ -42,39 +43,54 @@ function Healthpage() {
             </h1>
             <div className="content_text">
               <Typography variant="p">
-                The healthcare industry is undergoing a significant
+                {/* The healthcare industry is undergoing a significant
                 transformation with the integration of Internet of Things (IoT)
                 technology. IoT refers to the network of interconnected devices
                 that communicate and exchange data, enabling remote monitoring,
                 data analysis, and automation. In healthcare management, IoT has
                 the potential to revolutionize the way healthcare is delivered,
                 improving patient outcomes, reducing costs, and enhancing
-                operational efficiency.
+                operational efficiency. */}
+                IoT technology is revolutionizing healthcare management by
+                connecting devices for remote monitoring, data analysis, and
+                automation, ultimately improving patient outcomes, reducing
+                costs, and enhancing operational efficiency.
               </Typography>
             </div>
           </Grid>
           <Grid item md={6} xs={12}>
-            <img src={healthdetails} alt="health managemnt iot"  className="images_rightside" />
+            <img
+              src={healthdetails}
+              alt="health managemnt iot"
+              className="images_rightside"
+            />
           </Grid>
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
-            
-            <img src={remote_monitoring} alt="health managemnt iot" className="images" />
+            <img
+              src={remote_monitoring}
+              alt="health managemnt iot"
+              className="images"
+            />
           </Grid>
           <Grid item md={6} xs={12}>
-          <h1 className="typography_heading_solution">
+            <h1 className="typography_heading_solution">
               Remote Patient Monitoring
             </h1>
             <div className="content_text">
               <Typography variant="p">
-                One of the primary applications of IoT in healthcare management
+                {/* One of the primary applications of IoT in healthcare management
                 is remote patient monitoring (RPM). IoT devices, such as
                 wearables, sensors, and connected medical devices, can
                 continuously collect and transmit patient health data to
                 healthcare providers. This enables healthcare professionals to
                 monitor patients remotely, identify potential health issues in
-                real-time, and intervene promptly.
+                real-time, and intervene promptly. */}
+                IoT devices such as wearables and sensors collect and transmit
+                patient health data to healthcare providers, enabling remote
+                monitoring, real-time issue detection, and prompt intervention
+                by healthcare professionals.
               </Typography>
             </div>
           </Grid>
@@ -86,15 +102,23 @@ function Healthpage() {
             </h1>
             <div className="content_text">
               <Typography variant="p">
-                IoT technology enables the creation of smart hospitals and
+                {/* IoT technology enables the creation of smart hospitals and
                 healthcare facilities. Various interconnected devices and
                 systems can be integrated to automate routine tasks, optimize
-                resource allocation, and enhance patient experience.
+                resource allocation, and enhance patient experience. */}
+                IoT technology enables smart hospitals by integrating
+                interconnected devices and systems. This automation optimizes
+                resource allocation, streamlines routine tasks, and enhances the
+                patient experience.
               </Typography>
             </div>
           </Grid>
           <Grid item md={6} xs={12}>
-            <img src={smartHospital} alt="health managemnt iot"  className="images_rightside" />
+            <img
+              src={smartHospital}
+              alt="health managemnt iot"
+              className="images_rightside"
+            />
           </Grid>
         </Grid>
         <Grid container className=" dashboardpage">
@@ -104,7 +128,7 @@ function Healthpage() {
             </h1>
             <div className="content_text">
               <Typography variant="p">
-                The massive amounts of data generated by IoT devices in
+                {/* The massive amounts of data generated by IoT devices in
                 healthcare provide an opportunity for advanced analytics and
                 predictive insights. By collecting and analyzing real-time data,
                 healthcare providers can gain valuable insights into patient
@@ -113,12 +137,20 @@ function Healthpage() {
                 deterioration, optimize treatment plans, and improve resource
                 allocation. These insights enable proactive and personalized
                 care, leading to better patient outcomes and more efficient
-                healthcare management.
+                healthcare management. */}
+                The vast data from IoT devices in healthcare allows for advanced
+                analytics and predictive insights, aiding in real-time
+                monitoring, treatment optimization, and proactive patient care
+                for improved outcomes and efficient healthcare management.
               </Typography>
-              </div>
+            </div>
           </Grid>
-          <Grid item md={12} xs={12} >
-            <img src={dashboard} alt="iot helath management dahboard" className=" dashboard" />        
+          <Grid item md={12} xs={12}>
+            <img
+              src={dashboard}
+              alt="iot helath management dahboard"
+              className=" dashboard"
+            />
           </Grid>
         </Grid>
       </Grid>

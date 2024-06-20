@@ -22,7 +22,7 @@ function SolarMonitoring() {
           Digikloud's new template feature as a starting point to develop your
           Solar monitoring solution
         </h2>
-        <Button
+        {/* <Button
           target="_blank"
           href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"
           style={{
@@ -33,7 +33,7 @@ function SolarMonitoring() {
           }}
         >
           See Live Dashboard
-        </Button>
+        </Button> */}
       </section>
       <section className="iotdashboard_container">
         <article className="iotdashboard_image_container">

@@ -102,6 +102,14 @@ nav > a , .content > a , .menu > a {
   padding: 0 10px;
 }
 
+nav > a , .content > a , .nvaLink > a .menu > a {
+  color: #00b894;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
     display: block;

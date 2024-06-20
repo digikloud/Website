@@ -22,7 +22,7 @@ function WasteManagementIoT() {
           Utilize Digikloud's innovative template feature as a foundation to
           kickstart the development of your waste management solution.
         </h2>
-        <Button
+        {/* <Button
           target="_blank"
           href="https://app-demo.digikloudsystems.com/dashboard/923a4bc0-2148-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d"
           style={{
@@ -33,7 +33,7 @@ function WasteManagementIoT() {
           }}
         >
           See Live Dashboard
-        </Button>
+        </Button> */}
       </section>
       <section className="iotdashboard_container">
         <article className="iotdashboard_image_container">
