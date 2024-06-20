@@ -41,10 +41,14 @@ function ProtocolsHome() {
       <Grid container className="iotProtocols">
         <Grid item xs={12} md={12} lg={12}>
         <Fade direction="up" triggerOnce={true} duration={1500}>
-          <h1 className="typography_heading">Supported IoT protocols</h1>
-          <h3 className="homepageSubhead">
+          {/* <h1 className="typography_heading">Supported IoT protocols</h1> */}
+          <Typography variant="h3" className="typography_heading">Supported IoT protocols</Typography>
+          {/* <h3 className="homepageSubhead">
             Seamless Connectivity, Boundless Possibilities
-          </h3>
+          </h3> */}
+          <Typography variant="h5" className="homepageSubhead">
+          Seamless Connectivity, Boundless Possibilities
+            </Typography>
           <div className="content_text">
             <Typography variant="p" align="justify">
               At DiGiKloud, we specialize in delivering cutting-edge Internet of

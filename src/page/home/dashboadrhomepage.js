@@ -17,9 +17,10 @@ function Dashboadrhomepage() {
       <Grid container className="Dashboadrhomepage">
         <Grid item xs={12} md={12}>
           <Fade direction="up" triggerOnce={true} duration={2000}>
-          <h1 className="typography_heading">
+          {/* <h1 className="typography_heading">
             Harness IoT to aggregate data from every asset
-          </h1>
+          </h1> */}
+          <Typography variant="h3" className="typography_heading">Harness IoT to aggregate data from every asset</Typography>
           <div className="content_text" style={{width : '80%'}}>
             <Typography variant="p" align="justify">
               Collect and consolidate data from a wide range of assets,

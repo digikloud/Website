@@ -9,10 +9,14 @@ function Analyzehome() {
       <Grid container className="analyzehome">
         <Grid item xs={12} md={6}>
           <Slide direction="left" triggerOnce={true} duration={1500}>
-            <h1 className="typography_heading">Uncover, Analyze, Optimize</h1>
-            <h3 className="homepageSubhead">
+            {/* <h1 className="typography_heading">Uncover, Analyze, Optimize</h1> */}
+            <Typography variant="h3" className="typography_heading">Uncover, Analyze, Optimize</Typography>
+            {/* <h3 className="homepageSubhead">
               Extracting Actionable Insights from Raw Data
-            </h3>
+            </h3> */}
+            <Typography variant="h5" className="homepageSubhead">
+            Extracting Actionable Insights from Raw Data
+            </Typography>
             <img src={analyze} alt="iot analyze" className="homeAboutImages" />
           </Slide>
         </Grid>
@@ -27,9 +31,9 @@ function Analyzehome() {
               your business from disruptions and enabling long-term success.
             </Typography>
             <ul style={{ lineHeight: "2" }}>
-              <li>Identifying trends, patterns, and anomalies</li>
-              <li>Real-time data collection and integration</li>
-              <li>Improving resource allocation and cost efficiency</li>
+              <li><Typography variant="p">Identifying trends, patterns, and anomalies</Typography></li>
+              <li><Typography variant="p">Real-time data collection and integration</Typography></li>
+              <li><Typography variant="p">Improving resource allocation and cost efficiency</Typography></li>
             </ul>
           </Slide>
         </Grid>

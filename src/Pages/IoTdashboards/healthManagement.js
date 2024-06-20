@@ -260,7 +260,7 @@ function HealthManagementIoT() {
                   spacing={3}
                   className="iotdashboard_info"
                 >
-                  <Typography variant="h2">
+                  <Typography variant="h3">
                     IoT Health Management Dashboard
                   </Typography>
                   <article className="dashboardinfoContent">

@@ -9,9 +9,10 @@ function HomeAbout() {
       <Grid container className="HomeAbout">
         <Grid item xs={12} md={6}>
           <Slide triggerOnce={true}>
-            <h1 className="typography_heading">
+            {/* <h1 className="typography_heading">
               Resilience in IoT platform for your Business
-            </h1>
+            </h1> */}
+            <Typography variant="h3" className="typography_heading">Resilience in IoT platform for your Business</Typography>
             <article className="content_text">
               <Typography variant="p" align="justify">
                 The Internet of Things (IoT) has revolutionized the way

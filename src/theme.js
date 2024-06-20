@@ -15,45 +15,55 @@ const theme = createTheme({
     h1: {
       fontSize: "50px",
       fontWeight: 700,
-      fontFamily : " 'Montserrat', "
+      // fontFamily : " 'Montserrat', "
+      fontFamily: "sans-serif"
     },
     h2: {
       fontSize: "40px",
       fontWeight: 500,
-      fontFamily : " 'Montserrat', ",
+      // fontFamily: "'Montserrat',",
+      fontFamily: "sans-serif",
       color : "#00b894" ,
     },
     h3: {
-      fontSize: "30px",
+      fontSize: "32px",
       fontWeight: 600,
-      fontFamily: "'Montserrat',",
+      // fontFamily: "'Montserrat',",
+      fontFamily: "sans-serif"
     },
     h4: {
       fontSize: "24px",
       fontWeight: 600,
-      fontFamily: "'Montserrat',",
+      // fontFamily: "'Montserrat',",
+      fontFamily: "sans-serif"
     },
     h5: {
       fontSize: "20px",
-      fontFamily: "'Montserrat',",
+      // fontFamily: "'Montserrat',",
+      fontWeight: 600,
+      fontFamily: "sans-serif"
     },
     h6:{
       fontSize: "20px",
       fontWeight: 600,
-      fontFamily : " 'Montserrat', "
+      // fontFamily: "'Montserrat',",
+      fontFamily: "sans-serif"
     },
-    body1: {
+    body: {
       fontSize: "16px",
       fontWeight: 700,
-      fontFamily : " 'Montserrat', "
+      // fontFamily: "'Montserrat',",
+      fontFamily: "sans-serif"
     },
     p: {
       fontSize: "16px",
-      fontFamily: "'Montserrat', sans-serif",
+      // fontFamily: "'Montserrat',",
+      fontFamily: "sans-serif" ,
       lineHeight : '2',
     },
     homepageSubhead:{
-      fontFamily: "'Montserrat', sans-serif",
+      // fontFamily: "'Montserrat',",
+      fontFamily: "sans-serif"
     }
   },
 });

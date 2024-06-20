@@ -9,10 +9,14 @@ function Costsaving() {
       <Grid container className="costSaving">
         <Grid item xs={12} md={6}>
         <Slide direction="left" triggerOnce={true} duration={1500}>
-            <h1 className="typography_heading">Cost-Saving Insights</h1>
-            <h3 className="homepageSubhead">
+            {/* <h1 className="typography_heading">Cost-Saving Insights</h1> */}
+            <Typography variant="h3" className="typography_heading">Cost-Saving Insights</Typography>
+            {/* <h3 className="homepageSubhead">
               Minimize Downtimes, Optimize Operations with IoT Analytics
-            </h3>
+            </h3> */}
+            <Typography variant="h5" className="homepageSubhead">
+            Minimize Downtimes, Optimize Operations with IoT Analytics
+            </Typography>
             <article className="content_text">
               <Typography variant="p" align="justify">
                 IoT analytics offers businesses the opportunity to unlock
