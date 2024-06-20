@@ -227,12 +227,12 @@ function smartbuilding() {
           <Grid item md={6} xs={12}>
             <Slide triggerOnce={true}>
               <h1 className="typography_heading_solution">
-                3D Model Visualization with Tandam
+                3D Model Visualization with Tandem
               </h1>
               <div className="content_text">
                 <Typography variant="p">
-                  Tandam is used to view and interact with 3D models of the
-                  building. Tandam integrates with the data collected and stored
+                  Tandem is used to view and interact with 3D models of the
+                  building. Tandem integrates with the data collected and stored
                   in InfluxDB, providing a comprehensive 3D representation of
                   the building's systems and operations. This 3D visualization
                   offers an immersive and intuitive way to monitor and manage
@@ -255,11 +255,11 @@ function smartbuilding() {
         <Grid container className="dashboardpage">
           <Grid item md={12} xs={12}>
             <h1 className="typography_heading_solution">
-              Digikloud 3D Tandam Viewer
+              Digikloud 3D Tandem Viewer
             </h1>
             <div className="content_text">
               <Typography variant="p">
-                The addition of 3D visualization with Tandam provides a unique
+                The addition of 3D visualization with Tandem provides a unique
                 and detailed perspective, further empowering building managers
                 to optimize performance and address issues promptly.
               </Typography>
