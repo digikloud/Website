@@ -29,15 +29,16 @@ function Company() {
         </Grid>
         <Grid container className="company_page_detail company_top01">
           <Grid item md={6} xs={12}>
-            <h1 className="typography_heading_solution">Who we are</h1>
+            {/* <h1 className="typography_heading_solution">Who we are</h1> */}
+            <Typography variant="h3" className="typography_heading_solution">
+              Who we are
+            </Typography>
             <div className="content_text">
               <Typography variant="p">
-                Welcome to Digikloud, where we're dedicated to revolutionizing
-                industries through our cutting-edge IoT platform. Our mission is
-                to bridge the gap between the physical and digital realms,
-                empowering businesses to harness the power of the Internet of
-                Things (IoT) and drive unprecedented innovation, efficiency, and
-                growth.
+                Welcome to DiGiKloud, pioneering industry revolution with our
+                advanced IoT platform. We bridge the physical and digital
+                realms, empowering businesses to leverage IoT for innovation,
+                efficiency, and growth.
               </Typography>
             </div>
           </Grid>
@@ -54,7 +55,10 @@ function Company() {
         </Grid>
         <Grid container className="company_page_detail company_top01">
           <Grid item md={12} xs={12}>
-            <h1 className="typography_heading_solution">Our IoT Journey</h1>
+            {/* <h1 className="typography_heading_solution">Our IoT Journey</h1> */}
+            <Typography variant="h3" className="typography_heading_solution">
+              Our IoT Journey
+            </Typography>
             <div className="content_text">
               <Typography variant="p">
                 In 2022 , Digikloud systems embarked on a journey to reshape the
@@ -73,9 +77,16 @@ function Company() {
         <Grid container className="companyPagePlatformandValues">
           <section className="companyPlatformContainer">
             <Grid item xs={12}>
-              <h1 className="typography_heading" style={{ color: "white" }}>
+              {/* <h1 className="typography_heading" style={{ color: "white" }}>
                 Why Choose Our IoT Platform?
-              </h1>
+              </h1> */}
+              <Typography
+                variant="h3"
+                className="typography_heading_solution"
+                style={{ color: "white" }}
+              >
+                Why Choose Our IoT Platform?
+              </Typography>
             </Grid>
             <Grid item xs={12}>
               <h3 className="homepageSubhead" style={{ color: "white" }}>
@@ -137,9 +148,16 @@ function Company() {
           </section>
           <section className="companyValuesContainer">
             <Grid item xs={12}>
-              <h1 className="typography_heading" style={{ color: "white" }}>
+              {/* <h1 className="typography_heading" style={{ color: "white" }}>
                 Our Vision and Values
-              </h1>
+              </h1> */}
+              <Typography
+                variant="h3"
+                className="typography_heading_solution"
+                style={{ color: "white" }}
+              >
+                Our Vision and Values
+              </Typography>
             </Grid>
             <Grid item xs={12}>
               <h3 className="homepageSubhead" style={{ color: "white" }}>
@@ -186,19 +204,23 @@ function Company() {
 
         <Grid container className="company_page_detail company_top01">
           <Grid item md={12} xs={12}>
-            <h1 className="typography_heading_solution">Our Promise</h1>
+            {/* <h1 className="typography_heading_solution">Our Promise</h1> */}
+            <Typography variant="h3" className="typography_heading_solution">
+              Our Promise
+            </Typography>
             <div className="content_text">
               <article>
                 <Typography variant="p">
-                  We don't just provide solutions; we provide a partnership.
-                  From the conceptualization stage to implementation, and from
-                  deployment to ongoing management, our end-to-end support
-                  ensures that you're never alone in your IoT journey. Our team
-                  of experts will be there to address your questions, provide
-                  guidance, and offer solutions tailored to your specific needs.
+                  At Digikloud, we offer more than solutions; we offer a
+                  partnership. From conceptualization through implementation to
+                  ongoing management, our end-to-end support ensures you're
+                  never alone in your IoT journey. Our team of experts is
+                  dedicated to addressing your questions, providing guidance,
+                  and delivering tailored solutions that align with your unique
+                  objectives, challenges, and requirements.
                 </Typography>
               </article>
-              <article>
+              {/* <article>
                 <Typography variant="p">
                   We understand that every organization's IoT needs are unique.
                   Our approach is not one-size-fits-all. Instead, we collaborate
@@ -207,7 +229,7 @@ function Company() {
                   solutions that align with your goals and drive meaningful
                   results.
                 </Typography>
-              </article>
+              </article> */}
             </div>
           </Grid>
           <Grid item md={12} xs={12} className="promise_image_container">
@@ -242,7 +264,10 @@ function Company() {
         </Grid>
         <Grid container className="company_page_detail company_top01">
           <Grid item xs={12} md={12} lg={12}>
-            <h1 className="typography_heading_solution">What We've Done</h1>
+            {/* <h1 className="typography_heading_solution">What We've Done</h1> */}
+            <Typography variant="h3" className="typography_heading_solution">
+              What We've Done
+            </Typography>
             <div className="content_text">
               <Typography variant="p">
                 When you choose DigiKloud IoT, you're choosing a partner with a
