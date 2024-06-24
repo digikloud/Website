@@ -83,20 +83,14 @@ function Bookdemo() {
             <img
               src={image}
               alt="iot_bookedemo_image"
-              className="bookdemo_image"
+              className="bookdemo_image "
+              // className="homeAboutImages"
             />
           </Slide>
         </Grid>
         <Grid item xs={12} md={6} className="bookdemo_content">
           <Fade direction="up" triggerOnce={true} duration={1500}>
-            {/* <h1 className="typography_heading">
-              Ready to Create Something Extraordinary ?
-            </h1> */}
             <Typography variant="h3" className="typography_heading">Ready to Create Something Extraordinary ?</Typography>
-            {/* <h3 className="homepageSubhead">
-              Apply for our free trial and let our professionals ensure your
-              journey is smooth and successful
-            </h3> */}
             <Typography variant="h5" className="homepageSubhead">
             Apply for our free trial and let our professionals ensure your
             journey is smooth and successful

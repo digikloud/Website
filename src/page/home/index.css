@@ -169,21 +169,17 @@
 
 .HomeAbout {
   width: 80% !important;
-  /* height: 700px; */
   margin-top: 50px;
   padding: 0 100px;
   background: #f4f7f9;
 }
 
 .homeAboutImages {
-  height: 80%;
-  width: 80%;
+  height: 300px;
+  width: 300px;
+  /* width: 90%; */
 }
 
-.homeAboutImages01 {
-  height: 100%;
-  width: 100%;
-}
 
 .homeContainer {
   display: flex;
@@ -274,7 +270,7 @@
 }
 
 .analyzehome {
-  height: 600px;
+  height: 500px;
   width: 80% !important;
   padding: 0 100px;
   background: #f4f7f9;
@@ -379,46 +375,26 @@
 .contact_us_page {
   width: 80% !important;
   height: 100vh;
-  /* padding: 0 100px; */
-  /* position: relative; */
-  /* padding-bottom: 30px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 100px; */
-  /* background-color: red; */
 }
 
 .contact_us_page {
   width: 80% !important;
   display: flex;
-  /* height: 100vh; */
 }
 
 .contact_us_top_container {
-  /* height: 25vh; */
   padding: 20px 0px;
   text-align: center;
 }
 
 .contact_us_bottom_container {
-  /* height: 75vh; */
-  /* background: red; */
   padding-bottom: 30px;
   display: flex;
   justify-content: center;
 }
-
-/* .contact_us_form { */
-/* position: absolute; */
-/* top: 10; */
-/* background-color: white; */
-
-/* padding: 0; */
-/* padding-bottom: 50px;
-  border-bottom: 10px; */
-/* width: 80% !important; */
-/* } */
 
 .test {
   height: 100%;
@@ -436,7 +412,6 @@
   width: 100%;
   font-size: 16px;
   padding-left: 10px;
-  /* background: red; */
 }
 
 .contact_us_page_form {
@@ -449,8 +424,8 @@
 }
 
 .bookdemo_image {
-  width: 100%;
-  height: 400px;
+  width: 90%;
+  height: 300px;
 }
 
 .card {
@@ -540,7 +515,6 @@
 
   .HomeAbout {
     width: 100% !important;
-    height: 900px;
     padding: 5px 20px;
     margin-top: 0px;
   }
@@ -552,7 +526,8 @@
   }
 
   .homeAboutImages {
-    width: 100%;
+    height: 200px;
+    width: 200px;
   }
 
   .projectcard {
@@ -588,12 +563,6 @@
     padding-left: 10px;
   }
 
-  /* .projects_data {
-    text-align: center;
-    flex-direction: row !important;
-    margin-bottom: 5px;
-  } */
-
   .analyzehome {
     height: fit-content;
     width: 100% !important;
@@ -602,12 +571,12 @@
   }
 
   .typography_heading {
-    font-size: 25px;
+    font-size: 20px !important;
     color: #00b894;
   }
 
   .homepageSubhead {
-    font-size: 14px !important;
+    font-size: 16px !important;
     padding-bottom: 13px;
   }
 
@@ -682,13 +651,6 @@
     margin-top: 10px;
   }
 
-  /* .dashboard_image_slider{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
-} */
   .dashboard_platformPage {
     width: 100%;
     height: 300px;
@@ -739,8 +701,6 @@
 
   .bookdemo_image {
     display: none;
-    width: 400px;
-    height: 400px;
   }
 }
 

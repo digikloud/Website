@@ -65,13 +65,14 @@
 }
 
 .solution_building_page_top_image {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
-  background: url("../../assets/building.png");
-  background-position: center;
+  background: url("../../assets/building.jpg");
+  background-position:center top;
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   position: relative;
+  /* opacity: 75%; */
 }
 
 .solution_container {
@@ -175,8 +176,8 @@
 }
 
 .imagesSmart{
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -256,7 +257,7 @@
     position: relative;
   }
 
-  .solution_solar_page_top_image {
+  .solution_solar_page_top_image, .solution_building_page_top_image {
     height: 50vh;
   }
 

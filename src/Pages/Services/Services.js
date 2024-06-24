@@ -1,7 +1,9 @@
 import React from "react";
 import "./services.css";
 import Navbar from "../../page/home/navbar";
-import background from "../../assets/Services/services_bg.webp";
+// import background from "../../assets/Services/services_bg.webp";
+import background from "../../assets/Services/services_bg01.jpg";
+
 import services01 from "../../assets/Services/services01.webp";
 import services02 from "../../assets/Services/services02.webp";
 import services03 from "../../assets/Services/services03.webp";
@@ -60,14 +62,14 @@ function Services() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Slide direction="right" triggerOnce={true} duration={1500}>
-              <h1 className="typography_heading">Trusted Platform</h1>
+              <Typography variant="h3" className="typography_heading">Trusted Platform</Typography>
               <article className="iotServicesContent">
                 <Typography variant="p" align="justify">
-                  Empower your business with the limitless possibilities of the
-                  Internet of Things (IoT). At NextGen IoT Services, we
-                  specialize in providing comprehensive and innovative solutions
-                  that enable you to connect, manage, and leverage data from
-                  your devices like never before.
+                  Unleash the limitless possibilities of the Internet of Things
+                  (IoT) for your business. At NextGen IoT Services, we're your
+                  one-stop shop for comprehensive and innovative solutions that
+                  enable you to connect, manage, and leverage data from your
+                  devices like never before.
                 </Typography>
               </article>
             </Slide>
@@ -79,20 +81,22 @@ function Services() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={12} lg={12}>
             <Fade direction="left" duration={2000} triggerOnce={true}>
-              <h1
+              <Typography
+                variant="h3"
                 className="typography_heading"
                 style={{ textAlign: "center" }}
               >
                 Why Choose IoT Services?
-              </h1>
+              </Typography>
             </Fade>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} className="our_iot_service">
             <Slide triggerOnce={true}>
-              <h1 className="typography_heading">End-to-End Solutions</h1>
+              <Typography variant="h3" className="typography_heading">End-to-End Solutions</Typography>
               <Typography variant="p">
-                From device connectivity to data analysis, we offer a complete
-                suite of IoT services to address all your needs
+                We offer a complete suite of IoT services, from device
+                connectivity to data analysis, to help you optimize operations
+                and gain valuable insights.
               </Typography>
             </Slide>
           </Grid>
@@ -107,22 +111,22 @@ function Services() {
               <img src={services09} alt="" className="nextgen_images" />
             </Slide>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} className="our_iot_service">
             <Slide direction="right" triggerOnce={true} duration={1500}>
-              <h1 className="typography_heading">Scalable Infrastructure</h1>
+              <Typography variant="h3" className="typography_heading">Scalable Infrastructure</Typography>
               <Typography variant="p">
-                Our services are designed to accommodate growth, ensuring your
-                IoT ecosystem can expand seamlessly.
+                Our services are designed to scale with you, ensuring your IoT
+                ecosystem can expand seamlessly.
               </Typography>
             </Slide>
           </Grid>
 
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} className="our_iot_service">
             <Slide triggerOnce={true}>
-              <h1 className="typography_heading">Security First</h1>
+              <Typography variant="h3" className="typography_heading">Security First</Typography>
               <Typography variant="p">
-                We prioritize the security of your data and devices,
-                implementing the latest encryption and authentication measures.
+                We prioritize the security of your data and devices, actively
+                employing the latest encryption and authentication measures.
               </Typography>
             </Slide>
           </Grid>
@@ -137,12 +141,12 @@ function Services() {
               <img src={services11} alt="" className="nextgen_images" />
             </Slide>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} className="our_iot_service">
             <Slide direction="right" triggerOnce={true} duration={1500}>
-              <h1 className="typography_heading">Expertise and Experience</h1>
+              <Typography variant="h3" className="typography_heading">Expertise and Experience</Typography>
               <Typography variant="p">
-                Our team of IoT experts brings years of experience to the table,
-                guiding you through every step of the IoT journey.
+                Our team of IoT experts provides hands-on guidance throughout
+                your entire IoT journey.
               </Typography>
             </Slide>
           </Grid>
@@ -153,12 +157,13 @@ function Services() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={12} lg={12}>
             <Fade direction="left" duration={2000} triggerOnce={true}>
-              <h1
+              <Typography
+              variant="h3"
                 className="typography_heading"
                 style={{ textAlign: "center" }}
               >
                 Our Services
-              </h1>
+              </Typography>
             </Fade>
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
@@ -167,13 +172,11 @@ function Services() {
                 <img src={services02} alt="" className="services_images" />
                 <article>
                   <Typography variant="h6">Device Connectivity</Typography>
-                  {/* <article className="services_info"> */}
-                    <Typography variant="p">
-                      Seamlessly integrate your devices into the IoT ecosystem.
-                      Monitor and control them remotely for unprecedented
-                      convenience and efficiency.
-                    </Typography>
-                  {/* </article> */}
+                  <Typography variant="p">
+                    Seamlessly integrate your devices into the IoT ecosystem for
+                    unprecedented convenience and efficiency, enabling remote
+                    monitoring and insightful data analysis.
+                  </Typography>
                 </article>
               </article>
             </Slide>
@@ -186,8 +189,8 @@ function Services() {
                   <Typography variant="h6">Personal Data Security</Typography>
                   <Typography variant="p">
                     Unlock the potential of data by integrating information from
-                    various sources. Gain a holistic view of your operations for
-                    more informed decision-making.
+                    various sources. Empower yourself with a holistic view of
+                    your operations, enabling more informed decision-making.
                   </Typography>
                 </article>
               </article>
@@ -202,9 +205,9 @@ function Services() {
                     Data Storage and Visualization
                   </Typography>
                   <Typography variant="p">
-                    Store and visualize your data with ease. Our scalable cloud
-                    solutions and visualization tools turn complex data into
-                    actionable insights.
+                    Unlock the power of predictive analytics and actionable
+                    insights. Our scalable cloud solutions and visualization
+                    tools turn complex data into clear understanding.
                   </Typography>
                 </article>
               </article>
@@ -217,9 +220,9 @@ function Services() {
                 <article>
                   <Typography variant="h6">API Development</Typography>
                   <Typography variant="p">
-                    Foster collaboration and innovation by developing APIs that
-                    enable seamless communication between devices and
-                    third-party applications.
+                    Empower a thriving ecosystem of connected devices and
+                    third-party applications with our powerful APIs that drive
+                    seamless communication.
                   </Typography>
                 </article>
               </article>
@@ -235,9 +238,9 @@ function Services() {
                     Alert & Notification System
                   </Typography>
                   <Typography variant="p">
-                    Stay in the loop with real-time alerts. Set custom
-                    thresholds and receive notifications through your preferred
-                    channels.
+                    Never miss a critical moment. Stay in the loop with
+                    real-time alerts. Customize your notification triggers and
+                    receive updates through your preferred channels.
                   </Typography>
                 </article>
               </article>
@@ -250,9 +253,10 @@ function Services() {
                 <article>
                   <Typography variant="h6">Reports and Analytics</Typography>
                   <Typography variant="p">
-                    Make informed decisions based on data-driven insights. Our
-                    detailed reports and analytics help you optimize processes
-                    and drive excellence.
+                    Uncover data-driven insights that empower informed
+                    decisions. Our detailed reports and analytics guide you to
+                    optimize processes and achieve excellence, ultimately
+                    maximizing your ROI.
                   </Typography>
                 </article>
               </article>

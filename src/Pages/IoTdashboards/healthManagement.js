@@ -17,11 +17,11 @@ function HealthManagementIoT() {
       </Helmet>
       <Navbar />
       <section className="heading">
-        <h1>IoT Health Monitoring solution</h1>
-        <h2>
+        <Typography variant="h1">IoT Health Monitoring solution</Typography>
+        <Typography variant="h4">
           Utilize Digikloud's latest template feature as a foundation for
           building your health monitoring solution
-        </h2>
+        </Typography>
         {/* <Button
             target="_blank"
             href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"
@@ -62,11 +62,11 @@ function HealthManagementIoT() {
       </section>
       <section className="iotdashboard_container key_elements_solar_container">
         <article className="key_elements_solar">
-          <h2>
+          <Typography variant="h5">
             Here are the key elements that constitute a Health Monitoring
             scenario for businesses aiming to streamline their operational costs
             and enhance efficiency
-          </h2>
+          </Typography>
           <Grid container spacing={1}>
             <Grid
               style={{
@@ -273,9 +273,9 @@ function HealthManagementIoT() {
                     </Typography>
                   </article>
 
-                  <Button
-                    // target="_blank"
-                    // href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"
+                  {/* <Button
+                    target="_blank"
+                    href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"
                     style={{
                       borderRadius: 10,
                       backgroundColor: "#00b894",
@@ -284,7 +284,7 @@ function HealthManagementIoT() {
                     }}
                   >
                     GET STARTED
-                  </Button>
+                  </Button> */}
                 </Stack>
               </article>
             </Grid>

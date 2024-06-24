@@ -166,6 +166,10 @@
     padding: 10px;
 }
 
+.company_top01 {
+    height: 400px;
+}
+
 @media screen and (max-width : 600px) {
     .companyHomepage {
         height: 50vh;

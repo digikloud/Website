@@ -1,6 +1,8 @@
 .services_background_image {
     height: 100%;
     width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .feautured_info {
@@ -11,10 +13,6 @@
 
 .feautured {
     height: fit-content;
-}
-
-.feautured>Grid {
-    background-color: red;
 }
 
 .feautured_data {
@@ -42,6 +40,10 @@
 
 .thingsboardTopHead {
     width: 70%;
+}
+.servicesTopHead {
+    width: 70%;
+    left : 10%;
 }
 
 .azure_heading {
@@ -159,11 +161,12 @@
     position: absolute;
     left: 60%;
 }
-
+.our_iot_service{
+    padding: 50px 100px;
+}
 .influxDB_details {
     display: flex;
-    flex-direction: column;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: center;
     align-items: center;
     padding: 50px 100px;

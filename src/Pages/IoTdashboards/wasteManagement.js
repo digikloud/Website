@@ -17,11 +17,11 @@ function WasteManagementIoT() {
       </Helmet>
       <Navbar />
       <section className="heading">
-        <h1>IoT Waste Managment Solution</h1>
-        <h2>
+        <Typography variant="h1">IoT Waste Managment Solution</Typography>
+        <Typography variant="h4">
           Utilize Digikloud's innovative template feature as a foundation to
           kickstart the development of your waste management solution.
-        </h2>
+        </Typography>
         {/* <Button
           target="_blank"
           href="https://app-demo.digikloudsystems.com/dashboard/923a4bc0-2148-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d"
@@ -65,11 +65,11 @@ function WasteManagementIoT() {
       </section>
       <section className="iotdashboard_container key_elements_solar_container">
         <article className="key_elements_solar">
-          <h2>
+          <Typography variant="h5">
             Below are the fundamental components comprising a waste management
             scenario designed for businesses seeking to optimize operational
             expenses and improve overall efficiency.
-          </h2>
+          </Typography>
           <Grid container spacing={1}>
             <Grid
               style={{
@@ -194,7 +194,7 @@ function WasteManagementIoT() {
                       trial and embarking on your journey with simplicity.
                     </Typography>
                   </article>
-                  <Button
+                  {/* <Button
                     target="_blank"
                     href="https://app-demo.digikloudsystems.com/dashboard/923a4bc0-2148-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d"
                     style={{
@@ -205,7 +205,7 @@ function WasteManagementIoT() {
                     }}
                   >
                     GET STARTED
-                  </Button>
+                  </Button> */}
                 </Stack>
               </article>
             </Grid>

@@ -17,11 +17,11 @@ function SolarMonitoring() {
       </Helmet>
       <Navbar />
       <section className="heading">
-        <h1>IoT Solar Monitoring Solution</h1>
-        <h2>
+        <Typography variant="h1">IoT Solar Monitoring Solution</Typography>
+        <Typography variant="h4">
           Digikloud's new template feature as a starting point to develop your
           Solar monitoring solution
-        </h2>
+        </Typography>
         {/* <Button
           target="_blank"
           href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"
@@ -61,11 +61,11 @@ function SolarMonitoring() {
       </section>
       <section className="iotdashboard_container key_elements_solar_container">
         <article className="key_elements_solar">
-          <h2>
+          <Typography variant="h5">
             Here are the key elements that constitute a solar management
             scenario for businesses aiming to streamline their operational costs
             and enhance efficiency
-          </h2>
+          </Typography>
           <Grid container spacing={1}>
             <Grid
               style={{
@@ -277,7 +277,7 @@ function SolarMonitoring() {
                       initiating your journey with ease.
                     </Typography>
                   </article>
-                  <Button
+                  {/* <Button
                     target="_blank"
                     href="https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d&state=https://app-demo.digikloudsystems.com/dashboard/512ba870-22fd-11ee-a07d-712618d34042?publicId=6fe3ef60-1bba-11ee-beec-d9863dec950d%253D"
                     style={{
@@ -288,7 +288,7 @@ function SolarMonitoring() {
                     }}
                   >
                     GET STARTED
-                  </Button>
+                  </Button> */}
                 </Stack>
               </article>
             </Grid>

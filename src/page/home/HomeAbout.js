@@ -9,9 +9,6 @@ function HomeAbout() {
       <Grid container className="HomeAbout">
         <Grid item xs={12} md={6}>
           <Slide triggerOnce={true}>
-            {/* <h1 className="typography_heading">
-              Resilience in IoT platform for your Business
-            </h1> */}
             <Typography variant="h3" className="typography_heading">Resilience in IoT platform for your Business</Typography>
             <article className="content_text">
               <Typography variant="p" align="justify">
@@ -31,19 +28,17 @@ function HomeAbout() {
             <img
               src={resilence}
               alt="Digikloud"
-              className="homeAboutImages01"
+              className="homeAboutImages"
             />
           </Slide>
         </Grid>
         <Grid item xs={12} md={12} className="projects_data">
-          {/* <Fade direction="up" triggerOnce={true} duration={1500}> */}
           <div className="projectcard">
             <Typography variant="h1">50+</Typography>
             <Typography variant="body" className="homepageSubhead">
               Projects Delivered
             </Typography>
           </div>
-          {/* </Fade> */}
           <div className="projectcard">
             <Typography variant="h1">200+</Typography>
             <Typography variant="body" className="homepageSubhead">

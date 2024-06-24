@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/material";
+import {  Grid, Typography } from "@mui/material";
 import { Helmet } from "react-helmet";
 import React, { useState, useEffect } from "react";
 import "./solutionpage.css";
@@ -77,24 +77,11 @@ function Solarpage() {
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
             <Slide triggerOnce={true}>
-              {/* <h1 className="typography_heading_solution">
-              Solar Energy Management
-            </h1> */}
               <Typography variant="h3" className="typography_heading_solution">
                 Solar Energy Management
               </Typography>
               <div className="content_text">
                 <Typography variant="p">
-                  {/* Solar energy has emerged as a key player in the global shift
-                  towards sustainable and renewable energy sources. As the world
-                  recognizes the importance of reducing carbon emissions and
-                  combatting climate change, solar power offers a clean and
-                  abundant alternative. To further optimize solar energy
-                  generation and consumption, the integration of Internet of
-                  Things (IoT) technology has revolutionized solar energy
-                  management. This article explores how IoT is transforming
-                  solar energy management, enabling more efficient utilization,
-                  monitoring, and control of solar power systems. */}
                   Integrating Internet of Things (IoT) technology with solar
                   energy management is revolutionizing the global shift towards
                   sustainability by enabling more efficient utilization,

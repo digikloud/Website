@@ -29,7 +29,6 @@ function Company() {
         </Grid>
         <Grid container className="company_page_detail company_top01">
           <Grid item md={6} xs={12}>
-            {/* <h1 className="typography_heading_solution">Who we are</h1> */}
             <Typography variant="h3" className="typography_heading_solution">
               Who we are
             </Typography>
@@ -55,7 +54,6 @@ function Company() {
         </Grid>
         <Grid container className="company_page_detail company_top01">
           <Grid item md={12} xs={12}>
-            {/* <h1 className="typography_heading_solution">Our IoT Journey</h1> */}
             <Typography variant="h3" className="typography_heading_solution">
               Our IoT Journey
             </Typography>
@@ -77,9 +75,6 @@ function Company() {
         <Grid container className="companyPagePlatformandValues">
           <section className="companyPlatformContainer">
             <Grid item xs={12}>
-              {/* <h1 className="typography_heading" style={{ color: "white" }}>
-                Why Choose Our IoT Platform?
-              </h1> */}
               <Typography
                 variant="h3"
                 className="typography_heading_solution"
@@ -106,9 +101,9 @@ function Company() {
                   </div>
                   <div className="text">
                     <Typography variant="p">
-                      IoT devices are interconnected smart devices embedded with
-                      sensors, software, and other technologies that enable them
-                      to collect and exchange data over the internet.
+                      IoT devices intelligently connect everyday objects,
+                      equipping them with sensors and software to collect and
+                      transmit data online.
                     </Typography>
                   </div>
                 </div>
@@ -121,10 +116,10 @@ function Company() {
                   </div>
                   <div className="text">
                     <Typography variant="p">
-                      Implement strong authentication mechanisms to ensure that
-                      only authorized devices can access the network and data.
-                      This can involve using unique device identifiers, secure
-                      keys, and certificates.
+                      Fortify your network and data with robust authentication.
+                      We utilize unique device IDs, secure keys, and
+                      certificates to guarantee only authorized devices gain
+                      access.
                     </Typography>
                   </div>
                 </div>
@@ -137,9 +132,9 @@ function Company() {
                   </div>
                   <div className="text">
                     <Typography variant="p">
-                      Cross-industry expertise encourages the transfer of ideas,
-                      technologies, and best practices that can lead to
-                      breakthroughs and advancements.
+                      Cross-industry expertise promotes the transfer of ideas,
+                      technologies, and best practices, leading to breakthroughs
+                      and advancements.
                     </Typography>
                   </div>
                 </div>
@@ -148,9 +143,6 @@ function Company() {
           </section>
           <section className="companyValuesContainer">
             <Grid item xs={12}>
-              {/* <h1 className="typography_heading" style={{ color: "white" }}>
-                Our Vision and Values
-              </h1> */}
               <Typography
                 variant="h3"
                 className="typography_heading_solution"
@@ -172,9 +164,8 @@ function Company() {
                   <Typography variant="h6">Collaboration</Typography>
                   <div className="text">
                     <Typography variant="p">
-                      We believe in the power of collaboration. By working hand
-                      in hand with clients, partners,and industry leaders, we
-                      amplify our collective impact.
+                      Collaboration with clients, partners, and industry leaders
+                      amplifies our collective impact.
                     </Typography>
                   </div>
                 </div>
@@ -182,8 +173,8 @@ function Company() {
                   <Typography variant="h6">Reliability</Typography>
                   <div className="text">
                     <Typography variant="p">
-                      Depend on us to deliver reliable solutions that meet your
-                      needs today and scale to meet the demands of tomorrow.
+                      Unlock the potential of your business with reliable,
+                      scalable solutions.
                     </Typography>
                   </div>
                 </div>
@@ -191,9 +182,8 @@ function Company() {
                   <Typography variant="h6">Ethics and Integrity</Typography>
                   <div className="text">
                     <Typography variant="p">
-                      Our commitment to ethical conduct and integrity ensures
-                      that we operate with honesty, transparency, and respect in
-                      all our interactions.
+                      We operate with honesty, transparency, and respect in all
+                      interactions.
                     </Typography>
                   </div>
                 </div>
@@ -204,7 +194,6 @@ function Company() {
 
         <Grid container className="company_page_detail company_top01">
           <Grid item md={12} xs={12}>
-            {/* <h1 className="typography_heading_solution">Our Promise</h1> */}
             <Typography variant="h3" className="typography_heading_solution">
               Our Promise
             </Typography>
@@ -220,16 +209,6 @@ function Company() {
                   objectives, challenges, and requirements.
                 </Typography>
               </article>
-              {/* <article>
-                <Typography variant="p">
-                  We understand that every organization's IoT needs are unique.
-                  Our approach is not one-size-fits-all. Instead, we collaborate
-                  closely with you to understand your objectives, challenges,
-                  and requirements. This allows us to craft customized IoT
-                  solutions that align with your goals and drive meaningful
-                  results.
-                </Typography>
-              </article> */}
             </div>
           </Grid>
           <Grid item md={12} xs={12} className="promise_image_container">
@@ -264,7 +243,6 @@ function Company() {
         </Grid>
         <Grid container className="company_page_detail company_top01">
           <Grid item xs={12} md={12} lg={12}>
-            {/* <h1 className="typography_heading_solution">What We've Done</h1> */}
             <Typography variant="h3" className="typography_heading_solution">
               What We've Done
             </Typography>

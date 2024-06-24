@@ -6,8 +6,8 @@ import Footer from "../../page/home/Footer";
 import "./solutionpage.css";
 import Navbar from "../../page/home/navbar";
 import grafana from "../../assets/grafana.png";
-import influxdb from "../../assets/influxdb.png";
-import iothub from "../../assets/iothub.png";
+import influxdb from "../../assets/Services/AWS/aws03.webp";
+import iothub from "../../assets/Services/Azure/azure01.webp";
 import nodered from "../../assets/nodered.png";
 import tandam from "../../assets/tandam.png";
 import tandam3d from "../../assets/tandam_3d.png";
@@ -35,19 +35,17 @@ function smartbuilding() {
         <Grid className="solution_building_page_top_image">
           <div className="solution_home_head  ">
             <Slide triggerOnce={true} direction="up">
-              <h1 className="solutionTopTag" style={{ color: "black" }}>
+              <h1 className="solutionTopTag">
                 Smart buildings use IoT for efficient, secure, and comfortable
                 environments through real-time data
-              </h1>
+              </h1 >
             </Slide>
           </div>
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
             <Slide triggerOnce={true}>
-              <h1 className="typography_heading_solution">
-                Smart Building Management
-              </h1>
+              <Typography variant="h3" className="typography_heading_solution">Smart Building Management</Typography>
               <div className="content_text">
                 <Typography variant="p">
                   IoT integrated with AI and machine learning in building
@@ -61,7 +59,7 @@ function smartbuilding() {
           <Grid item md={6} xs={12}>
             <Slide duration={1500} triggerOnce={true} direction="right">
               <img
-                src={building1}
+                src="../images/services/iiot/iiot02.webp"
                 alt="iot solar dahboard"
                 className="imagesSmart"
               />
@@ -80,9 +78,9 @@ function smartbuilding() {
           </Grid>
           <Grid item md={6} xs={12}>
             <Slide duration={1500} triggerOnce={true} direction="right">
-              <h1 className="typography_heading_solution">
+              <Typography variant="h3" className="typography_heading_solution">
                 Energy Efficiency and Sustainability
-              </h1>
+              </Typography >
               <div className="content_text">
                 <Typography variant="p">
                   IoT-enabled Smart Building Management Systems (SBMS) optimize
@@ -97,9 +95,9 @@ function smartbuilding() {
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
             <Slide triggerOnce={true}>
-              <h1 className="typography_heading_solution">
+              <Typography variant="h3" className="typography_heading_solution">
                 Data Collection with Node-RED
-              </h1>
+              </Typography >
               <div className="content_text">
                 <Typography variant="p">
                   Node-RED, an open-source flow-based tool, collects data from
@@ -113,7 +111,7 @@ function smartbuilding() {
           <Grid item md={6} xs={12}>
             <Slide duration={1500} triggerOnce={true} direction="right">
               <img
-                src={nodered}
+                src="../images/services/iiot/iiot08.webp"
                 alt="iot solar dahboard"
                 className="imagesSmart"
               />
@@ -132,9 +130,9 @@ function smartbuilding() {
           </Grid>
           <Grid item md={6} xs={12}>
             <Slide duration={1500} triggerOnce={true} direction="right">
-              <h1 className="typography_heading_solution">
+              <Typography variant="h3" className="typography_heading_solution">
                 Integration with Azure IoT Hub
-              </h1>
+              </Typography >
               <div className="content_text">
                 <Typography variant="p">
                   Node-RED pushes data to Azure IoT Hub, ensuring secure
@@ -148,9 +146,9 @@ function smartbuilding() {
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
             <Slide triggerOnce={true}>
-              <h1 className="typography_heading_solution">
+              <Typography variant="h3" className="typography_heading_solution">
                 Data Transfer Using Event Hub and Telegraf
-              </h1>
+              </Typography >
               <div className="content_text">
                 <Typography variant="p">
                   Data from Azure IoT Hub flows to Azure Event Hub for real-time
@@ -175,7 +173,7 @@ function smartbuilding() {
           <Grid item md={6} xs={12}>
             <Slide triggerOnce={true}>
               <img
-                src={grafana}
+                src="../images/services/iiot/iiot06.webp"
                 alt="iot solar dahboard"
                 className="imagesSmart"
               />
@@ -183,9 +181,9 @@ function smartbuilding() {
           </Grid>
           <Grid item md={6} xs={12}>
             <Slide duration={1500} triggerOnce={true} direction="right">
-              <h1 className="typography_heading_solution">
+              <Typography variant="h3" className="typography_heading_solution">
                 Visualization with Grafana
-              </h1>
+              </Typography >
               <div className="content_text">
                 <Typography variant="p">
                   InfluxDB data is visualized through Grafana, providing
@@ -201,9 +199,9 @@ function smartbuilding() {
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
             <Slide triggerOnce={true}>
-              <h1 className="typography_heading_solution">
+              <Typography variant="h3" className="typography_heading_solution">
                 3D Model Visualization with Tandem
-              </h1>
+              </Typography >
               <div className="content_text">
                 <Typography variant="p">
                   Tandem integrates InfluxDB data into 3D building models to
@@ -226,9 +224,9 @@ function smartbuilding() {
         </Grid>
         <Grid container className="dashboardpage">
           <Grid item md={12} xs={12}>
-            <h1 className="typography_heading_solution">
+            <Typography variant="h3" className="typography_heading_solution">
               Digikloud 3D Tandem Viewer
-            </h1>
+            </Typography >
             <div className="content_text">
               <Typography variant="p">
                 The addition of 3D visualization with Tandem provides a unique

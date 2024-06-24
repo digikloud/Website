@@ -6,7 +6,6 @@ import CloseIcon from "@mui/icons-material/Close";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import "./navbar.css";
-import { Typography } from "@mui/material";
 
 function Navbar() {
   const [color, setColor] = useState("white_nav");
@@ -33,12 +32,6 @@ function Navbar() {
   const [anchorElIoT, setanchorElIoT] = useState(null);
   const open = Boolean(anchorEl);
   const iotopen = Boolean(anchorElIoT);
-  // const handleClick = (event) => {
-  //   setAnchorEl(event.currentTarget);
-  // };
-  // const handleClick1 = (event) => {
-  //   setanchorElIoT(event.currentTarget);
-  // };
   const handleClose = () => {
     setAnchorEl(null);
     setanchorElIoT(null);
@@ -200,11 +193,9 @@ function Navbar() {
         <nav ref={navRef}>
           <div className="dropdown">
             <div className="content">
-              {/* <Typography variant="navLink" className="nvaLink"> */}
               <Link underline="none" to="#">
               Product
               </Link>
-              {/* </Typography> */}
             </div>
             <button type="button"></button>
             <div className="menu">
@@ -272,15 +263,6 @@ function Navbar() {
               })}
             </div>
           </div>
-          {/* <Link
-            underline="none"
-            to="/services"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-          >
-            Services
-          </Link> */}
           <div className="dropdown">
             <div className="content">
               <Link underline="none" to="#">

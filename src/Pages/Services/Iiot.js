@@ -150,12 +150,7 @@ function Iiot() {
         <Grid container style={{ width: "90%" }}>
           <Grid item xs={12} md={12}>
             <Fade direction="up" triggerOnce={true} duration={2000}>
-              <h1
-                className="typography_heading"
-                style={{ textAlign: "center" }}
-              >
-                Our Services
-              </h1>
+              <Typography variant="h3" className="typography_heading" style={{ textAlign: "center" }}>Our Services</Typography>
             </Fade>
           </Grid>
           <Grid item xs={12} md={3} lg={3}>

@@ -49,10 +49,8 @@ function Footer() {
           <div className="footer_address">
             <div className="footer_icon_address">
               <LocationOnIcon sx={{ color: "#00b894", marginRight: "10px" }} />
-              {/* 002, Sai Bageecha Apartment, */}
               677, 1st Floor, 27th Main, 13th Cross, Sector 1,
               <br />
-              {/* Channasandra, Bengaluru -560067 */}
               HSR Layout , Bangalore, Karnataka, 560102
               <br />
               India

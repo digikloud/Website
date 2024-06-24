@@ -40,62 +40,60 @@ function ProtocolsHome() {
     <article className="homeContainer">
       <Grid container className="iotProtocols">
         <Grid item xs={12} md={12} lg={12}>
-        <Fade direction="up" triggerOnce={true} duration={1500}>
-          {/* <h1 className="typography_heading">Supported IoT protocols</h1> */}
-          <Typography variant="h3" className="typography_heading">Supported IoT protocols</Typography>
-          {/* <h3 className="homepageSubhead">
-            Seamless Connectivity, Boundless Possibilities
-          </h3> */}
-          <Typography variant="h5" className="homepageSubhead">
-          Seamless Connectivity, Boundless Possibilities
+          <Fade direction="up" triggerOnce={true} duration={1500}>
+            <Typography variant="h3" className="typography_heading">
+              Supported IoT protocols
             </Typography>
-          <div className="content_text">
-            <Typography variant="p" align="justify">
-              At DiGiKloud, we specialize in delivering cutting-edge Internet of
-              Things (IoT) solutions that empower businesses and individuals to
-              succeed in an interconnected world. With our expertise and
-              commitment to staying at the forefront of technology, we support a
-              range of industry-leading IoT protocols. These protocols serve as
-              the foundation of our IoT ecosystem, facilitating smooth
-              communication, data exchange, and seamless integration between
-              devices and applications.
+            <Typography variant="h5" className="homepageSubhead">
+              Seamless Connectivity, Boundless Possibilities
             </Typography>
-          </div>
+            <div className="content_text">
+              <Typography variant="p" align="justify">
+                At DiGiKloud, we specialize in delivering cutting-edge Internet
+                of Things (IoT) solutions that empower businesses and
+                individuals to unlock new levels of efficiency in an
+                interconnected world. With our expertise and commitment to
+                staying at the forefront of technology, we enable smooth
+                communication, data exchange, and seamless integration between
+                devices and applications. This is achieved through our support
+                for a range of industry-leading IoT protocols, which serve as
+                the foundation of our robust IoT ecosystem.
+              </Typography>
+            </div>
           </Fade>
           <Fade direction="up" triggerOnce={true} duration={1500}>
-
-          <div className="Dashboadrhomepagediv">
-            <div className="Dashboadrhomecardlayout">
-              {data.map((img, id) => {
-                return (
-                  <div className="card" key={img.id}>
-                    <div className="front">
-                      <div className="logoFlip">
-                        <Stack direction="row">
-                          <img
-                            src={img.img}
-                            alt={img.title}
-                            className="img_flipCard"
-                          />
-                        </Stack>
-                        <Typography variant="h6" className="flipCard_subhead">
-                          {img.title}
+            <div className="Dashboadrhomepagediv">
+              <div className="Dashboadrhomecardlayout">
+                {data.map((img, id) => {
+                  return (
+                    <div className="card" key={img.id}>
+                      <div className="front">
+                        <div className="logoFlip">
+                          <Stack direction="row">
+                            <img
+                              src={img.img}
+                              alt={img.title}
+                              className="img_flipCard"
+                            />
+                          </Stack>
+                          <Typography variant="h6" className="flipCard_subhead">
+                            {img.title}
+                          </Typography>
+                        </div>
+                      </div>
+                      <div className="back">
+                        <Typography
+                          variant="h6"
+                          className="flipcard_back_content"
+                        >
+                          {img.info}
                         </Typography>
                       </div>
                     </div>
-                    <div className="back">
-                      <Typography
-                        variant="h6"
-                        className="flipcard_back_content"
-                      >
-                        {img.info}
-                      </Typography>
-                    </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
           </Fade>
         </Grid>
       </Grid>

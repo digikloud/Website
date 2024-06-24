@@ -7,17 +7,17 @@ function Analyzehome() {
   return (
     <article className="homeContainer">
       <Grid container className="analyzehome">
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} >
           <Slide direction="left" triggerOnce={true} duration={1500}>
-            {/* <h1 className="typography_heading">Uncover, Analyze, Optimize</h1> */}
-            <Typography variant="h3" className="typography_heading">Uncover, Analyze, Optimize</Typography>
-            {/* <h3 className="homepageSubhead">
-              Extracting Actionable Insights from Raw Data
-            </h3> */}
-            <Typography variant="h5" className="homepageSubhead">
-            Extracting Actionable Insights from Raw Data
+            <Typography variant="h3" className="typography_heading">
+              Uncover, Analyze, Optimize
             </Typography>
+            <Typography variant="h5" className="homepageSubhead">
+              Extracting Actionable Insights from Raw Data
+            </Typography>
+            <article className="home_content_image">
             <img src={analyze} alt="iot analyze" className="homeAboutImages" />
+            </article>
           </Slide>
         </Grid>
         <Grid item xs={12} md={6} className="analyze_content">
@@ -31,9 +31,21 @@ function Analyzehome() {
               your business from disruptions and enabling long-term success.
             </Typography>
             <ul style={{ lineHeight: "2" }}>
-              <li><Typography variant="p">Identifying trends, patterns, and anomalies</Typography></li>
-              <li><Typography variant="p">Real-time data collection and integration</Typography></li>
-              <li><Typography variant="p">Improving resource allocation and cost efficiency</Typography></li>
+              <li>
+                <Typography variant="p">
+                  Identifying trends, patterns, and anomalies
+                </Typography>
+              </li>
+              <li>
+                <Typography variant="p">
+                  Real-time data collection and integration
+                </Typography>
+              </li>
+              <li>
+                <Typography variant="p">
+                  Improving resource allocation and cost efficiency
+                </Typography>
+              </li>
             </ul>
           </Slide>
         </Grid>
