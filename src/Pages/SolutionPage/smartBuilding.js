@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-import building1 from "../../assets/building1.jpeg";
+import building1 from "../../assets/building1.png";
 import building2 from "../../assets/building2.webp";
 import { Helmet } from "react-helmet";
 import Footer from "../../page/home/Footer";
@@ -12,6 +12,7 @@ import nodered from "../../assets/nodered.png";
 import tandam from "../../assets/tandam.png";
 import tandam3d from "../../assets/tandam_3d.png";
 import { Slide } from "react-awesome-reveal";
+import iiot08 from "../../assets/Services/iiot08.webp";
 
 function smartbuilding() {
   return (
@@ -59,7 +60,7 @@ function smartbuilding() {
           <Grid item md={6} xs={12}>
             <Slide duration={1500} triggerOnce={true} direction="right">
               <img
-                src="../images/services/iiot/iiot02.webp"
+                src={building1}
                 alt="iot solar dahboard"
                 className="imagesSmart"
               />
@@ -111,7 +112,7 @@ function smartbuilding() {
           <Grid item md={6} xs={12}>
             <Slide duration={1500} triggerOnce={true} direction="right">
               <img
-                src="../images/services/iiot/iiot08.webp"
+                src={iiot08}
                 alt="iot solar dahboard"
                 className="imagesSmart"
               />
