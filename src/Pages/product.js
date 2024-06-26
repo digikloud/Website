@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../page/home/navbar";
 import "./product.css";
-import { Button, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import prod from "../assets/Product/product_home.mp4";
 import prod01 from "../assets/Product/prod01.webp";
 import prod02 from "../assets/Product/prod02.webp";
@@ -9,7 +9,7 @@ import prod03 from "../assets/Product/prod03.webp";
 import prod04 from "../assets/Product/prod04.webp";
 import Footer from "../page/home/Footer";
 import { Helmet } from "react-helmet";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 function Product() {
   return (

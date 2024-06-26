@@ -5,7 +5,7 @@ import iotx05 from "../../assets/Product/iotx05.png";
 import iotx06 from "../../assets/Product/iotx06.png";
 import iotx07 from "../../assets/Product/iotx07.png";
 import iotx08 from "../../assets/Product/iotx07.gif";
-import { Button, Grid, Typography } from "@mui/material";
+import {Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 import styled from "styled-components";
 import Navbar from "../../page/home/navbar";

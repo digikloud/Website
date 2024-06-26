@@ -11,8 +11,7 @@ import iothub from "../../assets/Services/Azure/azure01.webp";
 // import nodered from "../../assets/nodered.png";
 import architecture from "../../assets/uog architecture.png";
 import tandam from "../../assets/tandam.png";
-import tandam3d from "../../assets/tandam_3d.png";
-// import tandam3d from "../../assets/Uog.gif";
+import tandam3d from "../../assets/Uog.gif";
 import { Slide } from "react-awesome-reveal";
 import iiot08 from "../../assets/Services/iiot08.webp";
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "../../page/home/navbar";
-import { Avatar, Button, Grid, Typography } from "@mui/material";
+import { Avatar, Grid, Typography } from "@mui/material";
 import video from "../../assets/Product/byop_video.mp4";
 import byop01 from "../../assets/Product/byop01.webp";
 import byop02 from "../../assets/Product/byop02.png";

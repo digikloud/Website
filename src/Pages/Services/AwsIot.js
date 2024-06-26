@@ -7,7 +7,7 @@ import aws04 from "../../assets/Services/AWS/aws04.webp";
 import aws05 from "../../assets/Services/AWS/aws05.webp";
 import aws06 from "../../assets/Services/AWS/aws06.webp";
 import { Fade } from "react-awesome-reveal";
-import { Avatar, Button, Grid, Typography } from "@mui/material";
+import { Avatar, Grid, Typography } from "@mui/material";
 import Footer from "../../page/home/Footer";
 import { useState } from "react";
 import DialogOpen from "../../components/DialogOpen";
