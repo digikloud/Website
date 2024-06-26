@@ -5,21 +5,21 @@ import iotx05 from "../../assets/Product/iotx05.png";
 import iotx06 from "../../assets/Product/iotx06.png";
 import iotx07 from "../../assets/Product/iotx07.png";
 import iotx08 from "../../assets/Product/iotx07.gif";
-import {Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 import styled from "styled-components";
 import Navbar from "../../page/home/navbar";
 import Footer from "../../page/home/Footer";
 import { Helmet } from "react-helmet";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Buttons = styled.button`
   /* Same as above */
 `;
 const ButtonToggle = styled(Buttons)`
   opacity: 0.9;
-  background : #f4f7f9 ;
-  width : 20% ;
+  background: #f4f7f9;
+  width: 20%;
   ${({ active }) =>
     active &&
     `
@@ -72,7 +72,7 @@ function Iotx() {
   const [img, setImg] = useState("../images/products/nextGen/nxtgen01.webp");
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Product | IoT X</title>
         <meta
           name="description"
@@ -90,19 +90,49 @@ function Iotx() {
           Your browser does not support the video tag.
         </video>
         <header className="iotx_top_innertext">
-          <h1>
-            Get your device connected for just $1 per month! <br />
-            Connected your device for &#8377; 100 per month
-          </h1>
+          <Fade direction="up" duration={2000} triggerOnce={true}>
+            <h1>
+              Get your device connected for just $1 per month! <br />
+              Connected your device for &#8377; 100 per month
+            </h1>
+          </Fade>
         </header>
       </section>
-      <section className="productpagecontainer">
+
+      <section className="byoppagecontainer">
+        <Grid container className="byop_deails">
+          <Grid item xs={12} md={6}>
+            <Slide direction="right" triggerOnce={true} duration={1500}>
+              <Typography variant="h3" className="typography_heading">
+                Unlock the Power of IoT with Our Comprehensive Services
+              </Typography>
+              <article className="product_thinhskloud_content">
+                <Typography variant="p">
+                  In a world driven by technology, harnessing the potential of
+                  the Internet of Things (IoT) has become essential for
+                  businesses and individuals alike. Our NextGen IoT Services
+                  offer a seamless and holistic solution to bring your devices
+                  to life, enabling you to collect, analyze, and utilize data
+                  like never before.
+                </Typography>
+              </article>
+            </Slide>
+          </Grid>
+          <Grid item xs={12} md={6} className="byop_image_container">
+            <Slide triggerOnce={true}>
+              <img src={iotx02} alt="" className="product_image" />
+            </Slide>
+          </Grid>
+        </Grid>
+      </section>
+
+      {/* <section className="productpagecontainer">
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
               <Typography variant="h3" className="typography_heading">
-              Unlock the Power of IoT with Our Comprehensive Services
-            </Typography>
+                Unlock the Power of IoT with Our Comprehensive Services
+              </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   In a world driven by technology, harnessing the potential of
@@ -113,7 +143,7 @@ function Iotx() {
                   like never before.
                 </Typography>
               </article>
-              {/* <Button
+              <Button
                 style={{
                   borderRadius: 15,
                   backgroundColor: "#00b894",
@@ -125,22 +155,22 @@ function Iotx() {
                 type="submit"
               >
                 Learn More
-              </Button> */}
+              </Button>
             </article>
           </Grid>
           <Grid item xs={12} md={6} className="iotx_images_container">
             <img src={iotx02} alt="" className="iotx_images" />
           </Grid>
         </Grid>
-      </section>
+      </section> */}
       <section className="productpagecontainer">
         <Grid container className="product_deails">
-          <Grid item md={12} style={{padding : '10px 0'}}>
+          <Grid item md={12} style={{ padding: "10px 0" }}>
             <Typography variant="h3" className="typography_heading">
-            Why Choose NextGen IoT Services?
+              Why Choose NextGen IoT Services?
             </Typography>
           </Grid>
-          <Grid item md={12} lg={12} style={{paddingBottom : '10px'}}>
+          <Grid item md={12} lg={12} style={{ paddingBottom: "10px" }}>
             <ButtonGroup>
               {NextGenBtn.map((type, ind) => (
                 <ButtonToggle
@@ -151,8 +181,8 @@ function Iotx() {
                     width: "20%",
                     fontSize: "15px",
                     fontWeight: "600",
-                    padding : "10px 0",
-                    border : '1px solid #cdf5ed',
+                    padding: "10px 0",
+                    border: "1px solid #cdf5ed",
                   }}
                   onClick={() => {
                     setActive(type);
@@ -181,11 +211,11 @@ function Iotx() {
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
               <Typography variant="h3" className="typography_heading">
-              Device Connectivity
-            </Typography>
+                Device Connectivity
+              </Typography>
               <Typography variant="h5" className="homepageSubhead">
-              Seamless Integration, Boundless Possibilities
-            </Typography>
+                Seamless Integration, Boundless Possibilities
+              </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Our Device Connectivity services ensure that your IoT devices
@@ -205,11 +235,11 @@ function Iotx() {
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
               <Typography variant="h3" className="typography_heading">
-              Data Integration
-            </Typography>
+                Data Integration
+              </Typography>
               <Typography variant="h5" className="homepageSubhead">
-              Unify Data, Unleash Insights
-            </Typography>
+                Unify Data, Unleash Insights
+              </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Unlock the true potential of your data with our Data
@@ -232,8 +262,8 @@ function Iotx() {
           <Grid item xs={12} md={12} lg={12} className="iotx-tf">
             <article>
               <Typography variant="h3" className="typography_heading">
-              Real-Time Monitoring
-            </Typography>
+                Real-Time Monitoring
+              </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Real-time monitoring lies at the heart of Industry 4.0,
@@ -259,7 +289,7 @@ function Iotx() {
                 </article>
               </Grid>
               <Grid item xs={12} md={6} lg={6} style={{ position: "relative" }}>
-              <div className="iotx_realtime_card_innerhead">
+                <div className="iotx_realtime_card_innerhead">
                   <h4>Quality Assurance</h4>
                 </div>
                 <article className="iotx_realtime_card">
@@ -270,13 +300,7 @@ function Iotx() {
                   </Typography>
                 </article>
               </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                lg={6}
-                style={{ position: "relative" }}
-              >
+              <Grid item xs={12} md={6} lg={6} style={{ position: "relative" }}>
                 <div className="iotx_realtime_card_innerhead">
                   <h4>Predictive Maintenance</h4>
                 </div>
@@ -289,13 +313,7 @@ function Iotx() {
                 </article>
               </Grid>
 
-              <Grid
-                item
-                xs={12}
-                md={6}
-                lg={6}
-                style={{ position: "relative" }}
-              >
+              <Grid item xs={12} md={6} lg={6} style={{ position: "relative" }}>
                 <div className="iotx_realtime_card_innerhead">
                   <h4>Operational Visibility</h4>
                 </div>
@@ -317,11 +335,11 @@ function Iotx() {
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
               <Typography variant="h3" className="typography_heading">
-              Alert & Notification System
-            </Typography>
+                Alert & Notification System
+              </Typography>
               <Typography variant="h5" className="homepageSubhead">
-              Stay Informed, Act Swiftlys
-            </Typography>
+                Stay Informed, Act Swiftlys
+              </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Respond promptly to critical events with our Alert &
@@ -340,19 +358,19 @@ function Iotx() {
           </Grid>
         </Grid>
       </section>
-      <section className="productpagecontainer" >
-        <Grid container className="product_deails" >
-          <Grid item xs={12} md={6} className="iotx_images_container" >
+      <section className="productpagecontainer">
+        <Grid container className="product_deails">
+          <Grid item xs={12} md={6} className="iotx_images_container">
             <img src={iotx06} alt="" className="iotx_images" />
           </Grid>
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
               <Typography variant="h3" className="typography_heading">
-              Reports and Analytics
-            </Typography>
+                Reports and Analytics
+              </Typography>
               <Typography variant="h5" className="homepageSubhead">
-              Insights that Drive Excellence
-            </Typography>
+                Insights that Drive Excellence
+              </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Make informed decisions backed by data-driven insights through
@@ -371,11 +389,11 @@ function Iotx() {
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
               <Typography variant="h3" className="typography_heading">
-              REST API Service
-            </Typography>
+                REST API Service
+              </Typography>
               <Typography variant="h5" className="homepageSubhead">
-              Empower Your Ecosystem
-            </Typography>
+                Empower Your Ecosystem
+              </Typography>
               <article className="content_text">
                 <Typography variant="p">
                   Our API Development services enable you to open new avenues of
@@ -397,13 +415,14 @@ function Iotx() {
       <section className="byoppagecontainer">
         <Grid container className="byop_deails">
           <Grid xs={12} md={12} className="byop_contact">
-          <Fade direction="up" triggerOnce={true} >
-            <article className="byop_contact_info">
-              <Typography variant="h4">
-              Join us in revolutionising access to ideas and emerging technologies.
-              </Typography>
-            </article>
-            {/* <Button
+            <Fade direction="up" triggerOnce={true}>
+              <article className="byop_contact_info">
+                <Typography variant="h4">
+                  Join us in revolutionising access to ideas and emerging
+                  technologies.
+                </Typography>
+              </article>
+              {/* <Button
                 aria-label="book demo"
                 style={{
                   borderRadius: 35,
@@ -417,7 +436,7 @@ function Iotx() {
               >
                 Book Demo
               </Button> */}
-              </Fade>
+            </Fade>
           </Grid>
         </Grid>
       </section>

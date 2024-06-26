@@ -36,7 +36,7 @@ function smartbuilding() {
       <Grid container className="solution_container">
         <Grid className="solution_building_page_top_image">
           <div className="solution_home_head  ">
-            <Slide triggerOnce={true} direction="up">
+            <Slide triggerOnce={true} direction="up" duration={2000}>
               <h1 className="solutionTopTag">
                 Smart buildings use IoT for efficient, secure, and comfortable
                 environments through real-time data

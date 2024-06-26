@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../page/home/navbar";
-import { Button, Grid, Typography } from "@mui/material";
+import { Grid,  Typography } from "@mui/material";
 import bin from "../../assets/smart waste bin.png";
 import smartbin from "../../assets/smart bin sensor.png";
 import wasteSorting from "../../assets/waste sorting.png";
@@ -9,6 +9,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../../page/home/Footer";
+import { Fade , Slide} from "react-awesome-reveal";
 
 function WasteMonitoringPage() {
   const [button, setButton] = useState("livedemo_btn_home");
@@ -44,10 +45,12 @@ function WasteMonitoringPage() {
       <Grid container className="solution_container">
         <Grid className="solution_wasteMonitor_page_top_image">
           <div className="solution_home_head health_quote">
+          <Fade triggerOnce={true} duration={2000} direction="up">
             <h1 className="solutionTopTag">
               Driving the Future of Waste Management IoT Innovations for Cleaner
               Communities
             </h1>
+            </Fade>
           </div>
         </Grid>
         {/* <div className={`${button}`}>
@@ -66,49 +69,42 @@ function WasteMonitoringPage() {
         </div> */}
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={6} lg={6}>
+          <Slide triggerOnce={true}>
             <h1 className="typography_heading_solution">
               Smart Waste Management
             </h1>
             <div className="content_text">
               <Typography variant="p">
-                {/* Smart waste management represents a cutting-edge approach to
-                waste handling and collection. By leveraging IoT (Internet of
-                Things) technology, smart waste management systems gather data
-                on waste generation patterns and behaviors. This data empowers
-                municipalities, cities, and waste collectors to optimize their
-                waste operations, enhance sustainability, and make informed
-                business decisions. */}
                 Smart waste management leverages IoT technology to collect data
                 on waste generation patterns, empowering municipalities and
                 waste collectors to optimize operations, promote sustainability,
                 and make informed decisions.
               </Typography>
             </div>
+            </Slide>
           </Grid>
           <Grid item md={6} xs={12}>
+          <Slide duration={1500} triggerOnce={true} direction="right">
             <img
               src={bin}
               alt="waste dashboard iot"
               className="images_rightside"
               style={{ width: "300px", height: "300px" }}
             />
+            </Slide>
           </Grid>
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={6} lg={6}>
+          <Slide triggerOnce={true}>
             <img src={smartbin} alt="waste dashboard iot" className="images" />
+            </Slide>
           </Grid>
           <Grid item md={6} xs={12}>
+          <Slide duration={1500} triggerOnce={true} direction="right">
             <h1 className="typography_heading_solution">Smart Bin Sensor</h1>
             <article className="content_text">
               <Typography variant="p">
-                {/* IoT sensors can be installed in waste bins to monitor their fill
-                levels in real-time. These sensors can use ultrasonic, infrared,
-                or weight measurement technologies to accurately gauge the fill
-                levels of the bins. The data collected by these sensors is
-                transmitted wirelessly to a central platform, enabling waste
-                management authorities to proactively plan collection routes
-                based on actual needs rather than fixed schedules. */}
                 IoT sensors in waste bins use ultrasonic, infrared, or weight
                 measurement technologies to monitor real-time fill levels,
                 transmitting data wirelessly to a central platform that enables
@@ -116,51 +112,41 @@ function WasteMonitoringPage() {
                 on current demand rather than fixed schedules.
               </Typography>
             </article>
+            </Slide>
           </Grid>
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item xs={12} md={6} lg={6}>
+          <Slide triggerOnce={true}>
             <h1 className="typography_heading_solution">
               Waste Sorting and Recycling
             </h1>
             <article className="content_text">
               <Typography variant="p">
-                {/* IoT technology can facilitate waste sorting and recycling
-                processes. Smart bins equipped with IoT sensors and cameras can
-                guide users to deposit waste in the correct compartments for
-                recycling. This data can be analyzed to identify trends and
-                patterns in recycling habits, enabling waste management
-                authorities to design targeted education and awareness campaigns
-                to improve recycling rates */}
                 IoT-enabled smart bins guide users to sort waste correctly. The
                 data collected identifies recycling trends, helping authorities
                 improve recycling rates through targeted campaigns.
               </Typography>
-            </article>
+            </article></Slide>
           </Grid>
           <Grid item md={6} xs={12}>
+          <Slide duration={1500} triggerOnce={true} direction="right">
             <img
               src={wasteSorting}
               alt="waste dashboard iot"
               className="images_rightside"
             />
+            </Slide>
           </Grid>
         </Grid>
         <Grid container className=" dashboardpage">
+        <Fade triggerOnce={true} duration={2000} direction="up">
           <Grid item xs={12} md={12} lg={12}>
             <h1 className="typography_heading_solution">
               Data-Driven Decision-Making and Continuous Improvement
             </h1>
             <article className="content_text">
               <Typography variant="p">
-                {/* The data generated by IoT-enabled smart waste management systems
-                serves as a valuable resource for data-driven decision-making.
-                By analyzing trends, patterns, and performance metrics, waste
-                management authorities can identify areas for improvement,
-                optimize processes, and implement targeted waste reduction
-                initiatives. This continuous improvement approach ensures the
-                evolution of waste management practices towards greater
-                efficiency and sustainability. */}
                 IoT-enabled smart waste management systems leverage real-time
                 data to optimize operations, identify trends, and implement
                 targeted waste reduction strategies, advancing efficiency and
@@ -175,6 +161,7 @@ function WasteMonitoringPage() {
               className=" dashboard"
             />
           </Grid>
+          </Fade>
         </Grid>
       </Grid>
       <Footer />

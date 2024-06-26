@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "../../page/home/navbar";
 import "./iotdashboard.css";
-import { Button, Grid, Stack, Typography } from "@mui/material";
+import { Grid, Stack, Typography } from "@mui/material";
 import waste01 from "../../assets/iotDashboard/waste01.webp";
 import waste02 from "../../assets/iotDashboard/waste02.webp";
 import bulb from "../../assets/iotDashboard/bulb01.png";
 import star02 from "../../assets/iotDashboard/star02.png";
 import Footer from "../../page/home/Footer";
 import { Helmet } from "react-helmet";
+// import { Fade } from "react-awesome-reveal";
 
 function WasteManagementIoT() {
   return (
@@ -17,6 +18,7 @@ function WasteManagementIoT() {
       </Helmet>
       <Navbar />
       <section className="heading">
+        {/* <Fade triggerOnce={true} duration={2000} direction="up"> */}
         <Typography variant="h1">IoT Waste Managment Solution</Typography>
         <Typography variant="h4">
           Utilize Digikloud's innovative template feature as a foundation to
@@ -34,6 +36,7 @@ function WasteManagementIoT() {
         >
           See Live Dashboard
         </Button> */}
+        {/* </Fade> */}
       </section>
       <section className="iotdashboard_container">
         <article className="iotdashboard_image_container">
@@ -48,18 +51,16 @@ function WasteManagementIoT() {
         <article className="solar_info">
           <Typography variant="h3">What is Waste Managment ?</Typography>
           <Typography variant="h4">
-            A waste management solution using IoT (Internet of Things) involves
-            integrating sensors, devices, and data analytics to enhance the
-            efficiency and effectiveness of waste collection, monitoring, and
-            processing.
+            Waste management using IoT (Internet of Things) integrates sensors,
+            devices, and data analytics to improve the efficiency and
+            effectiveness of waste collection, monitoring, and processing.
           </Typography>
           <Typography variant="h5">
-            IoT-enabled waste management systems can provide real-time data on
-            waste bin fill levels, optimize collection routes, monitor landfill
-            conditions, track recycling progress, and enable remote management
-            and control. This technology-driven approach aims to reduce
-            operational costs, minimize environmental impact, and improve
-            overall waste management practices.
+            IoT waste management systems offer real-time data on bin fill
+            levels, optimize collection routes, monitor landfill conditions,
+            track recycling progress, and enable remote management. Goals
+            include cost reduction, environmental impact minimization, and
+            improved waste management practices.
           </Typography>
         </article>
       </section>
@@ -186,12 +187,11 @@ function WasteManagementIoT() {
                   </Typography>
                   <article className="dashboardinfoContent">
                     <Typography variant="p">
-                      The pre-built IoT waste management monitoring dashboard
-                      offered by Digikloud provides a holistic solution. By
-                      connecting your sensor devices to the platform, you can
-                      effortlessly commence the management of your waste-related
-                      data. Seize this chance by enrolling in a complimentary
-                      trial and embarking on your journey with simplicity.
+                      Digikloud's pre-built IoT waste management monitoring
+                      dashboard offers a comprehensive solution. Connect your
+                      sensor devices to the platform to effortlessly manage
+                      waste-related data. Start your journey with ease by
+                      signing up for a complimentary trial.
                     </Typography>
                   </article>
                   {/* <Button

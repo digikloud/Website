@@ -62,7 +62,9 @@ function Services() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Slide direction="right" triggerOnce={true} duration={1500}>
-              <Typography variant="h3" className="typography_heading">Trusted Platform</Typography>
+              <Typography variant="h3" className="typography_heading">
+                Trusted Platform
+              </Typography>
               <article className="iotServicesContent">
                 <Typography variant="p" align="justify">
                   Unleash the limitless possibilities of the Internet of Things
@@ -92,7 +94,9 @@ function Services() {
           </Grid>
           <Grid item xs={12} md={6} className="our_iot_service">
             <Slide triggerOnce={true}>
-              <Typography variant="h3" className="typography_heading">End-to-End Solutions</Typography>
+              <Typography variant="h3" className="typography_heading">
+                End-to-End Solutions
+              </Typography>
               <Typography variant="p">
                 We offer a complete suite of IoT services, from device
                 connectivity to data analysis, to help you optimize operations
@@ -113,7 +117,9 @@ function Services() {
           </Grid>
           <Grid item xs={12} md={6} className="our_iot_service">
             <Slide direction="right" triggerOnce={true} duration={1500}>
-              <Typography variant="h3" className="typography_heading">Scalable Infrastructure</Typography>
+              <Typography variant="h3" className="typography_heading">
+                Scalable Infrastructure
+              </Typography>
               <Typography variant="p">
                 Our services are designed to scale with you, ensuring your IoT
                 ecosystem can expand seamlessly.
@@ -123,7 +129,9 @@ function Services() {
 
           <Grid item xs={12} md={6} className="our_iot_service">
             <Slide triggerOnce={true}>
-              <Typography variant="h3" className="typography_heading">Security First</Typography>
+              <Typography variant="h3" className="typography_heading">
+                Security First
+              </Typography>
               <Typography variant="p">
                 We prioritize the security of your data and devices, actively
                 employing the latest encryption and authentication measures.
@@ -143,7 +151,9 @@ function Services() {
           </Grid>
           <Grid item xs={12} md={6} className="our_iot_service">
             <Slide direction="right" triggerOnce={true} duration={1500}>
-              <Typography variant="h3" className="typography_heading">Expertise and Experience</Typography>
+              <Typography variant="h3" className="typography_heading">
+                Expertise and Experience
+              </Typography>
               <Typography variant="p">
                 Our team of IoT experts provides hands-on guidance throughout
                 your entire IoT journey.
@@ -158,7 +168,7 @@ function Services() {
           <Grid item xs={12} md={12} lg={12}>
             <Fade direction="left" duration={2000} triggerOnce={true}>
               <Typography
-              variant="h3"
+                variant="h3"
                 className="typography_heading"
                 style={{ textAlign: "center" }}
               >
@@ -173,9 +183,9 @@ function Services() {
                 <article>
                   <Typography variant="h6">Device Connectivity</Typography>
                   <Typography variant="p">
-                    Seamlessly integrate your devices into the IoT ecosystem for
-                    unprecedented convenience and efficiency, enabling remote
-                    monitoring and insightful data analysis.
+                    Integrate your devices into the IoT ecosystem seamlessly.
+                    Monitor and control them remotely for unmatched convenience
+                    and efficiency.
                   </Typography>
                 </article>
               </article>
@@ -188,9 +198,9 @@ function Services() {
                 <article>
                   <Typography variant="h6">Personal Data Security</Typography>
                   <Typography variant="p">
-                    Unlock the potential of data by integrating information from
-                    various sources. Empower yourself with a holistic view of
-                    your operations, enabling more informed decision-making.
+                    Unlock data potential by integrating information from
+                    various sources, gaining a holistic view of operations for
+                    informed decision-making.
                   </Typography>
                 </article>
               </article>
@@ -205,9 +215,9 @@ function Services() {
                     Data Storage and Visualization
                   </Typography>
                   <Typography variant="p">
-                    Unlock the power of predictive analytics and actionable
-                    insights. Our scalable cloud solutions and visualization
-                    tools turn complex data into clear understanding.
+                    Easily store and visualize data with scalable cloud
+                    solutions and visualization tools, transforming complex data
+                    into actionable insights.
                   </Typography>
                 </article>
               </article>
@@ -220,9 +230,9 @@ function Services() {
                 <article>
                   <Typography variant="h6">API Development</Typography>
                   <Typography variant="p">
-                    Empower a thriving ecosystem of connected devices and
-                    third-party applications with our powerful APIs that drive
-                    seamless communication.
+                    Develop APIs for seamless communication between devices and
+                    third-party applications, fostering collaboration and
+                    innovation.
                   </Typography>
                 </article>
               </article>
@@ -238,9 +248,8 @@ function Services() {
                     Alert & Notification System
                   </Typography>
                   <Typography variant="p">
-                    Never miss a critical moment. Stay in the loop with
-                    real-time alerts. Customize your notification triggers and
-                    receive updates through your preferred channels.
+                    Stay informed with real-time alerts. Set custom thresholds
+                    and receive notifications via your preferred channels.
                   </Typography>
                 </article>
               </article>
@@ -253,10 +262,8 @@ function Services() {
                 <article>
                   <Typography variant="h6">Reports and Analytics</Typography>
                   <Typography variant="p">
-                    Uncover data-driven insights that empower informed
-                    decisions. Our detailed reports and analytics guide you to
-                    optimize processes and achieve excellence, ultimately
-                    maximizing your ROI.
+                    Utilize data-driven insights from detailed reports and
+                    analytics to optimize processes and drive excellence.
                   </Typography>
                 </article>
               </article>

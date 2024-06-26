@@ -31,9 +31,7 @@ nav > a:hover , .content > a:hover{
   width: 100%;
   z-index: 1000;
 }
-.menu:hover > a {
-  color: red;
-}
+
 /* .navbar_container h4 {
   font-size: 18px;
   padding: 0 10px;

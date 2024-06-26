@@ -124,9 +124,7 @@
     justify-content: center;
     align-items: center;
 }
-.current_button{
-    background: red !important;
-}
+
 
 @media screen and (max-width : 1500px) {
     .iotx_top_innertext{

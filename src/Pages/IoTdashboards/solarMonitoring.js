@@ -8,6 +8,7 @@ import bulb from "../../assets/iotDashboard/bulb01.png";
 import star02 from "../../assets/iotDashboard/star02.png";
 import Footer from "../../page/home/Footer";
 import { Helmet } from "react-helmet";
+import { Fade } from "react-awesome-reveal";
 
 function SolarMonitoring() {
   return (
@@ -17,6 +18,7 @@ function SolarMonitoring() {
       </Helmet>
       <Navbar />
       <section className="heading">
+        {/* <Fade triggerOnce={true} duration={2000} direction="up"> */}
         <Typography variant="h1">IoT Solar Monitoring Solution</Typography>
         <Typography variant="h4">
           Digikloud's new template feature as a starting point to develop your
@@ -34,6 +36,7 @@ function SolarMonitoring() {
         >
           See Live Dashboard
         </Button> */}
+        {/* </Fade> */}
       </section>
       <section className="iotdashboard_container">
         <article className="iotdashboard_image_container">
@@ -269,12 +272,11 @@ function SolarMonitoring() {
                   </Typography>
                   <article className="dashboardinfoContent">
                     <Typography variant="p">
-                      The pre-built IoT solar monitoring dashboard available on
-                      Digikloud offers a comprehensive solution. By integrating
-                      your sensor into the platform, you can seamlessly begin
-                      managing your solar-related data. Take advantage of this
-                      opportunity by signing up for a complimentary trial and
-                      initiating your journey with ease.
+                      Explore Digikloud's pre-built IoT solar monitoring
+                      dashboard for a comprehensive solution. Integrate your
+                      sensors effortlessly and manage solar-related data. Start
+                      your journey with ease by signing up for a complimentary
+                      trial.
                     </Typography>
                   </article>
                   {/* <Button

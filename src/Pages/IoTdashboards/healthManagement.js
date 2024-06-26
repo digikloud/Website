@@ -265,11 +265,10 @@ function HealthManagementIoT() {
                   </Typography>
                   <article className="dashboardinfoContent">
                     <Typography variant="p">
-                      The IoT health management dashboard available through
-                      Digikloud offers a seamless resolution for monitoring
-                      health-related data after integrating sensors. Seize this
-                      opportunity by signing up for a complimentary trial and
-                      embarking on your journey with ease.
+                      Discover the IoT health management dashboard from
+                      Digikloud, offering seamless monitoring of health-related
+                      data post sensor integration. Begin your journey
+                      effortlessly by signing up for a complimentary trial.
                     </Typography>
                   </article>
 

@@ -6,24 +6,23 @@ import img01 from "../assets/contactusbg.webp";
 import { Typography } from "@mui/material";
 import ContactUsForm from "../page/home/contactus";
 import { Helmet } from "react-helmet";
+import { Fade } from "react-awesome-reveal";
 
 function ContactUs() {
   return (
     <>
-    <Helmet>
-      <title>Contact Us</title>
-    </Helmet>
+      <Helmet>
+        <title>Contact Us</title>
+      </Helmet>
       <Navbar />
       <section className="contactuspage_homepage">
         <img src={img01} alt="digikloud company" />
-        <header className="top_inner_text">
-            <Typography variant="h1" >
-                Let's Connect with US !
-            </Typography>
-        </header>
+          <header className="top_inner_text">
+            <Typography variant="h1">Let's Connect with US !</Typography>
+          </header>
       </section>
       <section>
-            <ContactUsForm />
+        <ContactUsForm />
       </section>
       <Footer />
     </>

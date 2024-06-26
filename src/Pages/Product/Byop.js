@@ -18,8 +18,8 @@ const Buttons = styled.button`
 `;
 const ButtonToggle = styled(Buttons)`
   opacity: 0.9;
-  background : #f4f7f9 ;
-  width : 20% ;
+  background: #f4f7f9;
+  width: 20%;
   ${({ active }) =>
     active &&
     `
@@ -64,7 +64,6 @@ const BYOP = [
   },
 ];
 function Byop() {
-  
   const [active, setActive] = useState(BYOP[0]);
   const [BYOPdata, setBYOPdata] = useState(
     "Our BYOP services revolve around your specific requirements, ensuring a platform that mirrors your goals and objectives."
@@ -86,7 +85,13 @@ function Byop() {
       </Helmet>
       <Navbar />
       <section className="homepage">
-        <video className="backgroundvideo" style={{objectFit : 'cover'}} muted autoPlay loop>
+        <video
+          className="backgroundvideo"
+          style={{ objectFit: "cover" }}
+          muted
+          autoPlay
+          loop
+        >
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -125,46 +130,46 @@ function Byop() {
 
       <section className="productpagecontainer">
         <Grid container className="product_deails">
-          <Grid item md={12} style={{padding : '10px 0'}}>
+          <Grid item md={12} style={{ padding: "10px 0" }}>
             <Fade direction="left" duration={2000} triggerOnce={true}>
-            <Typography variant="h3" className="typography_heading">
-            Why Choose BYOP with  DiGiKloud ?
-            </Typography>
+              <Typography variant="h3" className="typography_heading">
+                Why Choose BYOP with DiGiKloud ?
+              </Typography>
             </Fade>
           </Grid>
-          <Grid item md={12} lg={12} style={{paddingBottom : '10px'}}>
+          <Grid item md={12} lg={12} style={{ paddingBottom: "10px" }}>
             <Fade direction="up" duration={1500} triggerOnce={true}>
-            <ButtonGroup>
-              {BYOP.map((type, ind) => (
-                <ButtonToggle
-                  key={ind}
-                  active={active === type}
-                  style={{
-                    cursor: "pointer",
-                    width: "20%",
-                    fontSize: "15px",
-                    fontWeight: "600",
-                    padding : "10px 0",
-                    border : '1px solid #cdf5ed',
-                  }}
-                  onClick={() => {
-                    setActive(type);
-                    setBYOPdata(type.data);
-                    setImg(type.img);
-                  }}
-                >
-                  {type.title}
-                </ButtonToggle>
-              ))}
-            </ButtonGroup>
+              <ButtonGroup>
+                {BYOP.map((type, ind) => (
+                  <ButtonToggle
+                    key={ind}
+                    active={active === type}
+                    style={{
+                      cursor: "pointer",
+                      width: "20%",
+                      fontSize: "15px",
+                      fontWeight: "600",
+                      padding: "10px 0",
+                      border: "1px solid #cdf5ed",
+                    }}
+                    onClick={() => {
+                      setActive(type);
+                      setBYOPdata(type.data);
+                      setImg(type.img);
+                    }}
+                  >
+                    {type.title}
+                  </ButtonToggle>
+                ))}
+              </ButtonGroup>
             </Fade>
           </Grid>
           <Grid item md={12}>
-            <Slide direction="right" triggerOnce={true} >
-            <article className="product_info" style={{height : '500px'}}>
-              <img src={img} alt="" className="byop_image"  />
-              <Typography variant="h5">{BYOPdata}</Typography>
-            </article>
+            <Slide direction="right" triggerOnce={true}>
+              <article className="product_info" style={{ height: "500px" }}>
+                <img src={img} alt="" className="byop_image" />
+                <Typography variant="h5">{BYOPdata}</Typography>
+              </article>
             </Slide>
           </Grid>
         </Grid>
@@ -174,9 +179,13 @@ function Byop() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={12}>
             <Fade direction="up" triggerOnce={true} duration={2000}>
-              <Typography variant="h3" style={{ textAlign: "center" }} className="typography_heading">
-              Our BYOP Services
-            </Typography>
+              <Typography
+                variant="h3"
+                style={{ textAlign: "center" }}
+                className="typography_heading"
+              >
+                Our BYOP Services
+              </Typography>
             </Fade>
           </Grid>
           <Grid item xs={12} md={4} lg={4}>
@@ -188,11 +197,10 @@ function Byop() {
                 />
                 <Typography variant="h6">Consultancy Services</Typography>
                 <Typography variant="p">
-                  Our consultancy services lay the foundation for your IoT
-                  success. We work closely with you to define your IoT strategy,
-                  architecture, and technology stack. With our guidance, you'll
-                  navigate complexities and make informed decisions that align
-                  with your business objectives.
+                  We lay the foundation for your IoT success, defining strategy,
+                  architecture, and technology stack. With our guidance,
+                  navigate complexities and align decisions with business
+                  objectives.
                 </Typography>
               </article>
             </Slide>
@@ -206,11 +214,9 @@ function Byop() {
                 />
                 <Typography variant="h6">Engineering Services</Typography>
                 <Typography variant="p">
-                  Our engineering services bring your IoT platform to life. From
-                  device connectivity and data storage to analytics and
-                  visualization, we meticulously design and develop each
-                  component, ensuring they seamlessly integrate and deliver
-                  actionable insights.
+                  We make your IoT platform a reality, handling device
+                  connectivity, data storage, analytics, and visualization for
+                  seamless integration and actionable insights.
                 </Typography>
               </article>
             </Fade>
@@ -226,10 +232,9 @@ function Byop() {
                   Maintenance and Support Services
                 </Typography>
                 <Typography variant="p">
-                  An IoT platform demands continuous attention. Our maintenance
-                  and support services ensure your platform remains robust,
-                  up-to-date, and secure. We proactively address issues, perform
-                  updates, and offer swift assistance whenever you need it.
+                  Our services keep your IoT platform robust, updated, and
+                  secure with proactive issue resolution, updates, and
+                  responsive assistance.
                 </Typography>
               </article>
             </Slide>
@@ -241,13 +246,21 @@ function Byop() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={12}>
             <Fade direction="up" triggerOnce={true} duration={2000}>
-              <Typography variant="h3" style={{ textAlign: "center" }} className="typography_heading">
-              Getting Started
-            </Typography>
-              <Typography variant="h5" style={{ textAlign: "center" }} className="homepageSubhead">
-              Technology brings impactful changes that can make business
+              <Typography
+                variant="h3"
+                style={{ textAlign: "center" }}
+                className="typography_heading"
+              >
+                Getting Started
+              </Typography>
+              <Typography
+                variant="h5"
+                style={{ textAlign: "center" }}
+                className="homepageSubhead"
+              >
+                Technology brings impactful changes that can make business
                 flourish.
-            </Typography>
+              </Typography>
             </Fade>
 
             <Grid item xs={12} md={12} className="iotx_realtime_card_container">
@@ -266,8 +279,8 @@ function Byop() {
                   <article className="iotx_realtime_card">
                     <Typography variant="p">
                       Monitor machine performance, production rates, and process
-                      parameters in real time. Identify trends, patterns, and
-                      anomalies to optimize efficiency.
+                      parameters in real time to identify trends, patterns, and
+                      anomalies for optimizing efficiency.
                     </Typography>
                   </article>
                   {/* </Slide> */}
@@ -284,10 +297,9 @@ function Byop() {
                   </div>
                   <article className="iotx_realtime_card">
                     <Typography variant="p">
-                      Ensure product quality by monitoring and analyzing data at
-                      every stage of the production process. Implement
-                      corrective actions in real time to maintain consistent
-                      quality.
+                      Monitor and analyze data throughout the production process
+                      to ensure product quality. Implement real-time corrective
+                      actions for consistent quality maintenance.
                     </Typography>
                   </article>
                 </Grid>
@@ -303,9 +315,9 @@ function Byop() {
                   </div>
                   <article className="iotx_realtime_card">
                     <Typography variant="p">
-                      Utilize data from IoT devices, PLCs, and SCADA systems to
-                      predict equipment maintenance needs. Prevent costly
-                      downtimes and extend the lifespan of critical assets..
+                      Use IoT device, PLC, and SCADA system data for predictive
+                      equipment maintenance. Prevent costly downtimes and extend
+                      critical asset lifespan.
                     </Typography>
                   </article>
                 </Grid>
@@ -322,10 +334,9 @@ function Byop() {
                   </div>
                   <article className="iotx_realtime_card">
                     <Typography variant="p">
-                      Gain a comprehensive view of your operations through
-                      intuitive dashboards and visualization tools. Monitor key
-                      performance indicators (KPIs) to drive continuous
-                      improvement.
+                      Use intuitive dashboards and visualization tools for a
+                      comprehensive view of operations. Monitor KPIs to drive
+                      continuous improvement.
                     </Typography>
                   </article>
                 </Grid>
@@ -340,12 +351,11 @@ function Byop() {
           <Grid item xs={12} md={6}>
             <Slide triggerOnce={true} duration={1500}>
               <Typography variant="h3" className="typography_heading">
-              Experience the Future Today
-            </Typography>
+                Experience the Future Today
+              </Typography>
               <Typography variant="p" align="justify">
-                With DiGiKloud's BYOP services, you're not just building an IoT
-                platform you're crafting a transformative solution that elevates
-                your business, optimizes processes, and unlocks new
+                With DiGiKloud's BYOP services, build an IoT platform that
+                transforms your business, optimizes processes, and unlocks new
                 opportunities. Let's take the first step together.
               </Typography>
             </Slide>
@@ -362,7 +372,7 @@ function Byop() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={12} className="byop_contact">
             <Fade direction="up" triggerOnce={true}>
-              <article className="byop_contact_info"> 
+              <article className="byop_contact_info">
                 <Typography variant="h4">
                   Empower your vision with "Build Your Own IoT Platform"
                   services from Digikloud. Together, we'll make your IoT dreams

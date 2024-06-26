@@ -62,12 +62,11 @@ function Thingsboard() {
           >
             <Typography variant="h6">
               At DiGikloud, we are your trusted partner in harnessing the full
-              potential of ThingsBoard's comprehensive IoT services. Our
-              expertise in ThingsBoard offers you a complete ecosystem to
-              connect, manage, and optimize your devices and data. With services
-              ranging from device management to data visualization, we empower
-              you to create intelligent, data-driven solutions that drive
-              efficiency, insights, and growth.
+              potential of ThingsBoard's IoT services. Our expertise offers a
+              complete ecosystem to connect, manage, and optimize your devices
+              and data. From device management to data visualization, we empower
+              you to create intelligent, data-driven solutions for efficiency,
+              insights, and growth.
             </Typography>
           </article>
         </Fade>
@@ -86,11 +85,10 @@ function Thingsboard() {
                 </h3>
                 <article className="content_text">
                   <Typography variant="p" align="justify">
-                    Our ThingsBoard Device Management services provide you with
-                    the tools to seamlessly connect and manage your IoT devices.
-                    Whether it's remote device configuration, firmware updates,
-                    or real-time monitoring, we ensure your devices are secure,
-                    efficient, and always accessible.
+                    Our ThingsBoard Device Management services enable seamless
+                    connection and control of your IoT devices. We ensure
+                    secure, efficient, and accessible remote configuration,
+                    firmware updates, and real-time monitoring.
                   </Typography>
                 </article>
               </Slide>
@@ -146,11 +144,9 @@ function Thingsboard() {
                 <h3 className="homepageSubhead">Data at Your Fingertips</h3>
                 <article className="content_text">
                   <Typography variant="p" align="justify">
-                    Our Thingsboard Data Ingestion and Processing services allow
-                    you to collect, store, and process data from your devices
-                    seamlessly. With our expertise, your data becomes a valuable
-                    asset, ready to be transformed into insights that drive your
-                    business decisions.
+                    Our ThingsBoard services enable seamless data collection,
+                    storage, and processing. We transform your data into
+                    valuable insights to drive business decisions.
                   </Typography>
                 </article>
               </Slide>
@@ -189,12 +185,11 @@ function Thingsboard() {
                 </h3>
                 <article className="content_text">
                   <Typography variant="p" align="justify">
-                    Unlock the power of data visualization with our ThingsBoard
-                    services. We create customized dashboards that allow you to
-                    monitor, analyze, and interpret your IoT data effortlessly.
-                    Whether it's real-time metrics, historical trends, or
-                    predictive insights, our dashboards offer you clear,
-                    actionable information.
+                    Unlock data visualization's power with our ThingsBoard
+                    services. Our customized dashboards monitor, analyze, and
+                    interpret IoT data effortlessly, offering clear, actionable
+                    insights from real-time metrics, historical trends, and
+                    predictive analytics.
                   </Typography>
                 </article>
               </Slide>
@@ -253,11 +248,9 @@ function Thingsboard() {
                 </h3>
                 <article className="content_text">
                   <Typography variant="p" align="justify">
-                    Our ThingsBoard Rule Engine and Automation services enable
-                    you to set up automated workflows and trigger actions based
-                    on predefined conditions. From simple alerts to complex
-                    automation, we help you create intelligent systems that
-                    respond dynamically to your IoT data.
+                    Our ThingsBoard services empower smart automation with
+                    automated workflows and dynamic actions based on IoT data,
+                    from alerts to complex systems.
                   </Typography>
                 </article>
               </Slide>
