@@ -39,7 +39,7 @@ function Product() {
             compilation, data analysis, and graphical representation to empower
             your IoT solution
           </Typography>
-          <Button
+          {/* <Button
             style={{
               borderRadius: 10,
               backgroundColor: "#00b894",
@@ -48,7 +48,7 @@ function Product() {
             }}
           >
             Learn More
-          </Button>
+          </Button> */}
           {/* </Fade> */}
         </header>
       </section>
@@ -72,9 +72,6 @@ function Product() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={6}>
             <Slide triggerOnce={true} duration={1500}>
-              {/* <h1 className="typography_heading">
-                Provision and Manage Devices and Assets with Ease
-              </h1> */}
               <Typography variant="h3" className="typography_heading">
                 Provision and Manage Devices and Assets with Ease
               </Typography>
@@ -105,9 +102,6 @@ function Product() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Slide direction="right" triggerOnce={true} duration={1500}>
-              {/* <h1 className="typography_heading">
-                Data at Your Fingertips with Thingskloud
-              </h1> */}
               <Typography variant="h3" className="typography_heading">
                 Data at Your Fingertips with Thingskloud
               </Typography>
@@ -127,9 +121,6 @@ function Product() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={6}>
             <Slide triggerOnce={true} duration={1500}>
-              {/* <h1 className="typography_heading">
-                Data Processing and Intelligent Reaction with Thingskloud
-              </h1> */}
               <Typography variant="h3" className="typography_heading">
                 Data Processing and Intelligent Reaction with Thingskloud
               </Typography>
@@ -161,7 +152,6 @@ function Product() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Slide direction="right" triggerOnce={true} duration={1500}>
-              {/* <h1 className="typography_heading">IoT Rule Engine</h1> */}
               <Typography variant="h3" className="typography_heading">
                 IoT Rule Engine
               </Typography>

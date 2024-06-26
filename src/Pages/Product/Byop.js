@@ -127,9 +127,6 @@ function Byop() {
         <Grid container className="product_deails">
           <Grid item md={12} style={{padding : '10px 0'}}>
             <Fade direction="left" duration={2000} triggerOnce={true}>
-            {/* <h1 className="typography_heading">
-            Why Choose BYOP with  DiGiKloud ?
-            </h1> */}
             <Typography variant="h3" className="typography_heading">
             Why Choose BYOP with  DiGiKloud ?
             </Typography>
@@ -164,8 +161,8 @@ function Byop() {
           </Grid>
           <Grid item md={12}>
             <Slide direction="right" triggerOnce={true} >
-            <article className="teue" style={{height : '500px'}}>
-              <img src={img} alt="" className="" style={{height :'300px' ,width : '100p'  }} />
+            <article className="product_info" style={{height : '500px'}}>
+              <img src={img} alt="" className="byop_image"  />
               <Typography variant="h5">{BYOPdata}</Typography>
             </article>
             </Slide>
@@ -177,12 +174,6 @@ function Byop() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={12}>
             <Fade direction="up" triggerOnce={true} duration={2000}>
-              {/* <h1
-                className="typography_heading"
-                style={{ textAlign: "center" }}
-              >
-                Our BYOP Services
-              </h1> */}
               <Typography variant="h3" style={{ textAlign: "center" }} className="typography_heading">
               Our BYOP Services
             </Typography>
@@ -250,19 +241,9 @@ function Byop() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={12}>
             <Fade direction="up" triggerOnce={true} duration={2000}>
-              {/* <h1
-                className="typography_heading"
-                style={{ textAlign: "center" }}
-              >
-                Getting Started
-              </h1> */}
               <Typography variant="h3" style={{ textAlign: "center" }} className="typography_heading">
               Getting Started
             </Typography>
-              {/* <h3 className="homepageSubhead" style={{ textAlign: "center" }}>
-                Technology brings impactful changes that can make business
-                flourish.
-              </h3> */}
               <Typography variant="h5" style={{ textAlign: "center" }} className="homepageSubhead">
               Technology brings impactful changes that can make business
                 flourish.
@@ -358,9 +339,6 @@ function Byop() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={6}>
             <Slide triggerOnce={true} duration={1500}>
-              {/* <h1 className="typography_heading">
-                Experience the Future Today
-              </h1> */}
               <Typography variant="h3" className="typography_heading">
               Experience the Future Today
             </Typography>
@@ -384,14 +362,14 @@ function Byop() {
         <Grid container className="byop_deails">
           <Grid item xs={12} md={12} className="byop_contact">
             <Fade direction="up" triggerOnce={true}>
-              <article>
+              <article className="byop_contact_info"> 
                 <Typography variant="h4">
                   Empower your vision with "Build Your Own IoT Platform"
                   services from Digikloud. Together, we'll make your IoT dreams
                   a reality.
                 </Typography>
               </article>
-              <Button
+              {/* <Button
                 aria-label="book demo"
                 style={{
                   borderRadius: 35,
@@ -401,10 +379,10 @@ function Byop() {
                   fontSize: "18px",
                 }}
                 variant="contained"
-                // onClick={handleClickOpen}
+                onClick={handleClickOpen}
               >
                 Book Demo
-              </Button>
+              </Button> */}
             </Fade>
           </Grid>
         </Grid>

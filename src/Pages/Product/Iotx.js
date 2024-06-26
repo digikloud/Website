@@ -100,9 +100,6 @@ function Iotx() {
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              {/* <h1 className="typography_heading">
-                Unlock the Power of IoT with Our Comprehensive Services
-              </h1> */}
               <Typography variant="h3" className="typography_heading">
               Unlock the Power of IoT with Our Comprehensive Services
             </Typography>
@@ -116,7 +113,7 @@ function Iotx() {
                   like never before.
                 </Typography>
               </article>
-              <Button
+              {/* <Button
                 style={{
                   borderRadius: 15,
                   backgroundColor: "#00b894",
@@ -128,7 +125,7 @@ function Iotx() {
                 type="submit"
               >
                 Learn More
-              </Button>
+              </Button> */}
             </article>
           </Grid>
           <Grid item xs={12} md={6} className="iotx_images_container">
@@ -139,9 +136,6 @@ function Iotx() {
       <section className="productpagecontainer">
         <Grid container className="product_deails">
           <Grid item md={12} style={{padding : '10px 0'}}>
-            {/* <h1 className="typography_heading">
-              Why Choose NextGen IoT Services?
-            </h1> */}
             <Typography variant="h3" className="typography_heading">
             Why Choose NextGen IoT Services?
             </Typography>
@@ -172,7 +166,7 @@ function Iotx() {
             </ButtonGroup>
           </Grid>
           <Grid item md={12}>
-            <article className="teue">
+            <article className="product_info">
               <img src={img} alt="" className="nextgen_images" />
               <Typography variant="h5">{NextGenData}</Typography>
             </article>
@@ -186,13 +180,9 @@ function Iotx() {
           </Grid>
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              {/* <h1 className="typography_heading">Device Connectivity</h1> */}
               <Typography variant="h3" className="typography_heading">
               Device Connectivity
             </Typography>
-              {/* <h3 className="homepageSubhead">
-                Seamless Integration, Boundless Possibilities
-              </h3> */}
               <Typography variant="h5" className="homepageSubhead">
               Seamless Integration, Boundless Possibilities
             </Typography>
@@ -214,11 +204,9 @@ function Iotx() {
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              {/* <h1 className="typography_heading">Data Integration</h1> */}
               <Typography variant="h3" className="typography_heading">
               Data Integration
             </Typography>
-              {/* <h3 className="homepageSubhead">Unify Data, Unleash Insights</h3> */}
               <Typography variant="h5" className="homepageSubhead">
               Unify Data, Unleash Insights
             </Typography>
@@ -243,7 +231,6 @@ function Iotx() {
         <Grid container className="product_deails">
           <Grid item xs={12} md={12} lg={12} className="iotx-tf">
             <article>
-              {/* <h1 className="typography_heading">Real-Time Monitoring</h1> */}
               <Typography variant="h3" className="typography_heading">
               Real-Time Monitoring
             </Typography>
@@ -329,13 +316,9 @@ function Iotx() {
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              {/* <h1 className="typography_heading">
-                Alert & Notification System
-              </h1> */}
               <Typography variant="h3" className="typography_heading">
               Alert & Notification System
             </Typography>
-              {/* <h3 className="homepageSubhead">Stay Informed, Act Swiftlys</h3> */}
               <Typography variant="h5" className="homepageSubhead">
               Stay Informed, Act Swiftlys
             </Typography>
@@ -364,13 +347,9 @@ function Iotx() {
           </Grid>
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              {/* <h1 className="typography_heading">Reports and Analytics</h1> */}
               <Typography variant="h3" className="typography_heading">
               Reports and Analytics
             </Typography>
-              {/* <h3 className="homepageSubhead">
-                Insights that Drive Excellence
-              </h3> */}
               <Typography variant="h5" className="homepageSubhead">
               Insights that Drive Excellence
             </Typography>
@@ -391,11 +370,9 @@ function Iotx() {
         <Grid container className="product_deails">
           <Grid item xs={12} md={6} lg={6} className="iotx-tf">
             <article>
-              {/* <h1 className="typography_heading">REST API Service</h1> */}
               <Typography variant="h3" className="typography_heading">
               REST API Service
             </Typography>
-              {/* <h3 className="homepageSubhead">Empower Your Ecosystem</h3> */}
               <Typography variant="h5" className="homepageSubhead">
               Empower Your Ecosystem
             </Typography>
@@ -421,12 +398,12 @@ function Iotx() {
         <Grid container className="byop_deails">
           <Grid xs={12} md={12} className="byop_contact">
           <Fade direction="up" triggerOnce={true} >
-            <article>
+            <article className="byop_contact_info">
               <Typography variant="h4">
               Join us in revolutionising access to ideas and emerging technologies.
               </Typography>
             </article>
-            <Button
+            {/* <Button
                 aria-label="book demo"
                 style={{
                   borderRadius: 35,
@@ -436,10 +413,10 @@ function Iotx() {
                   fontSize: "18px",
                 }}
                 variant="contained"
-                // onClick={handleClickOpen}
+                onClick={handleClickOpen}
               >
                 Book Demo
-              </Button>
+              </Button> */}
               </Fade>
           </Grid>
         </Grid>

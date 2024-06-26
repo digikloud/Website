@@ -51,7 +51,7 @@ const theme = createTheme({
     p: {
       fontSize: "16px",
       fontFamily: "'Montserrat',",
-      lineHeight : '2'
+      lineHeight : '2',
     },
     homepageSubhead:{
       fontFamily: "'Montserrat',"

@@ -5,12 +5,14 @@ import { Helmet } from "react-helmet";
 import Footer from "../../page/home/Footer";
 import "./solutionpage.css";
 import Navbar from "../../page/home/navbar";
-import grafana from "../../assets/grafana.png";
+// import grafana from "../../assets/grafana.png";
 import influxdb from "../../assets/Services/AWS/aws03.webp";
 import iothub from "../../assets/Services/Azure/azure01.webp";
-import nodered from "../../assets/nodered.png";
+// import nodered from "../../assets/nodered.png";
+import architecture from "../../assets/uog architecture.png";
 import tandam from "../../assets/tandam.png";
 import tandam3d from "../../assets/tandam_3d.png";
+// import tandam3d from "../../assets/Uog.gif";
 import { Slide } from "react-awesome-reveal";
 import iiot08 from "../../assets/Services/iiot08.webp";
 
@@ -39,14 +41,16 @@ function smartbuilding() {
               <h1 className="solutionTopTag">
                 Smart buildings use IoT for efficient, secure, and comfortable
                 environments through real-time data
-              </h1 >
+              </h1>
             </Slide>
           </div>
         </Grid>
         <Grid container className="solution_page_detail">
           <Grid item md={6} xs={12}>
             <Slide triggerOnce={true}>
-              <Typography variant="h3" className="typography_heading_solution">Smart Building Management</Typography>
+              <Typography variant="h3" className="typography_heading_solution">
+                Smart Building Management
+              </Typography>
               <div className="content_text">
                 <Typography variant="p">
                   IoT integrated with AI and machine learning in building
@@ -81,7 +85,7 @@ function smartbuilding() {
             <Slide duration={1500} triggerOnce={true} direction="right">
               <Typography variant="h3" className="typography_heading_solution">
                 Energy Efficiency and Sustainability
-              </Typography >
+              </Typography>
               <div className="content_text">
                 <Typography variant="p">
                   IoT-enabled Smart Building Management Systems (SBMS) optimize
@@ -98,7 +102,7 @@ function smartbuilding() {
             <Slide triggerOnce={true}>
               <Typography variant="h3" className="typography_heading_solution">
                 Data Collection with Node-RED
-              </Typography >
+              </Typography>
               <div className="content_text">
                 <Typography variant="p">
                   Node-RED, an open-source flow-based tool, collects data from
@@ -133,7 +137,7 @@ function smartbuilding() {
             <Slide duration={1500} triggerOnce={true} direction="right">
               <Typography variant="h3" className="typography_heading_solution">
                 Integration with Azure IoT Hub
-              </Typography >
+              </Typography>
               <div className="content_text">
                 <Typography variant="p">
                   Node-RED pushes data to Azure IoT Hub, ensuring secure
@@ -149,7 +153,7 @@ function smartbuilding() {
             <Slide triggerOnce={true}>
               <Typography variant="h3" className="typography_heading_solution">
                 Data Transfer Using Event Hub and Telegraf
-              </Typography >
+              </Typography>
               <div className="content_text">
                 <Typography variant="p">
                   Data from Azure IoT Hub flows to Azure Event Hub for real-time
@@ -184,7 +188,7 @@ function smartbuilding() {
             <Slide duration={1500} triggerOnce={true} direction="right">
               <Typography variant="h3" className="typography_heading_solution">
                 Visualization with Grafana
-              </Typography >
+              </Typography>
               <div className="content_text">
                 <Typography variant="p">
                   InfluxDB data is visualized through Grafana, providing
@@ -202,7 +206,7 @@ function smartbuilding() {
             <Slide triggerOnce={true}>
               <Typography variant="h3" className="typography_heading_solution">
                 3D Model Visualization with Tandem
-              </Typography >
+              </Typography>
               <div className="content_text">
                 <Typography variant="p">
                   Tandem integrates InfluxDB data into 3D building models to
@@ -227,7 +231,7 @@ function smartbuilding() {
           <Grid item md={12} xs={12}>
             <Typography variant="h3" className="typography_heading_solution">
               Digikloud 3D Tandem Viewer
-            </Typography >
+            </Typography>
             <div className="content_text">
               <Typography variant="p">
                 The addition of 3D visualization with Tandem provides a unique
@@ -245,6 +249,27 @@ function smartbuilding() {
           </Grid>
         </Grid>
         <Grid container className="dashboardpage">
+          <Grid item md={12} xs={12}>
+            <Typography variant="h3" className="typography_heading_solution">
+              Architecture - Smart Building
+            </Typography>
+            {/* <div className="content_text">
+              <Typography variant="p">
+                The addition of 3D visualization with Tandem provides a unique
+                and detailed perspective, further empowering building managers
+                to optimize performance and address issues promptly.
+              </Typography>
+            </div> */}
+          </Grid>
+          <Grid item md={12} xs={12}>
+            <img
+              src={architecture}
+              alt="architcture"
+              className="architcture_dashboard"
+            />
+          </Grid>
+        </Grid>
+        <Grid container className="dashboardpage" >
           <article className="key_elements_solar key_elements_solars">
             <h2>
               The University of Glasgow's Smart Building Transformation - User
@@ -292,6 +317,80 @@ function smartbuilding() {
                 Glasgow to remain at the forefront of educational excellence and
                 technological advancement for centuries to come.
               </Typography>
+            </article>
+
+            <Typography variant="h3" className="typography_heading_solution">
+              Benefits
+            </Typography>
+            <article className="key_element_card smart_benefits">
+              <Typography variant="h5" className="homepageSubhead">
+                Scalable solutions for future
+              </Typography>
+              <ul style={{ lineHeight: "2" }}>
+                <li>
+                  <Typography variant="p">
+                    Using existing IT solutions
+                  </Typography>
+                  <ul>
+                    <li>
+                      <Typography variant="p">Microsoft | Autodesk</Typography>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Typography variant="p">
+                    Open Building Architecture such as BACNET, MQTT,DALI etc
+                  </Typography>
+                </li>
+              </ul>
+            </article>
+            <article className="key_element_card smart_benefits">
+              <Typography variant="h5" className="homepageSubhead">
+                Enhance Campus Management
+              </Typography>
+              <ul style={{ lineHeight: "2" }}>
+                <li>
+                  <Typography variant="p">
+                    Real time data into BIM Models using IoT
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="p">
+                    Predicative Facility Management with single point of data
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="p">
+                    Smart Command and Control Centre
+                  </Typography>
+                </li>
+              </ul>
+            </article>
+            <article className="key_element_card smart_benefits">
+              <Typography variant="h5" className="homepageSubhead">
+                Energy Savings – (Estimates)
+              </Typography>
+              <ul style={{ lineHeight: "2" }}>
+                <li>
+                  <Typography variant="p">Electricity : £ 40,226.96</Typography>
+                </li>
+                <li>
+                  <Typography variant="p">Gas : £64,849.51</Typography>
+                </li>
+                <li>
+                  <Typography variant="p">Carbon : £ 11,925</Typography>
+                </li>
+                <li>
+                  <Typography variant="p">
+                    TOTAL : £ 117,001 Annually
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="p">
+                    Supporting 2030 Net Zero Targets
+                  </Typography>
+                </li>
+              </ul>
             </article>
           </article>
         </Grid>
