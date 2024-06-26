@@ -102,7 +102,7 @@ function Iotx() {
       <section className="byoppagecontainer">
         <Grid container className="byop_deails">
           <Grid item xs={12} md={6}>
-            <Slide direction="right" triggerOnce={true} duration={1500}>
+            <Slide  triggerOnce={true} duration={1500}>
               <Typography variant="h3" className="typography_heading">
                 Unlock the Power of IoT with Our Comprehensive Services
               </Typography>
@@ -119,7 +119,7 @@ function Iotx() {
             </Slide>
           </Grid>
           <Grid item xs={12} md={6} className="byop_image_container">
-            <Slide triggerOnce={true}>
+            <Slide direction="right" triggerOnce={true}>
               <img src={iotx02} alt="" className="product_image" />
             </Slide>
           </Grid>
