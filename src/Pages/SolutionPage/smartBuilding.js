@@ -252,13 +252,6 @@ function smartbuilding() {
             <Typography variant="h3" className="typography_heading_solution">
               Architecture - Smart Building
             </Typography>
-            {/* <div className="content_text">
-              <Typography variant="p">
-                The addition of 3D visualization with Tandem provides a unique
-                and detailed perspective, further empowering building managers
-                to optimize performance and address issues promptly.
-              </Typography>
-            </div> */}
           </Grid>
           <Grid item md={12} xs={12}>
             <img
@@ -268,7 +261,7 @@ function smartbuilding() {
             />
           </Grid>
         </Grid>
-        <Grid container className="dashboardpage" >
+        <Grid container className="dashboardpage">
           <article className="key_elements_solar key_elements_solars">
             <h2>
               The University of Glasgow's Smart Building Transformation - User
@@ -276,45 +269,25 @@ function smartbuilding() {
             </h2>
             <article className="key_element_card">
               <Typography variant="p">
-                Founded in 1451 by papal bull, the University of Glasgow stands
-                as the fourth-oldest university in the English-speaking world.
-                Known for its prestigious history and cutting-edge research, the
-                university has consistently pushed the boundaries of innovation.
-                Today, the University of Glasgow (abbreviated as Glas. in
-                post-nominals; Scottish Gaelic: Oilthigh Ghlaschu) continues
-                this legacy by embarking on a transformative smart building
-                initiative in partnership with DigiKloud and Autodesk.The
-                collaboration with DigiKloud, a leader in IoT solutions, and
-                Autodesk, renowned for its advanced design software, has enabled
-                the university to retrofit and modernize its historical campus
-                with state-of-the-art smart building systems.This ambitious
-                project has already seen the completion of four buildings, each
-                equipped with over 1,000 smart devices. These devices are
-                designed to optimize energy efficiency, enhance security, and
-                improve the overall living and working conditions for students
-                and staff.Each smart device, integrated into a comprehensive
-                building management system, monitors and controls various
-                aspects of the buildings’ operations. This includes lighting,
-                heating, ventilation, and air conditioning systems, ensuring
-                they operate at peak efficiency.
+                Founded in 1451, the University of Glasgow, the fourth-oldest in
+                the English-speaking world, is modernizing its campus through a
+                smart building initiative with DigiKloud and Autodesk. This
+                project has retrofitted four buildings with over 1,000 smart
+                devices to optimize energy efficiency, security, and living
+                conditions. The comprehensive building management system
+                enhances lighting, HVAC, and overall operational efficiency.
               </Typography>
             </article>
             <article className="key_element_card">
               <Typography variant="p">
-                The partnership with DigiKloud and Autodesk exemplifies the
-                University of Glasgow’s commitment to leveraging technology for
-                the betterment of its community. By integrating cutting-edge
-                smart building solutions, the university not only preserves its
-                rich historical legacy but also sets a standard for future-ready
-                educational institutions worldwide. As the University of Glasgow
-                continues to expand its smart building initiative, the benefits
-                of this transformation will become increasingly evident.
-                Enhanced efficiency, improved security, and a more sustainable
-                campus are just the beginning. The success of these first four
-                buildings serves as a testament to what is possible when
-                tradition meets innovation, paving the way for the University of
-                Glasgow to remain at the forefront of educational excellence and
-                technological advancement for centuries to come.
+                The University of Glasgow's partnership with DigiKloud and
+                Autodesk showcases its commitment to leveraging technology,
+                integrating smart building solutions that preserve its legacy
+                and set a global standard. The initiative enhances efficiency,
+                security, and sustainability, with the success of the first four
+                buildings highlighting the potential when tradition meets
+                innovation. This positions the university at the forefront of
+                educational and technological excellence.
               </Typography>
             </article>
 
@@ -330,11 +303,14 @@ function smartbuilding() {
                   <Typography variant="p">
                     Using existing IT solutions
                   </Typography>
-                  <ul>
+                  {/* <ul>
                     <li>
                       <Typography variant="p">Microsoft | Autodesk</Typography>
                     </li>
-                  </ul>
+                  </ul> */}
+                </li>
+                <li>
+                  <Typography variant="p">Microsoft | Autodesk</Typography>
                 </li>
                 <li>
                   <Typography variant="p">
@@ -367,13 +343,13 @@ function smartbuilding() {
             </article>
             <article className="key_element_card smart_benefits">
               <Typography variant="h5" className="homepageSubhead">
-                Energy Savings – (Estimates)
+                Energy Savings
               </Typography>
               <ul style={{ lineHeight: "2" }}>
                 <li>
-                  <Typography variant="p">Electricity : £ 40,226.96</Typography>
+                  <Typography variant="p">you can save Up to 30% on Electricity, Gas, and Carbon Emissions</Typography>
                 </li>
-                <li>
+                {/* <li>
                   <Typography variant="p">Gas : £64,849.51</Typography>
                 </li>
                 <li>
@@ -388,7 +364,7 @@ function smartbuilding() {
                   <Typography variant="p">
                     Supporting 2030 Net Zero Targets
                   </Typography>
-                </li>
+                </li> */}
               </ul>
             </article>
           </article>
