@@ -247,7 +247,7 @@ function smartbuilding() {
             />
           </Grid>
         </Grid>
-        <Grid container className="dashboardpage">
+        {/* <Grid container className="dashboardpage">
           <Grid item md={12} xs={12}>
             <Typography variant="h3" className="typography_heading_solution">
               Architecture - Smart Building
@@ -260,7 +260,7 @@ function smartbuilding() {
               className="architcture_dashboard"
             />
           </Grid>
-        </Grid>
+        </Grid> */}
         <Grid container className="dashboardpage">
           <article className="key_elements_solar key_elements_solars">
             <h2>
